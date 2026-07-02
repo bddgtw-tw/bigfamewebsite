@@ -1,6 +1,7 @@
 /* Big Fame IND. CORP. - Global JavaScript Logic */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initThemeSwitcher();
   initHeaderScroll();
   initMobileMenu();
   initScrollAnimations();
@@ -10,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initMagneticButtons();
   initOfficeStatus();
   initContactForm();
+  initHeroParticles();
+  initScrollIndicator();
 });
 
 /**
@@ -187,26 +190,29 @@ function initOfficeStatus() {
       
       const timeStr = localTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
       
-      // Multi-language text maps
+      // Multi-language text maps (without dots, dots styled via CSS status-dot)
       let badgeText = '';
       let statusClass = '';
       let localLabel = '';
       
       if (lang === 'ja') {
-        badgeText = isOpen ? '● 営業中' : '○ 営業時間外';
+        badgeText = isOpen ? '営業中' : '営業時間外';
         localLabel = '現地時間';
       } else if (lang === 'en') {
-        badgeText = isOpen ? '● Open' : '○ Closed';
+        badgeText = isOpen ? 'Open' : 'Closed';
         localLabel = 'Local Time';
       } else { // tw
-        badgeText = isOpen ? '● 營業中' : '○ 休息中';
+        badgeText = isOpen ? '營業中' : '休息中';
         localLabel = '當地時間';
       }
       
       statusClass = isOpen ? 'status-open' : 'status-closed';
       
       container.innerHTML = `
-        <span class="status-badge ${statusClass}">${badgeText}</span> 
+        <span class="status-badge ${statusClass}">
+          <span class="status-dot"></span>
+          <span class="status-text">${badgeText}</span>
+        </span> 
         <span>(${localLabel}: ${timeStr})</span>
       `;
     });
@@ -297,4 +303,175 @@ function getLangSuccessMsg(lang) {
   } else { // tw
     return '詢問送出成功！我們的專案經理會儘快與您聯絡。';
   }
+}
+
+/**
+ * 10. Theme Switcher (Dark/Light Mode) Dynamic Injection & Controller
+ */
+function initThemeSwitcher() {
+  const savedTheme = localStorage.getItem('theme');
+  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const isDark = savedTheme === 'dark' || (!savedTheme && systemPrefersDark);
+  
+  if (isDark) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  } else {
+    document.documentElement.removeAttribute('data-theme');
+  }
+  
+  const langSelector = document.querySelector('.lang-selector');
+  if (!langSelector) return;
+  
+  const toggleBtn = document.createElement('button');
+  toggleBtn.className = 'theme-toggle';
+  toggleBtn.id = 'themeToggle';
+  toggleBtn.setAttribute('aria-label', 'Toggle Theme');
+  
+  const sunSvg = `
+    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: ${isDark ? 'block' : 'none'};">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  `;
+  const moonSvg = `
+    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: ${isDark ? 'none' : 'block'};">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+  `;
+  
+  toggleBtn.innerHTML = sunSvg + moonSvg;
+  langSelector.parentNode.insertBefore(toggleBtn, langSelector.nextSibling);
+  
+  toggleBtn.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const sunIcon = toggleBtn.querySelector('.sun-icon');
+    const moonIcon = toggleBtn.querySelector('.moon-icon');
+    
+    if (currentTheme === 'dark') {
+      document.documentElement.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'light');
+      sunIcon.style.display = 'none';
+      moonIcon.style.display = 'block';
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+      sunIcon.style.display = 'block';
+      moonIcon.style.display = 'none';
+    }
+  });
+}
+
+/**
+ * 11. Dynamic Particle Background (Canvas overlay in Hero Section)
+ */
+function initHeroParticles() {
+  const hero = document.querySelector('.hero');
+  if (!hero) return;
+  
+  const canvas = document.createElement('canvas');
+  canvas.className = 'hero-canvas';
+  hero.appendChild(canvas);
+  
+  const ctx = canvas.getContext('2d');
+  let particles = [];
+  let width = canvas.width = hero.offsetWidth;
+  let height = canvas.height = hero.offsetHeight;
+  
+  const handleResize = () => {
+    width = canvas.width = hero.offsetWidth;
+    height = canvas.height = hero.offsetHeight;
+  };
+  window.addEventListener('resize', handleResize);
+  
+  class Particle {
+    constructor() {
+      this.reset();
+    }
+    
+    reset() {
+      this.x = Math.random() * width;
+      this.y = Math.random() * height + height;
+      this.size = Math.random() * 2 + 1;
+      this.speedY = -(Math.random() * 0.4 + 0.1);
+      this.speedX = (Math.random() * 0.2 - 0.1);
+      this.opacity = Math.random() * 0.5 + 0.1;
+    }
+    
+    update() {
+      this.y += this.speedY;
+      this.x += this.speedX;
+      
+      if (this.y < 0 || this.x < 0 || this.x > width) {
+        this.reset();
+        this.y = height + Math.random() * 20;
+      }
+    }
+    
+    draw() {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      const color = isDark ? `rgba(197, 168, 128, ${this.opacity})` : `rgba(43, 58, 74, ${this.opacity * 0.7})`;
+      ctx.fillStyle = color;
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+  
+  const particleCount = 45;
+  for (let i = 0; i < particleCount; i++) {
+    const p = new Particle();
+    p.y = Math.random() * height;
+    particles.push(p);
+  }
+  
+  function animate() {
+    ctx.clearRect(0, 0, width, height);
+    particles.forEach(p => {
+      p.update();
+      p.draw();
+    });
+    requestAnimationFrame(animate);
+  }
+  
+  animate();
+}
+
+/**
+ * 12. Dynamic Scroll Down Mouse Indicator
+ */
+function initScrollIndicator() {
+  const hero = document.querySelector('.hero');
+  if (!hero) return;
+  
+  const indicator = document.createElement('div');
+  indicator.className = 'scroll-indicator';
+  
+  const isTW = document.documentElement.lang === 'zh-Hant-TW' || window.location.pathname.includes('/tw/');
+  const isJP = document.documentElement.lang === 'ja' || window.location.pathname.includes('/jp/');
+  let scrollText = 'Scroll Down';
+  if (isTW) scrollText = '向下滾動';
+  else if (isJP) scrollText = 'スクロール';
+  
+  indicator.innerHTML = `
+    <div class="scroll-indicator-mouse">
+      <div class="scroll-indicator-wheel"></div>
+    </div>
+    <span class="scroll-indicator-text">${scrollText}</span>
+  `;
+  
+  hero.appendChild(indicator);
+  
+  indicator.addEventListener('click', () => {
+    const nextSection = hero.nextElementSibling;
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
 }
