@@ -104,7 +104,11 @@
 
         <!-- Form Column -->
         <div class="reveal">
-          <form action="#" method="POST" class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for your inquiry. Our B2B project managers will respond shortly. (Inquiry demo sent successfully)');">
+          <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="contactForm">
+            <!-- Web3Forms Configuration -->
+            <input type="hidden" name="access_key" value="ceb65d7e-ad87-463a-a423-ca6accca0270">
+            <input type="hidden" name="subject" value="New Inquiry from Big Fame Website (EN)">
+            <input type="hidden" name="from_name" value="Big Fame Web Hub">
             <div class="form-group">
               <label for="name">Your Name / お名前 *</label>
               <input type="text" id="name" name="name" class="form-control" required placeholder="e.g. John Doe">
