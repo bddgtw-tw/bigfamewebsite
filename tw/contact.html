@@ -85,11 +85,30 @@
             <div class="office-status" data-offset="8"></div>
             <p style="margin-top: 8px;">吉隆坡 / 檳城（負責東南亞資源開發與客戶支援）</p>
           </div>
+
+          <!-- Google Maps Iframe (Grayscale Aesthetic) -->
+          <div class="contact-info-item" style="margin-top: 32px; padding: 0; border: none; background: none;">
+            <div class="map-container">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7231454178345!2d121.51206411500657!3d25.043422683967396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a97275d27d7f%3A0x6b8493cf8c69136!2zMTAw5Y-w5YyX5biC5Lit5q2j5Y2A5oe36a2v6KGXMTEy6JmfNw!5e0!3m2!1szh-TW!2stw!4v1719920000000!5m2!1szh-TW!2stw" 
+                width="100%" 
+                height="320" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
         </div>
 
         <!-- Form Column -->
         <div class="reveal">
-          <form action="#" method="POST" class="contact-form" onsubmit="event.preventDefault(); alert('感謝您的詢問，我們的專案經理將會盡速與您聯絡。 (Inquiry demo sent successfully)');">
+          <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="contactForm">
+            <!-- Web3Forms Configuration -->
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+            <input type="hidden" name="subject" value="New Inquiry from Big Fame Website (TW)">
+            <input type="hidden" name="from_name" value="Big Fame Web Hub">
             <div class="form-group">
               <label for="name">聯絡人姓名 / Name *</label>
               <input type="text" id="name" name="name" class="form-control" required placeholder="例如：王小明">

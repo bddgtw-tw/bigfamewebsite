@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initPageTransitions();
   initMagneticButtons();
   initOfficeStatus();
+  initContactForm();
 });
 
 /**
@@ -214,4 +215,86 @@ function initOfficeStatus() {
   // Initial run and interval update every 15s
   updateTimes();
   setInterval(updateTimes, 15000);
+}
+
+
+/**
+ * 9. AJAX Form submission for Web3Forms (with Loading and success popups)
+ */
+function initContactForm() {
+  const form = document.getElementById('contactForm');
+  if (!form) return;
+
+  const btn = form.querySelector('button[type="submit"]');
+  const btnOriginalText = btn.innerText;
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    // Set loading state
+    btn.disabled = true;
+    btn.innerHTML = `<span class="spinner"></span> Sending...`;
+
+    const formData = new FormData(form);
+    
+    // Fallback Mock for testing
+    const accessKey = formData.get('access_key');
+    if (accessKey === 'YOUR_ACCESS_KEY_HERE') {
+      setTimeout(() => {
+        showFormStatus(true, getLangSuccessMsg(document.documentElement.lang));
+        form.reset();
+        btn.disabled = false;
+        btn.innerText = btnOriginalText;
+      }, 1000);
+      return;
+    }
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      });
+      const data = await response.json();
+      if (data.success) {
+        showFormStatus(true, getLangSuccessMsg(document.documentElement.lang));
+        form.reset();
+      } else {
+        showFormStatus(false, data.message || 'Error sending message.');
+      }
+    } catch (err) {
+      showFormStatus(false, 'Failed to connect to server. Please try again.');
+    } finally {
+      btn.disabled = false;
+      btn.innerText = btnOriginalText;
+    }
+  });
+}
+
+function showFormStatus(isSuccess, message) {
+  // Create modal element if not exists
+  let modal = document.getElementById('formStatusModal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'formStatusModal';
+    modal.className = 'form-status-modal';
+    document.body.appendChild(modal);
+  }
+  
+  modal.innerText = message;
+  modal.className = isSuccess ? 'form-status-modal show' : 'form-status-modal show error';
+  
+  // Hide after 4 seconds
+  setTimeout(() => {
+    modal.classList.remove('show');
+  }, 4000);
+}
+
+function getLangSuccessMsg(lang) {
+  if (lang === 'ja') {
+    return 'お問い合わせありがとうございます。担当者よりご連絡いたします。';
+  } else if (lang === 'en') {
+    return 'Inquiry submitted successfully! We will get back to you shortly.';
+  } else { // tw
+    return '詢問送出成功！我們的專案經理會儘快與您聯絡。';
+  }
 }
