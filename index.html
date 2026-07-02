@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big Fame IND. CORP. | Loading...</title>
+  <script>
+    (function() {
+      // 1. Check saved preference in localStorage
+      var savedLang = localStorage.getItem('bf_lang');
+      if (savedLang === 'jp' || savedLang === 'en' || savedLang === 'tw') {
+        window.location.replace('./' + savedLang + '/index.html');
+        return;
+      }
+      
+      // 2. Detect browser language settings
+      var browserLang = (navigator.language || navigator.userLanguage || 'ja').toLowerCase();
+      if (browserLang.indexOf('zh') > -1) {
+        window.location.replace('./tw/index.html');
+      } else if (browserLang.indexOf('ja') > -1) {
+        window.location.replace('./jp/index.html');
+      } else if (browserLang.indexOf('en') > -1) {
+        window.location.replace('./en/index.html');
+      } else {
+        // Default fallback to Japanese (Primary client target)
+        window.location.replace('./jp/index.html');
+      }
+    })();
+  </script>
+</head>
+<body style="background: #ffffff; display: flex; align-items: center; justify-content: center; height: 100vh; font-family: sans-serif; margin: 0; color: #888888;">
+  <div style="text-align: center;">
+    <p style="font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase;">Redirecting to Big Fame...</p>
+  </div>
+</body>
+</html>
