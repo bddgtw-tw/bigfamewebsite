@@ -62,7 +62,7 @@
       
       <div style="display: flex; align-items: center;">
         <div class="lang-selector">
-          <div class="lang-btn">JP</div>
+          <button type="button" class="lang-btn" aria-haspopup="true" aria-expanded="false">JP</button>
           <div class="lang-dropdown">
             <a href="index.html" class="lang-dropdown-item active" data-lang="jp">JP</a>
             <a href="../en/index.html" class="lang-dropdown-item" data-lang="en">EN</a>
@@ -70,11 +70,11 @@
           </div>
         </div>
         
-        <div class="mobile-toggle">
+        <button type="button" class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
       </div>
     </div>
   </header>
@@ -182,7 +182,7 @@
   <!-- Network Section -->
   <section class="section">
     <div class="container">
-      <div class="grid-2">
+      <div class="grid-2 network-grid">
         <div class="reveal" style="display: flex; flex-direction: column; justify-content: center;">
           <span class="section-subtitle">GLOBAL NETWORK</span>
           <h2 class="section-title" style="margin-bottom: 24px;">効率的かつ地政学リスクを<br>考慮したグローバル展開</h2>
@@ -191,7 +191,7 @@
           </p>
           <a href="about.html" class="btn btn-secondary" style="align-self: flex-start;">会社概要・拠点詳細</a>
         </div>
-        <div class="grid-2 reveal">
+        <div class="grid-2 reveal location-grid">
           <div class="location-card">
             <h3 class="location-title">台北本部</h3>
             <p class="location-desc">プロジェクト管理、設計開発、金型開発、および貿易実務協調。</p>
@@ -200,7 +200,7 @@
             <h3 class="location-title">彰化物流拠点</h3>
             <p class="location-desc">製品の一時保管、最終アセンブリ検品、およびコンテナ装載調度。</p>
           </div>
-          <div class="location-card" style="grid-column: span 2;">
+          <div class="location-card">
             <h3 class="location-title">マレーシア分社</h3>
             <p class="location-desc">東南アジア市場へのアクセス、および生産拠点の地理的分散による安定供給体制の確立。</p>
           </div>

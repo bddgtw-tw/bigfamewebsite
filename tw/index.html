@@ -62,7 +62,7 @@
       
       <div style="display: flex; align-items: center;">
         <div class="lang-selector">
-          <div class="lang-btn">繁中</div>
+          <button type="button" class="lang-btn" aria-haspopup="true" aria-expanded="false">繁中</button>
           <div class="lang-dropdown">
             <a href="../jp/index.html" class="lang-dropdown-item" data-lang="jp">JP</a>
             <a href="../en/index.html" class="lang-dropdown-item" data-lang="en">EN</a>
@@ -70,11 +70,11 @@
           </div>
         </div>
         
-        <div class="mobile-toggle">
+        <button type="button" class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
       </div>
     </div>
   </header>
@@ -178,7 +178,7 @@
   <!-- Network Section -->
   <section class="section">
     <div class="container">
-      <div class="grid-2">
+      <div class="grid-2 network-grid">
         <div class="reveal" style="display: flex; flex-direction: column; justify-content: center;">
           <span class="section-subtitle">GLOBAL NETWORK</span>
           <h2 class="section-title" style="margin-bottom: 24px;">高效資源整合與風險分散</h2>
@@ -187,7 +187,7 @@
           </p>
           <a href="about.html" class="btn btn-secondary" style="align-self: flex-start;">了解據點網絡</a>
         </div>
-        <div class="grid-2 reveal">
+        <div class="grid-2 reveal location-grid">
           <div class="location-card">
             <h3 class="location-title">台北總部</h3>
             <p class="location-desc">負責國際客戶專案管理、圖面優化、模具設計與進出口報關貿易協調。</p>
@@ -196,7 +196,7 @@
             <h3 class="location-title">彰化倉儲據點</h3>
             <p class="location-desc">產品暫存、二次組裝與烤漆品管檢驗、物流裝箱與裝櫃出貨安排。</p>
           </div>
-          <div class="location-card" style="grid-column: span 2;">
+          <div class="location-card">
             <h3 class="location-title">馬來西亞分公司</h3>
             <p class="location-desc">拓展東南亞市場並管理當地工廠生產進度，作為供應鏈多元化與地緣風險防範的重要支援。</p>
           </div>
