@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.bigfame.com.tw/sitemap.xml
+
