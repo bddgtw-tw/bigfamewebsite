@@ -45,18 +45,34 @@ function initMobileMenu() {
 
   if (!toggle || !menu) return;
 
+  const setMenuState = (isOpen) => {
+    toggle.classList.toggle('active', isOpen);
+    menu.classList.toggle('active', isOpen);
+    toggle.setAttribute('aria-expanded', String(isOpen));
+    document.body.classList.toggle('menu-open', isOpen);
+  };
+
   toggle.addEventListener('click', () => {
-    toggle.classList.toggle('active');
-    menu.classList.toggle('active');
+    setMenuState(!menu.classList.contains('active'));
   });
 
   // Close menu when clicking on a link
   const links = document.querySelectorAll('.nav-link');
   links.forEach(link => {
     link.addEventListener('click', () => {
-      toggle.classList.remove('active');
-      menu.classList.remove('active');
+      setMenuState(false);
     });
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && menu.classList.contains('active')) {
+      setMenuState(false);
+      toggle.focus();
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) setMenuState(false);
   });
 }
 
@@ -90,7 +106,24 @@ function initScrollAnimations() {
  * 4. Language selector tracker (saves user choice to localStorage on click)
  */
 function initLanguageTracker() {
+  const langSelector = document.querySelector('.lang-selector');
+  const langButton = document.querySelector('.lang-btn');
   const langItems = document.querySelectorAll('.lang-dropdown-item');
+
+  if (langSelector && langButton) {
+    langButton.addEventListener('click', () => {
+      const isOpen = langSelector.classList.toggle('active');
+      langButton.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!langSelector.contains(event.target)) {
+        langSelector.classList.remove('active');
+        langButton.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
   langItems.forEach(item => {
     item.addEventListener('click', () => {
       const selectedLang = item.getAttribute('data-lang');

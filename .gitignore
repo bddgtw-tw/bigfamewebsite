@@ -1,0 +1,5 @@
+.tmp.driveupload/
+
+# Product intake is a local review workspace. Publish approved output only.
+products_staging/
+
