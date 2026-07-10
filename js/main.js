@@ -1,4 +1,5 @@
 /* Big Fame IND. CORP. - Global JavaScript Logic */
+const SITE_VERSION = '1.3.5';
 
 document.addEventListener('DOMContentLoaded', () => {
   initThemeSwitcher();
@@ -135,6 +136,10 @@ function initPageTransitions() {
   const transitionLinks = document.querySelectorAll('a:not([target="_blank"]):not([href^="#"]):not([href^="mailto:"]):not([href^="tel:"]):not(.lang-dropdown-item)');
   transitionLinks.forEach(link => {
     link.addEventListener('click', (e) => {
+      // Allow modifier keys (Ctrl, Shift, Alt, Cmd) and non-left clicks (like middle click to open in new tab)
+      if (e.button !== 0 || e.ctrlKey || e.shiftKey || e.altKey || e.metaKey) {
+        return;
+      }
       const href = link.getAttribute('href');
       if (href && href !== '') {
         e.preventDefault();
