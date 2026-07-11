@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&family=Shippori+Mincho:wght@300;400;500;600&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply font-body text-ink bg-white leading-relaxed font-light overflow-x-hidden;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+
+  img {
+    @apply max-w-full h-auto block;
+  }
+}
+
+@layer components {
+  /* Section container */
+  .section {
+    @apply py-section;
+  }
+
+  .section-alt {
+    @apply bg-paper-warm;
+  }
+
+  .section-cta-dark {
+    @apply bg-dark text-white py-section;
+  }
+
+  /* Container */
+  .container-site {
+    @apply w-full mx-auto px-6;
+    max-width: 1200px;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 text-xs font-light 
+           tracking-wide uppercase transition-all duration-700 cursor-pointer 
+           rounded-none;
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .btn-primary {
+    @apply border border-ink text-ink bg-transparent;
+  }
+
+  .btn-primary:hover {
+    @apply border-gold text-gold;
+  }
+
+  .btn-secondary {
+    @apply border border-black/10 text-ink-muted bg-transparent;
+  }
+
+  .btn-secondary:hover {
+    @apply border-ink text-ink;
+  }
+
+  /* Section header */
+  .section-subtitle {
+    @apply block text-xs tracking-wider uppercase text-gold font-semibold mb-3;
+  }
+
+  .section-title {
+    @apply font-display text-section-title font-normal;
+  }
+
+  /* Gallery */
+  .gallery-number {
+    @apply block text-xs tracking-wider text-ink-muted font-normal mb-2;
+  }
+
+  .gallery-title {
+    @apply font-display text-2xl font-normal tracking-display mb-3;
+  }
+
+  .gallery-desc {
+    @apply text-ink-light font-light text-sm leading-relaxed;
+  }
+
+  .gallery-link {
+    @apply inline-block text-xs tracking-wide uppercase text-ink-light 
+           border-b border-ink-light/30 pb-0.5 transition-all duration-300;
+  }
+
+  .gallery-link:hover {
+    @apply text-gold border-gold;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
