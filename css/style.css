@@ -451,7 +451,7 @@ html[data-theme="dark"] .btn-secondary {
 }
 
 html[data-theme="dark"] .hero-overlay {
-  background: rgba(15, 15, 15, 0.85);
+  background: linear-gradient(120deg, rgba(15,15,15,0.88) 0%, rgba(15,15,15,0.55) 55%, rgba(15,15,15,0.2) 100%);
 }
 
 .hero-content {
@@ -639,85 +639,10 @@ html[data-theme="dark"] .hero-overlay {
   line-height: 1.6;
 }
 
-/* --- Services Workflow Page / Preview --- */
-.timeline {
-  position: relative;
-  margin-top: 48px;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
+/* =============================================
+   APPLICATIONS / Projects Page / Preview
+   ============================================= */
 
-.timeline-item {
-  display: grid;
-  grid-template-columns: 50px 1fr;
-  gap: 32px;
-  padding-bottom: 48px;
-  position: relative;
-}
-
-.timeline-item:last-child {
-  padding-bottom: 0;
-}
-
-.timeline-item::after {
-  content: '';
-  position: absolute;
-  left: 25px; /* Center of 50px */
-  top: 40px;
-  bottom: 0;
-  width: 1px;
-  background-color: var(--border-color);
-}
-
-.timeline-item:last-child::after {
-  display: none;
-}
-
-.timeline-number {
-  width: 50px;
-  height: 50px;
-  border-radius: 0; /* Strictly square */
-  background-color: var(--bg-primary);
-  border: 1px solid var(--border-color);
-  color: var(--text-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-title);
-  font-size: 1.15rem;
-  font-weight: 400;
-  position: relative;
-  z-index: 5;
-  transition: var(--transition-fast);
-}
-
-.timeline-item:hover .timeline-number {
-  border-color: var(--accent-gold);
-  color: var(--accent-gold);
-}
-
-.timeline-content {
-  padding-top: 10px;
-}
-
-.timeline-title {
-  font-family: var(--font-title);
-  font-size: 1.25rem;
-  font-weight: 400;
-  margin-bottom: 12px;
-  color: var(--text-primary);
-  letter-spacing: 0.02em;
-}
-
-.timeline-desc {
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-  line-height: 1.6;
-  max-width: 800px;
-}
-
-/* --- Applications / Projects Page / Preview --- */
 .app-card {
   position: relative;
   overflow: hidden;
@@ -988,27 +913,11 @@ textarea.form-control {
   }
 
   .form-control {
-    width: 100%;
-    min-width: 0;
-  }
+      width: 100%;
+      min-width: 0;
+    }
 
-  .timeline-item {
-    grid-template-columns: 56px minmax(0, 1fr);
-    gap: 20px;
-    padding-bottom: 44px;
-  }
-
-  .timeline-number {
-    width: 56px;
-    height: 56px;
-  }
-
-  .timeline-item::after {
-    left: 27px;
-    top: 56px;
-  }
-
-  .footer {
+    .footer {
     padding: 60px 0 32px;
   }
 
@@ -1119,27 +1028,11 @@ textarea.form-control {
   }
 
   .location-card,
-  .product-info {
-    padding: 22px 18px;
-  }
+    .product-info {
+      padding: 22px 18px;
+    }
 
-  .timeline-item {
-    grid-template-columns: 44px minmax(0, 1fr);
-    gap: 16px;
-  }
-
-  .timeline-number {
-    width: 44px;
-    height: 44px;
-    font-size: 0.78rem;
-  }
-
-  .timeline-item::after {
-    left: 21px;
-    top: 44px;
-  }
-
-  .nav-menu {
+    .nav-menu {
     padding: 36px 18px;
   }
 }
@@ -1411,61 +1304,7 @@ html[data-theme="dark"] .status-closed .status-dot {
   font-weight: 500;
 }
 
-/* Trust Badges / Metrics Bar */
-.trust-badges {
-  background-color: var(--bg-primary);
-  border-bottom: 1px solid var(--border-color);
-  padding: 40px 0;
-}
-
-.trust-badges-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  text-align: center;
-}
-
-.badge-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.badge-item:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  right: -15px;
-  top: 15%;
-  height: 70%;
-  width: 1px;
-  background-color: var(--border-color);
-}
-
-.badge-number {
-  font-size: 2.5rem;
-  font-weight: 400;
-  color: var(--text-primary);
-  line-height: 1.2;
-  margin-bottom: 6px;
-  letter-spacing: -0.02em;
-}
-
-.badge-title {
-  font-family: var(--font-title);
-  font-size: 0.95rem;
-  font-weight: 400;
-  color: var(--text-primary);
-  margin-bottom: 4px;
-}
-
-.badge-desc {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-
-/* Glassmorphic Form Status Toast */
+/* --- Glassmorphic Form Status Toast */
 .form-status-modal {
   position: fixed;
   bottom: 30px;
@@ -1608,31 +1447,6 @@ html[data-theme="dark"] .form-status-modal {
     right: 20px;
     left: 20px;
   }
-}
-
-/* Client Sectors Wall */
-.client-sectors-wall {
-  background-color: var(--bg-primary);
-  border-bottom: 1px solid var(--border-color);
-  padding: 24px 0;
-  text-align: center;
-}
-
-.sectors-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 16px 40px;
-}
-
-.sector-item {
-  font-family: var(--font-global);
-  font-size: 0.8rem;
-  font-weight: 300;
-  letter-spacing: 0.15em;
-  color: var(--text-muted);
-  text-transform: uppercase;
 }
 
 /* Gallery-Style Curation Layout */
@@ -1781,7 +1595,7 @@ html[data-theme="dark"] .form-status-modal {
 }
 
 .section:last-of-type::after {
-  display: block;
+  display: none;
 }
 
 /* Gallery images: a subtle "frame" like a fixture holding the product */
@@ -1843,3 +1657,226 @@ html[data-theme="dark"] .form-status-modal {
 }
 
 
+/* =============================================
+   TIMELINE COMPONENT — Services Page
+   ============================================= */
+
+.timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+
+/* Vertical connecting line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 36px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--border-color);
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  padding-bottom: 48px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+/* Number circle */
+.timeline-number {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-title);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  transition: var(--transition-fast);
+}
+
+.timeline-item:hover .timeline-number {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+  background: var(--bg-secondary);
+}
+
+/* Content area */
+.timeline-content {
+  flex: 1;
+  padding: 24px 32px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-primary);
+  transition: var(--transition-fast);
+  margin-top: 0;
+  align-self: stretch;
+}
+
+.timeline-item:hover .timeline-content {
+  border-color: var(--accent-gold);
+  background: var(--bg-secondary);
+}
+
+.timeline-title {
+  font-family: var(--font-title);
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  letter-spacing: 0.01em;
+  line-height: 1.5;
+}
+
+.timeline-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+/* Responsive: mobile — stack vertically with left border only */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 24px;
+  }
+
+  .timeline-item {
+    gap: 20px;
+    padding-bottom: 32px;
+  }
+
+  .timeline-number {
+    width: 48px;
+    height: 48px;
+    font-size: 1rem;
+  }
+
+  .timeline-content {
+    padding: 18px 20px;
+  }
+
+  .timeline-title {
+    font-size: 0.95rem;
+  }
+}
+
+/* =============================================
+   TRUST BADGES & CLIENT SECTORS — Homepage
+   ============================================= */
+
+.trust-badges {
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+  padding: 40px 0;
+}
+
+.trust-badges-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  text-align: center;
+}
+
+.badge-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 16px;
+  position: relative;
+}
+
+.badge-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 20%;
+  height: 60%;
+  width: 1px;
+  background-color: var(--border-color);
+}
+
+.badge-number {
+  font-family: var(--font-title);
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+}
+
+.badge-title {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  font-weight: 300;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+/* Client Sectors */
+.client-sectors-wall {
+  border-bottom: 1px solid var(--border-color);
+  padding: 28px 0;
+  background: var(--bg-secondary);
+  overflow: hidden;
+}
+
+.sectors-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+.sector-item {
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  padding: 10px 24px;
+  border-right: 1px solid var(--border-color);
+  transition: color 0.2s ease;
+}
+
+.sector-item:last-child {
+  border-right: none;
+}
+
+.sector-item:hover {
+  color: var(--accent-gold);
+}
+
+@media (max-width: 900px) {
+  .trust-badges-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .sectors-grid {
+    gap: 12px 32px;
+  }
+  .sector-item {
+    border-right: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .trust-badges-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

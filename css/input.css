@@ -26,6 +26,42 @@
 }
 
 @layer components {
+  /* Nav link underline */
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background-color: theme('colors.gold.DEFAULT');
+    transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    width: 100%;
+  }
+
+  /* Header scroll effect */
+  .header.scrolled {
+    background-color: rgba(255, 255, 255, 0.98);
+    height: 70px;
+    border-bottom: 1px solid theme('colors.border.DEFAULT');
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+  }
+
+  /* Language dropdown open */
+  .lang-selector:hover .lang-dropdown,
+  .lang-selector:focus-within .lang-dropdown,
+  .lang-selector.active .lang-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(4px);
+  }
+
   /* Section container */
   .section {
     @apply py-section;

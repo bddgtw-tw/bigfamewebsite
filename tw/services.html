@@ -11,10 +11,292 @@
   <meta property="og:url" content="https://www.bigfame.co/tw/services.html">
   <meta property="og:site_name" content="Big Fame IND. CORP.">
   <title>服務流程 | 碧豐實業有限公司</title>
-  <link rel="stylesheet" href="../css/style.css?v=1.3.5">
+  <link rel="stylesheet" href="../css/style.css?v=1.3.6">
   <link rel="alternate" hreflang="ja" href="../jp/services.html">
   <link rel="alternate" hreflang="en" href="../en/services.html">
   <link rel="alternate" hreflang="zh-tw" href="services.html">
+  <style>
+    /* ── Services Page Exclusive Styles ── */
+
+    /* Hero Banner */
+    .services-hero {
+      padding: 80px 0 64px;
+      background-color: var(--bg-primary);
+      border-bottom: 1px solid var(--border-color);
+      overflow: hidden;
+      position: relative;
+    }
+    .services-hero-bg-word {
+      position: absolute;
+      right: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: var(--font-title);
+      font-size: clamp(80px, 12vw, 160px);
+      font-weight: 400;
+      color: var(--border-color);
+      letter-spacing: -0.02em;
+      line-height: 1;
+      user-select: none;
+      pointer-events: none;
+    }
+    .services-hero .section-subtitle {
+      display: block;
+      margin-bottom: 20px;
+    }
+    .services-hero h1 {
+      font-family: var(--font-title);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 400;
+      color: var(--text-primary);
+      letter-spacing: 0.02em;
+      margin-bottom: 20px;
+      line-height: 1.3;
+    }
+    .services-hero-lead {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      font-weight: 300;
+      max-width: 520px;
+      line-height: 1.8;
+    }
+
+    /* ── Promise Cards ── */
+    .promise-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+    }
+    .promise-card {
+      padding: 40px 36px;
+      border-right: 1px solid var(--border-color);
+      position: relative;
+      transition: background 0.25s ease;
+    }
+    .promise-card:last-child {
+      border-right: none;
+    }
+    .promise-card:hover {
+      background: var(--bg-primary);
+    }
+    .promise-number {
+      font-family: var(--font-title);
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      color: var(--accent-gold);
+      margin-bottom: 20px;
+      display: block;
+    }
+    .promise-title {
+      font-family: var(--font-title);
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--text-primary);
+      margin-bottom: 14px;
+      letter-spacing: 0.02em;
+      line-height: 1.4;
+    }
+    .promise-desc {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.85;
+      font-weight: 300;
+    }
+    /* Gold top bar on hover */
+    .promise-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--accent-gold);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .promise-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    /* ── Timeline Redesign ── */
+    .services-timeline {
+      padding: 80px 0 100px;
+    }
+    .timeline-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 64px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .timeline-header-left h2 {
+      font-family: var(--font-title);
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 400;
+      color: var(--text-primary);
+      letter-spacing: 0.02em;
+      margin-top: 12px;
+    }
+    .timeline-header-right {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 300;
+      line-height: 1.7;
+      max-width: 260px;
+      text-align: right;
+    }
+
+    /* Steps */
+    .timeline-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .timeline-step {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 0;
+      border-bottom: 1px solid var(--border-color);
+      transition: background 0.25s ease;
+      cursor: default;
+    }
+    .timeline-step:hover {
+      background: var(--bg-secondary);
+    }
+
+    /* Step left: big number */
+    .step-num {
+      padding: 36px 0;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      border-right: 1px solid var(--border-color);
+      position: relative;
+    }
+    .step-num-inner {
+      font-family: var(--font-title);
+      font-size: 2.5rem;
+      font-weight: 400;
+      color: var(--border-color);
+      line-height: 1;
+      transition: color 0.25s ease;
+      letter-spacing: -0.02em;
+    }
+    .timeline-step:hover .step-num-inner {
+      color: var(--accent-gold);
+    }
+
+    /* Step right: content */
+    .step-body {
+      padding: 36px 48px;
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+    .step-label {
+      display: block;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+    .step-title {
+      font-family: var(--font-title);
+      font-size: 1.0rem;
+      font-weight: 400;
+      color: var(--text-primary);
+      line-height: 1.5;
+      letter-spacing: 0.01em;
+    }
+    .step-desc {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.85;
+      font-weight: 300;
+      padding-top: 2px;
+    }
+
+    /* ── CTA ── */
+    .services-cta {
+      background: var(--bg-dark);
+      padding: 80px 0;
+      text-align: center;
+    }
+    .services-cta h2 {
+      font-family: var(--font-title);
+      font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+      font-weight: 400;
+      color: var(--text-light);
+      margin-bottom: 16px;
+      letter-spacing: 0.02em;
+    }
+    .services-cta p {
+      color: #888;
+      max-width: 500px;
+      margin: 0 auto 36px;
+      font-weight: 300;
+      font-size: 0.9rem;
+      line-height: 1.8;
+    }
+    .services-cta .btn-outline-light {
+      display: inline-block;
+      padding: 14px 40px;
+      border: 1px solid rgba(255,255,255,0.3);
+      color: var(--text-light);
+      font-size: 0.85rem;
+      letter-spacing: 0.15em;
+      text-decoration: none;
+      transition: border-color 0.25s ease, color 0.25s ease;
+    }
+    .services-cta .btn-outline-light:hover {
+      border-color: var(--accent-gold);
+      color: var(--accent-gold);
+    }
+    .services-cta .cta-sub {
+      margin-top: 20px;
+      font-size: 0.8rem;
+      color: #666;
+    }
+    .services-cta .cta-sub a {
+      color: var(--accent-gold);
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .promise-grid {
+        grid-template-columns: 1fr;
+      }
+      .promise-card {
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+      }
+      .promise-card:last-child {
+        border-bottom: none;
+      }
+      .timeline-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+      }
+      .timeline-header-right {
+        text-align: left;
+      }
+      .timeline-step {
+        grid-template-columns: 60px 1fr;
+      }
+      .step-num-inner {
+        font-size: 1.6rem;
+      }
+      .step-body {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 28px 24px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -39,7 +321,7 @@
           02-2311-8601
         </a>
         <div class="lang-selector">
-          <button type="button" class="lang-btn" aria-haspopup="true" aria-expanded="false">繁中</button>
+          <div class="lang-btn">繁中</div>
           <div class="lang-dropdown">
             <a href="../jp/services.html" class="lang-dropdown-item" data-lang="jp">JP</a>
             <a href="../en/services.html" class="lang-dropdown-item" data-lang="en">EN</a>
@@ -50,7 +332,7 @@
           <span></span>
           <span></span>
           <span></span>
-        </button>
+        </div>
       </div>
     </div>
   </header>
@@ -64,135 +346,146 @@
     </div>
   </nav>
 
-  <!-- Page Banner -->
-  <section class="section section-alt" style="padding-top: 60px; padding-bottom: 60px;">
+  <!-- Hero -->
+  <section class="services-hero">
+    <div class="services-hero-bg-word">PROCESS</div>
     <div class="container reveal">
       <span class="section-subtitle">OUR PROCESS</span>
-      <h1 class="section-title" style="font-size: 2.75rem;">一站式專案整合流程</h1>
+      <h1>一站式專案整合流程</h1>
+      <p class="services-hero-lead">從第一張圖面到最後一個門市落地，碧豐的 PM 團隊全程把關——台北研發、彰化 QC、吉隆坡分公司，三地聯動，確保每個環節都不出意外。</p>
     </div>
   </section>
 
-  <!-- Service Promises Section -->
-  <section class="section" style="border-bottom: 1px solid var(--border-color); background-color: var(--bg-secondary);">
+  <!-- Promise Cards -->
+  <section style="border-bottom: 1px solid var(--border-color); background: var(--bg-secondary);">
+    <div class="container" style="padding: 0;">
+      <div class="promise-grid reveal">
+
+        <div class="promise-card">
+          <span class="promise-number">PROMISE 01</span>
+          <h3 class="promise-title">價值工程最佳化</h3>
+          <p class="promise-desc">不僅是按圖製造——我們的研發團隊對每個構件進行受力分析與結構最佳化，在不犧牲強度與美感的前提下，提供最具性價比的量產方案。</p>
+        </div>
+
+        <div class="promise-card">
+          <span class="promise-number">PROMISE 02</span>
+          <h3 class="promise-title">彰化倉庫二次檢驗</h3>
+          <p class="promise-desc">所有批量零件出廠後，均集中至彰化物流中心進行預組裝配合度抽檢、鹽霧防鏽與漆膜百格測試，確保出海關前的品質達到日系極致標準。</p>
+        </div>
+
+        <div class="promise-card">
+          <span class="promise-number">PROMISE 03</span>
+          <h3 class="promise-title">全球多元交付</h3>
+          <p class="promise-desc">具備跨廠集貨、海運出口包裝及多國清關代理能力，提供 DDP／DDU 等多元交付模式，確保產品直接、安全、準時送達全球指定物流倉或店鋪。</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="services-timeline">
     <div class="container">
-      <div class="grid-3 reveal">
-        <div style="background-color: var(--bg-primary); padding: 32px; border: 1px solid var(--border-color);">
-          <span class="gallery-number">PROMISE 01</span>
-          <h3 class="gallery-title" style="font-size: 1.2rem; margin-bottom: 12px;">價值工程最佳化</h3>
-          <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
-            不僅是按圖製造，我們的研發團隊更會為您的五金構件進行受力分析與結構最佳化，在不犧牲強度與美感的前提下，提供最具性價比的量產方案。
-          </p>
+
+      <div class="timeline-header reveal">
+        <div class="timeline-header-left">
+          <span class="section-subtitle">WORKFLOW</span>
+          <h2>專案推進六大階段</h2>
         </div>
-        <div style="background-color: var(--bg-primary); padding: 32px; border: 1px solid var(--border-color);">
-          <span class="gallery-number">PROMISE 02</span>
-          <h3 class="gallery-title" style="font-size: 1.2rem; margin-bottom: 12px;">彰化倉庫二次檢驗</h3>
-          <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
-            所有批量零件出廠後，均會集中送往彰化物流中心進行預組裝配合度抽檢、鹽霧防鏽與漆膜附著力測試，確保出海關前的品質達到日系極致標準。
-          </p>
+        <p class="timeline-header-right">台北（PM研發）、彰化（QC檢驗）、吉隆坡（東南亞分部）三地聯動。</p>
+      </div>
+
+      <div class="timeline-steps">
+
+        <div class="timeline-step reveal">
+          <div class="step-num">
+            <span class="step-num-inner">01</span>
+          </div>
+          <div class="step-body">
+            <div>
+              <span class="step-label">Requirement</span>
+              <h3 class="step-title">需求釐清與<br>價值工程評估</h3>
+            </div>
+            <p class="step-desc">與客戶的設計與採購團隊緊密對接，詳細釐清陳列硬體承重、烤漆光澤、耐酸鹼度等具體指標。台北研發小組針對模具結構提出「價值工程（VE）」建議，在確保原有強度的同時降低生產成本。</p>
+          </div>
         </div>
-        <div style="background-color: var(--bg-primary); padding: 32px; border: 1px solid var(--border-color);">
-          <span class="gallery-number">PROMISE 03</span>
-          <h3 class="gallery-title" style="font-size: 1.2rem; margin-bottom: 12px;">全球多元交付</h3>
-          <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
-            具備跨廠集貨、專業海運出口包裝及多國清關代理能力。我們能提供 DDP/DDU 等多元交付模式，確保產品直接、安全、準時送達全球指定物流倉或店鋪。
-          </p>
+
+        <div class="timeline-step reveal">
+          <div class="step-num">
+            <span class="step-num-inner">02</span>
+          </div>
+          <div class="step-body">
+            <div>
+              <span class="step-label">Sampling</span>
+              <h3 class="step-title">設計繪圖與<br>樣品確認</h3>
+            </div>
+            <p class="step-desc">根據定案規格，迅速製作實體樣品。供客戶測試組裝公差、邊角焊接細緻度與表面烤漆電鍍手感，確保量產產品符合品牌期望，並根據測試回饋進行結構微調。</p>
+          </div>
         </div>
+
+        <div class="timeline-step reveal">
+          <div class="step-num">
+            <span class="step-num-inner">03</span>
+          </div>
+          <div class="step-body">
+            <div>
+              <span class="step-label">Manufacturing</span>
+              <h3 class="step-title">製造整合與<br>生產進度追蹤</h3>
+            </div>
+            <p class="step-desc">根據零件特性指派至專業工廠（圓管拉拔、不鏽鋼精沖、鋅合金壓鑄）。台北 PM 團隊全程管控各零件廠進度，確保異材質如期在後段交貨點彙整。</p>
+          </div>
+        </div>
+
+        <div class="timeline-step reveal">
+          <div class="step-num">
+            <span class="step-num-inner">04</span>
+          </div>
+          <div class="step-body">
+            <div>
+              <span class="step-label">Quality Control</span>
+              <h3 class="step-title">二次自建倉庫<br>品質檢驗</h3>
+            </div>
+            <p class="step-desc">所有批量生產產品均送往彰化自建物流據點進行二次品質檢驗——預組裝配合度抽檢、鹽霧防鏽測試、烤漆附著力百格測試，以及配件點數確認。</p>
+          </div>
+        </div>
+
+        <div class="timeline-step reveal">
+          <div class="step-num">
+            <span class="step-num-inner">05</span>
+          </div>
+          <div class="step-body">
+            <div>
+              <span class="step-label">Packaging</span>
+              <h3 class="step-title">國際包裝與<br>出貨標籤</h3>
+            </div>
+            <p class="step-desc">針對海運長途與多潮濕氣候，施以防撞紙護角與雙層強化外箱。可配合客戶黏貼條碼標籤、放入多國語言組裝圖紙，讓現場店員高效完成拼裝。</p>
+          </div>
+        </div>
+
+        <div class="timeline-step reveal">
+          <div class="step-num">
+            <span class="step-num-inner">06</span>
+          </div>
+          <div class="step-body">
+            <div>
+              <span class="step-label">Logistics &amp; Customs</span>
+              <h3 class="step-title">集貨拼箱與<br>全球物流協調</h3>
+            </div>
+            <p class="step-desc">安排跨工廠產品拼箱與貨櫃裝載計畫，申報出口報關。長期合作海運及空運承攬商，順暢安全地送至日本、歐美指定港口，亦可協助 DDP 配送至當地物流倉。</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Service Timeline Section -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header reveal" style="text-align: center; margin-bottom: 48px;">
-        <span class="gallery-number">WORKFLOW</span>
-        <h2 class="gallery-title" style="font-size: 1.85rem; margin-bottom: 16px;">專案推進六大階段</h2>
-        <p style="color: var(--text-secondary); font-size: 0.95rem; max-width: 600px; margin: 0 auto; font-weight: 300; line-height: 1.6;">
-          台北總部（PM與研發設計）、彰化物流據點（QC二次檢驗）與吉隆坡分公司三地聯動，確保從圖面到門市落地完美執行。
-        </p>
-      </div>
-
-      <div class="timeline">
-        <!-- Step 1 -->
-        <div class="timeline-item reveal">
-          <div class="timeline-number">01</div>
-          <div class="timeline-content">
-            <h3 class="timeline-title">需求釐清與價值工程評估 (Requirement)</h3>
-            <p class="timeline-desc">
-              與客戶的設計與採購團隊緊密對接，詳細釐清陳列硬體承重、烤漆光澤、耐酸鹼度等具體指標。台北總部的研發小組會針對模具結構提出「價值工程 (VE)」建議，在確保原有強度的同時降低生產與料件成本。
-            </p>
-          </div>
-        </div>
-
-        <!-- Step 2 -->
-        <div class="timeline-item reveal">
-          <div class="timeline-number">02</div>
-          <div class="timeline-content">
-            <h3 class="timeline-title">設計繪圖與樣品確認 (Sampling)</h3>
-            <p class="timeline-desc">
-              根據定案的規格，迅速製作實體產品樣品。供客戶測試組裝公差、邊角銲接細緻度與表面烤漆電鍍手感，確保量產產品完全符合品牌期望，並根據測試回饋進行結構微調。
-            </p>
-          </div>
-        </div>
-
-        <!-- Step 3 -->
-        <div class="timeline-item reveal">
-          <div class="timeline-number">03</div>
-          <div class="timeline-content">
-            <h3 class="timeline-title">製造整合與生產進度追蹤 (Manufacturing)</h3>
-            <p class="timeline-desc">
-              根據零件特性，指派至擁有優良檢測能力的專業工廠（例如圓管拉拔、不鏽鋼精沖、鋅合金壓鑄）。台北專案管理團隊（PM）全程管控各零件廠的生產進度，確保各項異材質能如期在後段交貨點彙整。
-            </p>
-          </div>
-        </div>
-
-        <!-- Step 4 -->
-        <div class="timeline-item reveal">
-          <div class="timeline-number">04</div>
-          <div class="timeline-content">
-            <h3 class="timeline-title">二次自建倉庫品質檢驗 (Quality Control)</h3>
-            <p class="timeline-desc">
-              所有批量生產的產品，均需送往我們位於台灣彰化的自建物流據點進行二次品質檢驗。進行預組裝配合度抽檢、鹽霧防鏽測試、烤漆附著力百格測試，並落實包裝內裝配件（如螺絲、扳手）點數確認。
-            </p>
-          </div>
-        </div>
-
-        <!-- Step 5 -->
-        <div class="timeline-item reveal">
-          <div class="timeline-number">05</div>
-          <div class="timeline-content">
-            <h3 class="timeline-title">國際級包裝與出貨標籤 (Packaging)</h3>
-            <p class="timeline-desc">
-              針對海運長途運輸、多潮濕氣候的特點，施以防撞紙護角與雙層強化外箱。可配合客戶要求黏貼條碼標籤、放入多國語言組裝圖紙，以便商場現場店員能高效進行拼裝。
-            </p>
-          </div>
-        </div>
-
-        <!-- Step 6 -->
-        <div class="timeline-item reveal">
-          <div class="timeline-number">06</div>
-          <div class="timeline-content">
-            <h3 class="timeline-title">集貨拼箱與全球物流協調 (Logistics & Customs)</h3>
-            <p class="timeline-desc">
-              安排跨工廠產品之拼箱、貨櫃裝載計畫，申報出口報關。長期合作海運與空運承攬商，確保將貨品流暢安全地運送至日本、歐美指定港口，亦可協助配送至客戶當地物流倉（DDP 交付等協調）。
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="section section-alt" style="text-align: center;">
+  <!-- CTA -->
+  <section class="services-cta">
     <div class="container reveal">
-      <h2 style="font-size: 1.85rem; font-weight: 500; margin-bottom: 16px;">需要客製化量產解決方案？</h2>
-      <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 32px auto; font-weight: 300;">
-        碧豐擁有一站式專案管理經驗，能從最前期的圖面優化到最終全球物流配送，全面為您把關。
-      </p>
-      <a href="contact.html" class="btn btn-primary">與專案經理取得聯繫</a>
-      <p style="margin-top: 16px; font-size: 0.85rem; color: var(--text-secondary);">
-        或是直接寫信至 <a href="mailto:shopdisplay@bigfame.co" style="color: var(--accent-gold); text-decoration: underline;">shopdisplay@bigfame.co</a>
-      </p>
+      <h2>需要客製化量產解決方案？</h2>
+      <p>碧豐擁有一站式專案管理經驗，從最前期的圖面優化到全球物流配送，全面為您把關。</p>
+      <a href="contact.html" class="btn-outline-light">與專案經理取得聯繫</a>
+      <p class="cta-sub">或直接寫信至 <a href="mailto:shopdisplay@bigfame.co">shopdisplay@bigfame.co</a></p>
     </div>
   </section>
 

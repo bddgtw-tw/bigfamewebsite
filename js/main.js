@@ -1,5 +1,5 @@
 /* Big Fame IND. CORP. - Global JavaScript Logic */
-const SITE_VERSION = '1.3.5';
+const SITE_VERSION = '1.3.8';
 
 document.addEventListener('DOMContentLoaded', () => {
   initThemeSwitcher();
@@ -179,7 +179,7 @@ function initPageTransitions() {
         document.body.classList.remove('page-loaded');
         setTimeout(() => {
           window.location.href = href;
-        }, 350);
+        }, 150);
       }
     });
   });
@@ -413,6 +413,9 @@ function initHeroParticles() {
   const hero = document.querySelector('.hero');
   if (!hero) return;
   
+  // Only enable particles on desktop (768px+)
+  if (window.innerWidth < 768) return;
+  
   const canvas = document.createElement('canvas');
   canvas.className = 'hero-canvas';
   hero.appendChild(canvas);
@@ -462,7 +465,7 @@ function initHeroParticles() {
     }
   }
   
-  const particleCount = 45;
+  const particleCount = 20;
   for (let i = 0; i < particleCount; i++) {
     const p = new Particle();
     p.y = Math.random() * height;
