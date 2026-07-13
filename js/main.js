@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initPageTransitions();
   initMagneticButtons();
   initOfficeStatus();
+  initContactPrefill();
   initContactForm();
   initHeroParticles();
   initScrollIndicator();
@@ -33,6 +34,24 @@ function initHeaderScroll() {
   // Run on load in case page is already scrolled
   handleScroll();
   window.addEventListener('scroll', handleScroll);
+}
+
+/**
+ * Prefill the contact form when a visitor arrives from a sourcing category link.
+ * Example: contact.html?category=system_fixtures
+ */
+function initContactPrefill() {
+  const categoryField = document.getElementById('product_category');
+  if (!categoryField) return;
+
+  const category = new URLSearchParams(window.location.search).get('category');
+  if (!category) return;
+
+  const matchingOption = Array.from(categoryField.options).find(option => option.value === category);
+  if (matchingOption) {
+    categoryField.value = category;
+    categoryField.dispatchEvent(new Event('change', { bubbles: true }));
+  }
 }
 
 /**
