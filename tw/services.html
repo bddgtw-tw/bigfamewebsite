@@ -3,489 +3,146 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="了解碧豐實業的一站式B2B展示設備委託開發服務，從規格討論、設計最佳化、打樣生產，至後段倉庫二次檢驗與全球物流。">
+  <meta name="description" content="台灣 B2B 展示設備採購流程：需求釐清、製造商配對、打樣、生產追蹤、品管、集貨、報關與出口。">
   <link rel="canonical" href="https://www.bigfame.co/tw/services.html">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="服務流程 | 碧豐實業有限公司">
-  <meta property="og:description" content="了解碧豐實業的一站式B2B展示設備委託開發服務，從規格討論、設計最佳化、打樣生產，至後段倉庫二次檢驗與全球物流。">
+  <meta property="og:title" content="台灣展示設備採購與出口流程｜碧豐實業">
+  <meta property="og:description" content="從需求釐清、製造商配對、打樣、生產追蹤到品管、集貨、報關與出口。">
   <meta property="og:url" content="https://www.bigfame.co/tw/services.html">
   <meta property="og:site_name" content="Big Fame IND. CORP.">
-  <title>服務流程 | 碧豐實業有限公司</title>
-  <link rel="stylesheet" href="../css/style.css?v=1.3.6">
+  <title>台灣 B2B 採購與出口整合流程｜碧豐實業</title>
+  
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="alternate" hreflang="ja" href="../jp/services.html">
   <link rel="alternate" hreflang="en" href="../en/services.html">
   <link rel="alternate" hreflang="zh-tw" href="services.html">
-  <style>
-    /* ── Services Page Exclusive Styles ── */
-
-    /* Hero Banner */
-    .services-hero {
-      padding: 80px 0 64px;
-      background-color: var(--bg-primary);
-      border-bottom: 1px solid var(--border-color);
-      overflow: hidden;
-      position: relative;
-    }
-    .services-hero-bg-word {
-      position: absolute;
-      right: -20px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-family: var(--font-title);
-      font-size: clamp(80px, 12vw, 160px);
-      font-weight: 400;
-      color: var(--border-color);
-      letter-spacing: -0.02em;
-      line-height: 1;
-      user-select: none;
-      pointer-events: none;
-    }
-    .services-hero .section-subtitle {
-      display: block;
-      margin-bottom: 20px;
-    }
-    .services-hero h1 {
-      font-family: var(--font-title);
-      font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 400;
-      color: var(--text-primary);
-      letter-spacing: 0.02em;
-      margin-bottom: 20px;
-      line-height: 1.3;
-    }
-    .services-hero-lead {
-      font-size: 0.95rem;
-      color: var(--text-secondary);
-      font-weight: 300;
-      max-width: 520px;
-      line-height: 1.8;
-    }
-
-    /* ── Promise Cards ── */
-    .promise-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0;
-    }
-    .promise-card {
-      padding: 40px 36px;
-      border-right: 1px solid var(--border-color);
-      position: relative;
-      transition: background 0.25s ease;
-    }
-    .promise-card:last-child {
-      border-right: none;
-    }
-    .promise-card:hover {
-      background: var(--bg-primary);
-    }
-    .promise-number {
-      font-family: var(--font-title);
-      font-size: 0.7rem;
-      letter-spacing: 0.18em;
-      color: var(--accent-gold);
-      margin-bottom: 20px;
-      display: block;
-    }
-    .promise-title {
-      font-family: var(--font-title);
-      font-size: 1.1rem;
-      font-weight: 400;
-      color: var(--text-primary);
-      margin-bottom: 14px;
-      letter-spacing: 0.02em;
-      line-height: 1.4;
-    }
-    .promise-desc {
-      font-size: 0.85rem;
-      color: var(--text-secondary);
-      line-height: 1.85;
-      font-weight: 300;
-    }
-    /* Gold top bar on hover */
-    .promise-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 2px;
-      background: var(--accent-gold);
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .promise-card:hover::before {
-      transform: scaleX(1);
-    }
-
-    /* ── Timeline Redesign ── */
-    .services-timeline {
-      padding: 80px 0 100px;
-    }
-    .timeline-header {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      margin-bottom: 64px;
-      padding-bottom: 32px;
-      border-bottom: 1px solid var(--border-color);
-    }
-    .timeline-header-left h2 {
-      font-family: var(--font-title);
-      font-size: clamp(1.6rem, 3vw, 2.2rem);
-      font-weight: 400;
-      color: var(--text-primary);
-      letter-spacing: 0.02em;
-      margin-top: 12px;
-    }
-    .timeline-header-right {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      font-weight: 300;
-      line-height: 1.7;
-      max-width: 260px;
-      text-align: right;
-    }
-
-    /* Steps */
-    .timeline-steps {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-    }
-    .timeline-step {
-      display: grid;
-      grid-template-columns: 100px 1fr;
-      gap: 0;
-      border-bottom: 1px solid var(--border-color);
-      transition: background 0.25s ease;
-      cursor: default;
-    }
-    .timeline-step:hover {
-      background: var(--bg-secondary);
-    }
-
-    /* Step left: big number */
-    .step-num {
-      padding: 36px 0;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      border-right: 1px solid var(--border-color);
-      position: relative;
-    }
-    .step-num-inner {
-      font-family: var(--font-title);
-      font-size: 2.5rem;
-      font-weight: 400;
-      color: var(--border-color);
-      line-height: 1;
-      transition: color 0.25s ease;
-      letter-spacing: -0.02em;
-    }
-    .timeline-step:hover .step-num-inner {
-      color: var(--accent-gold);
-    }
-
-    /* Step right: content */
-    .step-body {
-      padding: 36px 48px;
-      display: grid;
-      grid-template-columns: 220px 1fr;
-      gap: 40px;
-      align-items: start;
-    }
-    .step-label {
-      display: block;
-      font-size: 0.65rem;
-      letter-spacing: 0.2em;
-      color: var(--text-muted);
-      margin-bottom: 8px;
-      text-transform: uppercase;
-    }
-    .step-title {
-      font-family: var(--font-title);
-      font-size: 1.0rem;
-      font-weight: 400;
-      color: var(--text-primary);
-      line-height: 1.5;
-      letter-spacing: 0.01em;
-    }
-    .step-desc {
-      font-size: 0.875rem;
-      color: var(--text-secondary);
-      line-height: 1.85;
-      font-weight: 300;
-      padding-top: 2px;
-    }
-
-    /* ── CTA ── */
-    .services-cta {
-      background: var(--bg-dark);
-      padding: 80px 0;
-      text-align: center;
-    }
-    .services-cta h2 {
-      font-family: var(--font-title);
-      font-size: clamp(1.4rem, 2.5vw, 1.85rem);
-      font-weight: 400;
-      color: var(--text-light);
-      margin-bottom: 16px;
-      letter-spacing: 0.02em;
-    }
-    .services-cta p {
-      color: #888;
-      max-width: 500px;
-      margin: 0 auto 36px;
-      font-weight: 300;
-      font-size: 0.9rem;
-      line-height: 1.8;
-    }
-    .services-cta .btn-outline-light {
-      display: inline-block;
-      padding: 14px 40px;
-      border: 1px solid rgba(255,255,255,0.3);
-      color: var(--text-light);
-      font-size: 0.85rem;
-      letter-spacing: 0.15em;
-      text-decoration: none;
-      transition: border-color 0.25s ease, color 0.25s ease;
-    }
-    .services-cta .btn-outline-light:hover {
-      border-color: var(--accent-gold);
-      color: var(--accent-gold);
-    }
-    .services-cta .cta-sub {
-      margin-top: 20px;
-      font-size: 0.8rem;
-      color: #666;
-    }
-    .services-cta .cta-sub a {
-      color: var(--accent-gold);
-      text-decoration: underline;
-    }
-
-    /* Responsive */
-    @media (max-width: 900px) {
-      .promise-grid {
-        grid-template-columns: 1fr;
-      }
-      .promise-card {
-        border-right: none;
-        border-bottom: 1px solid var(--border-color);
-      }
-      .promise-card:last-child {
-        border-bottom: none;
-      }
-      .timeline-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-      }
-      .timeline-header-right {
-        text-align: left;
-      }
-      .timeline-step {
-        grid-template-columns: 60px 1fr;
-      }
-      .step-num-inner {
-        font-size: 1.6rem;
-      }
-      .step-body {
-        grid-template-columns: 1fr;
-        gap: 12px;
-        padding: 28px 24px;
-      }
-    }
-  </style>
+  <link rel="alternate" hreflang="x-default" href="https://www.bigfame.co/">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Service","@id":"https://www.bigfame.co/tw/services.html#service","url":"https://www.bigfame.co/tw/services.html","name":"台灣 B2B 採購與出口整合","inLanguage":"zh-Hant-TW","provider":{"@id":"https://www.bigfame.co/#organization"}}
+  </script>
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Header Section -->
   <header class="header">
     <div class="container navbar">
       <a href="index.html" class="logo">
         BIG FAME
         <span class="logo-sub">IND. CORP. EST. 1988</span>
       </a>
+      
       <nav class="nav-menu">
         <a href="index.html" class="nav-link">首頁</a>
         <a href="about.html" class="nav-link">關於我們</a>
         <a href="products.html" class="nav-link">產品與能力</a>
         <a href="services.html" class="nav-link active">服務流程</a>
-        <a href="applications.html" class="nav-link">應用場景</a>
+        <a href="applications.html" class="nav-link">店型與方案</a>
         <a href="contact.html" class="nav-link">聯絡我們</a>
       </nav>
+      
       <div style="display: flex; align-items: center;">
-        <a href="tel:+886-2-2311-8601" class="header-phone-cta">
-          <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.27c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.27 1.11z"/></svg>
-          02-2311-8601
-        </a>
         <div class="lang-selector">
-          <div class="lang-btn">繁中</div>
+          <button type="button" class="lang-btn" aria-haspopup="true" aria-expanded="false">繁中</button>
           <div class="lang-dropdown">
             <a href="../jp/services.html" class="lang-dropdown-item" data-lang="jp">JP</a>
             <a href="../en/services.html" class="lang-dropdown-item" data-lang="en">EN</a>
             <a href="services.html" class="lang-dropdown-item active" data-lang="tw">繁中</a>
           </div>
         </div>
-        <div class="mobile-toggle">
+        
+        <button type="button" class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
       </div>
     </div>
   </header>
 
-  <!-- Breadcrumbs -->
-  <nav class="breadcrumbs" aria-label="Breadcrumb">
-    <div class="container">
-      <a href="index.html">首頁</a>
-      <span class="separator">/</span>
-      <span class="current">服務流程</span>
-    </div>
-  </nav>
-
-  <!-- Hero -->
-  <section class="services-hero">
-    <div class="services-hero-bg-word">PROCESS</div>
+  <!-- Page Banner -->
+  <section class="section section-alt" style="padding-top: 160px; padding-bottom: 60px;">
     <div class="container reveal">
-      <span class="section-subtitle">OUR PROCESS</span>
-      <h1>一站式專案整合流程</h1>
-      <p class="services-hero-lead">從第一張圖面到最後一個門市落地，碧豐的 PM 團隊全程把關——台北研發、彰化 QC、吉隆坡分公司，三地聯動，確保每個環節都不出意外。</p>
+      <span class="section-subtitle">OUR SERVICES</span>
+      <h1 class="section-title" style="font-size: 2.75rem;">一站式專案整合流程</h1>
     </div>
   </section>
 
-  <!-- Promise Cards -->
-  <section style="border-bottom: 1px solid var(--border-color); background: var(--bg-secondary);">
-    <div class="container" style="padding: 0;">
-      <div class="promise-grid reveal">
-
-        <div class="promise-card">
-          <span class="promise-number">PROMISE 01</span>
-          <h3 class="promise-title">價值工程最佳化</h3>
-          <p class="promise-desc">不僅是按圖製造——我們的研發團隊對每個構件進行受力分析與結構最佳化，在不犧牲強度與美感的前提下，提供最具性價比的量產方案。</p>
-        </div>
-
-        <div class="promise-card">
-          <span class="promise-number">PROMISE 02</span>
-          <h3 class="promise-title">彰化倉庫二次檢驗</h3>
-          <p class="promise-desc">所有批量零件出廠後，均集中至彰化物流中心進行預組裝配合度抽檢、鹽霧防鏽與漆膜百格測試，確保出海關前的品質達到日系極致標準。</p>
-        </div>
-
-        <div class="promise-card">
-          <span class="promise-number">PROMISE 03</span>
-          <h3 class="promise-title">全球多元交付</h3>
-          <p class="promise-desc">具備跨廠集貨、海運出口包裝及多國清關代理能力，提供 DDP／DDU 等多元交付模式，確保產品直接、安全、準時送達全球指定物流倉或店鋪。</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Timeline -->
-  <section class="services-timeline">
+  <!-- Service Timeline Section -->
+  <section class="section">
     <div class="container">
-
-      <div class="timeline-header reveal">
-        <div class="timeline-header-left">
-          <span class="section-subtitle">WORKFLOW</span>
-          <h2>專案推進六大階段</h2>
-        </div>
-        <p class="timeline-header-right">台北（PM研發）、彰化（QC檢驗）、吉隆坡（東南亞分部）三地聯動。</p>
+      <div class="section-header reveal">
+        <p style="color: var(--text-secondary); font-size: 1.1rem; font-weight: 300;">
+          碧豐實業不是單一製造工廠，而是您在台灣的 B2B 採購與專案整合窗口。無論是金屬展示設備，或木作、壓克力、燈具組合的島架與品牌什器，我們都協助找到合適製造商，並管理從圖面到出口交付的關鍵節點。
+        </p>
       </div>
 
-      <div class="timeline-steps">
-
-        <div class="timeline-step reveal">
-          <div class="step-num">
-            <span class="step-num-inner">01</span>
-          </div>
-          <div class="step-body">
-            <div>
-              <span class="step-label">Requirement</span>
-              <h3 class="step-title">需求釐清與<br>價值工程評估</h3>
-            </div>
-            <p class="step-desc">與客戶的設計與採購團隊緊密對接，詳細釐清陳列硬體承重、烤漆光澤、耐酸鹼度等具體指標。台北研發小組針對模具結構提出「價值工程（VE）」建議，在確保原有強度的同時降低生產成本。</p>
+      <div class="timeline">
+        <!-- Step 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-number">01</div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">需求釐清與價值工程評估 (Requirement)</h3>
+            <p class="timeline-desc">
+              與客戶的設計與採購團隊緊密對接，詳細釐清陳列硬體承重、烤漆光澤、耐酸鹼度等具體指標。台北總部的研發小組會針對模具結構提出「價值工程 (VE)」建議，在確保原有強度的同時降低生產與料件成本。
+            </p>
           </div>
         </div>
 
-        <div class="timeline-step reveal">
-          <div class="step-num">
-            <span class="step-num-inner">02</span>
-          </div>
-          <div class="step-body">
-            <div>
-              <span class="step-label">Sampling</span>
-              <h3 class="step-title">設計繪圖與<br>樣品確認</h3>
-            </div>
-            <p class="step-desc">根據定案規格，迅速製作實體樣品。供客戶測試組裝公差、邊角焊接細緻度與表面烤漆電鍍手感，確保量產產品符合品牌期望，並根據測試回饋進行結構微調。</p>
+        <!-- Step 2 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-number">02</div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">製造商配對與樣品確認 (Sampling)</h3>
+            <p class="timeline-desc">
+              根據定案規格尋找合適的台灣製造商安排樣品，供客戶測試組裝公差、邊角處理與表面效果，再根據回饋調整規格與量產方式。
+            </p>
           </div>
         </div>
 
-        <div class="timeline-step reveal">
-          <div class="step-num">
-            <span class="step-num-inner">03</span>
-          </div>
-          <div class="step-body">
-            <div>
-              <span class="step-label">Manufacturing</span>
-              <h3 class="step-title">製造整合與<br>生產進度追蹤</h3>
-            </div>
-            <p class="step-desc">根據零件特性指派至專業工廠（圓管拉拔、不鏽鋼精沖、鋅合金壓鑄）。台北 PM 團隊全程管控各零件廠進度，確保異材質如期在後段交貨點彙整。</p>
+        <!-- Step 3 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-number">03</div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">生產整合與進度追蹤 (Production Coordination)</h3>
+            <p class="timeline-desc">
+              根據零件與材質特性，指派至合適的金屬、木作、壓克力與燈具專業夥伴。台北專案管理團隊（PM）全程管控各零件廠的生產進度，確保島架、什器與異材質組件能如期在後段交貨點彙整。
+            </p>
           </div>
         </div>
 
-        <div class="timeline-step reveal">
-          <div class="step-num">
-            <span class="step-num-inner">04</span>
-          </div>
-          <div class="step-body">
-            <div>
-              <span class="step-label">Quality Control</span>
-              <h3 class="step-title">二次自建倉庫<br>品質檢驗</h3>
-            </div>
-            <p class="step-desc">所有批量生產產品均送往彰化自建物流據點進行二次品質檢驗——預組裝配合度抽檢、鹽霧防鏽測試、烤漆附著力百格測試，以及配件點數確認。</p>
+        <!-- Step 4 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-number">04</div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">交付品管與規格確認 (Quality Control)</h3>
+            <p class="timeline-desc">
+              依客戶規格與產品特性協調製造商的檢驗資料、尺寸與外觀確認，並安排出貨前的交付檢查、包裝內容與數量核對。
+            </p>
           </div>
         </div>
 
-        <div class="timeline-step reveal">
-          <div class="step-num">
-            <span class="step-num-inner">05</span>
-          </div>
-          <div class="step-body">
-            <div>
-              <span class="step-label">Packaging</span>
-              <h3 class="step-title">國際包裝與<br>出貨標籤</h3>
-            </div>
-            <p class="step-desc">針對海運長途與多潮濕氣候，施以防撞紙護角與雙層強化外箱。可配合客戶黏貼條碼標籤、放入多國語言組裝圖紙，讓現場店員高效完成拼裝。</p>
+        <!-- Step 5 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-number">05</div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">國際級包裝與出貨標籤 (Packaging)</h3>
+            <p class="timeline-desc">
+              針對海運長途運輸、多潮濕氣候的特點，施以防撞紙護角與雙層強化外箱。可配合客戶要求黏貼條碼標籤、放入多國語言組裝圖紙，以便商場現場店員能高效進行拼裝。
+            </p>
           </div>
         </div>
 
-        <div class="timeline-step reveal">
-          <div class="step-num">
-            <span class="step-num-inner">06</span>
-          </div>
-          <div class="step-body">
-            <div>
-              <span class="step-label">Logistics &amp; Customs</span>
-              <h3 class="step-title">集貨拼箱與<br>全球物流協調</h3>
-            </div>
-            <p class="step-desc">安排跨工廠產品拼箱與貨櫃裝載計畫，申報出口報關。長期合作海運及空運承攬商，順暢安全地送至日本、歐美指定港口，亦可協助 DDP 配送至當地物流倉。</p>
+        <!-- Step 6 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-number">06</div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">集貨拼箱與全球物流協調 (Logistics & Customs)</h3>
+            <p class="timeline-desc">
+              安排跨工廠產品之拼箱、貨櫃裝載計畫與出口報關，並依目的地需求協調海運、空運、集貨與後續交付安排。
+            </p>
           </div>
         </div>
-
       </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="services-cta">
-    <div class="container reveal">
-      <h2>需要客製化量產解決方案？</h2>
-      <p>碧豐擁有一站式專案管理經驗，從最前期的圖面優化到全球物流配送，全面為您把關。</p>
-      <a href="contact.html" class="btn-outline-light">與專案經理取得聯繫</a>
-      <p class="cta-sub">或直接寫信至 <a href="mailto:shopdisplay@bigfame.co">shopdisplay@bigfame.co</a></p>
     </div>
   </section>
 
@@ -495,13 +152,8 @@
       <div class="footer-brand">
         <h3>BIG FAME</h3>
         <p style="margin-top: 16px; font-size: 0.85rem;">
-          創立於 1988 年。商業展示設備與零售陳列五金的全球整合夥伴。
+          創立於 1988 年。協助海外客戶在台灣完成商業展示設備採購與出口整合。
         </p>
-        <div class="footer-social">
-          <a href="https://linkedin.com/company/big-fame-ind-corp" target="_blank" class="social-link" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-          </a>
-        </div>
       </div>
       <div>
         <h4 class="footer-title">網站導覽</h4>
@@ -510,28 +162,27 @@
           <a href="about.html">關於我們</a>
           <a href="products.html">產品與能力</a>
           <a href="services.html">服務流程</a>
-          <a href="applications.html">應用場景</a>
+          <a href="applications.html">店型與方案</a>
           <a href="contact.html">聯絡我們</a>
         </div>
       </div>
       <div>
         <h4 class="footer-title">選擇語言</h4>
         <div class="footer-links">
-          <a href="../jp/services.html">日本語</a>
-          <a href="../en/services.html">English</a>
-          <a href="services.html">繁體中文</a>
+          <a href="../jp/index.html">日本語</a>
+          <a href="../en/index.html">English</a>
+          <a href="index.html">繁體中文</a>
         </div>
       </div>
       <div class="footer-contact-info">
         <h4 class="footer-title">聯絡碧豐</h4>
-        <p><span>台北總部</span> 台北市中正區懷寧街112號七樓</p>
-        <p><span>電話</span> 02-23118601</p>
-        <p><span>信箱</span> shopdisplay@bigfame.co</p>
+        <p><span>台北總部 (HQ)</span> 台北市中正區懷寧街112號七樓 (電話: 02-23118601)</p>
+        <p><span>電子信箱</span> shopdisplay@bigfame.co</p>
       </div>
     </div>
     <div class="container footer-bottom">
       <p>&copy; 1988-2026 Big Fame IND. CORP. All Rights Reserved.</p>
-      <p class="tagline">Behind every great store.</p>
+      <p>Designed for Global Retail Environment</p>
     </div>
   </footer>
 
