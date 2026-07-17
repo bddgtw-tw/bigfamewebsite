@@ -802,6 +802,68 @@ textarea.form-control {
   resize: vertical;
 }
 
+.form-status-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10000;
+  width: min(520px, calc(100vw - 32px));
+  padding: 24px 28px 24px 64px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background: #173f35;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.65;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.32);
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -46%) scale(0.98);
+  transition: opacity 180ms ease, transform 180ms ease, visibility 180ms ease;
+  pointer-events: none;
+}
+
+.form-status-modal::before {
+  content: '✓';
+  position: absolute;
+  top: 22px;
+  left: 26px;
+  width: 26px;
+  height: 26px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.form-status-modal.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.form-status-modal.error {
+  background: #7c2929;
+}
+
+.form-status-modal.error::before {
+  content: '!';
+}
+
+@media (max-width: 600px) {
+  .form-status-modal {
+    padding: 20px 20px 20px 56px;
+    font-size: 0.95rem;
+  }
+
+  .form-status-modal::before {
+    top: 19px;
+    left: 20px;
+  }
+}
+
 /* --- Footer --- */
 .footer {
   background-color: var(--bg-dark);

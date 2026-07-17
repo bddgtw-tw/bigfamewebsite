@@ -1,5 +1,5 @@
 /* Big Fame IND. CORP. - Global JavaScript Logic */
-const SITE_VERSION = '1.3.9';
+const SITE_VERSION = '1.3.10';
 
 document.addEventListener('DOMContentLoaded', () => {
   initThemeSwitcher();
@@ -375,16 +375,21 @@ function showFormStatus(isSuccess, message) {
     modal = document.createElement('div');
     modal.id = 'formStatusModal';
     modal.className = 'form-status-modal';
+    modal.setAttribute('role', 'status');
+    modal.setAttribute('aria-live', 'assertive');
+    modal.setAttribute('aria-atomic', 'true');
+    modal.setAttribute('tabindex', '-1');
     document.body.appendChild(modal);
   }
   
   modal.innerText = message;
   modal.className = isSuccess ? 'form-status-modal show' : 'form-status-modal show error';
+  modal.focus({ preventScroll: true });
   
-  // Hide after 4 seconds
+  // Keep the result visible long enough to be read on desktop and mobile.
   setTimeout(() => {
     modal.classList.remove('show');
-  }, 4000);
+  }, 8000);
 }
 
 function getLangSuccessMsg(lang) {
