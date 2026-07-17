@@ -1,5 +1,5 @@
 /* Big Fame IND. CORP. - Global JavaScript Logic */
-const SITE_VERSION = '1.3.8';
+const SITE_VERSION = '1.3.9';
 
 document.addEventListener('DOMContentLoaded', () => {
   initThemeSwitcher();
@@ -11,10 +11,58 @@ document.addEventListener('DOMContentLoaded', () => {
   initPageTransitions();
   initMagneticButtons();
   initOfficeStatus();
+  initInquiryTracking();
   initContactForm();
   initHeroParticles();
   initScrollIndicator();
 });
+
+/**
+ * Send privacy-safe B2B inquiry events to GA4.
+ * Never include form field values or other personally identifiable information.
+ */
+function trackAnalyticsEvent(eventName, parameters = {}) {
+  if (typeof window.gtag !== 'function') return;
+
+  window.gtag('event', eventName, {
+    site_language: document.documentElement.lang || 'unknown',
+    page_path: window.location.pathname,
+    ...parameters
+  });
+}
+
+function initInquiryTracking() {
+  document.addEventListener('click', (event) => {
+    const link = event.target.closest('a[href]');
+    if (!link) return;
+
+    const href = link.getAttribute('href') || '';
+    const linkText = (link.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 100);
+
+    if (/contact\.html(?:[?#]|$)/i.test(href)) {
+      let inquiryCategory = 'unspecified';
+      try {
+        inquiryCategory = new URL(link.href, window.location.href).searchParams.get('category') || 'unspecified';
+      } catch (error) {
+        // Keep the safe fallback when an older browser cannot parse the URL.
+      }
+
+      trackAnalyticsEvent('bf_contact_cta_click', {
+        link_text: linkText,
+        link_url: link.href,
+        inquiry_category: inquiryCategory
+      });
+      return;
+    }
+
+    if (href.startsWith('mailto:') || href.startsWith('tel:')) {
+      trackAnalyticsEvent('bf_contact_method_click', {
+        contact_method: href.startsWith('mailto:') ? 'email' : 'phone',
+        link_text: linkText
+      });
+    }
+  });
+}
 
 /**
  * 1. Header scroll effect: Adds background and shrinks header on scroll
@@ -300,6 +348,12 @@ function initContactForm() {
       });
       const data = await response.json();
       if (data.success) {
+        trackAnalyticsEvent('generate_lead', {
+          currency: 'USD',
+          value: 0,
+          inquiry_type: String(formData.get('inquiry_type') || 'unspecified'),
+          product_category: String(formData.get('product_category') || 'unspecified')
+        });
         showFormStatus(true, getLangSuccessMsg(document.documentElement.lang));
         form.reset();
       } else {
