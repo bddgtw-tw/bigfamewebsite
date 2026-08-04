@@ -2,6 +2,10 @@
 
 日期：2026-08-05（Asia/Taipei）
 
+發布提交：`cba1d598e4ad5d79e2548527074437ab8ceffaf0`
+
+發布分支：`main`、`release/draft` 已同步。
+
 ## 本次處理範圍
 
 針對公開 HTML、JavaScript 與 CSS 做內容品質掃描，優先處理會直接影響使用者理解、搜尋引擎解析與內部連結導向的問題。
@@ -25,3 +29,7 @@
 - GA4 尚有 4 個事件參數尚未註冊為自訂維度：`inquiry_role`、`inquiry_product`、`requested_files`、`source_page_path`。
 - Search Console 的索引與非品牌查詢成效仍需持續觀察；本次內容修復不等於排名已提升。
 - 案例頁仍維持「來源證據可支持到哪裡就寫到哪裡」的邊界，沒有把未核准的數量、交期、客戶名稱或商業成果補寫成既成事實。
+
+## 公開回讀
+
+發布後回讀 `https://www.bigfame.co/tw/display-hooks`、`/tw/design-support`、`/tw/procurement`、`/tw/case-ivy-modular-system` 與 `/jp/design-support`：全部 HTTP 200，`?{3,}` 亂碼 0。公開頁已讀到修復後的服務名稱與案例能力連結。
