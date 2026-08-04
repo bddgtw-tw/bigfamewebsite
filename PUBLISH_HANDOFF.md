@@ -118,3 +118,4 @@
 - `44a86bb` 公開部署第一次讀回仍是舊版；延遲後以 cache-buster 第二次讀回，`/tw/case-ivy-modular-system`、`/en/case-ivy-modular-system`、`/jp/case-ivy-modular-system` 均已出現 `SOURCE RECORD`、單一 H1 與正確 canonical。這次驗收明確區分 HTTP 200 與新內容已部署。
 - 公開瀏覽器實際點擊繁中 IVY 案例 CTA 後，聯絡頁讀回 `buyer_role=store_design_engineering`、`inquiry_type=quote`、`product_category=system_fixtures`、`source_category=system_fixtures`、`source_role=designer` 與帶有案例 clean URL 的 `source_page`；未提交表單，因此未產生外部寄送副作用。
 - 首頁公開桌機 runtime 讀回無橫向溢位、Hero 內有 2 個 CTA、影片已載入；手機 CSS 靜態條件包含 `100svh` Hero、單欄 CTA、44px 漢堡按鈕與 18px／24px 內距。當前瀏覽器連線未提供 viewport 切換，因此手機獨立 runtime 仍列為待驗證，不把桌機結果冒充手機驗收。
+- `730403e` 修正 2 個英文頁的重複 `og:description`，並移除英文／日文 technical resources 中語意重複的 CAD FAQ；本地 384 個 JSON-LD 區塊全部可解析。公開 `/tw/technical-resources`、`/en/technical-resources`、`/jp/technical-resources` 延遲後均回應 200、每頁 1 個 `og:description`、5 個 FAQ Question 與正確 canonical；英文 PAGE 頁也已回應 200 且只保留 1 個 `og:description`。
