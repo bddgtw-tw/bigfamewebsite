@@ -82,6 +82,8 @@
 - 三語 `/procurement` 均回應 200，且包含 `custom-metal-parts` 連結。
 - 三語 `/display-hooks` 均回應 200，且包含 `anti-theft-hooks` 連結。
 - 這六個連結已由本地、Git `main`、Git `draft` 與公開網站逐層驗證。
+- `f1d6544` 發布後，公開 `/en/display-hooks`、`/en/case-eyewear-2016`、`/tw/optical-hooks`、`/jp/case-urban-storage` 均回應 200，並已讀回三個 TA 導流連結與正確 canonical；公開部署有短暫延遲，需以延遲後讀回結果為準。
+- 英文 `case-page-cosmetic-organizer` 與 `technical-resources` clean URL 亦已讀回 200、正確 canonical、description 與 Open Graph description。
 
 ## 發布後仍需持續確認
 
