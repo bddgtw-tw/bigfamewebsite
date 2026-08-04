@@ -19,6 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollIndicator();
 });
 
+if (document.readyState !== 'loading') {
+  initAnalytics();
+}
+
 function initAnalytics() {
   if (window.__bfAnalyticsInitialized) return;
   window.__bfAnalyticsInitialized = true;
