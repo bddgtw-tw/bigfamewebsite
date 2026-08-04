@@ -10,6 +10,7 @@
 | 眼鏡品牌門市／展示掛勾 | `case-eyewear-2016`、`optical-hooks`、`display-hooks` | 展示方向、掛勾／背板系統、需求討論入口 | 客戶授權、正式 SKU、數量、交期、交付地 | 已有匿名證據入口；非完整交付案例 |
 | 3C／POS／模組化展示 | `case-modular-3c-store`、`pos-displays`、`modular-fixtures` | 客戶問題、展示櫃與模組方向、材料方向、易運輸／組裝、Big Fame 開發範圍 | 正式合約分工、數量、交期、最終交付條件 | 目前最完整的 POS／模組化證據案例 |
 | 旅宿家具／商業空間 | `case-boutique-hotel-furniture`、`case-japanese-wine-bar`、`case-urban-storage` | 空間問題、家具／展示方向、材料與部分開發範圍、匿名邊界 | 客戶授權、正式角色、數量、交期、交付地與成果 | 已有多個匿名證據頁；不宣稱具名成果 |
+| 小型旅館客房／可變家具 | 尚未上線；候選 clean URL：`case-hotel-room-transformable-table` | 小客房、食飲放置空間、折疊／巢狀桌評估、旋轉盤轉出／收回機能 | 客戶授權、Big Fame 正式角色、尺寸、數量、交期、交付地、照片可公開性 | 已完成來源讀回；待授權與角色確認 |
 | 壓克力／藥妝桌上展示 | `case-page-cosmetic-organizer`、`cosmetic-organizers` | 文件版本、尺寸、壓克力／實木、包裝、樣品／量產交期方向 | 客戶名稱、正式 MOQ、訂單數量、交付地、完成成果與公開授權 | 已有產品開發資料紀錄；不是完整客戶案例 |
 | 服飾品牌門市 | `applications` 店型／專案選集、`case-apparel-2016`、`apparel-store-fixtures` | 3 張來源照片可辨識中島、壁面、吊掛、桌面配件與鞋類展示；店型入口可整理採購問題 | 客戶名稱、Big Fame 實際承擔範圍、正式規格、數量、交期、交付與照片授權 | 已有證據控制的照片紀錄；仍未達完整交付案例 |
 | 防盜／展示五金 | `anti-theft-hooks`、`display-hooks`、`case-eyewear-2016` | 防盜需求、背板／安裝系統、SKU／圖面／樣品確認流程 | 已完成交付的公開案例、正式機構與數量 | 已有產品證據；案例證據待補 |

@@ -123,3 +123,4 @@
 - `109916f` 發布後第一次讀回 Urban Warehouse 案例仍是舊版；延遲後第二次以 cache-buster 讀回，三語 `/case-urban-storage` 均已出現來源文件段落、超過 50 個元件、單一 H1 與正確 canonical。頁面仍明確保留正式合約分工、最終數量、交期與交付地的證據邊界。
 - `6f67c56` 新增技術資料需求欄位：三語 `technical-resources` CTA 會以 `requested_files=technical_pack` 帶入聯絡表單；表單可選尺寸／規格、PDF／CAD／DWG／DXF／STEP、材質／表面處理、打樣討論或請協助判斷資料類型。`form_start`、`bf_form_submit_attempt`、`generate_lead` 與 `bf_form_submit_error` 均納入此非個資欄位；本地 `node --check js/main.js` 通過。
 - `6f67c56` 公開延遲讀回：`/tw/technical-resources?v=6f67c56-r2` 回應 200，CTA 已帶 `requested_files=technical_pack`；`/tw/contact?...&requested_files=technical_pack&v=6f67c56-r3` 回應 200，公開 HTML 已包含 `requested_files` 五個選項與 `technical_pack`。本次未提交表單，尚未宣稱實際 `generate_lead` 轉換已產生。
+- 本輪新增 `CASE_EVIDENCE_READBACK_STYLISH_HOTEL_2026-08-04.md`：從 `Stylish Hotel Room Furniture\長敘述.docx` 讀回小型基隆旅館客房、食飲放置空間、折疊／巢狀桌評估與旋轉盤轉出／收回機能。此為未上線的匿名案例候選；客戶授權、Big Fame 正式角色、尺寸、數量、交期、交付地與照片公開性仍待確認，未把它當成已完成交付案例。
