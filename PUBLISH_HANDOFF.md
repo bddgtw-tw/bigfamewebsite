@@ -10,7 +10,7 @@
 - 正式分支：`main`
 - 開發分支：`draft`
 - Git remote：`https://github.com/bddgtw-tw/bigfamewebsite.git`
-- `main` 與 `draft` 目前同步至同一發布提交：`2f41b8c`
+- `main` 與 `draft` 目前同步至同一發布提交：`7f11285`
 - 網站內容包含三語首頁、TA 入口、產品頁、案例頁、服務頁與詢問頁。
 
 ### 公開 `bigfame.co`
@@ -23,7 +23,7 @@
 - 舊 `/thank-you-page`、`/our-works` 等網址可導向新頁面
 - 公開版 `main.js` 已驗證包含 `bf_page_context`、`bf_contact_cta_click`、`form_start` 與 `generate_lead`
 
-完整 sitemap 驗收（2026-08-04）：78 個公開網址全部回應 200；78／78 具備單一 canonical、至少三個 hreflang 與單一 H1。
+完整 sitemap 驗收（2026-08-04）：81 個公開網址全部回應 200；81／81 具備單一 canonical、至少三個 hreflang 與單一 H1。
 
 最新新增的 PAGE 桌上型化妝品收納展示器「產品開發資料紀錄」已在三語公開網址驗證；頁面保留 2020-03-30 ver.01 文件的尺寸、材質、包裝與交期證據，並明確標示未核准的客戶、MOQ、交付與成果欄位。
 
@@ -34,6 +34,8 @@
 三語「服飾店展示設備」店型搜尋入口已公開驗證：三個頁面皆回應 200，具備單一 H1、FAQ 與展示設備需求情境；此頁是 TA／搜尋入口，不是已核准的具名客戶案例，產品、數量、交期與交付地仍需逐案確認。
 
 三語首頁主要「提交需求／專案諮詢」CTA 已公開驗證帶有 `category=integration&role=buyer`，可將首頁訪客帶入展示設備整合與採購角色脈絡；通用導覽列仍保留未預填的聯絡入口。
+
+三語 `case-apparel-2016` 已公開驗證：頁面使用來源資料夾中的服飾門市照片，整理為匿名、證據控制的照片紀錄，並明確標示不能由照片推定客戶、Big Fame 承擔範圍、數量、交期、交付地或成果；此頁不是完整交付案例。
 
 舊 `/overview`、`/contact-us`、`/thank-you-page`、`/our-works`、`/know-how`、`/blog` 與兩個舊 blog 路徑已公開回應 301，分別導向現行的 about、contact、applications、services、about 或 display-hooks clean URL。
 
