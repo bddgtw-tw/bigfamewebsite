@@ -18,6 +18,7 @@
 
 ## 公開狀態
 
-- Git `main` 已提交 `318c6b3`，並同步 `draft`、`release/draft`。
-- 公開網址目前 HTTP 200，但本次以 cache-buster 讀回仍是舊版，尚未讀到 `data-bf-resource-visual-index="1"`；因此本輪狀態為 `pushed_not_publicly_verified`。
-- 在公開第二次讀回前，不宣稱視覺索引已正式上線。
+- Git `main` 已提交 `918eedf`，並同步 `draft`、`release/draft`；網站內容變更提交為 `318c6b3`。
+- 公開三語技術資源頁以 cache-buster 讀回均為 HTTP 200，且各自讀到 1 個 `data-bf-resource-visual-index="1"`、6 張視覺卡片、6 個對應產品入口與正確語言 canonical。
+- 六個公開圖片資源均回應 HTTP 200；因此本輪視覺索引已完成公開驗證。
+- 手機專用 viewport 本次瀏覽連線未成功套用；CSS 的 `max-width:768px` 規則已確認將 `grid-3` 改為單欄，手機獨立 runtime 仍沿用既有手機驗收紀錄，不以本次桌機讀回替代。
