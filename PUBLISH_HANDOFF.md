@@ -120,3 +120,4 @@
 - 首頁公開桌機 runtime 讀回無橫向溢位、Hero 內有 2 個 CTA、影片已載入；手機 CSS 靜態條件包含 `100svh` Hero、單欄 CTA、44px 漢堡按鈕與 18px／24px 內距。當前瀏覽器連線未提供 viewport 切換，因此手機獨立 runtime 仍列為待驗證，不把桌機結果冒充手機驗收。
 - `730403e` 修正 2 個英文頁的重複 `og:description`，並移除英文／日文 technical resources 中語意重複的 CAD FAQ；本地 384 個 JSON-LD 區塊全部可解析。公開 `/tw/technical-resources`、`/en/technical-resources`、`/jp/technical-resources` 延遲後均回應 200、每頁 1 個 `og:description`、5 個 FAQ Question 與正確 canonical；英文 PAGE 頁也已回應 200 且只保留 1 個 `og:description`。
 - `ec48adb` 發布後第一次讀回精品旅宿案例仍是舊版；延遲後第二次以 cache-buster 讀回，三語 `/case-boutique-hotel-furniture` 均已出現來源文件段落、28 房背景、單一 H1 與正確 canonical。這三頁仍定位為匿名旅宿家具專案紀錄，不宣稱完整客戶交付。
+- `109916f` 發布後第一次讀回 Urban Warehouse 案例仍是舊版；延遲後第二次以 cache-buster 讀回，三語 `/case-urban-storage` 均已出現來源文件段落、超過 50 個元件、單一 H1 與正確 canonical。頁面仍明確保留正式合約分工、最終數量、交期與交付地的證據邊界。
