@@ -113,3 +113,4 @@
 - 不把未核對的測試數據、客戶名稱、所有權、MOQ、交期或市場地位寫成既定事實。
 
 - 本輪新增 `scripts/normalize_hreflang_absolute.py`，將 `tw/`、`en/`、`jp/` 15 個語系主頁的 45 個相對 `hreflang` 連結統一為 `https://www.bigfame.co` 絕對 clean URL；本地讀回 `RELATIVE_HREFLANG_COUNT=0`。這只證明 URL 標記已統一，不代表 Search Console 已重新處理或排名已改善。
+- `97b1404` 發布後，延遲讀回公開 `/tw/about`、`/en/products`、`/jp/about` 與 `/jp/products` 均回應 200，四個 hreflang 標記均為絕對 `https://www.bigfame.co/...` clean URL；`/overview` 與 `/tw/contact-us` 仍回應 301 至現行網址。第一次讀回日文 products 曾受部署延遲影響，第二次以 cache-buster 讀回後已更新。
