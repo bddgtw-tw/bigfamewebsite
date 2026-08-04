@@ -142,3 +142,7 @@
 2026-08-04 新增第二個高證據候選：從歷史 OEM／ODM 專案 `Thomas Game Headphone Set` 讀回三耳機展示組的客戶圖面、BOM、packout、工廠組裝說明與五種通路版本描述。新增匿名 `Three-Headphone Display Set／三耳機展示組工程紀錄` 三語 flat／clean route 共 6 頁，並加入 Applications 與展示掛勾頁的內部連結；公開頁不揭露客戶名稱、數量、交期、交貨地、成本或完整合約責任。完整證據讀回與邊界見 `CASE_EVIDENCE_READBACK_HEADPHONE_DISPLAY_2026-08-04.md`。
 
 `0335704` 公開部署讀回：Git `main`／`draft` 均已同步，但 2026-08-04 延遲讀回三語 `case-headphone-display-set` 仍為 404，公開 Applications 與 sitemap 尚未出現新案例；因此目前狀態是 `pushed_not_publicly_verified`，不可宣稱已公開完成。
+
+`4a9869b` 延遲公開讀回：三語 `case-headphone-display-set`、`tw/applications` 均回傳 200，頁面可讀到新案例內容；`sitemap.xml` 回傳 200，共 90 個 `<loc>`，三語新案例各有 1 筆。三語 contact 頁也已公開讀回 `requested_files` fallback。
+
+`6a002f6` P0 修正與 runtime 讀回：發現案例 CTA 傳入 `requested_files=dimension_drawing` 後，公開表單未穩定選取，已在三語 contact 頁加入 inline fallback。公開讀回確認 `buyer_role=buyer_trading_agent`、`inquiry_type=quote`、`product_category=system_fixtures`、`requested_files=dimension_drawing`、`source_category=system_fixtures`、`source_role=buyer`；未提交表單。390 × 844 手機驗收確認案例頁寬度 375、scrollWidth 375、H1=1、首屏 CTA 可見；viewport 已恢復預設。

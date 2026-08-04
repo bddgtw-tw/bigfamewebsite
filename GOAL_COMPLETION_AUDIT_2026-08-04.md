@@ -34,6 +34,8 @@
 
 目前最接近的素材包括匿名汽車零件展示架工程紀錄、匿名三耳機展示組工程紀錄、二手 3C 模組化展示、城市儲物系統，以及小型旅館旋轉式可變家具。汽車零件展示架與三耳機展示組已建立公開匿名證據頁，但仍不應宣稱為具名完整交付案例。2026-08-04 的交付線索掃描另讀到晁雍／金久盛歷史報價，以及 OMO 生活用品的報價／Invoice，但來源角色或產品類型不符合展示設備完整案例門檻，詳見 `CASE_EVIDENCE_READBACK_DELIVERY_SCAN_2026-08-04.md`。三耳機展示組的原始圖面、BOM、packout 與工廠組裝讀回見 `CASE_EVIDENCE_READBACK_HEADPHONE_DISPLAY_2026-08-04.md`。
 
+公開驗收補充：`case-headphone-display-set` 三語頁與 Applications 已回傳 200，sitemap 已包含三語新案例。`6a002f6` 修正後，contact 頁的 `requested_files` 上下文已在公開 runtime 讀回；尚未提交真實表單，因此 `generate_lead` 仍不宣稱已重新驗證。
+
 ### 2. 做最新公開版本的延遲讀回
 
 每次發布後至少確認：
