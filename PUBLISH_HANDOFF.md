@@ -88,6 +88,7 @@
 - 三語首頁 `og:url` 已由 `/tw/index`、`/en/index`、`/jp/index` 統一修正為各自的 clean URL；延遲後公開讀回確認三頁均與 canonical 完全一致。
 - 新增 `scripts/add_missing_open_graph.py`，以既有 title、description 與 canonical 為唯一來源，為 119 個原本缺少 Open Graph 的三語頁面補齊分享 metadata；未新增產品規格、客戶名稱或成果主張。發布後需抽驗案例、產品、TA 入口與聯絡頁。
 - `97bf222` 發布後，公開 `/en/display-hooks`、`/en/case-modular-3c-store`、`/tw/procurement`、`/jp/contact`、`/en/technical-resources` 均回應 200；五頁均已讀回 Open Graph description，且 `og:url` 與 canonical 一致。產品／案例頁的 TA 導流連結亦正常。
+- `c5ecbcd` 修正三語 `applications` 頁摘要數字：頁面實際有 7 個案例卡片，Hero 與 `SELECTED CASES` 已由 `04` 統一為 `07`。延遲部署後公開 `/tw/applications`、`/en/applications`、`/jp/applications` 均回應 200；公開 DOM 讀回三頁各 7 張案例卡、2 個 `07` 摘要數字、0 個舊 `04` 數字，且各頁維持單一 H1。
 
 ## 發布後仍需持續確認
 
