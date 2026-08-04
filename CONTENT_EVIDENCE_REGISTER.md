@@ -49,6 +49,7 @@
 | BF-CASE-C10 | 25x40展示系統 / IVY Collection | `IVY Collection.docx`、`2019.12.16 IVY 樣品.pdf`、多份 IVY 元件圖面 | 零售模組化展示系統；可核對 25x40 系統、Island Set、Slit Pipe、上下組合框、Top Cover、Base Hanging Clips、M6 組裝與樣品圖面 | 特定客戶、最終安裝、數量、交付地、成果數據與公開圖面授權 | 已公開為「系統開發／樣品圖面紀錄」；非客戶成果案例 |
 | BF-CASE-C11 | Boutique Hotel Room Furniture | `Delighting Bespoked Hotel Room Furniture\長敘述 250字體.docx`、21 張候選照片 | 匿名台北 28 房精品旅宿；可核對六層樓概念、衣櫃、迷你吧、書桌、邊桌、床頭板、床架，以及 mesh、wood、pipe、lighting、pattern 的混合材質方向 | 數量、價格、交付地、最終成果、客戶授權與正式專案角色 | 已公開為匿名旅宿家具專案紀錄；限制欄位明確標示 |
 | BF-CASE-C12 | Second Hand Apple Store | `Second Hand Apple Store\長敘述 250字體.docx` | 匿名二手 3C 門市；可核對展示 MacBook Air、iPhone、iPad、iMac、DSLR、PlayStation，及易運輸、易組裝、跨店複製需求；材料含 composite board、plywood、metal、glass、lighting；包含壁面管件、玻璃展示櫃、落地展示櫃與可替換上蓋 | 數量、正式交付地、最終店數、價格、客戶授權與成果數據 | 已公開為匿名 3C 門市模組化展示系統案例；未公開欄位不推論 |
+| BF-PROD-P01 | Eyewear Display Hook | `50_產品資料庫\20_產品文件\展示架\[眼鏡掛勾]\20_工程與規格\...Eyewear Display Hook.pdf`、`50_產品資料庫\40_Big_Fame_產品資料\10_商空陳列與展示架\[眼鏡掛勾]\01_Photos_產品照片與媒體\2019.01.16 Eyewear Display Hook - 01.png` | 圖面可核對 25 mm pitch、Ø6 mm 孔位；照片／圖面可見黑、白、鍍鉻外觀與眼鏡展示掛勾形態 | 正式材質牌號、線徑、SKU 對應、特定 MOQ、交期與公開圖面授權 | 已公開為三語產品頁；未核准欄位改為按 SKU／圖面／樣品確認 |
 
 ### C02 的特殊注意
 
