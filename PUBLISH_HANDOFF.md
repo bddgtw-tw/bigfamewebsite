@@ -10,7 +10,7 @@
 - 正式分支：`main`
 - 開發分支：`draft`
 - Git remote：`https://github.com/bddgtw-tw/bigfamewebsite.git`
-- `main` 與 `draft` 目前同步至同一發布提交：`bb56030`
+- `main` 與 `draft` 目前同步至同一發布提交：`aa0da57`
 - 網站內容包含三語首頁、TA 入口、產品頁、案例頁、服務頁與詢問頁。
 
 ### 公開 `bigfame.co`
@@ -46,6 +46,8 @@
 三語 `apparel-store-fixtures` 公開 HTML 已驗證新增 `case-apparel-2016` 內部連結；服飾店型、照片證據、相關產品與詢價流程現在形成可追蹤的內容群集。
 
 `MEASUREMENT_BASELINE.md` 已同步至公開版本 `1.3.13`，新增 `apparel-store-fixtures` 的 TA 量測分類，並記錄 390px 公開瀏覽器驗收已確認首屏可讀與 CTA 可點擊；真實使用者速度與點擊率仍待 GA4／Search Console 資料累積。
+
+8 類產品的三語頁面契約驗收已記錄於 `PRODUCT_PAGE_CONTRACT_AUDIT_2026-08-04.md`：24／24 頁未出現 `MISSING_CONTRACT`；該驗收只證明欄位與確認邊界存在，不把未核准規格視為已完成。
 
 舊 `/overview`、`/contact-us`、`/thank-you-page`、`/our-works`、`/know-how`、`/blog` 與兩個舊 blog 路徑已公開回應 301，分別導向現行的 about、contact、applications、services、about 或 display-hooks clean URL。
 
