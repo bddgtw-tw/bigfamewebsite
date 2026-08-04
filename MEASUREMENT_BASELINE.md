@@ -83,12 +83,14 @@ CTA 被點擊
 - 公開版包含 `bf_page_context`、`bf_contact_cta_click`、`form_start`、`generate_lead` 與 `source_page_path`。
 - 從公開 POS 展示頁點擊 CTA，可將產品類別與來源頁帶入詢問頁；尚未送出表單。
 - 公開網站的 URL、canonical、H1、sitemap、TA 入口與案例頁已完成既定的靜態／DOM 驗證。
+- 已確認正式 Big Fame GA4 資源、網站資料流與 Measurement ID；詳見 [GA4_BASELINE_2026-08-04.md](GA4_BASELINE_2026-08-04.md)。
+- 已讀回 GA4 過去 7 天的活躍使用者、事件、來源與自訂事件基準；詳見上述文件。
+- 已讀回 Search Console 搜尋成效與索引報告基準；詳見 [SEARCH_CONSOLE_BASELINE_2026-08-04.md](SEARCH_CONSOLE_BASELINE_2026-08-04.md)。
 
 ### 尚未驗證
 
-- GA4 是否已在正式資料流中收到上述事件。
-- GA4 各事件的實際數量、漏斗轉換率與角色分布。
-- Search Console 實際曝光、點擊、平均排名與非品牌搜尋詞。
+- `generate_lead` 在完整事件報表中的精確數量、漏斗轉換率與角色分布。
+- Search Console 後續 28 天的 TA 入口、產品頁與非品牌搜尋詞趨勢；目前基準已讀回，但資料量仍不足以做穩定結論。
 - 事件是否已在 GA4 介面建立為轉換事件／Key event。
 - 行動裝置的實際速度、可讀性與 CTA 點擊率；目前只有程式與公開 DOM 層級檢查。
 
@@ -96,9 +98,9 @@ CTA 被點擊
 
 ### P0：先取得基準數據
 
-1. 確認 GA4 資料流收到 `bf_page_context`、`bf_contact_cta_click`、`form_start`、`generate_lead`。
-2. 將 `generate_lead` 設為主要 Key event；CTA 與 `form_start` 作為診斷事件。
-3. 建立 Search Console 28 天基準，分開品牌與非品牌。
+1. 以完整 GA4 事件報表確認 `generate_lead` 是否收到事件。
+2. 由有權限的管理者確認是否將 `generate_lead` 設為主要 Key event；本次未修改 GA4 設定。
+3. 持續累積 Search Console 與 GA4 28 天資料，分開品牌與非品牌，再判斷內容優先級。
 
 ### P1：依數據修正網站
 
