@@ -41,24 +41,30 @@ checks = {
     "moq_and_lead_time": lambda s, t, a: bool(re.search(r"MOQ", t, re.I)) and bool(re.search(r"lead time|交期|納期", t, re.I)),
     "custom_scope": lambda s, t, a: bool(re.search(r"custom|客製|カスタム", t, re.I)),
     "asset": lambda s, t, a: bool(re.search(r"<img\b|drawing|圖面|図面", s, re.I)),
-    "related_case": lambda s, t, a: any(re.match(r"(?:\.\./)?case-", href) for href in a),
-    "inquiry_cta": lambda s, t, a: any("contact?category=" in href for href in a),
+    "related_case": lambda s, t, a: any(re.search(r"(?:^|/)case-", href) for href in a),
+    "inquiry_cta": lambda s, t, a: any(re.search(r"(?:^|/)contact(?:\.html)?\?", href) and "category=" in href for href in a),
     "faq": lambda s, t, a: "FAQPage" in s and 'data-bf-faq="1"' in s,
 }
 
 failures = []
+pages_checked = 0
 for language in ("tw", "en", "jp"):
     for slug in SLUGS:
-        path = ROOT / language / f"{slug}.html"
-        source = path.read_text(encoding="utf-8")
-        parser = TextParser()
-        parser.feed(source)
-        text = visible_text(source)
-        missing = [name for name, check in checks.items() if not check(source, text, parser.attrs)]
-        if missing:
-            failures.append((str(path.relative_to(ROOT)), missing))
+        paths = [ROOT / language / f"{slug}.html"]
+        clean = ROOT / language / slug / "index.html"
+        if clean.exists():
+            paths.append(clean)
+        for path in paths:
+            pages_checked += 1
+            source = path.read_text(encoding="utf-8")
+            parser = TextParser()
+            parser.feed(source)
+            text = visible_text(source)
+            missing = [name for name, check in checks.items() if not check(source, text, parser.attrs)]
+            if missing:
+                failures.append((str(path.relative_to(ROOT)), missing))
 
-print(f"PRODUCT_QUALITY_PAGES={len(SLUGS) * 3}")
+print(f"PRODUCT_QUALITY_PAGES={pages_checked}")
 print(f"PRODUCT_QUALITY_FAILURES={len(failures)}")
 for path, missing in failures:
     print(f"{path}: {', '.join(missing)}")

@@ -38,14 +38,16 @@ CHECKS = {
 failures = []
 pages = 0
 for language in ("tw", "en", "jp"):
-    for path in sorted((ROOT / language).glob("case-*.html")):
+    flat_pages = sorted((ROOT / language).glob("case-*.html"))
+    clean_pages = [path.parent / path.stem / "index.html" for path in flat_pages if (path.parent / path.stem / "index.html").exists()]
+    for path in flat_pages + clean_pages:
         pages += 1
         source = path.read_text(encoding="utf-8")
         parser = TextParser()
         parser.feed(source)
         visible = " ".join(parser.text)
         missing = [name for name, pattern in CHECKS.items() if not re.search(pattern, visible + " " + source, re.I)]
-        if not any("contact?" in href and "category=" in href for href in parser.hrefs):
+        if not any(re.search(r"(?:^|/)contact(?:\.html)?\?", href) and "category=" in href for href in parser.hrefs):
             missing.append("contextual_cta")
         if missing:
             failures.append((str(path.relative_to(ROOT)), missing))
