@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMagneticButtons();
   initOfficeStatus();
   initInquiryTracking();
+  initProductInquiryLinks();
   initInquiryContext();
   initTaServiceSchema();
   initVerifiedProductSchema();
@@ -272,6 +273,7 @@ function initInquiryTracking() {
         link_url: link.href,
         inquiry_category: inquiryCategory,
         inquiry_role: new URL(link.href, window.location.href).searchParams.get('role') || 'unspecified',
+        inquiry_product: new URL(link.href, window.location.href).searchParams.get('product') || 'unspecified',
         source_page_path: window.location.pathname
       });
       return;
@@ -287,6 +289,30 @@ function initInquiryTracking() {
 }
 
 /**
+ * Carry the exact product slug into the inquiry URL so the form can retain
+ * product context in addition to the referring page and broad category.
+ */
+function initProductInquiryLinks() {
+  const segments = window.location.pathname.split('/').filter(Boolean);
+  const locale = ['tw', 'en', 'jp'].includes(segments[0]) ? segments[0] : '';
+  const slug = segments[1] || '';
+  const productSlugs = ['display-hooks', 'optical-hooks', 'anti-theft-hooks', 'slatwall-pegboard-accessories', 'price-tag-holders', 'pos-displays', 'modular-fixtures', 'custom-metal-parts', 'cosmetic-organizers'];
+  if (!locale || !productSlugs.includes(slug)) return;
+
+  document.querySelectorAll('a[href]').forEach((link) => {
+    try {
+      const url = new URL(link.href, window.location.href);
+      if (url.origin !== window.location.origin || !/(?:^|\/)contact(?:\.html)?$/i.test(url.pathname)) return;
+      if (url.searchParams.get('product') === slug) return;
+      url.searchParams.set('product', slug);
+      link.href = `${url.pathname}${url.search}${url.hash}`;
+    } catch (error) {
+      // Keep the original link when an older browser cannot parse it.
+    }
+  });
+}
+
+/**
  * Preserve the visitor's role and inquiry context when a CTA opens the form.
  * Query values are controlled category labels only; never copy personal data.
  */
@@ -297,6 +323,7 @@ function initInquiryContext() {
   const params = new URLSearchParams(window.location.search);
   const category = params.get('category') || '';
   const role = params.get('role') || '';
+  const product = params.get('product') || '';
   const requestedFiles = params.get('requested_files') || '';
   let sourcePage = '';
   try {
@@ -336,6 +363,7 @@ function initInquiryContext() {
   setValue('buyer_role', roleMap[role]);
   setValue('source_category', category || 'unspecified');
   setValue('source_role', role || 'unspecified');
+  setValue('source_product', product || 'unspecified');
   setValue('requested_files', requestedFiles);
   setValue('source_page', sourcePage);
 }
@@ -618,6 +646,7 @@ function initContactForm() {
     trackAnalyticsEvent('form_start', {
       inquiry_category: String(form.querySelector('[name="source_category"]')?.value || 'unspecified'),
       inquiry_role: String(form.querySelector('[name="source_role"]')?.value || 'unspecified'),
+      inquiry_product: String(form.querySelector('[name="source_product"]')?.value || 'unspecified'),
       requested_files: String(form.querySelector('[name="requested_files"]')?.value || 'unspecified'),
       source_page_path: String(form.querySelector('[name="source_page"]')?.value || 'unspecified')
     });
@@ -637,7 +666,8 @@ function initContactForm() {
       product_category: String(formData.get('product_category') || 'unspecified'),
       requested_files: String(formData.get('requested_files') || 'unspecified'),
       inquiry_category: String(formData.get('source_category') || 'unspecified'),
-      inquiry_role: String(formData.get('source_role') || 'unspecified')
+      inquiry_role: String(formData.get('source_role') || 'unspecified'),
+      inquiry_product: String(formData.get('source_product') || 'unspecified')
     });
     
     // Fallback Mock for testing
@@ -667,6 +697,7 @@ function initContactForm() {
           requested_files: String(formData.get('requested_files') || 'unspecified'),
           inquiry_category: String(formData.get('source_category') || 'unspecified'),
           inquiry_role: String(formData.get('source_role') || 'unspecified'),
+          inquiry_product: String(formData.get('source_product') || 'unspecified'),
           source_page_path: String(formData.get('source_page') || 'unspecified')
         });
         showFormStatus(true, getLangSuccessMsg(document.documentElement.lang));
