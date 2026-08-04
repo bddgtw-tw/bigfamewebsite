@@ -68,7 +68,8 @@
 - `萬字旋轉架 組裝說明\Assembly Guide of 4 Side Peg Board Rack.doc`：列出四片洞洞板、煞車／非煞車腳輪與螺絲的組裝方式。
 - `Auto Parts Rack 組裝說明\IMG_1924.jpg`：可視讀到洞洞板與大量掛件／包裝標示的實物組裝畫面。這是來源照片，不推定為已授權公開的客戶現場照片。
 - `Final` 資料夾含 `Auto Clip Rack Final.jpg`、`4 Way Peg Board Rack Final.jpg` 與其他最終素材。
-- 根目錄含 `shipping mark.pdf`；檔案存在可支持曾整理運輸標示素材，但未把它解讀成交貨地或已完成出貨證明。
+- 根目錄含 `shipping mark.pdf`；視讀可見 `TRANSBEC`、`MONTREAL`、`P/O NO.: 0001643`、`AUTO CLIP RACK`（`RACK01`，`Q’TY: 1 SET`）、`4-Sides Peg Board Rack`（`RACK02`，`Q’TY: 1 SET`）與 `MADE IN TAIWAN`。N.W.／G.W. 欄位未填。
+- 這是包裝／運輸標示文件，能補強目的地、品項與套數的交付線索；但它不是獨立提單、簽收或驗收文件，因此不單獨宣稱貨物已完成交付。
 
 ## 案例欄位判定
 
@@ -79,9 +80,9 @@
 | 使用產品 | 4-way peg board rack、auto clip rotating rack、POP／sign holder |
 | 材料／製程 | 金屬框架、洞洞板、掛件、腳輪、粉體塗層與紙箱／塑膠保護；正式牌號與製程細節未公開 |
 | Big Fame 承擔範圍 | 需求回覆、設計、圖面迭代、缺陷分析、結構／包裝改善與組裝文件；正式合約範圍仍不公開 |
-| 數量 | 未讀到可公開的正式訂單數量 |
+| 數量 | shipping mark 可核對兩種架型各 1 set；P/O 與數量不公開，且未找到獨立訂單／出貨驗證 |
 | 交期 | 未讀到可公開的正式交期 |
-| 交付地 | 未讀到；shipping mark 不能單獨證明交貨地 |
+| 交付地 | shipping mark 可視讀到 Montreal；不在公開頁顯示客戶／目的地商務欄位 |
 | 可公開程度 | 可先做匿名工程／交付紀錄；客戶名稱、Logo、現場照片授權待確認 |
 | 對應產品 | 展示掛勾、槽板／洞洞板配件、模組化展示架、客製金屬零件 |
 | 詢問 CTA | 設計支援／系統展示／尺寸圖面需求，帶入 `requested_files=dimension_drawing` |

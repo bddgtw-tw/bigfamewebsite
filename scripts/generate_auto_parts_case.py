@@ -30,7 +30,7 @@ PAGES = {
             ("設計範圍", "旋轉架、洞洞板與 POP 配件", "專案資料包含 auto clip rotating rack、4-way peg board rack、hook shelf、POP／Sign Holder 與多版本尺寸／細節圖面。正式合約範圍未公開。"),
             ("Big Fame 實際承擔範圍", "從需求回覆到工程文件", "來源文件可支持 Big Fame 進行需求回覆、設計方案、圖面迭代、缺陷分析、結構／表面保護改善與組裝文件整理；正式合約範圍仍依專案確認。"),
             ("改善紀錄", "把缺陷轉成結構與包裝對策", "缺陷報告記錄粉體塗層剝落、運輸／試組裝損傷與底座強度問題；改善方向包含三角金屬補強、腳部保護、完成後塑膠袋與出口紙箱保護。"),
-            ("組裝與交付準備", "讓現場可以理解如何組裝", "組裝說明列出 base、connecting tubes、L posts、frame boxes、hook shelves、洞洞板與腳輪，並整理旋轉架與四向洞洞板架的組裝步驟。"),
+            ("組裝與交付準備", "讓現場可以理解如何組裝", "組裝說明列出 base、connecting tubes、L posts、frame boxes、hook shelves、洞洞板與腳輪，並整理旋轉架與四向洞洞板架的組裝步驟。專案資料另有 shipping mark；公開版不顯示 PO、客戶或正式數量，且 shipping mark 不等同於獨立貨運簽收。"),
         ],
         "faq": [
             ("這是已完成交付的客戶案例嗎？", "目前公開為匿名工程／交付紀錄；來源能支持需求、設計、改善與組裝文件，但客戶授權、正式數量、交期與交貨地不公開。"),
@@ -64,7 +64,7 @@ PAGES = {
             ("Design scope", "Rotating rack, pegboard and POP hardware", "The project files include an auto clip rotating rack, 4-way peg board rack, hook shelves, POP／Sign Holder and multiple drawing iterations. The formal contract scope is not public."),
             ("Big Fame's actual scope", "From requirement replies to engineering documents", "The sources support requirement replies, design proposals, drawing iterations, defect analysis, structural／surface-protection improvements and assembly-document preparation. Formal contract responsibility remains project-specific."),
             ("Improvement record", "Turning defects into structural and packing actions", "The defect report records powder-coating damage, transport／trial-assembly damage and base-strength questions. The documented responses include triangular metal reinforcement, leg protection, plastic-bag protection and export-carton protection."),
-            ("Assembly and delivery preparation", "Making the fixture understandable on site", "Assembly guides list the base, connecting tubes, L posts, frame boxes, hook shelves, pegboard panels and casters, then show how to assemble the rotating and four-way pegboard racks."),
+            ("Assembly and delivery preparation", "Making the fixture understandable on site", "Assembly guides list the base, connecting tubes, L posts, frame boxes, hook shelves, pegboard panels and casters, then show how to assemble the rotating and four-way pegboard racks. A shipping-mark document is also present; the public page withholds the PO, client and formal quantity, and treats it as a shipping clue rather than independent freight receipt."),
         ],
         "faq": [
             ("Is this a completed customer delivery case?", "It is currently published as an anonymous engineering and delivery record. The sources support the questions, design, improvement and assembly work, while authorization, quantity, lead time and destination remain undisclosed."),
@@ -98,7 +98,7 @@ PAGES = {
             ("設計範囲", "回転ラック、有孔ボード、POP金具", "資料にはオートクリップ回転ラック、4面有孔ボードラック、フックシェルフ、POP／サインホルダーと複数の図面改訂が含まれます。正式な契約範囲は公開していません。"),
             ("Big Fameの対応範囲", "要件への回答からエンジニアリング資料まで", "資料からは、要件への回答、設計提案、図面改訂、不具合分析、構造・表面保護の改善、組立て資料の準備を確認できます。正式な契約範囲は案件ごとに確認します。"),
             ("改善記録", "不具合を構造・梱包対策へ", "不具合資料には粉体塗装の剥離、輸送・試組立て時の損傷、ベース強度の課題が記録されています。三角補強、脚部保護、ビニール袋、輸出用カートンの対策が整理されています。"),
-            ("組立てと納品準備", "現場で組み立てやすい資料", "組立て資料ではベース、接続パイプ、Lポスト、フレームボックス、フックシェルフ、有孔ボード、キャスターを一覧化し、回転ラックと4面ラックの手順を整理しています。"),
+            ("組立てと納品準備", "現場で組み立てやすい資料", "組立て資料ではベース、接続パイプ、Lポスト、フレームボックス、フックシェルフ、有孔ボード、キャスターを一覧化し、回転ラックと4面ラックの手順を整理しています。shipping mark資料もありますが、公開ページではPO、顧客、正式数量を表示せず、独立した運送受領証とは扱いません。"),
         ],
         "faq": [
             ("完成納品済みの顧客事例ですか？", "現在は匿名のエンジニアリング／納品準備記録として公開しています。課題、設計、改善、組立て資料は確認できますが、公開許諾、数量、納期、納品先は非公開です。"),
