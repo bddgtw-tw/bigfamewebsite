@@ -1,5 +1,5 @@
 /* Big Fame IND. CORP. - Global JavaScript Logic */
-var SITE_VERSION = '1.3.24';
+var SITE_VERSION = '1.3.25';
 
 document.addEventListener('DOMContentLoaded', () => {
   initAnalytics();
@@ -687,7 +687,8 @@ function initContactForm() {
       requested_files: String(formData.get('requested_files') || 'unspecified'),
       inquiry_category: String(formData.get('source_category') || 'unspecified'),
       inquiry_role: String(formData.get('source_role') || 'unspecified'),
-      inquiry_product: String(formData.get('source_product') || 'unspecified')
+      inquiry_product: String(formData.get('source_product') || 'unspecified'),
+      source_page_path: String(formData.get('source_page') || 'unspecified')
     });
     
     // Fallback Mock for testing
@@ -727,7 +728,11 @@ function initContactForm() {
           error_type: 'web3forms_rejected',
           inquiry_type: String(formData.get('inquiry_type') || 'unspecified'),
           product_category: String(formData.get('product_category') || 'unspecified'),
-          requested_files: String(formData.get('requested_files') || 'unspecified')
+          requested_files: String(formData.get('requested_files') || 'unspecified'),
+          inquiry_category: String(formData.get('source_category') || 'unspecified'),
+          inquiry_role: String(formData.get('source_role') || 'unspecified'),
+          inquiry_product: String(formData.get('source_product') || 'unspecified'),
+          source_page_path: String(formData.get('source_page') || 'unspecified')
         });
         showFormStatus(false, data.message || 'Error sending message.');
       }
@@ -736,7 +741,11 @@ function initContactForm() {
           error_type: 'network_or_parse_error',
           inquiry_type: String(formData.get('inquiry_type') || 'unspecified'),
           product_category: String(formData.get('product_category') || 'unspecified'),
-          requested_files: String(formData.get('requested_files') || 'unspecified')
+          requested_files: String(formData.get('requested_files') || 'unspecified'),
+          inquiry_category: String(formData.get('source_category') || 'unspecified'),
+          inquiry_role: String(formData.get('source_role') || 'unspecified'),
+          inquiry_product: String(formData.get('source_product') || 'unspecified'),
+          source_page_path: String(formData.get('source_page') || 'unspecified')
       });
       showFormStatus(false, 'Failed to connect to server. Please try again.');
     } finally {

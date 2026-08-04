@@ -3,7 +3,7 @@ import re
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "1.3.23"
+VERSION = "1.3.25"
 
 main_js = ROOT / "js" / "main.js"
 source = main_js.read_text(encoding="utf-8")
