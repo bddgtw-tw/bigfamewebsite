@@ -134,3 +134,5 @@
 2026-08-04 交付線索盤點：從 `40_Projects_案例` 實際讀回晁雍／鐵網製成的波浪架與金久盛／角鋼架歷史報價，以及 OMO 生活用品展的產品報價與 Invoice。晁雍文件顯示 `晁雍 → 碧豐` 的報價關係，金久盛文件是舊規格／計算表，OMO 是生活用品採購而非展示設備案例；三者均未升格為 Big Fame 公開案例。完整來源、可支持內容與邊界見 `CASE_EVIDENCE_READBACK_DELIVERY_SCAN_2026-08-04.md`。
 
 2026-08-04 新增最強案例候選：從歷史 OEM／ODM 專案 `On Time Auto Parts Rack` 讀回客戶相容性問題、Big Fame 設計回覆、2011 年多版本圖面、缺陷改善報告、組裝說明、最終設計圖、實物組裝照片與 shipping mark 檔案。候選定位為匿名 `Automotive Parts Display Rack／汽車零件展示架工程紀錄`；不公開客戶名稱、Logo、數量、交期、交貨地或未核准照片授權。完整讀回見 `CASE_EVIDENCE_READBACK_ON_TIME_AUTO_PARTS_2026-08-04.md`。
+
+`68b1aa8` 發布後延遲讀回：三語 `/case-automotive-parts-rack` 均回應 200、單一 H1、正確 clean canonical、Article／BreadcrumbList／FAQPage JSON-LD、`requested_files=dimension_drawing` CTA 與證據邊界；公開 `/tw/applications`、`/en/modular-fixtures`、`/jp/display-hooks` 均已讀回新案例連結；公開 sitemap 回應 200 並包含三個新案例 URL。此頁仍是匿名工程／交付紀錄，不宣稱具名客戶成果、正式數量、交期或交貨地。
