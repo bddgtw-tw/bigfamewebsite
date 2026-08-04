@@ -331,10 +331,11 @@ function initInquiryContext() {
   const role = params.get('role') || '';
   const product = params.get('product') || '';
   const requestedFiles = params.get('requested_files') || '';
-  let sourcePage = '';
+  let sourcePage = params.get('source_page') || '';
+  if (sourcePage && !sourcePage.startsWith('/')) sourcePage = `/${sourcePage}`;
   try {
-    if (document.referrer && new URL(document.referrer).origin === window.location.origin) {
-      sourcePage = document.referrer;
+    if (!sourcePage && document.referrer && new URL(document.referrer).origin === window.location.origin) {
+      sourcePage = new URL(document.referrer).pathname;
     }
   } catch (error) {
     // Keep the safe empty fallback for malformed or cross-origin referrers.
