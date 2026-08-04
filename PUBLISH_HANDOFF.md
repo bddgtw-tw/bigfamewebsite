@@ -23,6 +23,8 @@
 - 舊 `/thank-you-page`、`/our-works` 等網址可導向新頁面
 - 公開版 `main.js` 已驗證包含 `bf_page_context`、`bf_contact_cta_click`、`form_start` 與 `generate_lead`
 
+完整 sitemap 驗收（2026-08-04）：69 個公開網址全部回應 200；69／69 具備單一 canonical、至少三個 hreflang 與單一 H1。
+
 ### 最新部署驗證
 
 已於 2026-08-04 重新讀取公開網址並確認：
