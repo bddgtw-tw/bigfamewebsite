@@ -35,6 +35,10 @@
 
 三語首頁主要「提交需求／專案諮詢」CTA 已公開驗證帶有 `category=integration&role=buyer`，可將首頁訪客帶入展示設備整合與採購角色脈絡；通用導覽列仍保留未預填的聯絡入口。
 
+舊 `/overview`、`/contact-us`、`/thank-you-page`、`/our-works`、`/know-how`、`/blog` 與兩個舊 blog 路徑已公開回應 301，分別導向現行的 about、contact、applications、services、about 或 display-hooks clean URL。
+
+英文目錄目前 43 個 HTML 頁面均具備 title、meta description 與 canonical；首頁、services、applications、anti-theft hooks、PAGE cosmetic record 與 technical resources 的描述已完成採購、展示設備、案例或 CAD 搜尋語意盤點，後續仍可依 Search Console 查詢詞做精修。
+
 ### 最新部署驗證
 
 已於 2026-08-04 重新讀取公開網址並確認：
