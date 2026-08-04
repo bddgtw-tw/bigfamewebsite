@@ -85,6 +85,8 @@
 
 ## 發布後仍需持續確認
 
+- P0 metadata 已在本地更新：英文 `applications`、`case-page-cosmetic-organizer`、`technical-resources` 的 `og:description` 與結構化資料描述，已改為較精準的 B2B 搜尋語意，未新增未核准的客戶、數量、測試或交付主張。這三頁需隨下一次網站內容發布後，再做公開 URL readback。
+
 1. 持續檢查公開版 sitemap、canonical、hreflang 與 Git `main` 是否一致；部署後需容許 CDN 延遲並以第二次讀回為準。
 2. 持續補足證據登錄表中尚未核准公開的數量、交期、客戶名稱與成果主張。
 3. 以 GA4 與 Search Console 28 天資料判斷 TA 入口、產品頁與詢問轉換。
