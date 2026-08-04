@@ -132,3 +132,5 @@
 - `138f881` 將三語 `custom-metal-parts` 與 `design-support` 的 flat／clean 頁面共 12 頁連到 `jewelry-display-accessories`；公開延遲讀回 `/tw/custom-metal-parts`、`/tw/design-support`、`/en/custom-metal-parts`、`/jp/design-support` 均回應 200、canonical 正確且 HTML 已包含新入口連結。
 
 2026-08-04 交付線索盤點：從 `40_Projects_案例` 實際讀回晁雍／鐵網製成的波浪架與金久盛／角鋼架歷史報價，以及 OMO 生活用品展的產品報價與 Invoice。晁雍文件顯示 `晁雍 → 碧豐` 的報價關係，金久盛文件是舊規格／計算表，OMO 是生活用品採購而非展示設備案例；三者均未升格為 Big Fame 公開案例。完整來源、可支持內容與邊界見 `CASE_EVIDENCE_READBACK_DELIVERY_SCAN_2026-08-04.md`。
+
+2026-08-04 新增最強案例候選：從歷史 OEM／ODM 專案 `On Time Auto Parts Rack` 讀回客戶相容性問題、Big Fame 設計回覆、2011 年多版本圖面、缺陷改善報告、組裝說明、最終設計圖、實物組裝照片與 shipping mark 檔案。候選定位為匿名 `Automotive Parts Display Rack／汽車零件展示架工程紀錄`；不公開客戶名稱、Logo、數量、交期、交貨地或未核准照片授權。完整讀回見 `CASE_EVIDENCE_READBACK_ON_TIME_AUTO_PARTS_2026-08-04.md`。
