@@ -10,7 +10,7 @@
 - 正式分支：`main`
 - 開發分支：`draft`
 - Git remote：`https://github.com/bddgtw-tw/bigfamewebsite.git`
-- `main` 與 `draft` 目前同步至同一發布提交：`1cb6b0d`
+- `main` 與 `draft` 目前同步至同一發布提交：`a5971fc`
 - 網站內容包含三語首頁、TA 入口、產品頁、案例頁、服務頁與詢問頁。
 
 ### 公開 `bigfame.co`
@@ -52,6 +52,8 @@
 8 類產品三語頁面的可見內容品質驗收已通過 24／24；除 FAQPage JSON-LD 外，所有頁面均有可核對的可見 FAQ 標記、相關案例連結與帶 category 的詢價 CTA。公開 clean URL 24／24 第二次讀回通過，完整規則與限制見 `PRODUCT_PAGE_CONTRACT_AUDIT_2026-08-04.md`。
 
 三語案例頁共 24 頁已補齊證據欄位狀態；對來源未提供或未核准的客戶問題、材質、Big Fame 分工、數量、交期與交付地，頁面明示未公開或需逐案確認。新增區塊的公開 clean URL 17／17 已驗證 200、單一 H1、FAQ、情境式 CTA 與單一 canonical；完整限制見 `CASE_PAGE_CONTRACT_AUDIT_2026-08-04.md`。
+
+採購、設計支援、展示掛勾與技術資源四類三語入口，共 12 頁已加入直接貼近 TA 搜尋問法的 FAQ；本地 `SEARCH_INTENT_FAILURES=0`，公開第二次讀回 12／12 通過。搜尋意圖與頁面對應見 `SEARCH_INTENT_MAP_2026-08-04.md`。
 
 `MEASUREMENT_BASELINE.md` 已同步至公開版本 `1.3.13`，新增 `apparel-store-fixtures` 的 TA 量測分類，並記錄 390px 公開瀏覽器驗收已確認首屏可讀與 CTA 可點擊；真實使用者速度與點擊率仍待 GA4／Search Console 資料累積。
 
