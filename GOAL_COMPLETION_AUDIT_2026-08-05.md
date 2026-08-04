@@ -83,3 +83,20 @@
 - GA4 目前已註冊 `inquiry_category`、`product_category`、`contact_method`、`site_language`、`inquiry_type` 五個事件維度。
 - 網站程式已送出 `inquiry_role`、`inquiry_product`、`requested_files`、`source_page_path`，但這四個參數尚未在 GA4 管理頁註冊為自訂維度，因此 TA 角色與來源頁仍無法在標準報表中可靠切分。
 - 本輪曾進入 GA4 管理頁建立維度，但儲存視窗無法可靠完成點擊；外部設定維持原狀，未宣稱已完成。
+
+## 2026-08-05 目標稽核再讀回
+
+- Git `main`、`draft`、`release/draft` 已同步至 `e295362`。
+- 本地 167 個 HTML：內部 `.html` 連結 `0`、canonical `.html` `0`、sitemap `<loc>` `96`。
+- 產品頁品質稽核：24 頁、0 失敗；案例頁契約稽核：36 頁、0 失敗。
+- Search Console Sitemap：2026-08-05 送出與讀取均成功，Google 發現頁面 `96`、影片 `0`。
+- Search Console 索引報表最後更新仍為 2026-07-24：已索引 `16`、未索引 `51`；這不能用來判定本次最新發布頁面已完成索引。
+- Search Console Performance（2026-07-16 至 2026-08-02）：4 點擊、383 曝光、CTR 1%、平均排名 9.7；非品牌查詢已有曝光但尚未產生點擊。
+- 本次新增的採購案例來源紀錄已在三語公開網址讀回：HTTP 200、H1=1、FAQPage、CTA 與來源區塊存在，無連續問號亂碼。
+
+### 目前仍不能升格為完成的項目
+
+1. Google 尚未證明 96 個 sitemap URL 已全部索引。
+2. 非品牌查詢尚未形成穩定點擊與 TA 入口導流。
+3. `generate_lead` 尚未與真實收到的有效詢問逐筆對帳。
+4. 多數案例仍缺正式授權、完整交付數量、交期與交付地，因此維持匿名證據紀錄定位。
