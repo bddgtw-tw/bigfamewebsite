@@ -1,5 +1,5 @@
 /* Big Fame IND. CORP. - Global JavaScript Logic */
-var SITE_VERSION = '1.3.23';
+var SITE_VERSION = '1.3.24';
 
 document.addEventListener('DOMContentLoaded', () => {
   initAnalytics();
@@ -33,15 +33,18 @@ function getMeasurementContext() {
   let pageType = 'content';
   if (slug === 'home') pageType = 'home';
   else if (slug === 'contact') pageType = 'contact';
-  else if (['procurement', 'design-support', 'display-hooks', 'apparel-store-fixtures'].includes(slug)) pageType = 'ta_entry';
+  else if (['procurement', 'design-support', 'apparel-store-fixtures'].includes(slug)) pageType = 'ta_entry';
   else if (slug.startsWith('case-')) pageType = 'case';
   else if (['products', 'applications', 'services', 'about'].includes(slug)) pageType = 'hub';
-  else if (['optical-hooks', 'anti-theft-hooks', 'slatwall-pegboard-accessories', 'price-tag-holders', 'pos-displays', 'modular-fixtures', 'custom-metal-parts', 'cosmetic-organizers'].includes(slug)) pageType = 'product';
+  else if (['display-hooks', 'optical-hooks', 'anti-theft-hooks', 'slatwall-pegboard-accessories', 'price-tag-holders', 'pos-displays', 'modular-fixtures', 'custom-metal-parts', 'cosmetic-organizers'].includes(slug)) pageType = 'product';
+  const isTaEntry = ['procurement', 'design-support', 'display-hooks', 'apparel-store-fixtures'].includes(slug);
+  const isProduct = ['display-hooks', 'optical-hooks', 'anti-theft-hooks', 'slatwall-pegboard-accessories', 'price-tag-holders', 'pos-displays', 'modular-fixtures', 'custom-metal-parts', 'cosmetic-organizers'].includes(slug);
   return {
     site_locale: locale,
     page_type: pageType,
     content_slug: slug,
-    ta_entry: pageType === 'ta_entry' ? slug : 'none'
+    ta_entry: isTaEntry ? slug : 'none',
+    content_role: isTaEntry && isProduct ? 'ta_entry_and_product' : (isTaEntry ? 'ta_entry' : (isProduct ? 'product' : 'content'))
   };
 }
 
@@ -373,6 +376,16 @@ function initInquiryContext() {
   setValue('source_product', product || 'unspecified');
   setValue('requested_files', requestedFiles);
   setValue('source_page', sourcePage);
+
+  // Record only controlled routing values, never names, email addresses, or message text.
+  trackAnalyticsEvent('bf_inquiry_context_ready', {
+    inquiry_category: category || 'unspecified',
+    inquiry_role: role || 'unspecified',
+    inquiry_product: product || 'unspecified',
+    requested_files: requestedFiles || 'unspecified',
+    source_page_path: sourcePage || 'unspecified',
+    context_prefill: Boolean(category || role || product || requestedFiles || sourcePage) ? 'prefilled' : 'direct'
+  });
 }
 
 /**
