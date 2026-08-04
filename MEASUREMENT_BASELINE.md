@@ -6,7 +6,7 @@
 
 ## 一、目前已完成的量測契約
 
-目前 `js/main.js` 版本為 `1.3.12`。本地版與公開版版本一致，公開版已驗證包含以下事件與欄位：
+目前 `js/main.js` 版本為 `1.3.13`。本地版與公開版版本一致，公開版已驗證包含以下事件與欄位：
 
 | 事件 | 觸發時機 | 主要欄位 | 用途 |
 |---|---|---|---|
@@ -23,7 +23,7 @@
 `page_type` 目前依網址判斷：
 
 - `home`：三語首頁
-- `ta_entry`：`procurement`、`design-support`、`display-hooks`
+- `ta_entry`：`procurement`、`design-support`、`display-hooks`、`apparel-store-fixtures`
 - `product`：展示掛勾、光學掛勾、防盜掛勾、洞洞板／槽板配件、價牌／標示、POS 展示、模組化什器、客製金屬零件，以及已有產品頁的相關品項
 - `case`：`case-` 開頭的案例頁
 - `hub`：產品、應用案例、服務、關於 Big Fame
@@ -35,6 +35,7 @@
 - `procurement`：採購、商社、代理商導向
 - `design-support`：店面規劃、設計、建築、工程導向
 - `display-hooks`：展示掛勾、陳列五金、店面展示配件導向
+- `apparel-store-fixtures`：服飾店展示設備、店面規劃與服飾店型需求導向
 
 ## 三、GA4 後續應觀察的漏斗
 
@@ -79,7 +80,7 @@ CTA 被點擊
 
 ### 已驗證
 
-- 公開 `https://www.bigfame.co/js/main.js` 與本地版本同為 `1.3.12`。
+- 公開 `https://www.bigfame.co/js/main.js` 與本地版本同為 `1.3.13`。
 - 公開版包含 `bf_page_context`、`bf_contact_cta_click`、`form_start`、`generate_lead` 與 `source_page_path`。
 - 從公開 POS 展示頁點擊 CTA，可將產品類別與來源頁帶入詢問頁；尚未送出表單。
 - 公開網站的 URL、canonical、H1、sitemap、TA 入口與案例頁已完成既定的靜態／DOM 驗證。
@@ -92,7 +93,7 @@ CTA 被點擊
 - `generate_lead` 在完整事件報表中的精確數量、漏斗轉換率與角色分布。
 - Search Console 後續 28 天的 TA 入口、產品頁與非品牌搜尋詞趨勢；目前基準已讀回，但資料量仍不足以做穩定結論。
 - 事件是否已在 GA4 介面建立為轉換事件／Key event。
-- 行動裝置的實際速度、可讀性與 CTA 點擊率；目前只有程式與公開 DOM 層級檢查。
+- 行動裝置的實際速度與 CTA 點擊率；390px 公開瀏覽器驗收已確認首屏可讀、CTA 可點擊，尚未取得真實使用者速度與點擊率資料。
 
 ## 六、後續執行順序
 
