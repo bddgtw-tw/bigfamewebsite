@@ -112,6 +112,9 @@ function initInquiryContext() {
     display_hardware: { inquiry_type: 'quote', product_category: 'display_hardware' },
     system_fixtures: { inquiry_type: 'quote', product_category: 'system_fixtures' },
     pos_displays: { inquiry_type: 'quote', product_category: 'pos_displays' },
+    pos_display: { inquiry_type: 'quote', product_category: 'pos_displays' },
+    modular_fixture: { inquiry_type: 'quote', product_category: 'system_fixtures' },
+    signage: { inquiry_type: 'quote', product_category: 'display_hardware' },
     custom_metal_components: { inquiry_type: 'custom_dev', product_category: 'custom_metal_components' }
   };
   const roleMap = {
