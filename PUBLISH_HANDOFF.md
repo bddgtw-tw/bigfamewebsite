@@ -85,7 +85,7 @@
 - `f1d6544` 發布後，公開 `/en/display-hooks`、`/en/case-eyewear-2016`、`/tw/optical-hooks`、`/jp/case-urban-storage` 均回應 200，並已讀回三個 TA 導流連結與正確 canonical；公開部署有短暫延遲，需以延遲後讀回結果為準。
 - 英文 `case-page-cosmetic-organizer` 與 `technical-resources` clean URL 亦已讀回 200、正確 canonical、description 與 Open Graph description。
 - 新增 `CASE_EVIDENCE_READBACK_3C_2026-08-04.md`：讀回 Second Hand Apple Store 原始長敘述，確認三語 `case-modular-3c-store` 已使用文件支持的客戶問題、展示物、材料方向、模組化、運輸／組裝與台北首店背景；數量、交期、交付地與合約範圍仍保留為未公開欄位。
-- 三語首頁 `og:url` 已由 `/tw/index`、`/en/index`、`/jp/index` 統一修正為各自的 clean URL，並在本地核對與 canonical 完全一致；需待公開部署後讀回。
+- 三語首頁 `og:url` 已由 `/tw/index`、`/en/index`、`/jp/index` 統一修正為各自的 clean URL；延遲後公開讀回確認三頁均與 canonical 完全一致。
 
 ## 發布後仍需持續確認
 
