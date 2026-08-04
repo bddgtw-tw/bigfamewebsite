@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initInquiryTracking();
   initInquiryContext();
   initTaServiceSchema();
+  initVerifiedProductSchema();
   initContactForm();
   initHeroParticles();
   initScrollIndicator();
@@ -116,6 +117,58 @@ function initTaServiceSchema() {
   const script = document.createElement('script');
   script.type = 'application/ld+json';
   script.dataset.bfServiceSchema = '1';
+  script.textContent = JSON.stringify(schema);
+  document.head.appendChild(script);
+}
+
+// Add only the verified product/category identity to product pages. Do not
+// invent SKU, price, offer, MOQ or lead-time values from representative data.
+function initVerifiedProductSchema() {
+  const segments = window.location.pathname.split('/').filter(Boolean);
+  const locale = ['tw', 'en', 'jp'].includes(segments[0]) ? segments[0] : '';
+  const slug = segments[1] || '';
+  const categories = {
+    'display-hooks': 'Display hooks and retail display hardware',
+    'optical-hooks': 'Eyewear display hooks',
+    'anti-theft-hooks': 'Anti-theft display hooks',
+    'slatwall-pegboard-accessories': 'Slatwall and pegboard accessories',
+    'price-tag-holders': 'Price tag holders and signage accessories',
+    'pos-displays': 'POS and countertop retail displays',
+    'modular-fixtures': 'Modular retail display fixtures',
+    'custom-metal-parts': 'Custom metal retail hardware'
+  };
+  if (!locale || !categories[slug]) return;
+  const existingProduct = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
+    .some((script) => {
+      try {
+        const data = JSON.parse(script.textContent);
+        return data && (data['@type'] === 'Product' || (Array.isArray(data['@type']) && data['@type'].includes('Product')));
+      } catch (error) {
+        return false;
+      }
+    });
+  if (existingProduct || document.querySelector('script[data-bf-product-schema]')) return;
+  const heading = document.querySelector('main h1, h1');
+  const description = document.querySelector('meta[name="description"]');
+  const canonical = document.querySelector('link[rel="canonical"]');
+  if (!heading || !description || !canonical) return;
+  const name = heading.textContent.replace(/\s+/g, ' ').trim();
+  const image = document.querySelector('main img[src]');
+  if (!name || !description.content) return;
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    '@id': `${canonical.href}#product`,
+    url: canonical.href,
+    name,
+    description: description.content,
+    category: categories[slug],
+    brand: { '@type': 'Brand', name: 'Big Fame' }
+  };
+  if (image && image.src) schema.image = [image.src];
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.dataset.bfProductSchema = '1';
   script.textContent = JSON.stringify(schema);
   document.head.appendChild(script);
 }
