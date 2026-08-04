@@ -10,7 +10,7 @@
 - 正式分支：`main`
 - 開發分支：`draft`
 - Git remote：`https://github.com/bddgtw-tw/bigfamewebsite.git`
-- `main` 與 `draft` 目前同步至同一發布提交：`329b012`
+- 網站內容目前發布提交：`575bf0c`；後續若只修改本交接文件，不改變網站內容版本。
 - 網站內容包含三語首頁、TA 入口、產品頁、案例頁、服務頁與詢問頁。
 
 ### 公開 `bigfame.co`
