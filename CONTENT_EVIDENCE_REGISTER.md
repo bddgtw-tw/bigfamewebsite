@@ -38,7 +38,7 @@
 | Candidate ID | 候選主題 | 已讀到的素材 | 可支持的暫定敘事 | 目前缺口 | 狀態 |
 |---|---|---|---|---|---|
 | BF-CASE-C01 | Eyewear Display Hook on Slatwall for Optical Brand | 4 張非重複候選照片；資料夾名稱含 slatwall 與 optical brand | 眼鏡展示掛勾、壁面系統、商品取用情境 | 日期、客戶授權、Big Fame 實際承擔範圍、規格與成果 | 待核准 |
-| BF-CASE-C02 | PAGE 壓克力化妝品收納盒 | 產品照片、尺寸圖、影片、Offer Form、SKU-like `BF-TP-CH0001-03` | 壓克力美妝收納與桌上型展示產品 | 需確認資料是否為正式產品主資料、可公開圖片與產品規格 | 待核准 |
+| BF-CASE-C02 | PAGE 壓克力化妝品收納盒 | 2020-03-30 ver.01 Offer Form、產品照片、尺寸圖、影片、3D 設計檔、SKU-like `BF-TP-CH0001-03` | 可核對 W250 × D120 × H240 mm、透明壓克力邊緣拋光、實木、1 SET/CTN、樣品約 15–25 天、量產約 25–35 天的桌上型化妝品展示方向 | 正式產品主資料、MOQ、版本／授權與最終商務條件仍需確認 | 已公開為證據控制的三語產品入口；未核准欄位明確標示 |
 | BF-CASE-C03 | Japanese Wine Bar Interior | 12 張候選現場照片、長敘述文件 | 商業空間酒品展示與照明整合情境 | 日期、專案角色、客戶／場地授權、交付內容 | 待核准 |
 | BF-CASE-C04 | Bespoke Hotel Room Furniture | 21 張候選照片、長敘述文件 | 客製旅宿家具與房間空間整合情境 | 日期、專案角色、產品規格、授權與可公開成果 | 待核准 |
 | BF-CASE-C05 | 2017 EUROSHOP Retail Fixture | 26 張候選展覽照片 | 展示設備於國際展覽情境的展示與品牌溝通 | Big Fame 參展／展示角色、照片權限、可公開文字 | 待核准 |
