@@ -384,6 +384,16 @@ function initContactForm() {
 
   const btn = form.querySelector('button[type="submit"]');
   const btnOriginalText = btn.innerText;
+  let formStarted = false;
+
+  form.addEventListener('focusin', (event) => {
+    if (formStarted || !event.target.matches('input, select, textarea')) return;
+    formStarted = true;
+    trackAnalyticsEvent('form_start', {
+      inquiry_category: String(form.querySelector('[name="source_category"]')?.value || 'unspecified'),
+      inquiry_role: String(form.querySelector('[name="source_role"]')?.value || 'unspecified')
+    });
+  });
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
