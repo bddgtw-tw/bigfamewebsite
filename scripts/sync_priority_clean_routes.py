@@ -9,6 +9,7 @@ content works without relying on a trailing slash.
 
 from pathlib import Path
 import re
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -80,6 +81,24 @@ def normalize(html: str, lang: str) -> str:
     return re.sub(r'href=(["\'])([^"\']+)(["\'])', lambda m: rewrite_href(m, lang), html, flags=re.IGNORECASE)
 
 
+def add_product_context(html: str, lang: str, slug: str) -> str:
+    """Make product context available before JavaScript enhancement runs."""
+    def add_query(match: re.Match[str]) -> str:
+        quote, value, closing = match.groups()
+        try:
+            parts = urlsplit(value)
+            if parts.path != f"/{lang}/contact":
+                return match.group(0)
+            query = dict(parse_qsl(parts.query, keep_blank_values=True))
+            query.setdefault("product", slug)
+            updated = urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query), parts.fragment))
+            return f"href={quote}{updated}{closing}"
+        except ValueError:
+            return match.group(0)
+
+    return re.sub(r'href=(["\'])([^"\']+)(["\'])', add_query, html, flags=re.IGNORECASE)
+
+
 def sync(lang: str, slug: str) -> None:
     flat_path = ROOT / lang / f"{slug}.html"
     clean_path = ROOT / lang / slug / "index.html"
@@ -87,6 +106,8 @@ def sync(lang: str, slug: str) -> None:
         return
 
     content = normalize(flat_path.read_text(encoding="utf-8"), lang)
+    if slug in PRODUCT_SLUGS:
+        content = add_product_context(content, lang, slug)
     flat_path.write_text(content, encoding="utf-8", newline="\n")
     clean_path.write_text(content, encoding="utf-8", newline="\n")
 
