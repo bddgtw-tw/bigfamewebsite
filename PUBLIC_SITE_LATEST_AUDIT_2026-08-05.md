@@ -1,7 +1,7 @@
 # Big Fame Website 最新版本公開稽核
 
 日期：2026-08-05  
-版本：`a3f6636`  
+版本：`a3f6636`
 公開網址：<https://www.bigfame.co>
 
 ## Git／版本同步
