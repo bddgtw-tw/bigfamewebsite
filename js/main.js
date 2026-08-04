@@ -1,5 +1,5 @@
 /* Big Fame IND. CORP. - Global JavaScript Logic */
-const SITE_VERSION = '1.3.10';
+const SITE_VERSION = '1.3.11';
 
 document.addEventListener('DOMContentLoaded', () => {
   initThemeSwitcher();
@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMagneticButtons();
   initOfficeStatus();
   initInquiryTracking();
+  initInquiryContext();
   initContactForm();
   initHeroParticles();
   initScrollIndicator();
@@ -39,7 +40,7 @@ function initInquiryTracking() {
     const href = link.getAttribute('href') || '';
     const linkText = (link.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 100);
 
-    if (/contact\.html(?:[?#]|$)/i.test(href)) {
+    if (/(?:^|\/)contact(?:\.html)?(?:[?#]|$)/i.test(href)) {
       let inquiryCategory = 'unspecified';
       try {
         inquiryCategory = new URL(link.href, window.location.href).searchParams.get('category') || 'unspecified';
@@ -62,6 +63,55 @@ function initInquiryTracking() {
       });
     }
   });
+}
+
+/**
+ * Preserve the visitor's role and inquiry context when a CTA opens the form.
+ * Query values are controlled category labels only; never copy personal data.
+ */
+function initInquiryContext() {
+  const form = document.getElementById('contactForm');
+  if (!form) return;
+
+  const params = new URLSearchParams(window.location.search);
+  const category = params.get('category') || '';
+  const role = params.get('role') || '';
+  let sourcePage = '';
+  try {
+    if (document.referrer && new URL(document.referrer).origin === window.location.origin) {
+      sourcePage = document.referrer;
+    }
+  } catch (error) {
+    // Keep the safe empty fallback for malformed or cross-origin referrers.
+  }
+
+  const contextMap = {
+    integration: { inquiry_type: 'integration', product_category: 'not_sure' },
+    display_hardware: { inquiry_type: 'quote', product_category: 'display_hardware' },
+    system_fixtures: { inquiry_type: 'quote', product_category: 'system_fixtures' },
+    pos_displays: { inquiry_type: 'quote', product_category: 'pos_displays' },
+    custom_metal_components: { inquiry_type: 'custom_dev', product_category: 'custom_metal_components' }
+  };
+  const roleMap = {
+    brand: 'brand_store_development',
+    designer: 'store_design_engineering',
+    buyer: 'buyer_trading_agent',
+    vm: 'store_design_engineering'
+  };
+  const mapped = contextMap[category] || {};
+  const setValue = (id, value) => {
+    const field = document.getElementById(id);
+    if (!field || !value) return;
+    field.value = value;
+    field.defaultValue = value;
+  };
+
+  setValue('inquiry_type', mapped.inquiry_type);
+  setValue('product_category', mapped.product_category);
+  setValue('buyer_role', roleMap[role]);
+  setValue('source_category', category || 'unspecified');
+  setValue('source_role', role || 'unspecified');
+  setValue('source_page', sourcePage);
 }
 
 /**
@@ -131,6 +181,20 @@ function initScrollAnimations() {
   const reveals = document.querySelectorAll('.reveal');
   if (reveals.length === 0) return;
 
+  const revealAboveFold = () => {
+    reveals.forEach(el => {
+      if (el.getBoundingClientRect().top < window.innerHeight * 1.15) {
+        el.classList.add('reveal-active');
+      }
+    });
+  };
+  revealAboveFold();
+
+  if (!('IntersectionObserver' in window)) {
+    reveals.forEach(el => el.classList.add('reveal-active'));
+    return;
+  }
+
   const observerOptions = {
     root: null,
     rootMargin: '0px',
@@ -186,24 +250,25 @@ function initLanguageTracker() {
  * 5. Highlights the active nav link based on current page URL
  */
 function highlightActiveLink() {
-  const currentPath = window.location.pathname;
+  const normalizePath = (path) => {
+    const value = path.replace(/\/index\.html?$/, '/').replace(/\.html?$/, '');
+    return value.length > 1 ? value.replace(/\/$/, '') : '/';
+  };
+  const currentPath = normalizePath(window.location.pathname);
   const navLinks = document.querySelectorAll('.nav-link');
   
   navLinks.forEach(link => {
     const href = link.getAttribute('href');
     if (!href) return;
     
-    // Check if path ends with href or if it's the home page
-    const cleanHref = href.replace('../', '');
-    if (currentPath.includes(cleanHref) && cleanHref !== '') {
+    let linkPath = '';
+    try {
+      linkPath = normalizePath(new URL(href, window.location.href).pathname);
+    } catch (error) {
+      return;
+    }
+    if (linkPath === currentPath) {
       link.classList.add('active');
-    } else if ((currentPath.endsWith('/') || currentPath.endsWith('index.html')) && (cleanHref === 'index.html' || cleanHref === '')) {
-      // Handle home page variations
-      const linkLang = link.closest('.lang-dropdown-item') ? null : link;
-      if (linkLang) {
-        // Only active if it's direct navigation
-        link.classList.add('active');
-      }
     }
   });
 }

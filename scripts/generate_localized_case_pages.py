@@ -1,0 +1,18 @@
+"""Generate the same evidence-controlled anonymous case in English and Japanese."""
+from pathlib import Path
+import html
+import json
+
+ROOT = Path(__file__).resolve().parents[1]
+DATA = {
+    "en": {"lang":"en", "title":"2016 Anonymous Eyewear Retail Display Case", "kicker":"ANONYMOUS PROJECT / EYEWEAR RETAIL", "lede":"An anonymous project record focused on wall display, shelves, tabletop display and product merchandising flow.", "scope":"What can be publicly confirmed", "h2":"Show the setting first, then discuss specifications", "body":"The public record confirms the year 2016, an eyewear retail setting, and display directions covering wall display, shelves, tabletop display and product merchandising flow. Client name, complete quantity, cost, delivery time, performance and unauthorized detailed specifications are not inferred here.", "cta":"Compare your store format and display requirements"},
+    "jp": {"lang":"ja", "title":"2016年 匿名メガネブランド店舗什器事例", "kicker":"ANONYMOUS PROJECT / EYEWEAR RETAIL", "lede":"壁面展示、棚、卓上展示、商品陳列動線を整理した匿名プロジェクト記録です。", "scope":"公開できる範囲", "h2":"まずシーンを見て、次に仕様を確認する", "body":"公開記録で確認できるのは、2016年、メガネ小売のシーン、壁面展示、棚、卓上展示、商品陳列動線です。顧客名、数量、費用、納期、成果、未承認の詳細仕様は推定していません。", "cta":"店舗形態と展示要件を相談する"},
+}
+
+for folder, d in DATA.items():
+    base = f"https://www.bigfame.co/{folder}/case-eyewear-2016"
+    alternates = ''.join(f'<link rel="alternate" hreflang="{h}" href="https://www.bigfame.co/{f}/case-eyewear-2016">' for h, f in (("zh-TW","tw"),("en","en"),("ja","jp")))
+    contact = "contact?category=system_fixtures&role=brand"
+    schema = json.dumps({"@context":"https://schema.org","@type":"Article","headline":d["title"],"description":d["lede"],"image":"https://www.bigfame.co/images/case-2016-eyewear.jpg","url":base}, ensure_ascii=False)
+    content = f'''<!DOCTYPE html><html lang="{d["lang"]}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="{html.escape(d["lede"], quote=True)}"><title>{html.escape(d["title"])} | Big Fame</title><link rel="canonical" href="{base}">{alternates}<link rel="stylesheet" href="../css/style.css"><script type="application/ld+json">{schema}</script></head><body><header class="header"><div class="container header-inner"><a href="./" class="logo">BIG FAME</a><nav class="nav-menu"><a href="./" class="nav-link">Home</a><a href="products" class="nav-link">Products</a><a href="applications" class="nav-link active">Applications</a><a href="{contact}" class="nav-link nav-cta">Contact</a></nav></div></header><main><section class="hero"><div class="container hero-content reveal"><p class="hero-kicker">{html.escape(d["kicker"])}</p><h1>{html.escape(d["title"])}</h1><p class="hero-description">{html.escape(d["lede"])}</p></div></section><section class="section section-light"><div class="container grid-2"><div class="reveal"><img class="hero-image-main" src="../images/case-2016-eyewear.jpg" alt="{html.escape(d["title"], quote=True)}"></div><div class="location-card reveal"><span class="section-subtitle">{html.escape(d["scope"])}</span><h2>{html.escape(d["h2"])}</h2><p>{html.escape(d["body"])}</p></div></div></section><section class="section section-dark"><div class="container"><div class="cta-block reveal"><a class="btn btn-primary" href="{contact}">{html.escape(d["cta"])}</a></div></div></section></main><footer class="footer"><div class="container footer-bottom"><p>© 1988-2026 Big Fame IND. CORP.</p><a href="applications">Applications</a></div></footer><script src="../js/main.js"></script></body></html>'''
+    (ROOT / folder / "case-eyewear-2016.html").write_text(content, encoding="utf-8")

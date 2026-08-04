@@ -15,39 +15,40 @@
   <meta name="robots" content="index,follow">
   <title>Big Fame IND. CORP. | Select Language</title>
   <link rel="canonical" href="https://www.bigfame.co/">
-  <link rel="alternate" hreflang="ja" href="https://www.bigfame.co/jp/index.html">
-  <link rel="alternate" hreflang="en" href="https://www.bigfame.co/en/index.html">
-  <link rel="alternate" hreflang="zh-TW" href="https://www.bigfame.co/tw/index.html">
+  <link rel="alternate" hreflang="ja" href="https://www.bigfame.co/jp/index">
+  <link rel="alternate" hreflang="en" href="https://www.bigfame.co/en/index">
+  <link rel="alternate" hreflang="zh-TW" href="https://www.bigfame.co/tw/index">
   <link rel="alternate" hreflang="x-default" href="https://www.bigfame.co/">
   <script>
     (function() {
       // 1. Check saved preference in localStorage
       var savedLang = localStorage.getItem('bf_lang');
       if (savedLang === 'jp' || savedLang === 'en' || savedLang === 'tw') {
-        window.location.replace('./' + savedLang + '/index.html');
+        window.location.replace('./' + savedLang + '/');
         return;
       }
       
       // 2. Detect browser language settings
       var browserLang = (navigator.language || navigator.userLanguage || 'ja').toLowerCase();
       if (browserLang.indexOf('zh') > -1) {
-        window.location.replace('./tw/index.html');
+        window.location.replace('./tw/');
       } else if (browserLang.indexOf('ja') > -1) {
-        window.location.replace('./jp/index.html');
+        window.location.replace('./jp/');
       } else if (browserLang.indexOf('en') > -1) {
-        window.location.replace('./en/index.html');
+        window.location.replace('./en/');
       } else {
         // Default fallback to Japanese (Primary client target)
-        window.location.replace('./jp/index.html');
+        window.location.replace('./jp/');
       }
     })();
   </script>
 </head>
 <body style="background: #ffffff; display: flex; align-items: center; justify-content: center; height: 100vh; font-family: sans-serif; margin: 0; color: #888888;">
   <div style="text-align: center;">
+    <h1 style="font-size: 1.3rem; font-weight: 500; color: #333333;">Big Fame Retail Display Manufacturing &amp; Sourcing</h1>
     <p style="font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase;">Redirecting to Big Fame...</p>
     <noscript>
-      <p><a href="./jp/index.html">日本語</a> · <a href="./en/index.html">English</a> · <a href="./tw/index.html">繁體中文</a></p>
+      <p><a href="./jp/">日本語</a> · <a href="./en/">English</a> · <a href="./tw/">繁體中文</a></p>
     </noscript>
   </div>
 </body>

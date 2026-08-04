@@ -9,3 +9,5 @@ node_modules/
 # Tailwind build output (regenerate with `npm run build:css`)
 css/tailwind.css
 
+scripts/__pycache__/
+*.pyc
