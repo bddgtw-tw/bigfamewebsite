@@ -55,6 +55,8 @@
 
 已重新讀回 `40_Projects_案例` 原始文件，確認 Urban Warehouse Self Storage 是目前最接近完整 B2B 證據的候選：來源可支持客戶問題、50+ 元件、約 3.4 m³、材料、K/D 運輸方向與已開放／可複製結果；正式合約角色、數量、交期、交付地與授權仍未核准。完整讀回見 `CASE_EVIDENCE_READBACK_2026-08-04.md`。
 
+2026-08-05 公開讀回 HMA／Milani 髮品展示旋轉架與端架三語 clean URL：三頁均 HTTP 200、單一 H1、FAQ 與正確 canonical。頁面定位為匿名工程／樣品紀錄；來源支持髮品盒尺寸需求、端架／雙面旋轉架、槽板、鋼線掛勾、壓克力招牌、代表性尺寸與來源標示容量，但不公開客戶／品牌、正式訂單數量、價格、目的地或現行商務承諾。完整紀錄見 `CASE_EVIDENCE_PUBLIC_READBACK_HMA_MILANI_2026-08-05.md`。
+
 三語首頁、關於 Big Fame、產品總覽與服務頁共 12 個非聯絡核心頁已新增可見 FAQ 與 FAQPage JSON-LD；本地驗收 `NON_CONTACT_GAPS=0`，公開讀回也確認 12／12 回應 200、單一 H1、至少一個 H2、FAQPage 與單一 canonical。聯絡頁仍以表單流程為主，未套用一般內容頁 FAQ 條件。
 
 三語關於、應用案例、產品總覽、服務、防盜展示掛勾、客製金屬零件與 POS 展示架頁面已補齊 BreadcrumbList；本地 30／30 檔案與公開 clean URL 21／21 讀回均通過。部署曾短暫回傳舊版，約 35 秒後再次讀回已確認新結構化資料生效；完整紀錄見 `STRUCTURED_DATA_AUDIT_2026-08-04.md`。
