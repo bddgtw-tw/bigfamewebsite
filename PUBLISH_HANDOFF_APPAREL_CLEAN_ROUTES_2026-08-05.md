@@ -27,8 +27,14 @@
 - JSON-LD 可解析錯誤：0。
 - 既有 `overview.html` 與 `contact-us.html` 沒有 H1，屬已知 legacy 例外，未在本次範圍處理。
 
+## 公開驗收結果
+
+- GitHub `main` 已推送，commit：`2af56b6`。
+- 六個 clean URL 均 HTTP 200。
+- 六個頁面均有 1 個 H1、FAQPage、canonical；三個服飾照片紀錄頁的 `case-2016-apparel.jpg` 可正常讀取。
+- 本次只做公開網址讀取與 DOM 靜態驗收，未送出表單。
+
 ## 尚未證明
 
-- 本文件建立的是發布交接紀錄；尚未代表 GitHub push、Cloudflare Pages deploy 或公開網址 runtime 已完成。
-- 發布後仍需逐一驗證六個 clean URL HTTP 200、H1、FAQ、canonical、hreflang、圖片與 CTA。
 - 服飾照片公開授權、專案角色與正式案例說法仍需逐案確認。
+- 尚未有足夠 GA4／Search Console 成效資料證明這六個頁面已帶來有效詢問或非品牌搜尋流量。
