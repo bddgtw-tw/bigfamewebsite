@@ -1,5 +1,5 @@
 /* Big Fame IND. CORP. - Global JavaScript Logic */
-var SITE_VERSION = '1.3.12';
+var SITE_VERSION = '1.3.13';
 
 document.addEventListener('DOMContentLoaded', () => {
   initAnalytics();
@@ -30,7 +30,7 @@ function getMeasurementContext() {
   let pageType = 'content';
   if (slug === 'home') pageType = 'home';
   else if (slug === 'contact') pageType = 'contact';
-  else if (['procurement', 'design-support', 'display-hooks'].includes(slug)) pageType = 'ta_entry';
+  else if (['procurement', 'design-support', 'display-hooks', 'apparel-store-fixtures'].includes(slug)) pageType = 'ta_entry';
   else if (slug.startsWith('case-')) pageType = 'case';
   else if (['products', 'applications', 'services', 'about'].includes(slug)) pageType = 'hub';
   else if (['optical-hooks', 'anti-theft-hooks', 'slatwall-pegboard-accessories', 'price-tag-holders', 'pos-displays', 'modular-fixtures', 'custom-metal-parts', 'cosmetic-organizers'].includes(slug)) pageType = 'product';
