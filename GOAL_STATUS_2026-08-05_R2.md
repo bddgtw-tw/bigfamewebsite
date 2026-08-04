@@ -18,12 +18,18 @@
 
 ## 最新版本一致性
 
-- 本地 HEAD：`c4afd9090b95906fc7f75976bd52d278779d55e8`
-- Git `origin/main`：同一 SHA
+- 本地 HEAD：`8779502a0f79d1c93e3a4042742eff820968041e`
+- Git `origin/main`、`origin/draft`、`origin/release/draft`：同一 SHA
 - 公開 `main.js`：`SITE_VERSION=1.3.24`
 - 工作區：clean
 - 公開 sitemap URL：96／96 HTTP 200
 - 主要舊網址：`/overview`、`/contact-us`、三語舊路徑與 `/portfolio` 等已讀回 301
+
+## 本輪新增
+
+- 眼鏡品牌門市案例三語 flat／clean 共六頁新增 `CASE BRIEF`，明確分開客戶問題來源、店型、Big Fame 可核對範圍、交付內容、未公開商務欄位與公開邊界。
+- 本地案例契約稽核仍為 72 頁、0 失敗；公開六頁均已讀回 HTTP 200、單一 H1、FAQPage、canonical 與 `data-bf-case-brief="1"`。
+- 發布分支原先落後於 `main`，已同步至同一 SHA；這次同步後公開網站才讀回眼鏡案例的新內容。
 
 ## 目前最值得投入的三件事
 
