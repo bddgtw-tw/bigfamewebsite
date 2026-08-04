@@ -66,3 +66,13 @@
 - Search Console 重新讀回：目前 16 頁已索引、51 頁未索引；實際期間 2026-07-16～2026-08-02 為 4 點擊、383 曝光、26 查詢。非品牌查詢已有曝光，但尚未形成點擊。
 - GA4 重新讀回：28 天 `bf_contact_cta_click` 7 次、`form_start` 2 次、`generate_lead` 2 次；這些是事件證據，不是已驗證的有效商機。
 - 目前目標判定不升級：網站結構、TA 入口、產品／案例內容與量測管線已有可驗證成果；SEO 找到、TA 歸因、案例商務證據與有效 lead 仍在觀察或待補件。
+
+## 本輪 P0／P1 現況稽核補充
+
+- Hero 可讀性：首頁 CSS 已使用高對比遮罩；桌機顯示背景影片，手機與 `prefers-reduced-motion` 會停用影片，保留靜態 fallback。
+- Hero 資產：目前首頁使用的 web 影片約 0.39 MB；未再使用約 21.95 MB 的舊版 `hero_bg.mp4` 作為首頁來源。
+- 英文 metadata：英文首頁、產品、服務、TA 入口與優先產品頁均已讀到 title、description、Open Graph、canonical 與 hreflang；產品頁的英文搜尋詞仍需依 Search Console 實際查詢持續調整。
+- 詢價上下文：`source_category`、`source_role`、`source_product`、`source_page` 與 `requested_files` 已由單一 `main.js` 初始化並送入事件；公開 URL 讀回已證明預填邏輯，尚不等於有效商機。
+- 版本文件：公開稽核文件已校正為目前發布 SHA `9995318`；`main` 與 `release/draft` 已再次核對為同一 SHA。
+
+本輪判斷：P0 的可直接修正項目前已具備可驗證實作；下一個真正能提升成果的工作，不是再改 Hero，而是取得 Search Console 的非品牌點擊、逐筆對帳 GA4 lead，並補一個有完整交付證據與公開邊界的案例。
