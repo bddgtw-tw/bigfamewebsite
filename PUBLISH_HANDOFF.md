@@ -86,6 +86,7 @@
 - 英文 `case-page-cosmetic-organizer` 與 `technical-resources` clean URL 亦已讀回 200、正確 canonical、description 與 Open Graph description。
 - 新增 `CASE_EVIDENCE_READBACK_3C_2026-08-04.md`：讀回 Second Hand Apple Store 原始長敘述，確認三語 `case-modular-3c-store` 已使用文件支持的客戶問題、展示物、材料方向、模組化、運輸／組裝與台北首店背景；數量、交期、交付地與合約範圍仍保留為未公開欄位。
 - 三語首頁 `og:url` 已由 `/tw/index`、`/en/index`、`/jp/index` 統一修正為各自的 clean URL；延遲後公開讀回確認三頁均與 canonical 完全一致。
+- 新增 `scripts/add_missing_open_graph.py`，以既有 title、description 與 canonical 為唯一來源，為 119 個原本缺少 Open Graph 的三語頁面補齊分享 metadata；未新增產品規格、客戶名稱或成果主張。發布後需抽驗案例、產品、TA 入口與聯絡頁。
 
 ## 發布後仍需持續確認
 
