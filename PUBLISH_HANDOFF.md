@@ -125,3 +125,5 @@
 - `6f67c56` 公開延遲讀回：`/tw/technical-resources?v=6f67c56-r2` 回應 200，CTA 已帶 `requested_files=technical_pack`；`/tw/contact?...&requested_files=technical_pack&v=6f67c56-r3` 回應 200，公開 HTML 已包含 `requested_files` 五個選項與 `technical_pack`。本次未提交表單，尚未宣稱實際 `generate_lead` 轉換已產生。
 - 本輪新增 `CASE_EVIDENCE_READBACK_STYLISH_HOTEL_2026-08-04.md`：從 `Stylish Hotel Room Furniture\長敘述.docx` 讀回小型基隆旅館客房、食飲放置空間、折疊／巢狀桌評估與旋轉盤轉出／收回機能。此為未上線的匿名案例候選；客戶授權、Big Fame 正式角色、尺寸、數量、交期、交付地與照片公開性仍待確認，未把它當成已完成交付案例。
 - 新增 `GOAL_COMPLETION_AUDIT_2026-08-04.md`，逐項區分七項官網目標的「已證明／部分完成／尚未完成」，並明確記錄案例授權、最新公開讀回、手機 runtime、真實 `generate_lead` 與非品牌搜尋數據仍是未完成的驗收條件。
+- 最新公開 P0 讀回：公開 `sitemap.xml` 回應 200，共 81 個 clean URL；逐一請求後 81／81 回應 200，且 canonical 與 sitemap URL 一致。三語 `procurement`、`design-support`、`display-hooks`、`contact` 均為單一 H1；`/overview`、`/contact-us`、`/tw/contact-us` 分別正確回應 301 至現行 clean URL。
+- 最新公開表單讀回：`/tw/contact?category=display_hardware&role=buyer&requested_files=technical_pack` 回應 200，已包含 `requested_files`、`estimated_quantity`、`target_date`、`market`、`drawings` 與採購角色選項；此為 HTML 欄位驗收，未提交表單，未宣稱產生實際 lead。
