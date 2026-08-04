@@ -130,3 +130,5 @@
 - 本輪新增 `PRODUCT_EVIDENCE_READBACK_ISLE_2026-08-04.md`：從 Big Fame 標頭的 2020-02-24 ISLE 估價圖面讀回木／石材底盤、鐵線掛件、戒指台、展示組合、孔位、螺牙、材料方向與部分數量標註。此目前是規格／設計證據候選，不宣稱已打樣、量產、交付或取得 ISLE 名稱與圖片公開授權。
 - `feb88e2` 新增三語匿名 `jewelry-display-accessories` 設計／規格入口與 sitemap clean routes；第一次公開讀回短暫 404，延遲後第二次讀回三語均 200、單一 H1、FAQPage、證據邊界與正確 canonical。繁中頁 CTA 已帶 `role=designer&category=custom_metal_components&requested_files=dimension_drawing`，公開 sitemap 已包含 3 個新 URL。頁面明確標示示意圖不是本案正式照片，未宣稱 ISLE 已交付。
 - `138f881` 將三語 `custom-metal-parts` 與 `design-support` 的 flat／clean 頁面共 12 頁連到 `jewelry-display-accessories`；公開延遲讀回 `/tw/custom-metal-parts`、`/tw/design-support`、`/en/custom-metal-parts`、`/jp/design-support` 均回應 200、canonical 正確且 HTML 已包含新入口連結。
+
+2026-08-04 交付線索盤點：從 `40_Projects_案例` 實際讀回晁雍／鐵網製成的波浪架與金久盛／角鋼架歷史報價，以及 OMO 生活用品展的產品報價與 Invoice。晁雍文件顯示 `晁雍 → 碧豐` 的報價關係，金久盛文件是舊規格／計算表，OMO 是生活用品採購而非展示設備案例；三者均未升格為 Big Fame 公開案例。完整來源、可支持內容與邊界見 `CASE_EVIDENCE_READBACK_DELIVERY_SCAN_2026-08-04.md`。
