@@ -10,7 +10,7 @@
 - 正式分支：`main`
 - 開發分支：`draft`
 - Git remote：`https://github.com/bddgtw-tw/bigfamewebsite.git`
-- `main` 與 `draft` 目前同步至同一發布提交：`d0e6f36`
+- `main` 與 `draft` 目前同步至同一發布提交：`61d641c`
 - 網站內容包含三語首頁、TA 入口、產品頁、案例頁、服務頁與詢問頁。
 
 ### 公開 `bigfame.co`
@@ -23,13 +23,15 @@
 - 舊 `/thank-you-page`、`/our-works` 等網址可導向新頁面
 - 公開版 `main.js` 已驗證包含 `bf_page_context`、`bf_contact_cta_click`、`form_start` 與 `generate_lead`
 
-完整 sitemap 驗收（2026-08-04）：75 個公開網址全部回應 200；75／75 具備單一 canonical、至少三個 hreflang 與單一 H1。
+完整 sitemap 驗收（2026-08-04）：78 個公開網址全部回應 200；78／78 具備單一 canonical、至少三個 hreflang 與單一 H1。
 
 最新新增的 PAGE 桌上型化妝品收納展示器「產品開發資料紀錄」已在三語公開網址驗證；頁面保留 2020-03-30 ver.01 文件的尺寸、材質、包裝與交期證據，並明確標示未核准的客戶、MOQ、交付與成果欄位。
 
 最新新增的「展示設備規格與 CAD 資料索取」三語入口已公開驗證；頁面提供代表性尺寸圖與 CAD／PDF／DWG／DXF／STEP 索取流程，但不公開未核准的通用 CAD 或產品承重資料。
 
 三語技術入口的 CAD 打樣 FAQ 已以 UTF-8 公開內容驗證：繁中、英文、日文頁面皆回應 200，且各自包含對應語言的 CAD 打樣問題與條件邊界。
+
+三語「服飾店展示設備」店型搜尋入口已公開驗證：三個頁面皆回應 200，具備單一 H1、FAQ 與展示設備需求情境；此頁是 TA／搜尋入口，不是已核准的具名客戶案例，產品、數量、交期與交付地仍需逐案確認。
 
 ### 最新部署驗證
 
