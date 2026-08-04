@@ -33,6 +33,7 @@ KNOWN_ROUTES = TA_SLUGS | PRODUCT_SLUGS | {
     "procurement",
     "services",
     "technical-resources",
+    "case-page-cosmetic-organizer",
 }
 
 
@@ -102,8 +103,10 @@ def add_product_context(html: str, lang: str, slug: str) -> str:
 def sync(lang: str, slug: str) -> None:
     flat_path = ROOT / lang / f"{slug}.html"
     clean_path = ROOT / lang / slug / "index.html"
-    if not flat_path.exists() or not clean_path.exists():
+    if not flat_path.exists():
         return
+
+    clean_path.parent.mkdir(exist_ok=True)
 
     content = normalize(flat_path.read_text(encoding="utf-8"), lang)
     if slug in PRODUCT_SLUGS:
