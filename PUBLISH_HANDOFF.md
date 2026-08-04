@@ -146,3 +146,5 @@
 `4a9869b` 延遲公開讀回：三語 `case-headphone-display-set`、`tw/applications` 均回傳 200，頁面可讀到新案例內容；`sitemap.xml` 回傳 200，共 90 個 `<loc>`，三語新案例各有 1 筆。三語 contact 頁也已公開讀回 `requested_files` fallback。
 
 `6a002f6` P0 修正與 runtime 讀回：發現案例 CTA 傳入 `requested_files=dimension_drawing` 後，公開表單未穩定選取，已在三語 contact 頁加入 inline fallback。公開讀回確認 `buyer_role=buyer_trading_agent`、`inquiry_type=quote`、`product_category=system_fixtures`、`requested_files=dimension_drawing`、`source_category=system_fixtures`、`source_role=buyer`；未提交表單。390 × 844 手機驗收確認案例頁寬度 375、scrollWidth 375、H1=1、首屏 CTA 可見；viewport 已恢復預設。
+
+2026-08-04 URL 抽樣驗收：本地三語內容共掃描 0 個內部 `.html` href；公開 `/overview` 與 `/contact-us` 回傳 301，舊三語 `.html` 路徑抽樣回傳 308 至 clean URL（Cloudflare 先做結尾斜線正規化），目的頁為 `/tw/about`、`/en/products`、`/jp/services` 等 clean URL。
