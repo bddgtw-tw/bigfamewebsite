@@ -14,7 +14,7 @@
 |---|---|---|---|
 | 1. 統一正式網站架構 | clean URL、canonical、絕對 hreflang、sitemap、舊網址 redirects 已在本地驗證；`main` 與 `draft` 已同步；最新三語案例、Applications 與 sitemap 已公開回傳 200 | 部分完成 | 仍需持續以公開抽樣與 Search Console 驗證完整 URL 集合；Search Console 是否已重新處理不能由本地檔案證明 |
 | 2. 三類 TA 搜尋入口 | `procurement`、`design-support`、`display-hooks` 三語頁面；搜尋意圖矩陣與 FAQ 已建立 | 已證明頁面存在 | Google／AI 是否已索引與帶來非品牌曝光仍未證明 |
-| 3. 可搜尋產品頁 | 8 類產品 × 3 語，共 24 頁；產品頁契約與可見內容驗收均為 24／24 通過 | 部分完成 | 契約通過不等於所有 SKU、材質牌號、MOQ、交期與承重均已正式核准 |
+| 3. 可搜尋產品頁 | 8 類產品 × 3 語，共 24 頁；產品頁契約與可見內容驗收均為 24／24 通過；新增 48 個 flat／clean 頁的 `SPECIFICATION GATE`，將採購欄位與證據確認方式明確呈現 | 部分完成 | 契約與規格閘門不等於所有 SKU、材質牌號、MOQ、交期與承重均已正式核准 |
 | 4. 可驗證 B2B 案例 | 30 頁案例契約通過；新增匿名汽車零件展示架與三耳機展示組工程紀錄，來源具備需求、圖面／BOM、Big Fame 工程脈絡、組裝／包裝文件與公開邊界 | 部分完成 | 客戶公開授權、正式數量、交期、交付地、現場照片授權與正式合約範圍仍未公開；尚不能稱為具名完整交付案例 |
 | 5. TA 詢價轉換 | 三語表單已有角色、階段、資料需求、數量、目標時間、交貨地、圖面連結；CTA 會保留 category／role／source_page／requested_files；公開 runtime 已驗證預填；桌機與 390 × 844 手機 Hero／CTA 均已驗證 | 部分完成 | 尚未取得真實 `generate_lead` 轉換讀回，因未授權提交測試表單 |
 | 6. Google／AI 可理解 | H1／H2／FAQ、FAQPage、Breadcrumb、Organization、Service 與內部連結已存在；搜尋意圖矩陣已建立 | 部分完成 | 仍需擴充「一個問題一個頁面」的內容群集，並以公開索引與 AI 引用結果驗證，不可只看 JSON-LD 存在 |
