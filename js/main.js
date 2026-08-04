@@ -1,5 +1,5 @@
 /* Big Fame IND. CORP. - Global JavaScript Logic */
-var SITE_VERSION = '1.3.20';
+var SITE_VERSION = '1.3.21';
 
 document.addEventListener('DOMContentLoaded', () => {
   initAnalytics();
@@ -144,6 +144,12 @@ function initVerifiedProductSchema() {
       { name: 'Documented wire diameters', value: '5.0 mm, 6.0 mm, 8.0 mm, 10.0 mm' },
       { name: 'DBTHK001-SLW documented lengths', value: '50 mm, 100 mm, 150 mm, 200 mm' },
       { name: 'Documented crossbar sizes', value: '10 × 20 mm, 14 × 24 mm, 20 × 40 mm, 15 × 30 mm' }
+    ],
+    'optical-hooks': [
+      { name: 'EYEHK 2025 pegboard drawing dimensions', value: '160 mm, 175 mm, 150.93 mm, 128 mm and 25.4 mm (drawing labels)' },
+      { name: 'EYEHK 2018 drawing material notes', value: 't2.0 iron plate and 4.0 mm iron wire (drawing notes)' },
+      { name: 'EYEHK 2018 drawing finish note', value: 'Black powder coating (drawing note)' },
+      { name: 'EYEHK 2018 design notes', value: 'End chamfer and approximately 2° upward angle (drawing notes)' }
     ],
     'slatwall-pegboard-accessories': [
       { name: 'GLOOVING documented series image dimension', value: '800 × 450 mm' },
