@@ -53,6 +53,7 @@
 
 | BF-PROD-P02 | GLOOVING Slatwall / Pegboard Accessories | `50_產品資料庫\\40_Big_Fame_產品資料\\10_商空陳列與展示架\\GLOOVING 溝槽板` 中的系列圖、800 x 450、DIM 10cm／15cm／alu 圖片 | 可核對 800×450 系列圖、10 cm／15 cm 變體、aluminium 標示變體與槽板展示方向 | 正式材質牌號、厚度、承重、SKU、MOQ、交期與授權 | 已公開為三語產品頁；未核准欄位依 SKU／圖面／樣品確認 |
 | BF-PROD-P03 | Display Hooks collection | `50_產品資料庫\\40_Big_Fame_產品資料\\10_商空陳列與展示架\\掛鉤類` 中的 PEG／SLW／REC／OVAL／GW／HGW 系列影像、DIM 圖與報價／規格文件 | 可核對多種安裝系統標示；代表性 DBTHK001-SLW 尺寸圖可核對 50／100／150／200 mm；BK／CH／WH 影像檔名變體 | 不將代表性尺寸外推至所有 SKU；正式材質、線徑、孔距、承重、MOQ、交期與客製條件仍依 SKU／圖面／樣品確認 | 已公開為三語展示掛勾集合頁；未核准欄位保留確認門檻 |
+| BF-PROD-P04 | BF-TP-PH0001 Price Tag Holders / Signage Accessories | `50_產品資料庫\\40_Big_Fame_產品資料\\10_商空陳列與展示架\\[舊樣品] 桌上型價格牌 - 有壓克力製 - 也有金屬製` 中 BF-TP-PH0001-01 至 -06 實物影像 | 可核對 BF-TP-PH0001 系列影像，以及壓克力／金屬產品方向；可作為桌上型價格牌與標示配件的形態證據 | 正式卡片尺寸、板厚、底座尺寸、材質牌號、MOQ、交期與客製條件仍依 SKU／圖面／樣品確認 | 已公開為三語產品頁；未核准欄位保留確認門檻 |
 
 ### C02 的特殊注意
 
