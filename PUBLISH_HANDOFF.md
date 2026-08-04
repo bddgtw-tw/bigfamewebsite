@@ -128,3 +128,4 @@
 - 最新公開 P0 讀回：公開 `sitemap.xml` 回應 200，共 81 個 clean URL；逐一請求後 81／81 回應 200，且 canonical 與 sitemap URL 一致。三語 `procurement`、`design-support`、`display-hooks`、`contact` 均為單一 H1；`/overview`、`/contact-us`、`/tw/contact-us` 分別正確回應 301 至現行 clean URL。
 - 最新公開表單讀回：`/tw/contact?category=display_hardware&role=buyer&requested_files=technical_pack` 回應 200，已包含 `requested_files`、`estimated_quantity`、`target_date`、`market`、`drawings` 與採購角色選項；此為 HTML 欄位驗收，未提交表單，未宣稱產生實際 lead。
 - 本輪新增 `PRODUCT_EVIDENCE_READBACK_ISLE_2026-08-04.md`：從 Big Fame 標頭的 2020-02-24 ISLE 估價圖面讀回木／石材底盤、鐵線掛件、戒指台、展示組合、孔位、螺牙、材料方向與部分數量標註。此目前是規格／設計證據候選，不宣稱已打樣、量產、交付或取得 ISLE 名稱與圖片公開授權。
+- `feb88e2` 新增三語匿名 `jewelry-display-accessories` 設計／規格入口與 sitemap clean routes；第一次公開讀回短暫 404，延遲後第二次讀回三語均 200、單一 H1、FAQPage、證據邊界與正確 canonical。繁中頁 CTA 已帶 `role=designer&category=custom_metal_components&requested_files=dimension_drawing`，公開 sitemap 已包含 3 個新 URL。頁面明確標示示意圖不是本案正式照片，未宣稱 ISLE 已交付。
