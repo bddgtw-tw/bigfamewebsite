@@ -91,6 +91,7 @@
 - `c5ecbcd` 修正三語 `applications` 頁摘要數字：頁面實際有 7 個案例卡片，Hero 與 `SELECTED CASES` 已由 `04` 統一為 `07`。延遲部署後公開 `/tw/applications`、`/en/applications`、`/jp/applications` 均回應 200；公開 DOM 讀回三頁各 7 張案例卡、2 個 `07` 摘要數字、0 個舊 `04` 數字，且各頁維持單一 H1。
 - 展示掛勾產品原始文件讀回記錄於 `PRODUCT_EVIDENCE_READBACK_DISPLAY_HOOKS_2026-08-04.md`：`Product Hook.docx` 支持 wire hook、50／75／100／150／200 mm 長度、Φ5／Φ6／Φ8／Φ10 線徑、crossbar 長條尺寸與 pegboard／slatwall／wire shelving 方向。三語 flat 與 clean route 共 6 個頁面已加入來源區塊；頁面明確保留 SKU、材質牌號、表面處理、MOQ 與交期的確認邊界。
 - `a4bb888` 發布延遲後，公開 `/tw/display-hooks`、`/en/display-hooks`、`/jp/display-hooks` 均讀回 200、單一 H1、`Product Hook.docx` 來源標記與 50／75／100／150／200 mm 證據；三頁均未讀到未核准的 500 pcs 通用承諾。公開瀏覽器亦確認繁中頁的來源卡片、3 個 TA 導流連結與證據文字可見。
+- EYEHK 三語 `optical-hooks` flat／clean route 共 6 頁已加入 PDF 圖面證據：2025 洞洞板版本的尺寸與雷射切割／焊接備註、2018 鎖螺絲／溝槽板版本的 t2.0 鐵板、4.0 mm 鐵線、黑色粉體烤漆、倒角與約 2° 上仰。`PRODUCT_EVIDENCE_READBACK_EYEHK_2026-08-04.md` 記錄了圖面可支持與不可宣稱的邊界；新增兩個圖面問題至可見 FAQ 與 FAQPage JSON-LD，未把 1000 支估價備註當成訂單數量或 MOQ。
 
 ## 發布後仍需持續確認
 
