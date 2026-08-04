@@ -114,3 +114,4 @@
 
 - 本輪新增 `scripts/normalize_hreflang_absolute.py`，將 `tw/`、`en/`、`jp/` 15 個語系主頁的 45 個相對 `hreflang` 連結統一為 `https://www.bigfame.co` 絕對 clean URL；本地讀回 `RELATIVE_HREFLANG_COUNT=0`。這只證明 URL 標記已統一，不代表 Search Console 已重新處理或排名已改善。
 - `97b1404` 發布後，延遲讀回公開 `/tw/about`、`/en/products`、`/jp/about` 與 `/jp/products` 均回應 200，四個 hreflang 標記均為絕對 `https://www.bigfame.co/...` clean URL；`/overview` 與 `/tw/contact-us` 仍回應 301 至現行網址。第一次讀回日文 products 曾受部署延遲影響，第二次以 cache-buster 讀回後已更新。
+- IVY／25×40 系統三語 flat／clean route 共 6 頁已加入兩份原始來源文件名稱、可核對的 25×40／600 mm／M6／元件證據與明確證據邊界；`CASE_EVIDENCE_READBACK_IVY_2026-08-04.md` 已記錄來源與不可宣稱項目。此頁定位為系統開發／樣品圖面紀錄，不宣稱客戶安裝或最終交付。
