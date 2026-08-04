@@ -51,6 +51,8 @@
 | BF-CASE-C12 | Second Hand Apple Store | `Second Hand Apple Store\長敘述 250字體.docx` | 匿名二手 3C 門市；可核對展示 MacBook Air、iPhone、iPad、iMac、DSLR、PlayStation，及易運輸、易組裝、跨店複製需求；材料含 composite board、plywood、metal、glass、lighting；包含壁面管件、玻璃展示櫃、落地展示櫃與可替換上蓋 | 數量、正式交付地、最終店數、價格、客戶授權與成果數據 | 已公開為匿名 3C 門市模組化展示系統案例；未公開欄位不推論 |
 | BF-PROD-P01 | Eyewear Display Hook | `50_產品資料庫\20_產品文件\展示架\[眼鏡掛勾]\20_工程與規格\...Eyewear Display Hook.pdf`、`50_產品資料庫\40_Big_Fame_產品資料\10_商空陳列與展示架\[眼鏡掛勾]\01_Photos_產品照片與媒體\2019.01.16 Eyewear Display Hook - 01.png` | 圖面可核對 25 mm pitch、Ø6 mm 孔位；照片／圖面可見黑、白、鍍鉻外觀與眼鏡展示掛勾形態 | 正式材質牌號、線徑、SKU 對應、特定 MOQ、交期與公開圖面授權 | 已公開為三語產品頁；未核准欄位改為按 SKU／圖面／樣品確認 |
 
+| BF-PROD-P02 | GLOOVING Slatwall / Pegboard Accessories | `50_產品資料庫\\40_Big_Fame_產品資料\\10_商空陳列與展示架\\GLOOVING 溝槽板` 中的系列圖、800 x 450、DIM 10cm／15cm／alu 圖片 | 可核對 800×450 系列圖、10 cm／15 cm 變體、aluminium 標示變體與槽板展示方向 | 正式材質牌號、厚度、承重、SKU、MOQ、交期與授權 | 已公開為三語產品頁；未核准欄位依 SKU／圖面／樣品確認 |
+
 ### C02 的特殊注意
 
 PAGE 資料夾同時含有產品影像、尺寸圖、影片、簡報與報價相關檔案，這比單純照片更接近「產品證據包」。但目前列出的主要檔案位於 `手動刪除_重複檔案\\來源_PAGE`，必須先確認其是否只是整理副本、是否仍為正式來源，以及哪些檔案可移到公開產品素材層。
