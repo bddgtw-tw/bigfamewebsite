@@ -10,7 +10,7 @@
 - 正式分支：`main`
 - 開發分支：`draft`
 - Git remote：`https://github.com/bddgtw-tw/bigfamewebsite.git`
-- `main` 與 `draft` 目前同步至同一發布提交：`75c5436`
+- `main` 與 `draft` 目前同步至同一發布提交：`cdd1c31`
 - 網站內容包含三語首頁、TA 入口、產品頁、案例頁、服務頁與詢問頁。
 
 ### 公開 `bigfame.co`
@@ -23,7 +23,9 @@
 - 舊 `/thank-you-page`、`/our-works` 等網址可導向新頁面
 - 公開版 `main.js` 已驗證包含 `bf_page_context`、`bf_contact_cta_click`、`form_start` 與 `generate_lead`
 
-完整 sitemap 驗收（2026-08-04）：69 個公開網址全部回應 200；69／69 具備單一 canonical、至少三個 hreflang 與單一 H1。
+完整 sitemap 驗收（2026-08-04）：72 個公開網址全部回應 200；72／72 具備單一 canonical、至少三個 hreflang 與單一 H1。
+
+最新新增的 PAGE 桌上型化妝品收納展示器「產品開發資料紀錄」已在三語公開網址驗證；頁面保留 2020-03-30 ver.01 文件的尺寸、材質、包裝與交期證據，並明確標示未核准的客戶、MOQ、交付與成果欄位。
 
 ### 最新部署驗證
 
