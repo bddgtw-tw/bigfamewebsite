@@ -1,5 +1,5 @@
 /* Big Fame IND. CORP. - Global JavaScript Logic */
-var SITE_VERSION = '1.3.17';
+var SITE_VERSION = '1.3.18';
 
 document.addEventListener('DOMContentLoaded', () => {
   initAnalytics();
@@ -138,6 +138,12 @@ function initVerifiedProductSchema() {
     'custom-metal-parts': 'Custom metal retail hardware'
   };
   const verifiedProperties = {
+    'display-hooks': [
+      { name: 'Documented hook lengths', value: '50 mm, 75 mm, 100 mm, 150 mm, 200 mm' },
+      { name: 'Documented wire diameters', value: '5.0 mm, 6.0 mm, 8.0 mm, 10.0 mm' },
+      { name: 'DBTHK001-SLW documented lengths', value: '50 mm, 100 mm, 150 mm, 200 mm' },
+      { name: 'Documented crossbar sizes', value: '10 × 20 mm, 14 × 24 mm, 20 × 40 mm, 15 × 30 mm' }
+    ],
     'modular-fixtures': [
       { name: 'YC-1524L documented dimensions', value: '24 × 30 × 56 in or 48 × 30 × 56 in' },
       { name: 'YC-1524L caster', value: '3 in rubber casters' },
