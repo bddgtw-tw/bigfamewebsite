@@ -94,6 +94,8 @@
 - Search Console Performance（2026-07-16 至 2026-08-02）：4 點擊、383 曝光、CTR 1%、平均排名 9.7；非品牌查詢已有曝光但尚未產生點擊。
 - 採購案例 `case-retail-fixture-procurement-integration` 三語 canonical clean URL 已公開讀回：HTTP 200、H1=1、FAQ、CTA、`data-bf-source-record="1"` 與 TA MUJI Valencia 來源紀錄均存在；正式客戶、數量、價格、現行交期與最終交付仍未宣稱。
 - Urban Warehouse 三語 clean URL 已公開讀回：HTTP 200、H1=1、JSON-LD=3、`data-bf-urban-deliverables="1"`、`data-bf-source-record="1"`、FAQ 與兩個相關目標連結均存在；技術資料頁與聯絡頁均回傳 HTTP 200。
+- 本輪優先 clean route 對齊已完成：三語 10 個 TA／產品路由與 14 個案例路由，flat／clean 內容已以已核對版本同步；本地 167 個 HTML 檢查為內部 `.html` 連結 0、root `.html` 連結 0、malformed href 0。
+- 公開 runtime 讀回上述三語 42 個優先 clean URL：全部 HTTP 200、H1=1、FAQPage 存在，且未讀到 malformed href；產品品質稽核 24 頁 0 失敗、案例契約稽核 36 頁 0 失敗。
 
 ### 目前仍不能升格為完成的項目
 
