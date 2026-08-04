@@ -55,6 +55,7 @@
 | BF-PROD-P03 | Display Hooks collection | `50_產品資料庫\\40_Big_Fame_產品資料\\10_商空陳列與展示架\\掛鉤類` 中的 PEG／SLW／REC／OVAL／GW／HGW 系列影像、DIM 圖與報價／規格文件 | 可核對多種安裝系統標示；代表性 DBTHK001-SLW 尺寸圖可核對 50／100／150／200 mm；BK／CH／WH 影像檔名變體 | 不將代表性尺寸外推至所有 SKU；正式材質、線徑、孔距、承重、MOQ、交期與客製條件仍依 SKU／圖面／樣品確認 | 已公開為三語展示掛勾集合頁；未核准欄位保留確認門檻 |
 | BF-PROD-P04 | BF-TP-PH0001 Price Tag Holders / Signage Accessories | `50_產品資料庫\\40_Big_Fame_產品資料\\10_商空陳列與展示架\\[舊樣品] 桌上型價格牌 - 有壓克力製 - 也有金屬製` 中 BF-TP-PH0001-01 至 -06 實物影像 | 可核對 BF-TP-PH0001 系列影像，以及壓克力／金屬產品方向；可作為桌上型價格牌與標示配件的形態證據 | 正式卡片尺寸、板厚、底座尺寸、材質牌號、MOQ、交期與客製條件仍依 SKU／圖面／樣品確認 | 已公開為三語產品頁；未核准欄位保留確認門檻 |
 | BF-PROD-P05 | Sunny Display Modular Fixtures | `50_產品資料庫\\40_Big_Fame_產品資料\\10_商空陳列與展示架\\[Sunny Display] 展示架系列\\02_Docs_報價與規格文件` 中 YC-1524L.txt、ARC67-A.txt 與對應產品影像 | YC-1524L：24 × 30 × 56 in 或 48 × 30 × 56 in、3 in 橡膠腳輪、粉體塗裝；ARC67-A：24.5 × 24.5 × 59 in、4 片白色壓克力板、2 in 腳輪、粉體塗裝 | 以上為代表性型式，不外推至其他型號；承重、包裝、MOQ、交期、正式材質牌號與客製條件依型號／圖面／專案確認 | 已公開為三語模組化展示架產品頁；未核准欄位保留確認門檻 |
+| BF-PROD-P06 | POS Displays / Countertop Retail Fixtures | `50_產品資料庫\\40_Big_Fame_產品資料\\10_商空陳列與展示架\\Big Fame display products.pdf` 第 3 頁 counter、第 6 頁 desktop、第 10 頁 modular display system | 可視讀到 counter、desktop 與 modular display system 分類，以及櫃台、桌面與模組展示方向 | 目錄影像不作為單一型號的尺寸、材質、承重、MOQ、交期或正式產品規格；需依型號圖面／報價／樣品確認 | 已公開為三語 POS 產品頁；未核准欄位保留確認門檻 |
 
 ### C02 的特殊注意
 
