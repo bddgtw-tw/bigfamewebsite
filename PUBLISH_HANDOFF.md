@@ -10,7 +10,7 @@
 - 正式分支：`main`
 - 開發分支：`draft`
 - Git remote：`https://github.com/bddgtw-tw/bigfamewebsite.git`
-- `main` 與 `draft` 目前同步至同一發布提交：`aa0da57`
+- `main` 與 `draft` 目前同步至同一發布提交：`154d1f7`
 - 網站內容包含三語首頁、TA 入口、產品頁、案例頁、服務頁與詢問頁。
 
 ### 公開 `bigfame.co`
@@ -45,6 +45,8 @@
 
 三語 `apparel-store-fixtures` 公開 HTML 已驗證新增 `case-apparel-2016` 內部連結；服飾店型、照片證據、相關產品與詢價流程現在形成可追蹤的內容群集。
 
+三語首頁、關於 Big Fame、產品總覽與服務頁共 12 個非聯絡核心頁已新增可見 FAQ 與 FAQPage JSON-LD；本地驗收 `NON_CONTACT_GAPS=0`，公開讀回也確認 12／12 回應 200、單一 H1、至少一個 H2、FAQPage 與單一 canonical。聯絡頁仍以表單流程為主，未套用一般內容頁 FAQ 條件。
+
 `MEASUREMENT_BASELINE.md` 已同步至公開版本 `1.3.13`，新增 `apparel-store-fixtures` 的 TA 量測分類，並記錄 390px 公開瀏覽器驗收已確認首屏可讀與 CTA 可點擊；真實使用者速度與點擊率仍待 GA4／Search Console 資料累積。
 
 8 類產品的三語頁面契約驗收已記錄於 `PRODUCT_PAGE_CONTRACT_AUDIT_2026-08-04.md`：24／24 頁未出現 `MISSING_CONTRACT`；該驗收只證明欄位與確認邊界存在，不把未核准規格視為已完成。
@@ -63,7 +65,7 @@
 
 ## 發布後仍需持續確認
 
-1. 持續檢查公開版 sitemap、canonical、hreflang 與 Git `main` 是否一致。
+1. 持續檢查公開版 sitemap、canonical、hreflang 與 Git `main` 是否一致；部署後需容許 CDN 延遲並以第二次讀回為準。
 2. 持續補足證據登錄表中尚未核准公開的數量、交期、客戶名稱與成果主張。
 3. 以 GA4 與 Search Console 28 天資料判斷 TA 入口、產品頁與詢問轉換。
 
