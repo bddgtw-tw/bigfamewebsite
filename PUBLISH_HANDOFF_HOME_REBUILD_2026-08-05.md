@@ -31,8 +31,13 @@
 
 最新發布 commit：`6353e42`。
 
+## 行動版與表單 runtime 驗收
+
+- 以公開 `/tw/` 於 `390 × 844` viewport 驗收：Hero 標題可見、首屏兩個 CTA 均可見，按鈕高度 53px，頁面寬度沒有水平溢出。
+- 行動版選單按鈕可見，尺寸 44 × 44px。
+- 由公開聯絡頁讀回：`inquiry_type=quote`、`product_category=display_hardware`、`buyer_role=buyer_trading_agent`、`requested_files=dimension_drawing`、`source_page=/tw/display-hooks`、`source_product=display-hooks`，未送出表單。
+
 ## 尚未證明
 
-- 本次完成 DOM／公開 HTML 驗收；尚未以真正 390px 行動 viewport 完成整頁視覺驗收。
 - 尚未有足夠 GA4／Search Console 資料證明首頁重建已帶來有效詢問或非品牌流量。
 - 影片仍需持續觀察 LCP、行動裝置流量與實際瀏覽器效能。
