@@ -40,6 +40,7 @@
 | BF-CASE-C01 | Eyewear Display Hook on Slatwall for Optical Brand | 4 張非重複候選照片；資料夾名稱含 slatwall 與 optical brand | 眼鏡展示掛勾、壁面系統、商品取用情境 | 日期、客戶授權、Big Fame 實際承擔範圍、規格與成果 | 待核准 |
 | BF-CASE-C02 | PAGE 壓克力化妝品收納盒 | 2020-03-30 ver.01 Offer Form、產品照片、尺寸圖、影片、3D 設計檔、SKU-like `BF-TP-CH0001-03` | 可核對 W250 × D120 × H240 mm、透明壓克力邊緣拋光、實木、1 SET/CTN、樣品約 15–25 天、量產約 25–35 天的桌上型化妝品展示方向 | 正式產品主資料、MOQ、版本／授權與最終商務條件仍需確認 | 已公開為證據控制的三語產品入口；未核准欄位明確標示 |
 | BF-CASE-C03 | Japanese Wine Bar Interior | `Japanese Wine Bar Interior\其他格式\長敘述.docx`（9 段文字）、12 張候選現場照片 | 匿名台北現代酒吧；可核對大型壁面酒類展示櫃、透明強化玻璃層板、KANEKA OLED 展示照明方向、薄型與低操作溫度等來源描述 | 日期、專案角色、正式合約分工、數量、交期、最終交付地、客戶／場地授權與可公開成果 | 已公開為匿名酒吧展示櫃／照明專案紀錄；未核准欄位明確標示 |
+| BF-CASE-C13 | Urban Warehouse Self Storage | `Urban Warehouse Self Storage\其他格式\來源_UrbanWarehouse\長敘述.docx`、16 張候選現場照片 | 匿名城市儲物空間；可核對城市儲物需求、可複製的迷你儲物單元、超過 50 個元件、約 3.4 m³ 標準單元、鋼板／鋼管／鋼線、客製粉體塗裝、K/D 結構、帶門單元與雙層儲物櫃；來源記錄已開放並可複製到其他城市 | 日期、客戶名稱、正式合約分工、最終數量／店數、交付地、價格、正式承重／測試資料與照片授權 | 已公開為匿名模組化儲物案例；原始敘述的第一人稱範圍與正式 Big Fame 合約角色仍需逐案確認 |
 | BF-CASE-C04 | Bespoke Hotel Room Furniture | 21 張候選照片、長敘述文件 | 客製旅宿家具與房間空間整合情境 | 日期、專案角色、產品規格、授權與可公開成果 | 待核准 |
 | BF-CASE-C05 | 2017 EUROSHOP Retail Fixture | 26 張候選展覽照片 | 展示設備於國際展覽情境的展示與品牌溝通 | Big Fame 參展／展示角色、照片權限、可公開文字 | 待核准 |
 | BF-CASE-C06 | 2016 Apparel Brand Retail | `40_Projects_案例\精選案例照片` 中 3 張成組照片；檔名含 `2016` 與 `clothing brand` | 匿名服飾品牌門市；可辨識中島、壁面與吊掛展示方向 | 客戶名稱、Big Fame 實際承擔範圍、照片對外授權 | 匿名精選，已接入網站；詳細資料待補 |

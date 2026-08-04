@@ -6,7 +6,7 @@ slugs = [
     "procurement", "design-support", "display-hooks", "case-eyewear-2016",
     "optical-hooks", "anti-theft-hooks", "slatwall-pegboard-accessories",
     "price-tag-holders", "pos-displays", "modular-fixtures", "custom-metal-parts",
-    "cosmetic-organizers", "case-ivy-modular-system", "case-boutique-hotel-furniture", "case-modular-3c-store", "case-japanese-wine-bar",
+    "cosmetic-organizers", "case-ivy-modular-system", "case-boutique-hotel-furniture", "case-modular-3c-store", "case-japanese-wine-bar", "case-urban-storage",
 ]
 for language in ("tw", "en", "jp"):
     for slug in slugs:
@@ -17,7 +17,16 @@ for language in ("tw", "en", "jp"):
         text = text.replace('href="../css/', 'href="../../css/')
         text = text.replace('src="../images/', 'src="../../images/')
         text = text.replace('src="../js/', 'src="../../js/')
-        for name in ("products", "applications", "contact", "display-hooks", "case-eyewear-2016"):
+        for name in (
+            "products", "applications", "contact", "about", "services",
+            "procurement", "design-support", "display-hooks",
+            "optical-hooks", "anti-theft-hooks", "slatwall-pegboard-accessories",
+            "price-tag-holders", "pos-displays", "modular-fixtures",
+            "custom-metal-parts", "cosmetic-organizers",
+            "case-eyewear-2016", "case-ivy-modular-system",
+            "case-boutique-hotel-furniture", "case-modular-3c-store",
+            "case-japanese-wine-bar", "case-urban-storage",
+        ):
             text = text.replace(f'href="{name}', f'href="../{name}')
         text = text.replace('href="./"', 'href="../"')
         (target_dir / "index.html").write_text(text, encoding="utf-8")
