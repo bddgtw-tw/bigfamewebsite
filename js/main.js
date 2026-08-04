@@ -1,5 +1,5 @@
 /* Big Fame IND. CORP. - Global JavaScript Logic */
-var SITE_VERSION = '1.3.18';
+var SITE_VERSION = '1.3.19';
 
 document.addEventListener('DOMContentLoaded', () => {
   initAnalytics();
@@ -144,6 +144,11 @@ function initVerifiedProductSchema() {
       { name: 'DBTHK001-SLW documented lengths', value: '50 mm, 100 mm, 150 mm, 200 mm' },
       { name: 'Documented crossbar sizes', value: '10 × 20 mm, 14 × 24 mm, 20 × 40 mm, 15 × 30 mm' }
     ],
+    'slatwall-pegboard-accessories': [
+      { name: 'GLOOVING documented series image dimension', value: '800 × 450 mm' },
+      { name: 'GLOOVING documented dimension variants', value: '10 cm and 15 cm (source image labels)' },
+      { name: 'GLOOVING documented material direction', value: 'Aluminium (source image label)' }
+    ],
     'modular-fixtures': [
       { name: 'YC-1524L documented dimensions', value: '24 × 30 × 56 in or 48 × 30 × 56 in' },
       { name: 'YC-1524L caster', value: '3 in rubber casters' },
@@ -153,8 +158,8 @@ function initVerifiedProductSchema() {
     ]
   };
   if (!locale || !categories[slug]) return;
-  const existingProduct = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
-    .some((script) => {
+  const existingProductScript = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
+    .find((script) => {
       try {
         const data = JSON.parse(script.textContent);
         return data && (data['@type'] === 'Product' || (Array.isArray(data['@type']) && data['@type'].includes('Product')));
@@ -162,7 +167,21 @@ function initVerifiedProductSchema() {
         return false;
       }
     });
-  if (existingProduct || document.querySelector('script[data-bf-product-schema]')) return;
+  if (existingProductScript && verifiedProperties[slug] && !existingProductScript.dataset.bfVerifiedProperties) {
+    try {
+      const data = JSON.parse(existingProductScript.textContent);
+      data.additionalProperty = verifiedProperties[slug].map((property) => ({
+        '@type': 'PropertyValue',
+        name: property.name,
+        value: property.value
+      }));
+      existingProductScript.textContent = JSON.stringify(data);
+      existingProductScript.dataset.bfVerifiedProperties = '1';
+    } catch (error) {
+      // Keep the original static schema when it cannot be safely parsed.
+    }
+  }
+  if (existingProductScript || document.querySelector('script[data-bf-product-schema]')) return;
   const heading = document.querySelector('main h1, h1');
   const description = document.querySelector('meta[name="description"]');
   const canonical = document.querySelector('link[rel="canonical"]');
