@@ -16,7 +16,9 @@ for lang, (heading, body) in FIELDS.items():
     elif lang == "en":
         marker = '<h3>Quantity / lead time</h3>'
     else:
-        marker = '<h3>数量・納期</h3>'
+        marker = '<h3>数量／納期</h3>'
+    if f'<h3>{heading}</h3>' in text:
+        continue
     if text.count(marker) != 1:
         raise SystemExit(f"Expected one quantity marker in {path}")
     block = f'<h3>{heading}</h3><p>{body}</p>'
