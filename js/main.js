@@ -1,5 +1,5 @@
 /* Big Fame IND. CORP. - Global JavaScript Logic */
-var SITE_VERSION = '1.3.13';
+var SITE_VERSION = '1.3.14';
 
 document.addEventListener('DOMContentLoaded', () => {
   initAnalytics();
