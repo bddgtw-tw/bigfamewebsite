@@ -9,6 +9,7 @@
 |---|---|---|---|---|
 | 眼鏡品牌門市／展示掛勾 | `case-eyewear-2016`、`optical-hooks`、`display-hooks` | 展示方向、掛勾／背板系統、需求討論入口；案例頁另接 EYEHK 2025／2018 圖面作為相關產品證據，明確不宣稱為同一案例 SKU | 客戶授權、正式 SKU 對應、數量、交期、交付地 | 已有匿名證據入口與產品圖面橋接；非完整交付案例 |
 | 3C／POS／模組化展示 | `case-modular-3c-store`、`pos-displays`、`modular-fixtures` | 客戶問題、展示櫃與模組方向、材料方向、易運輸／組裝、Big Fame 開發範圍 | 正式合約分工、數量、交期、最終交付條件 | 目前最完整的 POS／模組化證據案例 |
+| 零售店面展示設備採購整合 | `case-retail-fixture-procurement-integration`、`procurement`、`display-hooks` | 匿名 TA MUJI Valencia 採購文件紀錄；多品類展示設備、尺寸／單位、Big Fame 文件整理與採購協調脈絡 | 客戶授權、正式合約角色、正式數量、價格、目的地、現行交期與最終交付結果 | canonical clean URL 已補齊來源紀錄；可作採購入口證據，仍非具名完整交付案例 |
 | 旅宿家具／商業空間 | `case-boutique-hotel-furniture`、`case-japanese-wine-bar`、`case-urban-storage` | 空間問題、家具／展示方向、材料與部分開發範圍、匿名邊界 | 客戶授權、正式角色、數量、交期、交付地與成果 | 已有多個匿名證據頁；不宣稱具名成果 |
 | Urban Warehouse／模組化儲物空間 | `case-urban-storage`、`modular-fixtures`、`custom-metal-parts` | 超過 50 個元件、約 3.4 m³ 標準單元、鋼板／鋼管／鋼線、粉體塗裝方向、K/D 結構、帶門與雙層儲物單元；來源記錄空間啟用與跨城市複製方向 | 客戶授權、Big Fame 正式合約分工、正式數量、交期、交付地、包裝／運費與公開成果數據 | 已完成匿名來源證據頁；可說明系統與使用結果，仍非正式完整交付案例 |
 | 小型旅館客房／可變家具 | 尚未上線；候選 clean URL：`case-hotel-room-transformable-table` | 小客房、食飲放置空間、折疊／巢狀桌評估、旋轉盤轉出／收回機能 | 客戶授權、Big Fame 正式角色、尺寸、數量、交期、交付地、照片可公開性 | 已完成來源讀回；待授權與角色確認 |
