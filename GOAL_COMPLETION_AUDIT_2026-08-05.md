@@ -6,7 +6,7 @@
 
 | 目標 | 目前證據 | 判定 | 尚未證明／尚待完成 |
 |---|---|---|---|
-| 1. 統一正式網站架構 | 162 個 HTML 全站靜態檢查通過：JSON-LD 可解析、H1=1、canonical 存在、內部不再使用 `.html`；公開 sitemap 96 URL 全部可連線；Git `main` 與 `draft` 同步 | 部分完成 | Search Console 全量重新處理與索引狀態仍需觀察 |
+| 1. 統一正式網站架構 | 167 個 HTML 全站靜態檢查通過：JSON-LD 可解析、內容頁 H1=1、canonical 存在、內部不再使用 `.html`；公開 sitemap 96 URL 全部可連線；Git `main`、`draft` 與 `release/draft` 已同步至 `0d1b515` | 部分完成 | Search Console 全量重新處理與索引狀態仍需觀察 |
 | 2. 三類 TA 搜尋入口 | 三語 `procurement`、`design-support`、`display-hooks` 已有問題、產品、案例、流程、FAQ、CTA；九頁 Service schema 已靜態公開驗收 | 頁面已證明 | 非品牌曝光與 TA 實際找到入口尚未證明 |
 | 3. 可搜尋產品頁 | 八類產品三語 24 頁品質驗收通過；48 個 flat／clean 頁有產品身分、圖片、分類、canonical；未具備正式商務資料者使用 specification gate | 部分完成 | 各 SKU 正式 MOQ、交期、承重、材質牌號與客製商務條件仍需核准 |
 | 4. 可驗證 B2B 案例 | 案例頁含需求、使用方向、材料／工程範圍、證據狀態、CTA；IVY、旅宿案例已回連產品／能力頁；六類優先案例來源與公開邊界已盤點 | 部分完成 | 客戶授權、正式合約角色、正式交付數量／交期／交付地仍未普遍取得 |
@@ -19,7 +19,7 @@
 - Service schema：三語九頁，公開驗收 9/9 通過。
 - 案例產品／能力回連：三語六頁，公開驗收 6/6 通過。
 - Technical Resources 代表性尺寸圖下載：三語 3/3 頁通過，圖片資產 HTTP 200。
-- 目前最新提交：`b105ce1`；`main` 與 `release/draft` 已推送並核對為同一 SHA。
+- 目前最新提交：`0d1b515`；`main`、`draft` 與 `release/draft` 已推送並核對為同一 SHA。
 - 舊網址 13 組已於公開端讀回 301；`scripts/generate_redirect_rules.py` 已與 `_redirects` 對齊，避免日後重建規則時遺失 `portfolio`、下載路徑與 `/contact` 導向。
 
 ## 最新量測讀回（2026-08-05）
@@ -55,7 +55,7 @@
 - 匿名零售店面展示設備採購整合案：網站公開頁回答了採購問題、店型／品類、Big Fame 文件整合範圍與交付欄位，但仍明確限制為匿名採購／文件整合紀錄，不宣稱安裝完成、正式數量或現行交期。
 - 本輪結論：產品證據單元已更接近可搜尋、可核對與可詢問；仍不能把它升格為「已完成客戶案例」，除非取得授權或更完整的交付證據。
 - 案例升格優先順序：On Time 汽車零件展示架目前具備需求往返、Big Fame 設計回覆、圖面迭代、缺陷改善、組裝文件與 shipping mark；已另列出正式承擔範圍、獨立交付證據、數量、交期、交付地與公開授權的最小補件清單，避免重複掃描資料庫。
-- 詢價流程整理：三語聯絡頁已移除重複的歷史 inline 預填腳本，公開版由 `main.js?v=1.3.21` 單一邏輯讀取角色、類別、產品、需求文件與同站來源頁；公開帶參數 URL 已讀回正確欄位。這證明上下文初始化，不代表真實表單送出或有效商機。
+- 詢價流程整理：三語聯絡頁已移除重複的歷史 inline 預填腳本，公開版由 `main.js?v=1.3.22` 單一邏輯讀取角色、類別、產品、需求文件與來源頁；來源頁現在可由 CTA URL 帶入，並以同站 referrer 作 fallback。公開帶參數 URL 已讀回正確欄位。這證明上下文初始化，不代表真實表單送出或有效商機。
 - On Time 案例跨資料夾查找：以 `TRANSBEC`、`0001643`、`AUTO CLIP RACK`、`4-Sides Peg Board Rack` 與專案名稱交叉查找 `10_內部營運`、`90_歷史封存` 後，未找到專案資料夾外的獨立訂單／出貨／簽收／驗收文件；目前仍維持匿名工程／交付準備紀錄。
 - 八類產品頁需求稽核：中英日 24 頁均通過頁面欄位與內容契約；目前的未完成項是逐 SKU 正式商務資料核准，不是頁面缺少 MOQ／交期欄位。詳細區分已寫入 `PRODUCT_PAGE_REQUIREMENTS_AUDIT_2026-08-05.md`。
 - 三類 TA 入口搜尋問答稽核：採購、設計支援、展示掛勾入口均已用自然問句回答供應商／報價、CAD 協作、眼鏡掛勾與槽板／洞洞板確認方式；答案均保留正式供貨與商務條件的確認邊界。詳細讀回已寫入 `TA_ENTRY_SEARCH_ANSWER_AUDIT_2026-08-05.md`。
@@ -73,7 +73,7 @@
 - Hero 資產：目前首頁使用的 web 影片約 0.39 MB；未再使用約 21.95 MB 的舊版 `hero_bg.mp4` 作為首頁來源。
 - 英文 metadata：英文首頁、產品、服務、TA 入口與優先產品頁均已讀到 title、description、Open Graph、canonical 與 hreflang；產品頁的英文搜尋詞仍需依 Search Console 實際查詢持續調整。
 - 詢價上下文：`source_category`、`source_role`、`source_product`、`source_page` 與 `requested_files` 已由單一 `main.js` 初始化並送入事件；公開 URL 讀回已證明預填邏輯，尚不等於有效商機。
-- 版本文件：公開稽核文件已校正為目前發布 SHA `b105ce1`；`main` 與 `release/draft` 已再次核對為同一 SHA。
+- 版本文件：公開稽核文件已校正為目前發布 SHA `0d1b515`；`main`、`draft` 與 `release/draft` 已再次核對為同一 SHA。
 
 本輪判斷：P0 的可直接修正項目前已具備可驗證實作；下一個真正能提升成果的工作，不是再改 Hero，而是取得 Search Console 的非品牌點擊、逐筆對帳 GA4 lead，並補一個有完整交付證據與公開邊界的案例。
 
@@ -86,7 +86,7 @@
 
 ## 2026-08-05 目標稽核再讀回
 
-- Git `main`、`draft`、`release/draft` 已同步至 `e295362`。
+- Git `main`、`draft`、`release/draft` 已同步至 `0d1b515`。
 - 本地 167 個 HTML：內部 `.html` 連結 `0`、canonical `.html` `0`、sitemap `<loc>` `96`。
 - 產品頁品質稽核：24 頁、0 失敗；案例頁契約稽核：36 頁、0 失敗。
 - Search Console Sitemap：2026-08-05 送出與讀取均成功，Google 發現頁面 `96`、影片 `0`。
