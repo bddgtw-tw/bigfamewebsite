@@ -6,7 +6,7 @@ slugs = [
     "procurement", "design-support", "display-hooks", "case-eyewear-2016",
     "optical-hooks", "anti-theft-hooks", "slatwall-pegboard-accessories",
     "price-tag-holders", "pos-displays", "modular-fixtures", "custom-metal-parts",
-    "cosmetic-organizers", "case-ivy-modular-system", "case-boutique-hotel-furniture", "case-modular-3c-store",
+    "cosmetic-organizers", "case-ivy-modular-system", "case-boutique-hotel-furniture", "case-modular-3c-store", "case-japanese-wine-bar",
 ]
 for language in ("tw", "en", "jp"):
     for slug in slugs:
