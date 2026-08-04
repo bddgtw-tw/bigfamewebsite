@@ -6,7 +6,7 @@
 
 | 目標 | 目前證據 | 判定 | 尚未證明／尚待完成 |
 |---|---|---|---|
-| 1. 統一正式網站架構 | 167 個 HTML 全站靜態檢查通過：JSON-LD 可解析、內容頁 H1=1、canonical 存在、內部不再使用 `.html`；公開 sitemap 96 URL 全部可連線；Git `main`、`draft` 與 `release/draft` 已同步至 `52f9738` | 部分完成 | Search Console 全量重新處理與索引狀態仍需觀察 |
+| 1. 統一正式網站架構 | 167 個 HTML 全站靜態檢查通過：JSON-LD 可解析、內容頁 H1=1、canonical 存在、內部不再使用 `.html`；公開 sitemap 96 URL 全部可連線；Git `main`、`draft` 與 `release/draft` 已同步至 `db0a18c` | 部分完成 | Search Console 全量重新處理與索引狀態仍需觀察 |
 | 2. 三類 TA 搜尋入口 | 三語 `procurement`、`design-support`、`display-hooks` 已有問題、產品、案例、流程、FAQ、CTA；九頁 Service schema 已靜態公開驗收 | 頁面已證明 | 非品牌曝光與 TA 實際找到入口尚未證明 |
 | 3. 可搜尋產品頁 | 八類產品三語 24 頁品質驗收通過；48 個 flat／clean 頁有產品身分、圖片、分類、canonical；未具備正式商務資料者使用 specification gate | 部分完成 | 各 SKU 正式 MOQ、交期、承重、材質牌號與客製商務條件仍需核准 |
 | 4. 可驗證 B2B 案例 | 案例頁含需求、使用方向、材料／工程範圍、證據狀態、CTA；三耳機展示組補上工程交付包，眼鏡門市案例補上 EYEHK 圖面相關產品證據與年份／SKU 邊界，Urban Warehouse 三語 clean／flat 頁補上模組、材料、K/D 結構、使用結果與來源邊界 | 部分完成 | 客戶授權、正式合約角色、正式交付數量／交期／交付地仍未普遍取得 |
@@ -19,7 +19,7 @@
 - Service schema：三語九頁，公開驗收 9/9 通過。
 - 案例產品／能力回連：三語六頁，公開驗收 6/6 通過。
 - Technical Resources 代表性尺寸圖下載：三語 3/3 頁通過，圖片資產 HTTP 200。
-- 目前最新提交：待本輪 Urban Warehouse 三語頁驗收後更新；`main`、`draft` 與 `release/draft` 需再次推送並核對為同一 SHA。
+- 目前最新提交：`db0a18c`；本輪 Urban Warehouse 三語頁內容已寫入，`main`、`draft` 與 `release/draft` 需完成公開發布後再做 runtime 讀回。
 - 舊網址 13 組已於公開端讀回 301；`scripts/generate_redirect_rules.py` 已與 `_redirects` 對齊，避免日後重建規則時遺失 `portfolio`、下載路徑與 `/contact` 導向。
 
 ## 最新量測讀回（2026-08-05）
@@ -73,7 +73,7 @@
 - Hero 資產：目前首頁使用的 web 影片約 0.39 MB；未再使用約 21.95 MB 的舊版 `hero_bg.mp4` 作為首頁來源。
 - 英文 metadata：英文首頁、產品、服務、TA 入口與優先產品頁均已讀到 title、description、Open Graph、canonical 與 hreflang；產品頁的英文搜尋詞仍需依 Search Console 實際查詢持續調整。
 - 詢價上下文：`source_category`、`source_role`、`source_product`、`source_page` 與 `requested_files` 已由單一 `main.js` 初始化並送入事件；公開 URL 讀回已證明預填邏輯，尚不等於有效商機。
-- 版本文件：本輪 Urban Warehouse 三語頁驗收完成後，將以實際發布 SHA 更新；不得以文件中的舊 SHA 代替公開讀回。
+- 版本文件：目前記錄實際提交 SHA `db0a18c`；公開發布仍須以正式 URL runtime 讀回，不以 Git SHA 單獨代替。
 
 本輪判斷：P0 的可直接修正項目前已具備可驗證實作；Urban Warehouse 已補成可追溯的匿名系統證據頁，但仍不是正式完整交付案例。下一步應取得 Search Console 的非品牌點擊、逐筆對帳 GA4 lead，並持續補具正式交付證據與公開授權的案例。
 
@@ -86,7 +86,7 @@
 
 ## 2026-08-05 目標稽核再讀回
 
-- Git `main`、`draft`、`release/draft` 將於本輪 Urban Warehouse 發布後以實際 SHA 再次核對。
+- Git `main`、`draft`、`release/draft` 預計同步至 `db0a18c`，並於推送後再次核對。
 - 本地 167 個 HTML：內部 `.html` 連結 `0`、canonical `.html` `0`、sitemap `<loc>` `96`。
 - 產品頁品質稽核：24 頁、0 失敗；案例頁契約稽核：36 頁、0 失敗；Urban Warehouse 六個 flat／clean 版本另通過模組交付、來源標記、FAQ、H1、JSON-LD 與內部連結驗收。
 - Search Console Sitemap：2026-08-05 送出與讀取均成功，Google 發現頁面 `96`、影片 `0`。
