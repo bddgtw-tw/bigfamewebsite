@@ -19,7 +19,7 @@
 - Service schema：三語九頁，公開驗收 9/9 通過。
 - 案例產品／能力回連：三語六頁，公開驗收 6/6 通過。
 - Technical Resources 代表性尺寸圖下載：三語 3/3 頁通過，圖片資產 HTTP 200。
-- 目前最新提交：`a3f6636`；`main` 與 `release/draft` 已推送並核對為同一 SHA。
+- 目前最新提交：`b105ce1`；`main` 與 `release/draft` 已推送並核對為同一 SHA。
 - 舊網址 13 組已於公開端讀回 301；`scripts/generate_redirect_rules.py` 已與 `_redirects` 對齊，避免日後重建規則時遺失 `portfolio`、下載路徑與 `/contact` 導向。
 
 ## 最新量測讀回（2026-08-05）
@@ -73,6 +73,13 @@
 - Hero 資產：目前首頁使用的 web 影片約 0.39 MB；未再使用約 21.95 MB 的舊版 `hero_bg.mp4` 作為首頁來源。
 - 英文 metadata：英文首頁、產品、服務、TA 入口與優先產品頁均已讀到 title、description、Open Graph、canonical 與 hreflang；產品頁的英文搜尋詞仍需依 Search Console 實際查詢持續調整。
 - 詢價上下文：`source_category`、`source_role`、`source_product`、`source_page` 與 `requested_files` 已由單一 `main.js` 初始化並送入事件；公開 URL 讀回已證明預填邏輯，尚不等於有效商機。
-- 版本文件：公開稽核文件已校正為目前發布 SHA `9995318`；`main` 與 `release/draft` 已再次核對為同一 SHA。
+- 版本文件：公開稽核文件已校正為目前發布 SHA `b105ce1`；`main` 與 `release/draft` 已再次核對為同一 SHA。
 
 本輪判斷：P0 的可直接修正項目前已具備可驗證實作；下一個真正能提升成果的工作，不是再改 Hero，而是取得 Search Console 的非品牌點擊、逐筆對帳 GA4 lead，並補一個有完整交付證據與公開邊界的案例。
+
+## GA4 參數稽核補充
+
+- `generate_lead` 28 天報表讀回為 2 次、2 位使用者；來源均為 Direct，有效待開發客戶 0、已轉換 0。
+- GA4 目前已註冊 `inquiry_category`、`product_category`、`contact_method`、`site_language`、`inquiry_type` 五個事件維度。
+- 網站程式已送出 `inquiry_role`、`inquiry_product`、`requested_files`、`source_page_path`，但這四個參數尚未在 GA4 管理頁註冊為自訂維度，因此 TA 角色與來源頁仍無法在標準報表中可靠切分。
+- 本輪曾進入 GA4 管理頁建立維度，但儲存視窗無法可靠完成點擊；外部設定維持原狀，未宣稱已完成。
