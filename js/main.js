@@ -1,5 +1,5 @@
 /* Big Fame IND. CORP. - Global JavaScript Logic */
-var SITE_VERSION = '1.3.15';
+var SITE_VERSION = '1.3.17';
 
 document.addEventListener('DOMContentLoaded', () => {
   initAnalytics();
@@ -137,6 +137,15 @@ function initVerifiedProductSchema() {
     'modular-fixtures': 'Modular retail display fixtures',
     'custom-metal-parts': 'Custom metal retail hardware'
   };
+  const verifiedProperties = {
+    'modular-fixtures': [
+      { name: 'YC-1524L documented dimensions', value: '24 × 30 × 56 in or 48 × 30 × 56 in' },
+      { name: 'YC-1524L caster', value: '3 in rubber casters' },
+      { name: 'ARC67-A documented dimensions', value: '24.5 × 24.5 × 59 in' },
+      { name: 'ARC67-A panels', value: '4 white acrylic panels' },
+      { name: 'Documented finish direction', value: 'Powder-coat metal finish' }
+    ]
+  };
   if (!locale || !categories[slug]) return;
   const existingProduct = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
     .some((script) => {
@@ -166,6 +175,13 @@ function initVerifiedProductSchema() {
     brand: { '@type': 'Brand', name: 'Big Fame' }
   };
   if (image && image.src) schema.image = [image.src];
+  if (verifiedProperties[slug]) {
+    schema.additionalProperty = verifiedProperties[slug].map((property) => ({
+      '@type': 'PropertyValue',
+      name: property.name,
+      value: property.value
+    }));
+  }
   const script = document.createElement('script');
   script.type = 'application/ld+json';
   script.dataset.bfProductSchema = '1';
