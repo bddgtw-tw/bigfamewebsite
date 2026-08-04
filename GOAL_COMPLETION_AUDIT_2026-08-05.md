@@ -9,7 +9,7 @@
 | 1. 統一正式網站架構 | 167 個 HTML 全站靜態檢查通過：JSON-LD 可解析、內容頁 H1=1、canonical 存在、內部不再使用 `.html`；公開 sitemap 96 URL 全部可連線；Git `main`、`draft` 與 `release/draft` 已同步至 `52f9738` | 部分完成 | Search Console 全量重新處理與索引狀態仍需觀察 |
 | 2. 三類 TA 搜尋入口 | 三語 `procurement`、`design-support`、`display-hooks` 已有問題、產品、案例、流程、FAQ、CTA；九頁 Service schema 已靜態公開驗收 | 頁面已證明 | 非品牌曝光與 TA 實際找到入口尚未證明 |
 | 3. 可搜尋產品頁 | 八類產品三語 24 頁品質驗收通過；48 個 flat／clean 頁有產品身分、圖片、分類、canonical；未具備正式商務資料者使用 specification gate | 部分完成 | 各 SKU 正式 MOQ、交期、承重、材質牌號與客製商務條件仍需核准 |
-| 4. 可驗證 B2B 案例 | 案例頁含需求、使用方向、材料／工程範圍、證據狀態、CTA；三耳機展示組三語頁新增圖面／零件對應、組裝說明、Packout 與通路版本的可核對工程交付包，並回連 POS 展示架 | 部分完成 | 客戶授權、正式合約角色、正式交付數量／交期／交付地仍未普遍取得 |
+| 4. 可驗證 B2B 案例 | 案例頁含需求、使用方向、材料／工程範圍、證據狀態、CTA；三耳機展示組補上工程交付包，眼鏡門市案例補上 EYEHK 圖面相關產品證據與年份／SKU 邊界 | 部分完成 | 客戶授權、正式合約角色、正式交付數量／交期／交付地仍未普遍取得 |
 | 5. TA 詢價轉換 | 表單包含角色、階段、產品類別、需求文件、數量、目標時間、交貨地與圖面連結；CTA 可保留 category／role／product／source_page；手機首屏與公開預填已驗證 | 部分完成 | 尚未授權送出真實表單，不能宣稱有效 `generate_lead` 已驗證 |
 | 6. Google／AI 理解 | TA 問題矩陣已有對應頁；FAQ、Breadcrumb、Organization、Service、Product schema 與產品／案例／店型內部連結已補齊；代表性尺寸圖可下載 | 結構已建立 | Google 索引、AI 引用、排名與回答採用仍需外部觀察 |
 | 7. 搜尋／轉換量測 | Search Console 與 GA4 基準、事件命名與 28 天觀察週期已建立 | 基準已建立 | 尚未形成完整 28 天非品牌查詢、入口曝光、產品 CTA、form_start 與有效 lead 比較資料 |
