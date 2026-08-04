@@ -16,7 +16,7 @@
 | 2. 三類 TA 搜尋入口 | `procurement`、`design-support`、`display-hooks` 三語頁面；搜尋意圖矩陣與 FAQ 已建立 | 已證明頁面存在 | Google／AI 是否已索引與帶來非品牌曝光仍未證明 |
 | 3. 可搜尋產品頁 | 8 類產品 × 3 語，共 24 頁；產品頁契約與可見內容驗收均為 24／24 通過 | 部分完成 | 契約通過不等於所有 SKU、材質牌號、MOQ、交期與承重均已正式核准 |
 | 4. 可驗證 B2B 案例 | 27 頁案例契約通過；新增匿名汽車零件展示架工程／交付紀錄，來源具備客戶問題、Big Fame 回覆、圖面迭代、缺陷改善、組裝文件與實物／最終設計素材 | 部分完成 | 客戶公開授權、正式數量、交期、交付地、現場照片授權與正式合約範圍仍未公開；尚不能稱為具名完整交付案例 |
-| 5. TA 詢價轉換 | 三語表單已有角色、階段、資料需求、數量、目標時間、交貨地、圖面連結；CTA 會保留 category／role／source_page；桌機 Hero 已驗證 | 部分完成 | 手機獨立 runtime 尚未驗證；尚未取得真實 `generate_lead` 轉換讀回，因未授權提交測試表單 |
+| 5. TA 詢價轉換 | 三語表單已有角色、階段、資料需求、數量、目標時間、交貨地、圖面連結；CTA 會保留 category／role／source_page；桌機與 390 × 844 手機 Hero／CTA runtime 均已驗證 | 部分完成 | 尚未取得真實 `generate_lead` 轉換讀回，因未授權提交測試表單 |
 | 6. Google／AI 可理解 | H1／H2／FAQ、FAQPage、Breadcrumb、Organization、Service 與內部連結已存在；搜尋意圖矩陣已建立 | 部分完成 | 仍需擴充「一個問題一個頁面」的內容群集，並以公開索引與 AI 引用結果驗證，不可只看 JSON-LD 存在 |
 | 7. 搜尋與轉換量測 | Search Console 與 GA4 baseline 已建立；`form_start`、`bf_contact_cta_click`、`generate_lead` 等事件已埋設 | 部分完成 | 尚未形成 28 天非品牌查詢、TA 入口、產品頁到表單與實際 lead 的穩定比較資料 |
 

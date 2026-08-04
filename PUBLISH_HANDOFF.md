@@ -136,3 +136,5 @@
 2026-08-04 新增最強案例候選：從歷史 OEM／ODM 專案 `On Time Auto Parts Rack` 讀回客戶相容性問題、Big Fame 設計回覆、2011 年多版本圖面、缺陷改善報告、組裝說明、最終設計圖、實物組裝照片與 shipping mark 檔案。候選定位為匿名 `Automotive Parts Display Rack／汽車零件展示架工程紀錄`；不公開客戶名稱、Logo、數量、交期、交貨地或未核准照片授權。完整讀回見 `CASE_EVIDENCE_READBACK_ON_TIME_AUTO_PARTS_2026-08-04.md`。
 
 `68b1aa8` 發布後延遲讀回：三語 `/case-automotive-parts-rack` 均回應 200、單一 H1、正確 clean canonical、Article／BreadcrumbList／FAQPage JSON-LD、`requested_files=dimension_drawing` CTA 與證據邊界；公開 `/tw/applications`、`/en/modular-fixtures`、`/jp/display-hooks` 均已讀回新案例連結；公開 sitemap 回應 200 並包含三個新案例 URL。此頁仍是匿名工程／交付紀錄，不宣稱具名客戶成果、正式數量、交期或交貨地。
+
+`5733acc` 發布後延遲讀回：三語新案例頁均已讀回 shipping mark 證據邊界文字；公開案例與詢問 CTA 仍維持匿名與未授權欄位不公開。以 390 × 844 手機 viewport 做公開 runtime 驗收：首頁無橫向溢位，Hero 高度 844px，兩個首屏 CTA 均可見且可點擊；新案例頁無橫向溢位，第一個 CTA 可見。手機 viewport 已於驗收後恢復預設，未保留測試分頁。
