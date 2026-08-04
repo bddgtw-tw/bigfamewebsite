@@ -11,3 +11,6 @@ css/tailwind.css
 
 scripts/__pycache__/
 *.pyc
+
+# Local PDF rendering and inspection output
+tmp/

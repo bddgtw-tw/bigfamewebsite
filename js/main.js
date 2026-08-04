@@ -23,6 +23,25 @@ if (document.readyState !== 'loading') {
   initAnalytics();
 }
 
+function getMeasurementContext() {
+  const segments = window.location.pathname.split('/').filter(Boolean);
+  const locale = ['tw', 'en', 'jp'].includes(segments[0]) ? segments[0] : 'root';
+  const slug = segments[1] || 'home';
+  let pageType = 'content';
+  if (slug === 'home') pageType = 'home';
+  else if (slug === 'contact') pageType = 'contact';
+  else if (['procurement', 'design-support', 'display-hooks'].includes(slug)) pageType = 'ta_entry';
+  else if (slug.startsWith('case-')) pageType = 'case';
+  else if (['products', 'applications', 'services', 'about'].includes(slug)) pageType = 'hub';
+  else if (['optical-hooks', 'anti-theft-hooks', 'slatwall-pegboard-accessories', 'price-tag-holders', 'pos-displays', 'modular-fixtures', 'custom-metal-parts', 'cosmetic-organizers'].includes(slug)) pageType = 'product';
+  return {
+    site_locale: locale,
+    page_type: pageType,
+    content_slug: slug,
+    ta_entry: pageType === 'ta_entry' ? slug : 'none'
+  };
+}
+
 function initAnalytics() {
   if (window.__bfAnalyticsInitialized) return;
   window.__bfAnalyticsInitialized = true;
@@ -37,7 +56,12 @@ function initAnalytics() {
     document.head.appendChild(script);
   }
   window.gtag('js', new Date());
-  window.gtag('config', 'G-PDW4NPHHW8');
+  window.gtag('config', 'G-PDW4NPHHW8', {
+    page_type: getMeasurementContext().page_type,
+    content_slug: getMeasurementContext().content_slug,
+    site_locale: getMeasurementContext().site_locale
+  });
+  trackAnalyticsEvent('bf_page_context');
 }
 
 /**
@@ -50,6 +74,7 @@ function trackAnalyticsEvent(eventName, parameters = {}) {
   window.gtag('event', eventName, {
     site_language: document.documentElement.lang || 'unknown',
     page_path: window.location.pathname,
+    ...getMeasurementContext(),
     ...parameters
   });
 }
@@ -73,7 +98,9 @@ function initInquiryTracking() {
       trackAnalyticsEvent('bf_contact_cta_click', {
         link_text: linkText,
         link_url: link.href,
-        inquiry_category: inquiryCategory
+        inquiry_category: inquiryCategory,
+        inquiry_role: new URL(link.href, window.location.href).searchParams.get('role') || 'unspecified',
+        source_page_path: window.location.pathname
       });
       return;
     }
@@ -416,7 +443,8 @@ function initContactForm() {
     formStarted = true;
     trackAnalyticsEvent('form_start', {
       inquiry_category: String(form.querySelector('[name="source_category"]')?.value || 'unspecified'),
-      inquiry_role: String(form.querySelector('[name="source_role"]')?.value || 'unspecified')
+      inquiry_role: String(form.querySelector('[name="source_role"]')?.value || 'unspecified'),
+      source_page_path: String(form.querySelector('[name="source_page"]')?.value || 'unspecified')
     });
   });
 
@@ -452,7 +480,10 @@ function initContactForm() {
           currency: 'USD',
           value: 0,
           inquiry_type: String(formData.get('inquiry_type') || 'unspecified'),
-          product_category: String(formData.get('product_category') || 'unspecified')
+          product_category: String(formData.get('product_category') || 'unspecified'),
+          inquiry_category: String(formData.get('source_category') || 'unspecified'),
+          inquiry_role: String(formData.get('source_role') || 'unspecified'),
+          source_page_path: String(formData.get('source_page') || 'unspecified')
         });
         showFormStatus(true, getLangSuccessMsg(document.documentElement.lang));
         form.reset();
