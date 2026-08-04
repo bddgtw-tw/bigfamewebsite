@@ -100,6 +100,8 @@
 
 ## 不能宣稱的事項
 
+- `MEASUREMENT_FORM_FUNNEL_UPDATE_2026-08-04.md` 記錄新增的 `bf_form_submit_attempt` 與 `bf_form_submit_error`；本次只完成程式與靜態驗證，未提交公開表單，尚未宣稱新的 `generate_lead` 已在 GA4 實際發生。
+
 - 不把本地或 Git 已完成的變更直接稱為公開網站已完成部署。
 - 不把候選案例當成已取得公開授權的正式客戶案例。
 - 不把未核對的測試數據、客戶名稱、所有權、MOQ、交期或市場地位寫成既定事實。

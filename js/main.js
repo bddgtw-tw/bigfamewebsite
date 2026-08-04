@@ -456,6 +456,13 @@ function initContactForm() {
     btn.innerHTML = `<span class="spinner"></span> Sending...`;
 
     const formData = new FormData(form);
+
+    trackAnalyticsEvent('bf_form_submit_attempt', {
+      inquiry_type: String(formData.get('inquiry_type') || 'unspecified'),
+      product_category: String(formData.get('product_category') || 'unspecified'),
+      inquiry_category: String(formData.get('source_category') || 'unspecified'),
+      inquiry_role: String(formData.get('source_role') || 'unspecified')
+    });
     
     // Fallback Mock for testing
     const accessKey = formData.get('access_key');
@@ -488,9 +495,19 @@ function initContactForm() {
         showFormStatus(true, getLangSuccessMsg(document.documentElement.lang));
         form.reset();
       } else {
+        trackAnalyticsEvent('bf_form_submit_error', {
+          error_type: 'web3forms_rejected',
+          inquiry_type: String(formData.get('inquiry_type') || 'unspecified'),
+          product_category: String(formData.get('product_category') || 'unspecified')
+        });
         showFormStatus(false, data.message || 'Error sending message.');
       }
     } catch (err) {
+      trackAnalyticsEvent('bf_form_submit_error', {
+        error_type: 'network_or_parse_error',
+        inquiry_type: String(formData.get('inquiry_type') || 'unspecified'),
+        product_category: String(formData.get('product_category') || 'unspecified')
+      });
       showFormStatus(false, 'Failed to connect to server. Please try again.');
     } finally {
       btn.disabled = false;
