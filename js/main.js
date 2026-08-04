@@ -96,7 +96,7 @@ function initInquiryContext() {
     brand: 'brand_store_development',
     designer: 'store_design_engineering',
     buyer: 'buyer_trading_agent',
-    vm: 'store_design_engineering'
+    vm: 'visual_merchandising'
   };
   const mapped = contextMap[category] || {};
   const setValue = (id, value) => {
@@ -638,5 +638,27 @@ function initScrollIndicator() {
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: 'smooth' });
     }
+  });
+}
+
+// Keep the form result and mobile scroll cue readable in every supported language.
+function getLangSuccessMsg(lang) {
+  if (lang === 'ja') return 'お問い合わせを受け付けました。内容を確認してご連絡します。';
+  if (lang === 'en') return 'Inquiry submitted successfully! We will get back to you shortly.';
+  return '需求已送出，我們會確認內容後與您聯絡。';
+}
+
+function initScrollIndicator() {
+  const hero = document.querySelector('.hero');
+  if (!hero || hero.querySelector('.scroll-indicator')) return;
+  const indicator = document.createElement('div');
+  indicator.className = 'scroll-indicator';
+  const lang = document.documentElement.lang;
+  const label = lang === 'ja' ? 'スクロール' : (lang === 'en' ? 'Scroll down' : '往下查看');
+  indicator.innerHTML = '<div class="scroll-indicator-mouse"><div class="scroll-indicator-wheel"></div></div><span class="scroll-indicator-text">' + label + '</span>';
+  hero.appendChild(indicator);
+  indicator.addEventListener('click', () => {
+    const nextSection = hero.nextElementSibling;
+    if (nextSection) nextSection.scrollIntoView({ behavior: 'smooth' });
   });
 }
