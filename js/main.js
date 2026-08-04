@@ -125,6 +125,7 @@ function initInquiryContext() {
   const params = new URLSearchParams(window.location.search);
   const category = params.get('category') || '';
   const role = params.get('role') || '';
+  const requestedFiles = params.get('requested_files') || '';
   let sourcePage = '';
   try {
     if (document.referrer && new URL(document.referrer).origin === window.location.origin) {
@@ -163,6 +164,7 @@ function initInquiryContext() {
   setValue('buyer_role', roleMap[role]);
   setValue('source_category', category || 'unspecified');
   setValue('source_role', role || 'unspecified');
+  setValue('requested_files', requestedFiles);
   setValue('source_page', sourcePage);
 }
 
@@ -444,6 +446,7 @@ function initContactForm() {
     trackAnalyticsEvent('form_start', {
       inquiry_category: String(form.querySelector('[name="source_category"]')?.value || 'unspecified'),
       inquiry_role: String(form.querySelector('[name="source_role"]')?.value || 'unspecified'),
+      requested_files: String(form.querySelector('[name="requested_files"]')?.value || 'unspecified'),
       source_page_path: String(form.querySelector('[name="source_page"]')?.value || 'unspecified')
     });
   });
@@ -460,6 +463,7 @@ function initContactForm() {
     trackAnalyticsEvent('bf_form_submit_attempt', {
       inquiry_type: String(formData.get('inquiry_type') || 'unspecified'),
       product_category: String(formData.get('product_category') || 'unspecified'),
+      requested_files: String(formData.get('requested_files') || 'unspecified'),
       inquiry_category: String(formData.get('source_category') || 'unspecified'),
       inquiry_role: String(formData.get('source_role') || 'unspecified')
     });
@@ -488,6 +492,7 @@ function initContactForm() {
           value: 0,
           inquiry_type: String(formData.get('inquiry_type') || 'unspecified'),
           product_category: String(formData.get('product_category') || 'unspecified'),
+          requested_files: String(formData.get('requested_files') || 'unspecified'),
           inquiry_category: String(formData.get('source_category') || 'unspecified'),
           inquiry_role: String(formData.get('source_role') || 'unspecified'),
           source_page_path: String(formData.get('source_page') || 'unspecified')
@@ -498,15 +503,17 @@ function initContactForm() {
         trackAnalyticsEvent('bf_form_submit_error', {
           error_type: 'web3forms_rejected',
           inquiry_type: String(formData.get('inquiry_type') || 'unspecified'),
-          product_category: String(formData.get('product_category') || 'unspecified')
+          product_category: String(formData.get('product_category') || 'unspecified'),
+          requested_files: String(formData.get('requested_files') || 'unspecified')
         });
         showFormStatus(false, data.message || 'Error sending message.');
       }
     } catch (err) {
       trackAnalyticsEvent('bf_form_submit_error', {
-        error_type: 'network_or_parse_error',
-        inquiry_type: String(formData.get('inquiry_type') || 'unspecified'),
-        product_category: String(formData.get('product_category') || 'unspecified')
+          error_type: 'network_or_parse_error',
+          inquiry_type: String(formData.get('inquiry_type') || 'unspecified'),
+          product_category: String(formData.get('product_category') || 'unspecified'),
+          requested_files: String(formData.get('requested_files') || 'unspecified')
       });
       showFormStatus(false, 'Failed to connect to server. Please try again.');
     } finally {
