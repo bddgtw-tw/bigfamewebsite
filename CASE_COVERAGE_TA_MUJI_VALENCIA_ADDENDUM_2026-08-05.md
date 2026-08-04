@@ -22,3 +22,17 @@
 ## 狀態
 
 三語案例已公開驗證並接回 Applications；後續仍需以 Search Console、GA4 與實際詢問驗證它是否真正帶來採購 TA。
+
+## 2026-08-05 公開補強讀回
+
+- 三語頁面新增 `data-bf-source-record="1"` 的採購文件來源區塊。
+- 公開頁明確呈現訂購清單、三組 PI、PC／SET、部分尺寸、品類範圍與 Big Fame 文件識別。
+- 公開頁明確排除客戶、品牌、PI 編號、正式數量、價格、目的地與歷史時程。
+- 三語 clean URL 均 HTTP `200`，H1 數量 `1`，FAQPage、CTA 與來源區塊均存在，未發現連續問號亂碼。
+- Git `main`、`draft`、`release/draft` 已同步至 `d41ee0c`。
+
+## 下一輪量測問題
+
+1. Search Console 是否開始出現 `retail fixture procurement`、`store display equipment supplier`、`展示設備採購` 等非品牌查詢。
+2. 採購入口與本案例頁，哪一頁帶來較高的詢價頁進入率與 `form_start`。
+3. 以 `role=buyer`、`category=system_fixtures`、`source_page` 判斷採購 TA 是否比設計／VM 產生更明確的需求。
