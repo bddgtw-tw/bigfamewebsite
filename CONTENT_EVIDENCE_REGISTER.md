@@ -52,6 +52,7 @@
 | BF-PROD-P01 | Eyewear Display Hook | `50_產品資料庫\20_產品文件\展示架\[眼鏡掛勾]\20_工程與規格\...Eyewear Display Hook.pdf`、`50_產品資料庫\40_Big_Fame_產品資料\10_商空陳列與展示架\[眼鏡掛勾]\01_Photos_產品照片與媒體\2019.01.16 Eyewear Display Hook - 01.png` | 圖面可核對 25 mm pitch、Ø6 mm 孔位；照片／圖面可見黑、白、鍍鉻外觀與眼鏡展示掛勾形態 | 正式材質牌號、線徑、SKU 對應、特定 MOQ、交期與公開圖面授權 | 已公開為三語產品頁；未核准欄位改為按 SKU／圖面／樣品確認 |
 
 | BF-PROD-P02 | GLOOVING Slatwall / Pegboard Accessories | `50_產品資料庫\\40_Big_Fame_產品資料\\10_商空陳列與展示架\\GLOOVING 溝槽板` 中的系列圖、800 x 450、DIM 10cm／15cm／alu 圖片 | 可核對 800×450 系列圖、10 cm／15 cm 變體、aluminium 標示變體與槽板展示方向 | 正式材質牌號、厚度、承重、SKU、MOQ、交期與授權 | 已公開為三語產品頁；未核准欄位依 SKU／圖面／樣品確認 |
+| BF-PROD-P03 | Display Hooks collection | `50_產品資料庫\\40_Big_Fame_產品資料\\10_商空陳列與展示架\\掛鉤類` 中的 PEG／SLW／REC／OVAL／GW／HGW 系列影像、DIM 圖與報價／規格文件 | 可核對多種安裝系統標示；代表性 DBTHK001-SLW 尺寸圖可核對 50／100／150／200 mm；BK／CH／WH 影像檔名變體 | 不將代表性尺寸外推至所有 SKU；正式材質、線徑、孔距、承重、MOQ、交期與客製條件仍依 SKU／圖面／樣品確認 | 已公開為三語展示掛勾集合頁；未核准欄位保留確認門檻 |
 
 ### C02 的特殊注意
 
