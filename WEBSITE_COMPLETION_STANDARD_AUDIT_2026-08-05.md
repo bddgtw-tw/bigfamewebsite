@@ -9,6 +9,7 @@
 - sitemap URL：96 筆；含 `.html`：0 筆。
 - 15 個較早的三語樞紐頁已將 `hreflang="zh-tw"` 統一為 `hreflang="zh-TW"`。
 - `main`、`release/draft` 已同步至同一發布版本。
+- 公開回讀 `/overview`、`/contact-us`、`/our-works`、`/know-how`、`/blog`、`/portfolio`：均回傳 HTTP 301 並導向 clean URL，未直接 404。
 
 ## 產品頁結構
 
