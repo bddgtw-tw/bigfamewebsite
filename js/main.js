@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initOfficeStatus();
   initInquiryTracking();
   initInquiryContext();
+  initTaServiceSchema();
   initContactForm();
   initHeroParticles();
   initScrollIndicator();
@@ -40,6 +41,83 @@ function getMeasurementContext() {
     content_slug: slug,
     ta_entry: pageType === 'ta_entry' ? slug : 'none'
   };
+}
+
+// Add a service entity to the three TA entry pages without changing their
+// legacy one-line HTML heads. The JSON-LD is visible in the rendered DOM.
+function initTaServiceSchema() {
+  if (document.querySelector('script[data-bf-service-schema]')) return;
+  const segments = window.location.pathname.split('/').filter(Boolean);
+  const locale = ['tw', 'en', 'jp'].includes(segments[0]) ? segments[0] : '';
+  const slug = segments[1] || '';
+  const entries = {
+    'tw/procurement': {
+      name: '台灣店面展示設備採購',
+      description: '店面展示設備採購與需求整理入口。',
+      serviceType: 'Retail display hardware procurement'
+    },
+    'tw/design-support': {
+      name: '零售空間展示系統與設計支援',
+      description: '店面設計與展示設備規格協作入口。',
+      serviceType: 'Retail display systems and design support'
+    },
+    'tw/display-hooks': {
+      name: '展示掛勾與陳列五金',
+      description: '支援洞洞板、槽板與零售展示系統的展示掛勾與陳列五金。',
+      serviceType: 'Display hooks and retail display hardware'
+    },
+    'en/procurement': {
+      name: 'Taiwan Retail Display Hardware Procurement',
+      description: 'Procurement entry for retail display hardware and fixture requirements.',
+      serviceType: 'Retail display hardware procurement'
+    },
+    'en/design-support': {
+      name: 'Retail Display Systems and Design Support',
+      description: 'Design collaboration entry for retail display systems and hardware.',
+      serviceType: 'Retail display systems and design support'
+    },
+    'en/display-hooks': {
+      name: 'Display Hooks & Retail Display Hardware',
+      description: 'Display hooks for pegboard, slatwall and retail fixture projects.',
+      serviceType: 'Display hooks and retail display hardware'
+    },
+    'jp/procurement': {
+      name: '台湾の店舗什器・ディスプレイ金具の購買',
+      description: '店舗什器とディスプレイ金具の購買相談入口。',
+      serviceType: '店舗什器・ディスプレイ金具の購買支援'
+    },
+    'jp/design-support': {
+      name: '店舗什器・ディスプレイシステム設計支援',
+      description: '店舗設計とディスプレイシステムの相談入口。',
+      serviceType: '店舗什器・ディスプレイシステム設計支援'
+    },
+    'jp/display-hooks': {
+      name: 'ディスプレイフック・店舗什器金物',
+      description: '有孔ボード、スラットウォール、店舗什器向けのディスプレイフック。',
+      serviceType: 'ディスプレイフック・店舗什器金物'
+    }
+  };
+  const key = `${locale}/${slug}`;
+  const entry = entries[key];
+  if (!entry) return;
+  const existingService = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
+    .some((script) => script.textContent.includes('"@type":"Service"'));
+  if (existingService) return;
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': `${window.location.origin}${window.location.pathname}#service`,
+    url: `${window.location.origin}${window.location.pathname}`,
+    name: entry.name,
+    description: entry.description,
+    serviceType: entry.serviceType,
+    provider: { '@id': `${window.location.origin}/#organization` }
+  };
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.dataset.bfServiceSchema = '1';
+  script.textContent = JSON.stringify(schema);
+  document.head.appendChild(script);
 }
 
 function initAnalytics() {
