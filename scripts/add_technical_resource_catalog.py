@@ -1,0 +1,23 @@
+"""Add a trilingual, evidence-safe request catalog to technical resources."""
+
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+MARKER = '<section class="section section-light" data-bf-faq="1">'
+SECTIONS = {
+    "tw": '''<section class="section section-light" data-bf-resource-catalog="1"><div class="container"><div class="section-heading reveal"><span class="section-subtitle">RESOURCE REQUEST CATALOG</span><h2 class="section-title">你要確認哪一類資料？</h2><p>先選擇資料類型，再附上產品、系統、數量、目標日期與交貨地；我們依 SKU、圖面與版本確認可提供內容。</p></div><div class="grid-2"><article class="location-card reveal"><h3>尺寸圖／規格摘要</h3><p>適合先確認安裝方式、尺寸、材質方向與版本。</p><a href="contact?category=display_hardware&role=buyer&requested_files=dimension_drawing">索取尺寸圖</a></article><article class="location-card reveal"><h3>PDF／CAD／DWG／DXF／STEP</h3><p>適合設計師、建築師與工程團隊提供圖面後進一步確認。</p><a href="contact?category=display_hardware&role=designer&requested_files=cad_files">詢問 CAD 檔案</a></article><article class="location-card reveal"><h3>材質／表面處理</h3><p>依 SKU、圖面、報價與樣品確認材質牌號、顏色與表面。</p><a href="contact?category=display_hardware&role=buyer&requested_files=material_finish">詢問材質資料</a></article><article class="location-card reveal"><h3>打樣可行性</h3><p>附上尺寸、數量、目標日期與照片或圖面，先確認打樣路徑。</p><a href="contact?category=display_hardware&role=designer&requested_files=sampling_review">討論打樣</a></article></div></div></section>''',
+    "en": '''<section class="section section-light" data-bf-resource-catalog="1"><div class="container"><div class="section-heading reveal"><span class="section-subtitle">RESOURCE REQUEST CATALOG</span><h2 class="section-title">Which information do you need?</h2><p>Choose a resource type, then share the product, system, quantity, target date and destination so the available SKU, drawing and revision can be confirmed.</p></div><div class="grid-2"><article class="location-card reveal"><h3>Dimension drawing / specification summary</h3><p>Start by confirming mounting, dimensions, material direction and revision.</p><a href="contact?category=display_hardware&role=buyer&requested_files=dimension_drawing">Request dimension data</a></article><article class="location-card reveal"><h3>PDF / CAD / DWG / DXF / STEP</h3><p>Useful for designers, architects and engineering teams with a drawing-led review.</p><a href="contact?category=display_hardware&role=designer&requested_files=cad_files">Request CAD files</a></article><article class="location-card reveal"><h3>Material / finish information</h3><p>Confirm material grade, colour and finish against the SKU, drawing, quotation and sample.</p><a href="contact?category=display_hardware&role=buyer&requested_files=material_finish">Request material data</a></article><article class="location-card reveal"><h3>Sampling feasibility</h3><p>Share dimensions, quantity, target date and a photo or drawing to review the sampling path.</p><a href="contact?category=display_hardware&role=designer&requested_files=sampling_review">Discuss sampling</a></article></div></div></section>''',
+    "jp": '''<section class="section section-light" data-bf-resource-catalog="1"><div class="container"><div class="section-heading reveal"><span class="section-subtitle">RESOURCE REQUEST CATALOG</span><h2 class="section-title">どの資料を確認しますか？</h2><p>資料の種類を選び、製品、システム、数量、希望時期、納品地を共有してください。SKU、図面、版に応じて確認します。</p></div><div class="grid-2"><article class="location-card reveal"><h3>寸法図／仕様概要</h3><p>取付方法、寸法、材料方向、版を先に確認したい場合。</p><a href="contact?category=display_hardware&role=buyer&requested_files=dimension_drawing">寸法資料を相談</a></article><article class="location-card reveal"><h3>PDF／CAD／DWG／DXF／STEP</h3><p>設計者、建築家、エンジニアが図面を起点に確認する場合。</p><a href="contact?category=display_hardware&role=designer&requested_files=cad_files">CAD資料を相談</a></article><article class="location-card reveal"><h3>材料／仕上げ資料</h3><p>SKU、図面、見積、サンプルで材料グレード、色、仕上げを確認します。</p><a href="contact?category=display_hardware&role=buyer&requested_files=material_finish">材料資料を相談</a></article><article class="location-card reveal"><h3>試作可否</h3><p>寸法、数量、希望時期、写真または図面を共有し、試作の進め方を確認します。</p><a href="contact?category=display_hardware&role=designer&requested_files=sampling_review">試作を相談</a></article></div></div></section>''',
+}
+
+for locale, section in SECTIONS.items():
+    path = ROOT / locale / "technical-resources.html"
+    text = path.read_text(encoding="utf-8")
+    if 'data-bf-resource-catalog="1"' in text:
+        continue
+    if MARKER not in text:
+        raise SystemExit(f"FAQ marker not found: {locale}")
+    path.write_text(text.replace(MARKER, section + MARKER, 1), encoding="utf-8", newline="")
+
+print("Added resource request catalogs to tw/en/jp technical-resources pages.")
