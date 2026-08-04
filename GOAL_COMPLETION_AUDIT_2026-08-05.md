@@ -19,7 +19,8 @@
 - Service schema：三語九頁，公開驗收 9/9 通過。
 - 案例產品／能力回連：三語六頁，公開驗收 6/6 通過。
 - Technical Resources 代表性尺寸圖下載：三語 3/3 頁通過，圖片資產 HTTP 200。
-- 目前最新提交：`715f45c`。
+- 目前最新提交：`98dc955`；`main` 與 `release/draft` 已推送。
+- 舊網址 13 組已於公開端讀回 301；`scripts/generate_redirect_rules.py` 已與 `_redirects` 對齊，避免日後重建規則時遺失 `portfolio`、下載路徑與 `/contact` 導向。
 
 ## 最新量測讀回（2026-08-05）
 
@@ -42,6 +43,7 @@
 
 ## 目前最重要的下一步
 
-1. 取得一個可公開或明確匿名授權的完整案例，補確認 Big Fame 範圍、交付內容與可公開欄位。
-2. 完成至少一個 Search Console／GA4 觀察週期，檢查非品牌 query、TA 入口、產品 CTA 與 `form_start`。
-3. 依正式核准資料逐 SKU 補材質、尺寸、表面、MOQ、交期與 CAD／規格檔，不用推測內容填滿頁面。
+1. 等待本次發布後重新讀回 404 fallback 與 redirect；目前已知不可由網站控制的 404 僅剩 Cloudflare 系統路徑與外部短網址。
+2. 取得一個可公開或明確匿名授權的完整案例，補確認 Big Fame 範圍、交付內容與可公開欄位。
+3. 完成至少一個 Search Console／GA4 觀察週期，檢查非品牌 query、TA 入口、產品 CTA 與 `form_start`。
+4. 依正式核准資料逐 SKU 補材質、尺寸、表面、MOQ、交期與 CAD／規格檔，不用推測內容填滿頁面。
