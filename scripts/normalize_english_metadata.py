@@ -34,6 +34,21 @@ UPDATES = {
     ),
 }
 
+OG_UPDATES = {
+    "en/applications.html": (
+        "Explore anonymous project selections and real spatial applications, from retail fixtures to hospitality furniture, with Taiwan sourcing and export coordination by Big Fame.",
+        "Explore anonymous Big Fame project selections, from retail fixtures to hospitality furniture, with Taiwan sourcing and export coordination.",
+    ),
+    "en/case-page-cosmetic-organizer.html": (
+        "Evidence-controlled PAGE tabletop cosmetic organizer record with dimensions, acrylic, solid wood, packing and documented lead-time notes.",
+        "Evidence-controlled PAGE tabletop cosmetic organizer record with dimensions, acrylic, solid wood, packing and documented lead-time notes.",
+    ),
+    "en/technical-resources.html": (
+        "Technical resources and CAD request entry for retail display equipment. Start with evidence, then confirm files by SKU, drawing and sample.",
+        "Technical resources and CAD request entry for retail display equipment. Start with evidence, then confirm files by SKU, drawing and sample.",
+    ),
+}
+
 for rel, (old, new) in UPDATES.items():
     path = ROOT / rel
     text = path.read_text(encoding="utf-8")
@@ -45,3 +60,17 @@ for rel, (old, new) in UPDATES.items():
         raise SystemExit(f"Metadata value not found in {rel}")
     path.write_text(text, encoding="utf-8")
 print(f"Updated {len(UPDATES)} English metadata descriptions.")
+
+for rel, (old, new) in OG_UPDATES.items():
+    path = ROOT / rel
+    text = path.read_text(encoding="utf-8")
+    og = f'<meta property="og:description" content="{new}">'
+    if '<meta property="og:description"' in text:
+        text = re.sub(r'<meta property="og:description" content="[^"]*">', og, text, count=1)
+    else:
+        marker = re.search(r'<meta name="description" content="[^"]*">', text)
+        if not marker:
+            raise SystemExit(f'Description marker not found in {rel}')
+        text = text[:marker.end()] + og + text[marker.end():]
+    path.write_text(text, encoding="utf-8")
+print(f"Updated {len(OG_UPDATES)} English Open Graph descriptions.")
