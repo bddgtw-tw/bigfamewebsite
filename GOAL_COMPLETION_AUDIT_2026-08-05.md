@@ -97,6 +97,7 @@
 - 本輪優先 clean route 對齊已完成：三語 10 個 TA／產品路由與 14 個案例路由，flat／clean 內容已以已核對版本同步；本地 167 個 HTML 檢查為內部 `.html` 連結 0、root `.html` 連結 0、malformed href 0。
 - 公開 runtime 讀回上述三語 42 個優先 clean URL：全部 HTTP 200、H1=1、FAQPage 存在，且未讀到 malformed href；產品品質稽核 24 頁 0 失敗、案例契約稽核 36 頁 0 失敗。
 - 詢價歸因補強：三語八類產品頁的靜態聯絡 CTA 均已帶入對應 `product` 參數；公開 24 個產品 clean URL 均讀回至少一個含正確 `product=<slug>` 的聯絡 CTA。JavaScript 仍保留來源頁 fallback，但不再只依賴 JavaScript 才能保留產品脈絡。
+- 共用事件版本一致性：162 個載入 `main.js` 的 HTML 已統一至 `main.js?v=1.3.23`，5 個 404／root legacy／工具頁維持未載入共用 JS；首頁、展示掛勾、眼鏡案例與聯絡頁公開讀回均已確認 `1.3.23`。
 
 ### 目前仍不能升格為完成的項目
 
