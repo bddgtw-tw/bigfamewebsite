@@ -1,15 +1,15 @@
 # Big Fame Website 最新版本公開稽核
 
 日期：2026-08-05  
-版本：`f919ada`  
+版本：`a3f6636`  
 公開網址：<https://www.bigfame.co>
 
 ## Git／版本同步
 
-- `main`：`f919ada`
-- `origin/main`：`f919ada`
-- `draft`：`f919ada`
-- `origin/draft`：`f919ada`
+- `main`：`a3f6636`
+- `origin/main`：`a3f6636`
+- `release/draft`：`a3f6636`
+- `origin/release/draft`：`a3f6636`
 - 工作樹：乾淨
 
 ## 本地架構稽核

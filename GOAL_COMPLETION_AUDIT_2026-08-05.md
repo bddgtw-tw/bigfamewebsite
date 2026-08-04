@@ -19,7 +19,7 @@
 - Service schema：三語九頁，公開驗收 9/9 通過。
 - 案例產品／能力回連：三語六頁，公開驗收 6/6 通過。
 - Technical Resources 代表性尺寸圖下載：三語 3/3 頁通過，圖片資產 HTTP 200。
-- 目前最新提交：`98dc955`；`main` 與 `release/draft` 已推送。
+- 目前最新提交：`a3f6636`；`main` 與 `release/draft` 已推送並核對為同一 SHA。
 - 舊網址 13 組已於公開端讀回 301；`scripts/generate_redirect_rules.py` 已與 `_redirects` 對齊，避免日後重建規則時遺失 `portfolio`、下載路徑與 `/contact` 導向。
 
 ## 最新量測讀回（2026-08-05）

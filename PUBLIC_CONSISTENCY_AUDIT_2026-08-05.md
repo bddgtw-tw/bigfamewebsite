@@ -12,6 +12,11 @@
 | legacy `/overview` | HTTP 301 → `/en/about` |
 | Git `main` 與 `release/draft` | 同步於 `5eb3050` |
 
+## 2026-08-05 量測文件更新後的版本核對
+
+- `main` 與 `release/draft` 已再次同步至 `a3f6636`。
+- 本文件前述頁面結構與公開 URL 結果仍有效；最新 Search Console／GA4 讀回另見 `SEARCH_CONSOLE_LIVE_READBACK_2026-08-05.md` 與 `GA4_LIVE_READBACK_2026-08-05.md`。
+
 ## HTML 數量與例外
 
 目前工作樹共有 167 個 HTML。全站掃描發現的 5 個版本／結構例外，均不是正式內容頁：
