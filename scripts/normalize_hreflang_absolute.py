@@ -26,7 +26,7 @@ def normalize_file(path: Path) -> bool:
     page_url = public_url_for_file(path)
 
     def replace_tag(match: re.Match[str]) -> str:
-        tag = match.group(0)
+        tag = re.sub(r'(\bhreflang=["\'])zh-tw(["\'])', r'\1zh-TW\2', match.group(0), flags=re.IGNORECASE)
         href_match = re.search(r'(href=["\'])([^"\']+)(["\'])', tag, re.IGNORECASE)
         if not href_match:
             return tag
