@@ -98,6 +98,8 @@
 - 公開 runtime 讀回上述三語 42 個優先 clean URL：全部 HTTP 200、H1=1、FAQPage 存在，且未讀到 malformed href；產品品質稽核 24 頁 0 失敗、案例契約稽核 36 頁 0 失敗。
 - 詢價歸因補強：三語八類產品頁的靜態聯絡 CTA 均已帶入對應 `product` 參數；公開 24 個產品 clean URL 均讀回至少一個含正確 `product=<slug>` 的聯絡 CTA。JavaScript 仍保留來源頁 fallback，但不再只依賴 JavaScript 才能保留產品脈絡。
 - 共用事件版本一致性：162 個載入 `main.js` 的 HTML 已統一至 `main.js?v=1.3.23`，5 個 404／root legacy／工具頁維持未載入共用 JS；首頁、展示掛勾、眼鏡案例與聯絡頁公開讀回均已確認 `1.3.23`。
+- 表單 runtime 互動讀回：公開 `/tw/contact?category=display_hardware&role=buyer&product=display-hooks&requested_files=dimension_drawing&source_page=/tw/display-hooks` 已填入 `inquiry_type=quote`、`product_category=display_hardware`、`buyer_role=buyer_trading_agent`、`source_category=display_hardware`、`source_role=buyer`、`source_product=display-hooks`、`requested_files=dimension_drawing`、`source_page=/tw/display-hooks`；未送出真實表單。
+- 手機驗收界線：本次瀏覽器要求 390×844，但實際頁面仍回報 1280×720，故本輪只證明桌面 runtime 表單預填，不把手機實機首屏驗收升格為完成。
 
 ### 目前仍不能升格為完成的項目
 
