@@ -111,3 +111,5 @@
 - 不把本地或 Git 已完成的變更直接稱為公開網站已完成部署。
 - 不把候選案例當成已取得公開授權的正式客戶案例。
 - 不把未核對的測試數據、客戶名稱、所有權、MOQ、交期或市場地位寫成既定事實。
+
+- 本輪新增 `scripts/normalize_hreflang_absolute.py`，將 `tw/`、`en/`、`jp/` 15 個語系主頁的 45 個相對 `hreflang` 連結統一為 `https://www.bigfame.co` 絕對 clean URL；本地讀回 `RELATIVE_HREFLANG_COUNT=0`。這只證明 URL 標記已統一，不代表 Search Console 已重新處理或排名已改善。
