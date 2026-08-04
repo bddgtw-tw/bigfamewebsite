@@ -25,4 +25,5 @@
 - 三語頁面：已加入來源紀錄標記 `data-bf-source-record="1"`
 - 產品頁品質稽核：`24` 頁，`0` 項失敗
 - 案例頁契約稽核：`36` 頁，`0` 項失敗
-- 後續仍應以公開網址進行 HTTP、DOM、FAQPage 與亂碼驗收
+- Git `main`、`draft`、`release/draft`：已同步至 `15cdd7a`
+- 公開三語網址：HTTP `200`；來源紀錄存在；H1 數量 `1`；FAQPage 存在；未發現連續問號亂碼
