@@ -2,6 +2,7 @@
 const SITE_VERSION = '1.3.11';
 
 document.addEventListener('DOMContentLoaded', () => {
+  initAnalytics();
   initThemeSwitcher();
   initHeaderScroll();
   initMobileMenu();
@@ -17,6 +18,23 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeroParticles();
   initScrollIndicator();
 });
+
+function initAnalytics() {
+  if (window.__bfAnalyticsInitialized) return;
+  window.__bfAnalyticsInitialized = true;
+  window.dataLayer = window.dataLayer || [];
+  if (typeof window.gtag !== 'function') {
+    window.gtag = function () { window.dataLayer.push(arguments); };
+  }
+  if (!document.querySelector('script[src*="googletagmanager.com/gtag/js?id=G-PDW4NPHHW8"]')) {
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-PDW4NPHHW8';
+    document.head.appendChild(script);
+  }
+  window.gtag('js', new Date());
+  window.gtag('config', 'G-PDW4NPHHW8');
+}
 
 /**
  * Send privacy-safe B2B inquiry events to GA4.
