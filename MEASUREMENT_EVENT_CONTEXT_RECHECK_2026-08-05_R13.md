@@ -22,6 +22,12 @@
 - 8 類產品三語頁的 90 個詢價連結：均具 `category` 與 `role`
 - 三語 TA／技術資源入口的 57 個詢價連結：均具 `category` 與 `role`
 
+## 公開 runtime 回讀
+
+- 公開 `https://www.bigfame.co/js/main.js?v=1.3.25` 回應 HTTP 200，讀到 `SITE_VERSION = '1.3.25'`，並包含送出嘗試與完整上下文欄位。
+- 公開繁中聯絡頁回應 HTTP 200，載入 `main.js?v=1.3.25`；以展示掛勾、採購角色、尺寸圖與 `/tw/display-hooks` 來源參數進入時，`buyer_role`、`inquiry_type`、`product_category`、`requested_files`、`source_category`、`source_role`、`source_product` 與 `source_page` 均正確預填。
+- 公開瀏覽器 runtime 的錯誤／警告讀回為空；本次未提交表單。
+
 ## 尚未宣稱的事項
 
 - 尚未取得 GA4 管理權限，因此尚未在 GA4 後台註冊或讀回所有自訂維度。
