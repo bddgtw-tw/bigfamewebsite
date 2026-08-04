@@ -138,3 +138,5 @@
 `68b1aa8` 發布後延遲讀回：三語 `/case-automotive-parts-rack` 均回應 200、單一 H1、正確 clean canonical、Article／BreadcrumbList／FAQPage JSON-LD、`requested_files=dimension_drawing` CTA 與證據邊界；公開 `/tw/applications`、`/en/modular-fixtures`、`/jp/display-hooks` 均已讀回新案例連結；公開 sitemap 回應 200 並包含三個新案例 URL。此頁仍是匿名工程／交付紀錄，不宣稱具名客戶成果、正式數量、交期或交貨地。
 
 `5733acc` 發布後延遲讀回：三語新案例頁均已讀回 shipping mark 證據邊界文字；公開案例與詢問 CTA 仍維持匿名與未授權欄位不公開。以 390 × 844 手機 viewport 做公開 runtime 驗收：首頁無橫向溢位，Hero 高度 844px，兩個首屏 CTA 均可見且可點擊；新案例頁無橫向溢位，第一個 CTA 可見。手機 viewport 已於驗收後恢復預設，未保留測試分頁。
+
+2026-08-04 新增第二個高證據候選：從歷史 OEM／ODM 專案 `Thomas Game Headphone Set` 讀回三耳機展示組的客戶圖面、BOM、packout、工廠組裝說明與五種通路版本描述。新增匿名 `Three-Headphone Display Set／三耳機展示組工程紀錄` 三語 flat／clean route 共 6 頁，並加入 Applications 與展示掛勾頁的內部連結；公開頁不揭露客戶名稱、數量、交期、交貨地、成本或完整合約責任。完整證據讀回與邊界見 `CASE_EVIDENCE_READBACK_HEADPHONE_DISPLAY_2026-08-04.md`。
