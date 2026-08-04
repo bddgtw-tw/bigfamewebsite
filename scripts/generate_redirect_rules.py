@@ -31,5 +31,15 @@ lines = [
     "/blog/author/benny/ /en/about 301",
     "/blog/retail-fixture-blog /en/display-hooks 301",
     "/blog/retail-fixture-blog/ /en/display-hooks 301",
+    "/portfolio /en/applications 301",
+    "/portfolio/ /en/applications 301",
+    "/downloads/project-brief-template.docx /en/technical-resources 301",
+    "/downloads/project-brief-template.docx/ /en/technical-resources 301",
+    "/downloads/catalog.pdf /en/products 301",
+    "/downloads/catalog.pdf/ /en/products 301",
+    "/downloads/material-guide.pdf /en/technical-resources 301",
+    "/downloads/material-guide.pdf/ /en/technical-resources 301",
+    "/contact /en/contact 301",
+    "/contact/ /en/contact 301",
 ]
 (ROOT / "_redirects").write_text("\n".join(lines) + "\n", encoding="utf-8")
