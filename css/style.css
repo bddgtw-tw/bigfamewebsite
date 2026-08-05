@@ -1026,6 +1026,35 @@ textarea.form-control {
   line-height: 1.6;
 }
 
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  color: var(--text-muted);
+  border: 1px solid var(--border-dark);
+  transition: var(--transition-fast);
+}
+
+.social-link:hover,
+.social-link:focus-visible {
+  color: var(--text-light);
+  border-color: var(--text-light);
+}
+
+.social-link svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
 .footer-title {
   color: var(--text-light);
   font-size: 0.85rem;
