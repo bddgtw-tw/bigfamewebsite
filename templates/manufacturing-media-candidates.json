@@ -1,0 +1,27 @@
+{
+  "status": "candidate_only_not_published",
+  "source_folder": "網站營運素材/02_Big_Fame_Raw_Data/10_網站共用素材/製造資源/01_Photos_媒體檔案",
+  "selection_note": "以製程可理解度、B2B可信度與頁面用途初選；仍需逐張視覺檢查、授權確認與重新命名。",
+  "candidates": [
+    {"file": "[官網] Metal Working - Metal Sheet on Laser Cutting Machine.jpg", "role": "metal-fabrication", "target": ["products", "design-support"]},
+    {"file": "[官網] Metal Working - Before Powder Coating.jpg", "role": "surface-treatment", "target": ["products", "procurement"]},
+    {"file": "[官網] Metal working - Function Check after Welding.jpg", "role": "quality-check", "target": ["procurement", "services"]},
+    {"file": "[官網] Metal working - Trial Assembly.jpg", "role": "assembly", "target": ["design-support", "applications"]},
+    {"file": "[官網] Metal working - Pipe Inspection.jpg", "role": "quality-check", "target": ["procurement", "technical-resources"]},
+    {"file": "[官網] Metal Working - Wire Mesh Welding Machine.jpg", "role": "wire-processing", "target": ["products", "display-hooks"]},
+    {"file": "[官網] Wood Working - 5 Axies CNC Machine.jpg", "role": "wood-cnc", "target": ["products", "design-support"]},
+    {"file": "[官網] Wood Working - CNC Drilling Process.jpg", "role": "wood-cnc", "target": ["design-support", "technical-resources"]},
+    {"file": "[官網] Wood Working - Plywood Compression Machine.jpg", "role": "wood-assembly", "target": ["products", "services"]},
+    {"file": "[官網] Wood Working - Making Sample.jpg", "role": "sampling", "target": ["design-support", "procurement"]},
+    {"file": "[官網] Wood Working - Connecting the Electricity Supply.jpg", "role": "assembly", "target": ["design-support", "applications"]},
+    {"file": "[官網] Packing - Carefully Inspection.jpg", "role": "packing-quality", "target": ["procurement", "services"]},
+    {"file": "[官網] Packing - Full Protection of Wooden Crate.jpg", "role": "export-packing", "target": ["procurement", "services"]},
+    {"file": "[官網] Glass Working - Blowing the Glass.jpg", "role": "glass-processing", "target": ["products", "design-support"]},
+    {"file": "[官網] Glass Working - The Tooling.jpg", "role": "tooling", "target": ["design-support", "procurement"]},
+    {"file": "[官網] Glass Working - Glass Light Shield Sample 01.jpg", "role": "sample", "target": ["applications", "products"]},
+    {"file": "[官網] Marble Working - Cutting Slab Machine.jpg", "role": "stone-processing", "target": ["products", "design-support"]},
+    {"file": "[官網] Marble Working - Surface Furnishing Line.jpg", "role": "surface-treatment", "target": ["products", "services"]},
+    {"file": "[官網] Printing Working - Brochure Printing 01.jpg", "role": "printing", "target": ["custom-metal-parts", "applications"]},
+    {"file": "[官網] Metal working - Production Line.jpg", "role": "factory-context", "target": ["home", "procurement"]}
+  ]
+}
