@@ -1,0 +1,69 @@
+{
+  "source_root": "F:\\共用雲端硬碟\\公司營運資料架構\\80_B2B_網站與行銷專區\\網站營運素材\\02_Big_Fame_Raw_Data",
+  "scope": "Big Fame raw website and marketing media source; no files copied or published",
+  "total_media_files": 1789,
+  "top_level": [
+    {
+      "folder": "10_網站共用素材",
+      "media_count": 1029,
+      "by_extension": {
+        "ai": 9,
+        "gif": 3,
+        "jpeg": 18,
+        "jpg": 574,
+        "mov": 21,
+        "mp4": 17,
+        "pdf": 17,
+        "png": 368,
+        "psd": 2
+      }
+    },
+    {
+      "folder": "90_備份與舊資料",
+      "media_count": 350,
+      "by_extension": {
+        "ai": 1,
+        "jpg": 338,
+        "mp4": 1,
+        "pdf": 1,
+        "png": 9
+      }
+    },
+    {
+      "folder": "30_台灣經貿網",
+      "media_count": 342,
+      "by_extension": {
+        "jpg": 289,
+        "pdf": 3,
+        "png": 50
+      }
+    },
+    {
+      "folder": "40_阿里巴巴",
+      "media_count": 52,
+      "by_extension": {
+        "jpg": 51,
+        "pdf": 1
+      }
+    },
+    {
+      "folder": "60_素材與資源",
+      "media_count": 15,
+      "by_extension": {
+        "jpg": 15
+      }
+    },
+    {
+      "folder": "20_新加坡電商平台",
+      "media_count": 1,
+      "by_extension": {
+        "pdf": 1
+      }
+    },
+    {
+      "folder": "50_關鍵字與SEO",
+      "media_count": 0,
+      "by_extension": {}
+    }
+  ]
+}
