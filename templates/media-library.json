@@ -1,0 +1,195 @@
+{
+  "generated_from": "images/ and videos/",
+  "items": [
+    {
+      "file": "images/case-2016-apparel.jpg",
+      "role": "case",
+      "bytes": 87657
+    },
+    {
+      "file": "images/case-2016-eyewear.jpg",
+      "role": "case",
+      "bytes": 1971992
+    },
+    {
+      "file": "images/case-2016-hospitality.jpg",
+      "role": "case",
+      "bytes": 162773
+    },
+    {
+      "file": "images/case-2017-hospitality.jpg",
+      "role": "case",
+      "bytes": 1774313
+    },
+    {
+      "file": "images/case-japanese-wine-bar.jpg",
+      "role": "case",
+      "bytes": 162743
+    },
+    {
+      "file": "images/case-urban-storage.jpg",
+      "role": "case",
+      "bytes": 121826
+    },
+    {
+      "file": "images/case_a_lifestyle.jpg",
+      "role": "case",
+      "bytes": 805302
+    },
+    {
+      "file": "images/case_b_sports.jpg",
+      "role": "case",
+      "bytes": 978994
+    },
+    {
+      "file": "images/case_c_eyewear.jpg",
+      "role": "case",
+      "bytes": 721700
+    },
+    {
+      "file": "images/case_d_drugstore.jpg",
+      "role": "case",
+      "bytes": 831244
+    },
+    {
+      "file": "images/case_e_jewelry.jpg",
+      "role": "case",
+      "bytes": 737428
+    },
+    {
+      "file": "images/case_f_concept.jpg",
+      "role": "case",
+      "bytes": 755295
+    },
+    {
+      "file": "images/case_g_supermarket.jpg",
+      "role": "case",
+      "bytes": 895556
+    },
+    {
+      "file": "images/case_h_electronics.jpg",
+      "role": "case",
+      "bytes": 676566
+    },
+    {
+      "file": "images/factory_cnc.jpg",
+      "role": "factory",
+      "bytes": 1034479
+    },
+    {
+      "file": "images/factory_finishing.jpg",
+      "role": "factory",
+      "bytes": 774446
+    },
+    {
+      "file": "images/factory_loading.jpg",
+      "role": "factory",
+      "bytes": 1016435
+    },
+    {
+      "file": "images/factory_welding.jpg",
+      "role": "factory",
+      "bytes": 947892
+    },
+    {
+      "file": "images/hero_display_fixture.jpg",
+      "role": "hero",
+      "bytes": 706432
+    },
+    {
+      "file": "images/product-cosmetic-organizer.png",
+      "role": "product",
+      "bytes": 1496520
+    },
+    {
+      "file": "images/product-display-hooks-dim.jpg",
+      "role": "product",
+      "bytes": 91412
+    },
+    {
+      "file": "images/product-display-hooks.jpg",
+      "role": "product",
+      "bytes": 53526
+    },
+    {
+      "file": "images/product-modular-fixtures-arc67.jpg",
+      "role": "product",
+      "bytes": 61743
+    },
+    {
+      "file": "images/product-modular-fixtures-yc1524.jpg",
+      "role": "product",
+      "bytes": 63940
+    },
+    {
+      "file": "images/product-optical-hooks.png",
+      "role": "product",
+      "bytes": 409228
+    },
+    {
+      "file": "images/product-pos-displays-counter-catalog.jpg",
+      "role": "product",
+      "bytes": 223145
+    },
+    {
+      "file": "images/product-pos-displays-counter-catalog.png",
+      "role": "product",
+      "bytes": 538845
+    },
+    {
+      "file": "images/product-pos-displays-desktop-catalog.png",
+      "role": "product",
+      "bytes": 480705
+    },
+    {
+      "file": "images/product-price-tag-holders-metal.jpg",
+      "role": "product",
+      "bytes": 201073
+    },
+    {
+      "file": "images/product-price-tag-holders.jpg",
+      "role": "product",
+      "bytes": 184801
+    },
+    {
+      "file": "images/product-slatwall-accessories.jpg",
+      "role": "product",
+      "bytes": 957695
+    },
+    {
+      "file": "images/product_fixtures.jpg",
+      "role": "product",
+      "bytes": 704628
+    },
+    {
+      "file": "images/product_hooks.jpg",
+      "role": "product",
+      "bytes": 736189
+    },
+    {
+      "file": "images/product_parts.jpg",
+      "role": "product",
+      "bytes": 873330
+    },
+    {
+      "file": "images/product_pos.jpg",
+      "role": "product",
+      "bytes": 665453
+    },
+    {
+      "file": "videos/hero-apparel-store-blurred-foot-traffic-web-20260804.mp4",
+      "role": "video",
+      "bytes": 411768
+    },
+    {
+      "file": "videos/hero-apparel-store-blurred-foot-traffic.mp4",
+      "role": "video",
+      "bytes": 1101558
+    },
+    {
+      "file": "videos/hero_bg.mp4",
+      "role": "video",
+      "bytes": 23014356
+    }
+  ]
+}
