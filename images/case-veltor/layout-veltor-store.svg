@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#eee9df"/>
+  <text x="80" y="90" font-family="Arial, Noto Sans TC, sans-serif" font-size="48" font-weight="700" fill="#25302b">VELTOR｜城市巡航與旅程店配置圖</text>
+  <text x="82" y="132" font-family="Arial, Noto Sans TC, sans-serif" font-size="22" fill="#657067">從日常通勤到週末遠行｜概念配置，非施工圖</text>
+  <rect x="80" y="180" width="1040" height="700" rx="8" fill="#ffffff" stroke="#222" stroke-width="5"/>
+  <rect x="110" y="210" width="250" height="610" rx="6" fill="#d7cbb8" stroke="#817866" stroke-width="2"/>
+  <text x="235" y="270" text-anchor="middle" font-family="Arial, Noto Sans TC, sans-serif" font-size="28" font-weight="700">F01</text>
+  <text x="235" y="310" text-anchor="middle" font-family="Arial, Noto Sans TC, sans-serif" font-size="23">城市巡航鞋靴牆</text>
+  <g stroke="#a49d94" stroke-width="4"><line x1="140" y1="355" x2="330" y2="355"/><line x1="140" y1="430" x2="330" y2="430"/><line x1="140" y1="505" x2="330" y2="505"/><line x1="140" y1="580" x2="330" y2="580"/><line x1="140" y1="655" x2="330" y2="655"/></g>
+  <rect x="390" y="210" width="330" height="190" rx="6" fill="#c8c2af" stroke="#777" stroke-width="2"/>
+  <text x="555" y="285" text-anchor="middle" font-family="Arial, Noto Sans TC, sans-serif" font-size="28" font-weight="700">F02</text>
+  <text x="555" y="330" text-anchor="middle" font-family="Arial, Noto Sans TC, sans-serif" font-size="23">安全帽與旅行裝備牆</text>
+  <rect x="750" y="210" width="340" height="190" rx="6" fill="#a9ad91" stroke="#777" stroke-width="2"/>
+  <text x="920" y="285" text-anchor="middle" font-family="Arial, Noto Sans TC, sans-serif" font-size="28" font-weight="700">F03</text>
+  <text x="920" y="330" text-anchor="middle" font-family="Arial, Noto Sans TC, sans-serif" font-size="22">手套雨具與旅行配件牆</text>
+  <rect x="420" y="455" width="270" height="245" rx="6" fill="#7c765f" stroke="#4e4a3e" stroke-width="3"/>
+  <text x="555" y="555" text-anchor="middle" font-family="Arial, Noto Sans TC, sans-serif" font-size="30" font-weight="700" fill="#fff">F05</text>
+  <text x="555" y="600" text-anchor="middle" font-family="Arial, Noto Sans TC, sans-serif" font-size="23" fill="#fff">旅程規劃中島桌</text>
+  <rect x="765" y="455" width="285" height="245" rx="6" fill="#465148" stroke="#25302b" stroke-width="3"/>
+  <text x="907" y="555" text-anchor="middle" font-family="Arial, Noto Sans TC, sans-serif" font-size="30" font-weight="700" fill="#fff">F04</text>
+  <text x="907" y="600" text-anchor="middle" font-family="Arial, Noto Sans TC, sans-serif" font-size="22" fill="#fff">通勤與旅行服飾架</text>
+  <rect x="390" y="740" width="300" height="110" rx="6" fill="#b27b50"/>
+  <text x="540" y="788" text-anchor="middle" font-family="Arial, Noto Sans TC, sans-serif" font-size="25" font-weight="700" fill="#fff">F06｜城市旅行主題架</text>
+  <text x="540" y="822" text-anchor="middle" font-family="Arial, Noto Sans TC, sans-serif" font-size="19" fill="#fff">路線／季節／裝備組合</text>
+  <rect x="730" y="740" width="360" height="110" rx="6" fill="#716a5b"/>
+  <text x="910" y="788" text-anchor="middle" font-family="Arial, Noto Sans TC, sans-serif" font-size="25" font-weight="700" fill="#fff">F07｜旅程諮詢櫃台</text>
+  <text x="910" y="822" text-anchor="middle" font-family="Arial, Noto Sans TC, sans-serif" font-size="19" fill="#fff">諮詢／結帳／裝備收納</text>
+  <path d="M 540 900 L 660 900 L 600 820 Z" fill="#222"/>
+  <text x="600" y="950" text-anchor="middle" font-family="Arial, Noto Sans TC, sans-serif" font-size="22" fill="#444">主要入口</text>
+  <text x="1210" y="220" font-family="Arial, Noto Sans TC, sans-serif" font-size="30" font-weight="700" fill="#171717">配置邏輯</text>
+  <g font-family="Arial, Noto Sans TC, sans-serif" font-size="22" fill="#333">
+    <text x="1210" y="280">牆面：承擔容量與分類</text>
+    <text x="1210" y="330">中島：組合一趟旅程裝備</text>
+    <text x="1210" y="380">主題架：連結城市與週末</text>
+    <text x="1210" y="430">櫃台：諮詢、服務與收納</text>
+  </g>
+  <line x1="1210" y1="480" x2="1510" y2="480" stroke="#bbb" stroke-width="2"/>
+  <text x="1210" y="535" font-family="Arial, Noto Sans TC, sans-serif" font-size="30" font-weight="700" fill="#171717">材料方向</text>
+  <g font-family="Arial, Noto Sans TC, sans-serif" font-size="22" fill="#333">
+    <text x="1210" y="595">炭灰粉體烤漆鋼構</text>
+    <text x="1210" y="645">礦物米色紋理牆板</text>
+    <text x="1210" y="695">白蠟木與沙色板材</text>
+    <text x="1210" y="745">透明壓克力</text>
+    <text x="1210" y="795">線性燈與投射燈</text>
+  </g>
+  <rect x="1200" y="835" width="310" height="55" rx="27" fill="#465148"/>
+  <text x="1355" y="870" text-anchor="middle" font-family="Arial, Noto Sans TC, sans-serif" font-size="21" font-weight="700" fill="#fff">一間店・一個製造夥伴</text>
+</svg>
