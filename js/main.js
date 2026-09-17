@@ -1,5 +1,5 @@
 /* Big Fame IND. CORP. - Global JavaScript Logic */
-var SITE_VERSION = '1.3.25';
+var SITE_VERSION = '1.3.26';
 
 document.addEventListener('DOMContentLoaded', () => {
   initAnalytics();
@@ -360,6 +360,9 @@ function initInquiryContext() {
     buyer: 'buyer_trading_agent',
     vm: 'visual_merchandising'
   };
+  const directInquiryType = params.get('inquiry_type') || '';
+  const directProductCategory = params.get('product_category') || '';
+  const source = params.get('source') || '';
   const mapped = contextMap[category] || {};
   const setValue = (id, value) => {
     const field = document.getElementById(id);
@@ -368,10 +371,10 @@ function initInquiryContext() {
     field.defaultValue = value;
   };
 
-  setValue('inquiry_type', mapped.inquiry_type);
-  setValue('product_category', mapped.product_category);
-  setValue('buyer_role', roleMap[role]);
-  setValue('source_category', category || 'unspecified');
+  setValue('inquiry_type', directInquiryType || mapped.inquiry_type);
+  setValue('product_category', directProductCategory || mapped.product_category);
+  setValue('buyer_role', roleMap[role] || role);
+  setValue('source_category', source || category || 'unspecified');
   setValue('source_role', role || 'unspecified');
   setValue('source_product', product || 'unspecified');
   setValue('requested_files', requestedFiles);
