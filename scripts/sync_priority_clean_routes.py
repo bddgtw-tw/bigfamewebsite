@@ -24,7 +24,12 @@ PRODUCT_SLUGS = {
     "modular-fixtures",
     "custom-metal-parts",
 }
-KNOWN_ROUTES = TA_SLUGS | PRODUCT_SLUGS | {
+GUIDE_SLUGS = {
+    "guide-made-in-taiwan-custom-fixtures",
+    "guide-mixed-material-display-engineering",
+    "guide-concept-to-prototype",
+}
+KNOWN_ROUTES = TA_SLUGS | PRODUCT_SLUGS | GUIDE_SLUGS | {
     "applications",
     "contact",
     "design-support",
@@ -116,8 +121,9 @@ def sync(lang: str, slug: str) -> None:
 
 
 for lang in ("tw", "en", "jp"):
-    slugs = TA_SLUGS | PRODUCT_SLUGS
+    slugs = TA_SLUGS | PRODUCT_SLUGS | GUIDE_SLUGS
     slugs |= {p.stem for p in (ROOT / lang).glob("case-*.html")}
+    slugs |= {p.stem for p in (ROOT / lang).glob("guide-*.html")}
     for slug in sorted(slugs):
         sync(lang, slug)
 
