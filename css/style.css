@@ -1890,3 +1890,49 @@ html[data-theme="dark"] .status-closed .status-dot {
     transform: rotate(-45deg) translate(5px, -5px);
   }
 }
+
+/* --- Defensive Breadcrumbs & Subpage Spacing (Collision Prevention) --- */
+.breadcrumbs {
+  padding-top: calc(var(--header-height) + 18px);
+  padding-bottom: 16px;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  position: relative;
+  z-index: 10;
+}
+
+.breadcrumbs .container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs a {
+  color: var(--text-secondary);
+  transition: var(--transition-fast);
+}
+
+.breadcrumbs a:hover {
+  color: var(--text-primary);
+}
+
+.breadcrumbs .separator {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  padding: 0 4px;
+}
+
+.breadcrumbs .current {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* Header on subpages with breadcrumbs: Ensure clean backdrop */
+.header:not(.scrolled) {
+  background-color: rgba(var(--bg-primary-rgb), 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
