@@ -1936,3 +1936,36 @@ html[data-theme="dark"] .status-closed .status-dot {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
+
+/* --- Header Phone CTA (Responsive & Containment) --- */
+.header-phone-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  padding: 6px 14px;
+  border: 1px solid var(--border-color);
+  transition: var(--transition-fast);
+  margin-right: 12px;
+  white-space: nowrap;
+}
+
+.header-phone-cta:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+.header-phone-cta svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .header-phone-cta {
+    display: none;
+  }
+}
