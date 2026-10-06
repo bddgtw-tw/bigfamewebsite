@@ -3,14 +3,16 @@ var SITE_VERSION = '1.3.26';
 
 document.addEventListener('DOMContentLoaded', () => {
   initAnalytics();
-  initThemeSwitcher();
+  initPersistentLanguageSwitch();
+  if (!document.body.classList.contains("bf-localized-site")) initThemeSwitcher();
   initHeaderScroll();
   initMobileMenu();
   initScrollAnimations();
   initLanguageTracker();
   highlightActiveLink();
-  initPageTransitions();
-  initMagneticButtons();
+  if (!document.body.classList.contains("jp-dossier")) initPageTransitions();
+  else document.body.classList.add("page-loaded");
+  if (!document.body.classList.contains("jp-dossier")) initMagneticButtons();
   initOfficeStatus();
   initInquiryTracking();
   initProductInquiryLinks();
@@ -18,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initTaServiceSchema();
   initVerifiedProductSchema();
   initContactForm();
-  initHeroParticles();
-  initScrollIndicator();
+  if (!document.body.classList.contains("jp-dossier")) initHeroParticles();
+  if (!document.body.classList.contains("jp-dossier")) initScrollIndicator();
 });
 
 if (document.readyState !== 'loading') {
@@ -447,7 +449,7 @@ function initMobileMenu() {
   });
 
   window.addEventListener('resize', () => {
-    if (window.innerWidth > 768) setMenuState(false);
+    if (window.innerWidth > (document.body.classList.contains("bf-localized-site") ? 1280 : (document.body.classList.contains("jp-dossier") ? 1024 : 768))) setMenuState(false);
   });
 }
 
@@ -986,4 +988,25 @@ function initScrollIndicator() {
     const nextSection = hero.nextElementSibling;
     if (nextSection) nextSection.scrollIntoView({ behavior: 'smooth' });
   });
+}
+
+
+// Subpages also provide persistent links to the three locale homepages.
+function initPersistentLanguageSwitch() {
+ const navbar=document.querySelector('.navbar');
+ if(!navbar) return;
+ document.body.classList.add('bf-localized-site');
+ if(navbar.querySelector('.bf-language-switch')) return;
+ const code=({'ja':'jp','en':'en','zh-TW':'tw'})[document.documentElement.lang];
+ if(!code) return;
+ const nav=document.createElement('nav');
+ nav.className='bf-language-switch';
+ nav.setAttribute('aria-label',({'jp':'言語を選択','en':'Choose language','tw':'選擇語系'})[code]);
+ for(const [locale,label,lang] of [['jp','日本語','ja'],['en','EN','en'],['tw','繁中','zh-TW']]) {
+  const a=document.createElement('a');
+  a.href='../'+locale+'/'; a.textContent=label; a.lang=lang; a.hreflang=lang;
+  if(locale===code) a.setAttribute('aria-current','page');
+  nav.append(a);
+ }
+ navbar.insertBefore(nav,navbar.querySelector('.mobile-toggle'));
 }
