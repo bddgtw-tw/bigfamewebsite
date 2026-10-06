@@ -997,7 +997,8 @@ function initPersistentLanguageSwitch() {
  if(!navbar) return;
  document.body.classList.add('bf-localized-site');
  if(navbar.querySelector('.bf-language-switch')) return;
- const code=({'ja':'jp','en':'en','zh-TW':'tw'})[document.documentElement.lang];
+ const langCode=document.documentElement.lang.toLowerCase();
+ const code=langCode.startsWith('ja')?'jp':langCode.startsWith('en')?'en':langCode.startsWith('zh')?'tw':null;
  if(!code) return;
  const nav=document.createElement('nav');
  nav.className='bf-language-switch';
