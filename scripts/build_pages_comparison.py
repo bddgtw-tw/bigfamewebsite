@@ -1,6 +1,7 @@
 """Build a Pages comparison site from two checkouts. No repository documents are published."""
 import argparse
 import html
+import json
 import re
 import shutil
 from pathlib import Path
@@ -32,6 +33,8 @@ def local_link(value, source, root, prefix):
 
 def export(root, out, prefix):
     pages = []
+    manifest = root / "config/public-assets.json"
+    allowed = set(json.loads(manifest.read_text())) if manifest.is_file() else None
     for directory in WEB_DIRS:
         folder = root / directory
         if not folder.is_dir():
@@ -52,6 +55,8 @@ def export(root, out, prefix):
                 target.write_text(text, encoding="utf-8")
                 pages.append(rel.as_posix())
             elif source.suffix.lower() in ASSET_SUFFIXES:
+                if allowed is not None and rel.as_posix() not in allowed:
+                    continue
                 target = out / rel
                 target.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(source, target)
@@ -83,3 +88,4 @@ if __name__ == "__main__":
     parser.add_argument("--base", default="/bigfamewebsite/")
     args = parser.parse_args()
     build(args.main, args.preview, args.output, args.base)
+
