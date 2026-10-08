@@ -352,12 +352,16 @@ function initInquiryContext() {
     pos_display: { inquiry_type: 'quote', product_category: 'pos_displays' },
     modular_fixture: { inquiry_type: 'quote', product_category: 'system_fixtures' },
     signage: { inquiry_type: 'quote', product_category: 'display_hardware' },
-    custom_metal_components: { inquiry_type: 'custom_dev', product_category: 'custom_metal_components' }
+    custom_metal_components: { inquiry_type: 'custom_dev', product_category: 'custom_metal_components' },
+    bespoke_fixture: { inquiry_type: 'custom_dev', product_category: 'system_fixtures' },
+    engineering_dossier: { inquiry_type: 'quote', product_category: 'system_fixtures' }
   };
   const roleMap = {
     brand: 'brand_store_development',
     designer: 'store_design_engineering',
+    architect: 'store_design_engineering',
     buyer: 'buyer_trading_agent',
+    procurement: 'buyer_trading_agent',
     vm: 'visual_merchandising'
   };
   const directInquiryType = params.get('inquiry_type') || '';

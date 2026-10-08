@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e2124"/>
+      <stop offset="50%" stop-color="#282c31"/>
+      <stop offset="100%" stop-color="#181a1c"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(214, 194, 165, 0.08)" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="oakGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D6C2A5"/>
+      <stop offset="100%" stop-color="#C2AD90"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGrad)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  
+  <!-- Outer Architectural Border -->
+  <rect x="20" y="20" width="1880" height="1040" fill="none" stroke="rgba(214, 194, 165, 0.2)" stroke-width="1.5" stroke-dasharray="8 6"/>
+  <rect x="28" y="28" width="1864" height="1024" fill="none" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1"/>
+  
+  <!-- Corner Accents -->
+  <path d="M 20 50 L 20 20 L 50 20" fill="none" stroke="#D6C2A5" stroke-width="3"/>
+  <path d="M 1870 20 L 1900 20 L 1900 50" fill="none" stroke="#D6C2A5" stroke-width="3"/>
+  <path d="M 20 1030 L 20 1060 L 50 1060" fill="none" stroke="#D6C2A5" stroke-width="3"/>
+  <path d="M 1870 1060 L 1900 1060 L 1900 1030" fill="none" stroke="#D6C2A5" stroke-width="3"/>
+  
+  <!-- Center Visual Motif / Technical Bounding Box -->
+  <g transform="translate(960, 520)">
+    <!-- Isometric Cube / Wireframe Silhouette -->
+    <rect x="-120" y="-70" width="240" height="140" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(214, 194, 165, 0.3)" stroke-width="2"/>
+    <line x1="-120" y1="0" x2="120" y2="0" stroke="rgba(214, 194, 165, 0.15)" stroke-dasharray="4 4"/>
+    <line x1="0" y1="-70" x2="0" y2="70" stroke="rgba(214, 194, 165, 0.15)" stroke-dasharray="4 4"/>
+    
+    <!-- Badge -->
+    <rect x="-90" y="-120" width="180" height="28" rx="14" fill="rgba(214, 194, 165, 0.15)" stroke="#D6C2A5" stroke-width="1"/>
+    <text x="0" y="-102" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#D6C2A5" text-anchor="middle" letter-spacing="2">CIRCUIT &amp; CRAFT</text>
+    
+    <!-- Main Title -->
+    <text x="0" y="10" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">FLAGSHIP STORE VISUALIZATION</text>
+    
+    <!-- Subtitle -->
+    <text x="0" y="38" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#9CAEA9" text-anchor="middle">Urban Smart Nordic Tech Architecture (16:9)</text>
+  </g>
+  
+  <!-- Bottom Status Bar -->
+  <g transform="translate(40, 1040)">
+    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="600" fill="rgba(255,255,255,0.4)" letter-spacing="1">STAGING PLACEHOLDER / WAITING FOR 4K RENDERING</text>
+    <text x="1840" y="0" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#D6C2A5" text-anchor="end" letter-spacing="1">1920 x 1080 | 16:9</text>
+  </g>
+</svg>
