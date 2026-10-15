@@ -877,6 +877,35 @@
       .verified-grid { grid-template-columns: 1fr; }
     }
   
+    .hero-inquiry {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      min-height: 48px;
+      margin-top: 28px;
+      padding: 12px 18px;
+      background: var(--text-main);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    .hero-inquiry:hover, .hero-inquiry:focus-visible { background: var(--accent-cad); }
+    @media (max-width: 768px) {
+      .hero-inquiry { width: 100%; margin-top: 22px; }
+      .hero-main-title span { color: var(--accent-cad); font-weight: 400; }
+      .hero-lede { font-size: 0.95rem; color: #434b52; font-weight: 400; }
+      .spectrum-slider-block { margin-top: 30px; }
+      .spectrum-ticks {
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 5px;
+      }
+      .tick-btn { flex: 0 0 43%; min-height: 64px; scroll-snap-align: start; }
+    }
+
     /* ==========================================================================
        ANIMATIONS (For Aesthetics Master & UX Specialist)
        ========================================================================== */
@@ -900,12 +929,12 @@
       <a href="./" class="brand-logo">BIG FAME</a>
       <span class="brand-sub">EST. 1988 · TAIWAN CRAFT</span>
     </div>
-    <button class="mobile-menu-btn" aria-label="Toggle navigation" onclick="document.querySelector('.nav-menu').classList.toggle('open')">
+    <button class="mobile-menu-btn" type="button" aria-label="開啟選單" aria-controls="primary-menu" aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
     </button>
-    <nav class="nav-menu">
+    <nav class="nav-menu" id="primary-menu">
       <a href="#digital-twins">行業實境孿生</a>
       <a href="tw/products">產品與能力</a>
       <a href="tw/applications">專案實錄</a>
@@ -936,6 +965,7 @@
           <p class="hero-lede">
             無論您需要一個單獨客製展架、一組專用配件，或是跨國連鎖門市的展示系統開發。Big Fame 整合冷軋鋼構、0.5mm Osamari 木作公差與平整化 K/D 結構，讓您的陳列概念無瑕落地。
           </p>
+          <a class="hero-inquiry" href="tw/contact?category=bespoke_fixture&role=designer&inquiry_type=custom_dev">帶草圖討論專案 <span aria-hidden="true">↗</span></a>
         </div>
 
         <!-- 尺度刻度滑桿 -->
@@ -1290,16 +1320,20 @@
     </div>
   </footer>
 
-  <!-- 全域浮動諮詢膠囊 (Floating Action Rail) -->
-  <div class="bf-float-rail">
-    <a href="tw/contact?category=bespoke_fixture&role=designer&inquiry_type=custom_dev" class="bf-capsule-cta">
-      <span class="pulse-dot"></span>
-      <span>帶草圖/需求諮詢 · 24h 工程評估 ↗</span>
-    </a>
-  </div>
-
   <!-- 互動腳本：尺度滑桿無縫切換 -->
   <script>
+    const menuButton = document.querySelector('.mobile-menu-btn');
+    const primaryMenu = document.querySelector('#primary-menu');
+    const closeMenu = () => {
+      primaryMenu.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+    };
+    menuButton.addEventListener('click', () => {
+      const open = primaryMenu.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(open));
+    });
+    primaryMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
     const spectrumData = {
       1: {
         badge: 'SPECTRUM 01 · SINGLE OBJECT',
