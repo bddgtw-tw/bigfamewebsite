@@ -873,6 +873,37 @@ img, svg {
     }
 
 
+/* The primary inquiry is visible before the long case catalogue on every screen. */
+.hero-inquiry {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 48px;
+  margin-top: 28px;
+  padding: 12px 18px;
+  background: var(--bf-ink-main);
+  color: var(--bf-ink-invert);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.hero-inquiry:hover, .hero-inquiry:focus-visible { background: var(--bf-accent-steel); }
+@media (max-width: 768px) {
+  .hero-inquiry { width: 100%; margin-top: 22px; }
+  .bf-lead { font-size: 0.95rem; color: #434b52; font-weight: 400; }
+  .spectrum-slider-block { margin-top: 30px; }
+  .spectrum-ticks {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 5px;
+  }
+  .tick-btn { flex: 0 0 43%; min-height: 64px; scroll-snap-align: start; }
+  .bf-float-rail { right: 12px; left: auto; bottom: 12px; }
+  .bf-capsule-cta { width: auto; padding: 9px 12px; font-size: 0.75rem; }
+}
+
 /* ==========================================================================
    ANIMATIONS (For Aesthetics Master & UX Specialist)
    ========================================================================== */

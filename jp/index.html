@@ -84,12 +84,12 @@
       <a href="./" class="bf-brand-name">BIG FAME</a>
       <span class="bf-brand-tag">EST. 1988 · TAIWAN CRAFT</span>
     </div>
-    <button class="bf-mobile-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.bf-menu').classList.toggle('open')">
+    <button class="bf-mobile-toggle" type="button" aria-label="メニューを開く" aria-controls="primary-menu" aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
     </button>
-    <nav class="bf-menu">
+    <nav class="bf-menu" id="primary-menu">
       <a href="#digital-twins">デジタルツイン事例</a>
       <a href="products">製品と製作能力</a>
       <a href="applications">納入実績・事例</a>
@@ -119,6 +119,7 @@
           <p class="bf-lead">
             単体の特注什器・専用フック金物から、多店舗展開・チェーン展開のモジュール什器開発まで。Big Fameは冷間圧延鋼、0.5mm納まり無垢材接合、フラットパックKD構造を統合し、デザイナーの意図を正確に具現化します。
           </p>
+          <a class="hero-inquiry" href="contact?category=bespoke_fixture&role=designer&inquiry_type=custom_dev">什器のご相談はこちら <span aria-hidden="true">↗</span></a>
         </div>
 
         <div class="spectrum-slider-block">
@@ -460,15 +461,19 @@
     </div>
   </footer>
 
-  <!-- Floating Action Rail -->
-  <div class="bf-float-rail">
-    <a href="contact?category=bespoke_fixture&role=designer&inquiry_type=custom_dev" class="bf-capsule-cta">
-      <span class="pulse-dot"></span>
-      <span>手描き図面・スケッチで相談 · 24h技術検証 ↗</span>
-    </a>
-  </div>
-
   <script>
+    const menuButton = document.querySelector('.bf-mobile-toggle');
+    const primaryMenu = document.querySelector('#primary-menu');
+    const closeMenu = () => {
+      primaryMenu.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+    };
+    menuButton.addEventListener('click', () => {
+      const open = primaryMenu.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(open));
+    });
+    primaryMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
     const spectrumData = {
       1: {
         badge: 'SPECTRUM 01 · SINGLE OBJECT',
