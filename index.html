@@ -14,7 +14,7 @@
   <meta property="og:title" content="BIG FAME IND. CORP. · 商業展示設備工程與日系精工製造">
   <meta property="og:description" content="台灣高品質商業展示設備與專屬展架工程。對標日系現代建築極簡美學，整合冷軋鋼構、實木咬合與極限公差，支援單品少量試作到連鎖門市全店落地。">
   <meta property="og:url" content="https://www.bigfame.co/">
-  <meta property="og:image" content="https://www.bigfame.co/images/case-veltor/hero-veltor-store.jpg">
+  <meta property="og:image" content="https://www.bigfame.co/images/case-2016-eyewear.jpg">
   
   <!-- JSON-LD 結構化資料：工廠與 B2B 能力 -->
   <script type="application/ld+json">
@@ -891,9 +891,24 @@
       font-weight: 600;
     }
     .hero-inquiry:hover, .hero-inquiry:focus-visible { background: var(--accent-cad); }
+    .hero-spatial { grid-template-columns: minmax(0, 42%) minmax(0, 58%); min-height: 660px; }
+    .hero-left-editorial { padding: clamp(32px, 5vw, 72px); }
+    .hero-main-title { font-size: clamp(2.5rem, 4.5vw, 4.8rem); line-height: 1.12; }
+    .hero-main-title span { color: var(--text-main); font-weight: 400; font-size: 1em; }
+    .hero-lede { max-width: 38em; font-size: 1.04rem; line-height: 1.85; }
+    .hero-note { margin-top: 40px; font-size: 0.78rem; letter-spacing: 0.06em; color: var(--text-sub); }
+    .hero-right-canvas { padding: 0; background: #e9e6df; }
+    .hero-photo { position: relative; width: 100%; height: 100%; min-height: 660px; margin: 0; }
+    .hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .hero-photo figcaption { position: absolute; right: 16px; bottom: 16px; max-width: calc(100% - 32px); padding: 9px 12px; background: rgba(255,255,255,.93); color: #30343a; font-size: .72rem; line-height: 1.5; }
+    .hero-photo figcaption a { text-decoration: underline; text-underline-offset: 2px; }
     @media (max-width: 768px) {
+      .hero-spatial { grid-template-columns: 1fr; min-height: 0; }
+      .hero-left-editorial { padding: 36px 20px 28px; }
+      .hero-main-title { font-size: clamp(2.1rem, 9vw, 3rem); }
+      .hero-photo { min-height: 320px; height: 64vw; max-height: 480px; }
+      .hero-note { margin-top: 28px; }
       .hero-inquiry { width: 100%; margin-top: 22px; }
-      .hero-main-title span { color: var(--accent-cad); font-weight: 400; }
       .hero-lede { font-size: 0.95rem; color: #434b52; font-weight: 400; }
       .spectrum-slider-block { margin-top: 30px; }
       .spectrum-ticks {
@@ -957,65 +972,23 @@
       <!-- 左側 30% 俐落排版 -->
       <div class="hero-left-editorial">
         <div>
-          <div class="hero-meta-kicker">ENGINEERING RETAIL SPACES · 2026 ARCHITECTURE</div>
+          <div class="hero-meta-kicker">BIG FAME · RETAIL DISPLAY MANUFACTURING</div>
           <h1 class="hero-main-title">
-            專為空間陳列打造的
-            <span>精工金屬與異材質工程</span>
+            展示設備，<span>從構想到製造。</span>
           </h1>
           <p class="hero-lede">
-            無論您需要一個單獨客製展架、一組專用配件，或是跨國連鎖門市的展示系統開發。Big Fame 整合冷軋鋼構、0.5mm Osamari 木作公差與平整化 K/D 結構，讓您的陳列概念無瑕落地。
+            從展示掛勾、客製展架到店面陳列系統，Big Fame 與設計及採購團隊討論尺寸、材質、安裝方式和製造可行性。帶著草圖或參考照片，從需求開始談。
           </p>
-          <a class="hero-inquiry" href="tw/contact?category=bespoke_fixture&role=designer&inquiry_type=custom_dev">帶草圖討論專案 <span aria-hidden="true">↗</span></a>
+          <a class="hero-inquiry" href="tw/contact.html?category=bespoke_fixture&role=designer&inquiry_type=custom_dev">討論你的展示設備專案 <span aria-hidden="true">↗</span></a>
         </div>
-
-        <!-- 尺度刻度滑桿 -->
-        <div class="spectrum-slider-block">
-          <div class="spectrum-label">
-            <span>DIMENSION SPECTRUM</span>
-            <span>01 ➔ 03</span>
-          </div>
-          <div class="spectrum-ticks">
-            <button class="tick-btn active" onclick="switchSpectrum(1)">
-              <span class="num">01. OBJECT</span>
-              單獨展架與配件
-            </button>
-            <button class="tick-btn" onclick="switchSpectrum(2)">
-              <span class="num">02. SYSTEM</span>
-              模組壁面系統
-            </button>
-            <button class="tick-btn" onclick="switchSpectrum(3)">
-              <span class="num">03. SPACE</span>
-              全店空間工程
-            </button>
-          </div>
-        </div>
+        <p class="hero-note">展示掛勾 · 客製展架 · 店面陳列系統</p>
       </div>
 
-      <!-- 右側 70%：線稿漸變實景互動畫布 -->
-      <div class="hero-right-canvas" id="engineering-spectrum">
-        <div class="canvas-card-wrapper">
-          <div class="canvas-visual">
-            <img id="spectrum-img" src="../images/case-veltor/hero-veltor-store.jpg" alt="展示設備實境與線稿切換">
-            <div class="canvas-cad-overlay"></div>
-          </div>
-          <div class="canvas-spec-panel">
-            <div>
-              <span class="spec-badge" id="spec-badge">SPECTRUM 01 · SINGLE OBJECT</span>
-              <h3 class="spec-title" id="spec-title">重載防垂懸臂展示架</h3>
-              <ul class="spec-details">
-                <li>結構材料 <strong>2.0mm 冷拔無縫鋼管</strong></li>
-                <li>表面處理 <strong>啞光微砂粉體烤漆</strong></li>
-                <li>接合技術 <strong>45° 隱形螺栓與平整收口</strong></li>
-                <li>承載能力 <strong>單臂抗傾覆負重 85 kg</strong></li>
-                <li>試作彈性 <strong>支援 1 套 1:1 實體打樣</strong></li>
-              </ul>
-            </div>
-            <div class="spec-action">
-              <a href="#contact-dual" class="btn-line">下載 CAD 線稿 ↗</a>
-              <a href="#contact-dual" class="btn-line" style="border-color: var(--line-dark);">洽詢試作條件 ➔</a>
-            </div>
-          </div>
-        </div>
+      <div class="hero-right-canvas">
+        <figure class="hero-photo">
+          <img src="images/case-2016-eyewear.jpg" alt="眼鏡零售空間的展示設備與陳列情境" fetchpriority="high">
+          <figcaption>眼鏡零售展示影像 · <a href="tw/case-eyewear-2016/">查看案例與資料範圍 ↗</a></figcaption>
+        </figure>
       </div>
     </section>
 
@@ -1285,10 +1258,10 @@
           <div>
             <div class="cta-kicker">TRACK A · DIRECT FABRICATION CONSULT</div>
             <h2 class="cta-title">手邊有展架概念或草圖？<br>我們接手後續工程落地</h2>
-            <p class="cta-desc">上傳手繪圖、照片、DWG/CAD 或店面平面圖。我們將於 1 個工作日內回覆結構建議、材質咬合分析與試作時程。</p>
+            <p class="cta-desc">請描述展示商品、空間尺寸、預估數量與目標時間；若已有草圖、照片或圖面，可附上可瀏覽的連結。我們會根據資料討論製造可行性與下一步。</p>
           </div>
-          <a href="contact?category=bespoke_fixture&role=designer" class="btn-cta">
-            帶草圖/圖面上傳諮詢 ↗
+          <a href="tw/contact.html?category=bespoke_fixture&role=designer" class="btn-cta">
+            討論展示設備專案 ↗
           </a>
         </div>
 
@@ -1296,11 +1269,11 @@
         <div class="cta-card alt">
           <div>
             <div class="cta-kicker">TRACK B · ARCHITECT & BUYER DOSSIER</div>
-            <h2 class="cta-title">索取對標工程規格書<br>與五大行業 CAD 圖集</h2>
-            <p class="cta-desc">提供空間設計師與採購評估專案使用。內含 0.5mm Osamari 細部收口、承重力學數據與平整化 (K/D) 包裝規範。</p>
+            <h2 class="cta-title">先看產品與技術資料</h2>
+            <p class="cta-desc">瀏覽現有展示配件、產品頁與可公開的技術資訊，再帶著具體需求與我們討論。</p>
           </div>
-          <a href="contact?category=engineering_dossier&role=procurement" class="btn-cta">
-            索取 CAD 與工程白皮書 ➔
+          <a href="tw/technical-resources.html" class="btn-cta">
+            查看技術資料 ➔
           </a>
         </div>
       </div>
@@ -1396,7 +1369,7 @@
         });
       }, { threshold: 0.1 });
 
-      const elementsToFade = document.querySelectorAll('h1, h2, h3, .hero-lede, .bf-lead, .proof-card, .twin-card, .step-card, .verified-card, .cta-card');
+      const elementsToFade = document.querySelectorAll('h2, h3, .bf-lead, .proof-card, .twin-card, .step-card, .verified-card, .cta-card');
       elementsToFade.forEach(el => {
         el.classList.add('fade-in-up');
         observer.observe(el);
