@@ -36,3 +36,15 @@ git checkout draft
 ## 📂 素材與文案儲存位置
 - 網站原始碼：本 GitHub 儲存庫
 - 設計稿、原始高畫質圖檔、企劃文件：`Google 雲端硬碟 (F:\共用雲端硬碟)`
+
+## Inquiry foundation validation (2026-11-12)
+
+Run `npm test` (Node 22+, no dependency install needed) and `node --check js/main.js`.
+The focused tests cover CTA prefill, legacy aliases, mobile-menu logic, core metadata and reference assets. They do **not** replace browser, email-delivery or analytics verification.
+
+Before production release:
+- Check the actual `bigfame.co` hosting project, repository connection and deployed commit. The current GitHub Pages workflow builds a **noindex comparison site**, not proof of production deployment.
+- Review English homepage and all three contact/product pages at desktop and 390px widths; test navigation, back/forward, validation and resubmission after errors.
+- With an approved test recipient, verify form delivery and one successful lead event. Do not mistake Web3Forms success for confirmed delivery.
+- Check remaining language pages and claims separately; this change is not a site-wide claims certification.
+- Record the deployed commit and verify the live page before reporting release. Roll back by redeploying the last known good commit through the verified host.
