@@ -1,5 +1,5 @@
 /* Big Fame IND. CORP. - Global JavaScript Logic */
-var SITE_VERSION = '1.3.26';
+var SITE_VERSION = '1.3.27';
 
 document.addEventListener('DOMContentLoaded', () => {
   initAnalytics();
@@ -333,7 +333,7 @@ function initInquiryContext() {
   const category = params.get('category') || '';
   const role = params.get('role') || '';
   const product = params.get('product') || '';
-  const requestedFiles = params.get('requested_files') || '';
+  const requestedFiles = params.get('requested_files') || (category === 'engineering_dossier' ? 'technical_pack' : '');
   let sourcePage = params.get('source_page') || '';
   if (sourcePage && !sourcePage.startsWith('/')) sourcePage = `/${sourcePage}`;
   try {
@@ -354,7 +354,7 @@ function initInquiryContext() {
     signage: { inquiry_type: 'quote', product_category: 'display_hardware' },
     custom_metal_components: { inquiry_type: 'custom_dev', product_category: 'custom_metal_components' },
     bespoke_fixture: { inquiry_type: 'custom_dev', product_category: 'system_fixtures' },
-    engineering_dossier: { inquiry_type: 'quote', product_category: 'system_fixtures' }
+    engineering_dossier: { inquiry_type: 'other', product_category: 'system_fixtures' }
   };
   const roleMap = {
     brand: 'brand_store_development',
@@ -436,7 +436,7 @@ function initMobileMenu() {
   });
 
   // Close menu when clicking on a link
-  const links = document.querySelectorAll('.nav-link');
+  const links = menu.querySelectorAll('a[href]');
   links.forEach(link => {
     link.addEventListener('click', () => {
       setMenuState(false);
@@ -979,7 +979,7 @@ function getLangSuccessMsg(lang) {
 
 function initScrollIndicator() {
   const hero = document.querySelector('.hero');
-  if (!hero || hero.querySelector('.scroll-indicator')) return;
+  if (!hero || hero.classList.contains('contact-hero') || hero.querySelector('.scroll-indicator')) return;
   const indicator = document.createElement('div');
   indicator.className = 'scroll-indicator';
   const lang = document.documentElement.lang;
