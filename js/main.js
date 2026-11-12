@@ -2,6 +2,7 @@
 var SITE_VERSION = '1.3.26';
 
 document.addEventListener('DOMContentLoaded', () => {
+  initContactForm();
   initAnalytics();
   initThemeSwitcher();
   initHeaderScroll();
@@ -17,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initInquiryContext();
   initTaServiceSchema();
   initVerifiedProductSchema();
-  initContactForm();
   initHeroParticles();
   initScrollIndicator();
 });
@@ -225,6 +225,7 @@ function initVerifiedProductSchema() {
 }
 
 function initAnalytics() {
+  if (!['www.bigfame.co', 'bigfame.co'].includes(window.location.hostname)) return;
   if (window.__bfAnalyticsInitialized) return;
   window.__bfAnalyticsInitialized = true;
   window.dataLayer = window.dataLayer || [];
@@ -583,7 +584,7 @@ function initPageTransitions() {
  * 7. Magnetic cursor/hover effects on buttons
  */
 function initMagneticButtons() {
-  const buttons = document.querySelectorAll('.btn-primary, .btn-secondary');
+  const buttons = document.querySelectorAll('a.btn-primary, a.btn-secondary');
   buttons.forEach(btn => {
     btn.addEventListener('mousemove', (e) => {
       const rect = btn.getBoundingClientRect();
@@ -661,9 +662,12 @@ function initOfficeStatus() {
  */
 function initContactForm() {
   const form = document.getElementById('contactForm');
-  if (!form) return;
+  if (!form || form.dataset.submitReady === 'true') return;
+  form.dataset.submitReady = 'true';
 
   const btn = form.querySelector('button[type="submit"]');
+  if (!btn) return;
+  let sending = false;
   const btnOriginalText = btn.innerText;
   let formStarted = false;
 
@@ -681,7 +685,8 @@ function initContactForm() {
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    
+    if (sending || !form.reportValidity()) return;
+    sending = true;
     // Set loading state
     btn.disabled = true;
     btn.innerHTML = `<span class="spinner"></span> Sending...`;
@@ -698,25 +703,26 @@ function initContactForm() {
       source_page_path: String(formData.get('source_page') || 'unspecified')
     });
     
-    // Fallback Mock for testing
+    // Fail closed: a missing configuration must never pretend to send.
     const accessKey = formData.get('access_key');
-    if (accessKey === 'YOUR_ACCESS_KEY_HERE') {
-      setTimeout(() => {
-        showFormStatus(true, getLangSuccessMsg(document.documentElement.lang));
-        form.reset();
-        btn.disabled = false;
-        btn.innerText = btnOriginalText;
-      }, 1000);
+    if (!accessKey || accessKey === 'YOUR_ACCESS_KEY_HERE') {
+      showFormStatus(false, 'Online inquiry is unavailable. Please email shopdisplay@bigfame.co.');
+      sending = false;
+      btn.disabled = false;
+      btn.innerText = btnOriginalText;
       return;
     }
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 20000);
 
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        body: formData
+        body: formData,
+        signal: controller.signal
       });
       const data = await response.json();
-      if (data.success) {
+      if (response.ok && data.success === true) {
         trackAnalyticsEvent('generate_lead', {
           currency: 'USD',
           value: 0,
@@ -754,8 +760,10 @@ function initContactForm() {
           inquiry_product: String(formData.get('source_product') || 'unspecified'),
           source_page_path: String(formData.get('source_page') || 'unspecified')
       });
-      showFormStatus(false, 'Failed to connect to server. Please try again.');
+      showFormStatus(false, 'Submission could not be confirmed. Do not resend immediately. Please email shopdisplay@bigfame.co to check receipt.');
     } finally {
+      clearTimeout(timeout);
+      sending = false;
       btn.disabled = false;
       btn.innerText = btnOriginalText;
     }
