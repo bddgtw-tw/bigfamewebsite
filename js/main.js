@@ -225,6 +225,7 @@ function initVerifiedProductSchema() {
 }
 
 function initAnalytics() {
+  if (!['www.bigfame.co', 'bigfame.co'].includes(window.location.hostname)) return;
   if (window.__bfAnalyticsInitialized) return;
   window.__bfAnalyticsInitialized = true;
   window.dataLayer = window.dataLayer || [];
