@@ -5,6 +5,8 @@ function validate(values){
  for(const key of ['name','email','company','product','market','brief'])if(!String(values[key]||'').trim())errors.push(key);
  if(values.email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email))errors.push('email');
  if(values.reference){try{const url=new URL(values.reference);if(!['http:','https:'].includes(url.protocol))errors.push('reference');}catch{errors.push('reference');}}
+ if(values.product&&!['eyewear','custom'].includes(values.product))errors.push('product');
+ for(const [key,value] of Object.entries(values))if(String(value||'').length>(key==='brief'?4000:500))errors.push(key);
  return [...new Set(errors)];
 }
 if(typeof module!=='undefined')module.exports={validate};
