@@ -1,0 +1,93 @@
+{
+  "checked_at_utc": "2026-11-12T01:23:53.678857+00:00",
+  "mode": "production",
+  "base": "https://www.bigfame.co",
+  "read_only": true,
+  "release_approved": false,
+  "results": [
+    {
+      "url": "https://www.bigfame.co/en/",
+      "status": 200,
+      "final_url": "https://www.bigfame.co/en/",
+      "sha256": "944d0a13bb36a765094a0971cdecf70fc959f5409b1f3eb39381aa1a78e6c147",
+      "noindex": false,
+      "canonical": [
+        "https://www.bigfame.co/en/"
+      ],
+      "h1_count": 1,
+      "form_actions": [],
+      "failures": []
+    },
+    {
+      "url": "https://www.bigfame.co/en/contact",
+      "status": 200,
+      "final_url": "https://www.bigfame.co/en/contact",
+      "sha256": "15621dcef637da1a0dff4d333482134770a406a25ef9450a1d10cd588ff23d04",
+      "noindex": false,
+      "canonical": [
+        "https://www.bigfame.co/en/contact"
+      ],
+      "h1_count": 1,
+      "form_actions": [
+        "https://api.web3forms.com/submit"
+      ],
+      "failures": []
+    },
+    {
+      "url": "https://www.bigfame.co/tw/",
+      "status": 200,
+      "final_url": "https://www.bigfame.co/tw/",
+      "sha256": "db08348874ff1644368cc1a2a8d924409e0d80fe4da5fb801c45b917bcb0b716",
+      "noindex": false,
+      "canonical": [
+        "https://www.bigfame.co/tw/"
+      ],
+      "h1_count": 1,
+      "form_actions": [],
+      "failures": []
+    },
+    {
+      "url": "https://www.bigfame.co/tw/contact",
+      "status": 200,
+      "final_url": "https://www.bigfame.co/tw/contact",
+      "sha256": "0aa2f6ba52ab80c7608e5254f5b585279f45f3fc10eb578f4f29401016b054ae",
+      "noindex": false,
+      "canonical": [
+        "https://www.bigfame.co/tw/contact"
+      ],
+      "h1_count": 1,
+      "form_actions": [
+        "https://api.web3forms.com/submit"
+      ],
+      "failures": []
+    },
+    {
+      "url": "https://www.bigfame.co/jp/",
+      "status": 200,
+      "final_url": "https://www.bigfame.co/jp/",
+      "sha256": "165d17060e31c61f954fd5d7b60a2517c73e4efb56a7e7a321bb4c10928eaab3",
+      "noindex": false,
+      "canonical": [
+        "https://www.bigfame.co/jp/"
+      ],
+      "h1_count": 1,
+      "form_actions": [],
+      "failures": []
+    },
+    {
+      "url": "https://www.bigfame.co/jp/contact",
+      "status": 200,
+      "final_url": "https://www.bigfame.co/jp/contact",
+      "sha256": "00d0e2990a4af84739251133bc62278198dc59554791de0ffe854300e2b3565c",
+      "noindex": false,
+      "canonical": [
+        "https://www.bigfame.co/jp/contact"
+      ],
+      "h1_count": 1,
+      "form_actions": [
+        "https://api.web3forms.com/submit"
+      ],
+      "failures": []
+    }
+  ]
+}

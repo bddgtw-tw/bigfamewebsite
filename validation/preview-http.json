@@ -1,0 +1,93 @@
+{
+  "checked_at_utc": "2026-11-12T01:24:07.554866+00:00",
+  "mode": "preview",
+  "base": "https://cb67d3bd.bigfamewebsite.pages.dev",
+  "read_only": true,
+  "release_approved": false,
+  "results": [
+    {
+      "url": "https://cb67d3bd.bigfamewebsite.pages.dev/en/",
+      "status": 200,
+      "final_url": "https://cb67d3bd.bigfamewebsite.pages.dev/en/",
+      "sha256": "de9ea366714e974557f40aa95d497f19b0cf34b433433ef873206d88ae7dd645",
+      "noindex": true,
+      "canonical": [
+        "https://www.bigfame.co/en/"
+      ],
+      "h1_count": 1,
+      "form_actions": [],
+      "failures": []
+    },
+    {
+      "url": "https://cb67d3bd.bigfamewebsite.pages.dev/en/contact",
+      "status": 200,
+      "final_url": "https://cb67d3bd.bigfamewebsite.pages.dev/en/contact",
+      "sha256": "bbd55e2b6a348418a59f362f5a11581e90c5d49f8839a33ed6137b9e74c86b25",
+      "noindex": true,
+      "canonical": [
+        "https://www.bigfame.co/en/contact"
+      ],
+      "h1_count": 1,
+      "form_actions": [
+        "https://api.web3forms.com/submit"
+      ],
+      "failures": []
+    },
+    {
+      "url": "https://cb67d3bd.bigfamewebsite.pages.dev/tw/",
+      "status": 200,
+      "final_url": "https://cb67d3bd.bigfamewebsite.pages.dev/tw/",
+      "sha256": "c2f8c66f400b963b2f04e8d398c2417785a917622a90bd57ee3853d596568c89",
+      "noindex": true,
+      "canonical": [
+        "https://www.bigfame.co/tw/"
+      ],
+      "h1_count": 1,
+      "form_actions": [],
+      "failures": []
+    },
+    {
+      "url": "https://cb67d3bd.bigfamewebsite.pages.dev/tw/contact",
+      "status": 200,
+      "final_url": "https://cb67d3bd.bigfamewebsite.pages.dev/tw/contact",
+      "sha256": "2e7f1ca2e0ad9001ad955bc0aa469532738dbe4261b30db77bf67bd43f22d23c",
+      "noindex": true,
+      "canonical": [
+        "https://www.bigfame.co/tw/contact"
+      ],
+      "h1_count": 1,
+      "form_actions": [
+        "https://api.web3forms.com/submit"
+      ],
+      "failures": []
+    },
+    {
+      "url": "https://cb67d3bd.bigfamewebsite.pages.dev/jp/",
+      "status": 200,
+      "final_url": "https://cb67d3bd.bigfamewebsite.pages.dev/jp/",
+      "sha256": "0f23668fa71a2a415f3bc0e4a7ae9a7e764277380de4fa17ce2be5c7eb7a065f",
+      "noindex": true,
+      "canonical": [
+        "https://www.bigfame.co/jp/"
+      ],
+      "h1_count": 1,
+      "form_actions": [],
+      "failures": []
+    },
+    {
+      "url": "https://cb67d3bd.bigfamewebsite.pages.dev/jp/contact",
+      "status": 200,
+      "final_url": "https://cb67d3bd.bigfamewebsite.pages.dev/jp/contact",
+      "sha256": "6e7b7cbccb9548c9a157b6db3b9f26a953d2a6653f39ccfa47b8f9e59a3aff44",
+      "noindex": true,
+      "canonical": [
+        "https://www.bigfame.co/jp/contact"
+      ],
+      "h1_count": 1,
+      "form_actions": [
+        "https://api.web3forms.com/submit"
+      ],
+      "failures": []
+    }
+  ]
+}
