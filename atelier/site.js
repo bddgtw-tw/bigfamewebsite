@@ -14,13 +14,27 @@ if(form){
  if(categories.includes(params.get('category')))form.elements.category.value=params.get('category');
  const result=document.querySelector('#result'),draft=document.querySelector('#draft'),emailLink=document.querySelector('#open-email'),status=document.querySelector('#status');
  const clean=v=>String(v).trim().replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/g,'');
- const build=()=>['Hello Big Fame,','I would like to discuss a retail display project.','',
+ const build=()=>['Hello Big Fame,','I would like to discuss the following project.','',
+ 'PROJECT REQUIREMENTS SUMMARY',
+ '1. Project context',
  'Role: '+clean(form.elements.role.value),
- 'Product type: '+clean(form.elements.category.value),
+ 'Product type: '+clean(form.elements.category.value),'',
+ '2. Quantity and destination',
  'Estimated quantity: '+clean(form.elements.quantity.value),
  'Destination: '+clean(form.elements.destination.value),'',
- 'Requirements:',clean(form.elements.requirements.value),'',
- 'Please let me know which dimensions, drawings or samples would help you review this request.'].join('\n');
+ '3. Timing and available information',
+ 'Target timing (requested, not confirmed): '+(clean(form.elements.timing.value)||'Not specified'),
+ 'Existing drawings / references: '+(clean(form.elements.drawings.value)||'Not specified'),'',
+ '4. Requirements and open questions',clean(form.elements.requirements.value),'',
+ 'Please advise which dimensions, drawings or samples are needed next and what scope we should review before quotation.',
+ 'No files are attached by this brief builder.'].join('\n');
+ const invalidate=()=>{
+  const prepared=!result.hidden;
+  result.hidden=true;
+  draft.value='';
+  emailLink.removeAttribute('href');
+  status.textContent=prepared?'Details changed. Prepare a new brief before opening an email draft. Nothing has been sent.':'';
+ };
  const button=document.querySelector('#prepare');button.hidden=false;
  button.addEventListener('click',()=>{
   for(const el of [form.elements.quantity,form.elements.destination,form.elements.requirements])el.setCustomValidity(el.value.trim()?'':'Please enter a value, or write “Not decided”.');
@@ -32,7 +46,7 @@ if(form){
   result.hidden=false;status.textContent='Draft prepared. Nothing has been sent.';
   document.querySelector('#result-title').focus();
  });
- form.addEventListener('input',e=>{if(e.target.setCustomValidity)e.target.setCustomValidity('');result.hidden=true;status.textContent=''});
+ form.addEventListener('input',e=>{if(e.target.setCustomValidity)e.target.setCustomValidity('');invalidate()});
  form.addEventListener('change',()=>{result.hidden=true;status.textContent=''});
  form.addEventListener('submit',e=>e.preventDefault());
  emailLink.addEventListener('click',()=>{status.textContent='Opening your email app. Review the draft and send it there; this page cannot confirm delivery.'});

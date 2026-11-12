@@ -43,7 +43,7 @@
 <form id="brief" autocomplete="off">
 <fieldset>
 <legend>Your project details</legend>
-<p class="hint">All five fields are required. “Not decided” is a useful answer.</p>
+<p class="hint">Role, product type, quantity, destination and requirements are required. Target timing and drawing status are optional. “Not decided” is a useful answer.</p>
 <div class="form-grid">
 <div class="field">
 <label for="role">Your role</label>
@@ -76,11 +76,29 @@
 <input id="destination" name="destination" maxlength="100" required aria-describedby="destination-hint">
 <p class="hint" id="destination-hint">Country or region. No street address needed.</p>
 </div>
+<div class="field">
+<label for="timing">Target timing (optional)</label>
+<input id="timing" name="timing" maxlength="120" aria-describedby="timing-hint">
+<p class="hint" id="timing-hint">Target launch, installation or delivery period; note if flexible. This is a request, not a confirmed schedule.</p>
+</div>
+<div class="field">
+<label for="drawings">Existing drawings (optional)</label>
+<select id="drawings" name="drawings" aria-describedby="drawings-hint">
+<option value="">Not specified</option>
+<option>No drawings yet</option>
+<option>Product photos or references available</option>
+<option>Space plan or site dimensions available</option>
+<option>Sketch or concept drawing available</option>
+<option>Dimensioned drawings or CAD available</option>
+<option>Several types available — described below</option>
+</select>
+<p class="hint" id="drawings-hint">Status only. No upload or file link is needed here.</p>
+</div>
 <div class="field full">
 <label for="requirements">What do you need?</label>
 <textarea id="requirements" name="requirements" maxlength="1500" required aria-describedby="requirements-hint">
 </textarea>
-<p class="hint" id="requirements-hint">Product, setting, approximate dimensions and open questions. Maximum 1,500 characters. Do not include confidential or personal information.</p>
+<p class="hint" id="requirements-hint">Describe the product, dimensions, display setting and open questions. Mention any photos or space plans you can share later; do not paste private file links. Maximum 1,500 characters. No confidential or personal information.</p>
 </div>
 </div>
 </fieldset>
@@ -117,6 +135,8 @@ Role:
 Product type:
 Estimated quantity:
 Destination:
+Target timing (optional):
+Existing drawings / references (optional):
 Requirements / open questions:
 
 Please let me know what information you need next.</pre>
@@ -129,7 +149,7 @@ Please let me know what information you need next.</pre>
 <ol>
 <li>Prepare and review the text on this page.</li>
 <li>Open an email draft, or copy the text into your email app.</li>
-<li>Send it when you are ready. Big Fame can review the details and discuss the next information needed.</li>
+<li>Send it when you are ready. A reply can clarify missing dimensions, drawing or sample needs, and the scope to review before quotation. No quotation date or project outcome is promised.</li>
 </ol>
 <p class="notice">This preview does not upload files, store your brief or submit enquiries to a server. It is publicly accessible, not a private workspace.</p>
 <p class="hint">You can also use our existing contact page.</p>
