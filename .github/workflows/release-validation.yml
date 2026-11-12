@@ -1,0 +1,35 @@
+name: Read-only release validation
+on:
+  pull_request:
+    paths:
+      - 'scripts/validate_release.py'
+      - 'tests/release-validation.test.cjs'
+      - 'validation/**'
+      - '.github/workflows/release-validation.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm test
+      - name: Read production without submitting forms
+        run: python3 scripts/validate_release.py --base https://www.bigfame.co --mode production --output production-check.json
+      - name: Preserve diagnostic report even on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-read-only-check
+          path: production-check.json
+          retention-days: 14
+# No deployment, merge, DNS, form POST, analytics, or traffic-allocation steps.
+# No schedule here: GitHub scheduled workflows run on the default branch;
+# merging solely to activate a check could also trigger the site's release.

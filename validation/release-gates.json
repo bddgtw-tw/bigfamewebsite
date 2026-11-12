@@ -1,0 +1,17 @@
+{
+  "production_origin": "https://www.bigfame.co",
+  "production_host_project": null,
+  "production_deployment_id": null,
+  "production_commit": null,
+  "verified_rollback_deployment_id": null,
+  "preview_origin": "https://cb67d3bd.bigfamewebsite.pages.dev",
+  "preview_commit": "0b7a7bd1f7610b7d77d3bd98d42208cc2161d195",
+  "preview_evidence": "PR15 Cloudflare Pages deployment bot; not a production mapping",
+  "mobile_browser_qa": "pending",
+  "approved_inquiry_test_received": "pending",
+  "analytics_end_to_end": "pending",
+  "claims_and_rights_review": "pending",
+  "release_approved": false,
+  "experiment_enabled": false,
+  "automatic_promotion": false
+}
