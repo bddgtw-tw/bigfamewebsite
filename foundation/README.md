@@ -1,6 +1,6 @@
 # Big Fame new website foundation v1
 
-Independent bilingual vertical prototype. No existing repository, PR15 or production site was modified. Open `index.html` directly after extracting the ZIP; no installation needed. `en/` and `zh/` contain approach, product, engineering record and inquiry pages. Source text and shared layout live in build.py; run `python build.py` after edits. CSS/JS under assets. The dist directory is a preview copy, not production deployment.
+Bilingual vertical prototype integrated into this draft branch under `foundation/`. Root production pages are not replaced. Edit the checked-in HTML in `en/` and `zh/` and shared CSS/JS under `assets/` directly. The original ZIP's `build.py`, `dist/` and test harness were not imported: do not use them to regenerate these newer integration changes.
 
 ## Design and scope
 First screen identifies Big Fame, retail brand/design/sourcing audiences, display development and a concrete brief CTA. Deep-green/warm-neutral editorial layout uses an existing EYEHK product asset. One source-backed product family and one anonymized historical engineering record: no fake customer logos, testimonials, delivery outcomes, guaranteed lead times or Made in Taiwan claim.
@@ -39,3 +39,12 @@ Required-field and email/URL checks, inline live feedback, first invalid field f
 
 ## 2026-11-12 integration draft
 Packaged under /foundation/ on isolated branch. Existing website remains unchanged. Added a visible email inquiry fallback on every substantive page, available without JavaScript. Local brief generator remains explicitly NOT SENT. Real submission remains blocked until independent end-to-end receipt verification; never infer mailto click equals lead receipt. Preview remains noindex. Original image rights and content review gates remain. Production rollback reference: main ec40b9d1ae114c5779fdb4765529dbde52bb66a8, Cloudflare deployment df16c993-c6ad-4342-b238-5d9d17a11d3e. Do not deploy over production.
+
+## Integration verification and limits (2026-11-12, latest)
+- Public branch preview: https://bob-b-foundation-20261112.bigfamewebsite.pages.dev/foundation/en/
+- Added bilingual privacy pages and links. Data entered in the local brief generator is not submitted automatically; the user-controlled email action opens their email client.
+- Read back the generated mailto destination, subject and summary from the rendered preview. Destination: shopdisplay@bigfame.co. This verifies composition, not email delivery.
+- Rechecked English inquiry and Chinese homepage inside 390px frames (375px content): scrollWidth equals clientWidth. Desktop and narrow layouts visually inspected; physical-device behavior remains unverified.
+- `assets/inquiry-transport.js` is a dormant, disabled-by-default adapter. It is NOT loaded by HTML and NOT wired to the UI. Four isolated mocked transport tests passed without network; no real delivery certification.
+- Earlier ZIP test counts above are historical results for that ZIP, not a claim that those suites exist or pass in this integration branch.
+- PR17 changes the legacy form reliability; PR18 is the distinct B prototype stacked on it. Neither has been merged or deployed over main.
