@@ -35,10 +35,25 @@ if(form){
   emailLink.removeAttribute('href');
   status.textContent=prepared?'Details changed. Prepare a new brief before opening an email draft. Nothing has been sent.':'';
  };
+ const fields=[...form.querySelectorAll('[data-error]')];
+ const nativeUserInvalid=CSS.supports('selector(:user-invalid)');
+ const attempted=new WeakSet();
+ const syncError=(el,force=false)=>{
+  if(!el.dataset.error)return;
+  const shown=!el.validity.valid&&(force||attempted.has(el)||(nativeUserInvalid&&el.matches(':user-invalid')));
+  el.setAttribute('aria-invalid',String(shown));
+  document.getElementById(el.dataset.error).hidden=!shown;
+  const ids=(el.getAttribute('aria-describedby')||'').split(/\s+/).filter(id=>id&&id!==el.dataset.error);
+  if(shown)ids.push(el.dataset.error);
+  if(ids.length)el.setAttribute('aria-describedby',ids.join(' '));else el.removeAttribute('aria-describedby');
+ };
+ form.addEventListener('invalid',e=>{attempted.add(e.target);syncError(e.target,true)},true);
+ form.addEventListener('focusout',e=>syncError(e.target));
  const button=document.querySelector('#prepare');button.hidden=false;
  button.addEventListener('click',()=>{
   for(const el of [form.elements.quantity,form.elements.destination,form.elements.requirements])el.setCustomValidity(el.value.trim()?'':'Please enter a value, or write “Not decided”.');
-  if(!form.reportValidity())return;
+  fields.forEach(el=>{attempted.add(el);syncError(el,true)});
+  if(!form.reportValidity()){status.textContent='Please correct the fields marked Error. Nothing has been sent.';return;}
   draft.value=build();const uri='mailto:shopdisplay@bigfame.co?subject='+encodeURIComponent('Retail display project brief')+'&body='+encodeURIComponent(draft.value);
   emailLink.href=uri;
   emailLink.hidden=uri.length>1900;
@@ -46,7 +61,7 @@ if(form){
   result.hidden=false;status.textContent='Draft prepared. Nothing has been sent.';
   document.querySelector('#result-title').focus();
  });
- form.addEventListener('input',e=>{if(e.target.setCustomValidity)e.target.setCustomValidity('');invalidate()});
+ form.addEventListener('input',e=>{if(e.target.setCustomValidity)e.target.setCustomValidity('');syncError(e.target);invalidate()});
  form.addEventListener('change',()=>{result.hidden=true;status.textContent=''});
  form.addEventListener('submit',e=>e.preventDefault());
  emailLink.addEventListener('click',()=>{status.textContent='Opening your email app. Review the draft and send it there; this page cannot confirm delivery.'});

@@ -34,3 +34,11 @@ picker.addEventListener('change', () => {
   openPage.href = picker.value;
   announce();
 });
+
+const noJS=document.querySelector('#no-js');
+noJS.addEventListener('change',()=>{
+ frame.setAttribute('sandbox',noJS.checked?'allow-same-origin':'allow-same-origin allow-scripts');
+ frame.src=picker.value;
+ announce();
+ status.textContent+=noJS.checked?' · Prototype JavaScript disabled':' · Prototype JavaScript enabled';
+});

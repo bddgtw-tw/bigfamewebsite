@@ -47,17 +47,18 @@
 <div class="form-grid">
 <div class="field">
 <label for="role">Your role</label>
-<select id="role" name="role" required>
+<select id="role" name="role" required aria-invalid="false" data-error="role-error">
 <option value="">Choose a role</option>
 <option>Brand team</option>
 <option>Retail designer</option>
 <option>Procurement</option>
 <option>Other</option>
 </select>
+<p class="field-error" id="role-error" hidden>Error: Choose your role.</p>
 </div>
 <div class="field">
 <label for="category">Product type</label>
-<select id="category" name="category" required>
+<select id="category" name="category" required aria-invalid="false" data-error="category-error">
 <option value="">Choose a product type</option>
 <option>Display hooks &amp; hardware</option>
 <option>Custom retail fixtures</option>
@@ -65,15 +66,18 @@
 <option>Custom metal parts</option>
 <option>Not sure yet</option>
 </select>
+<p class="field-error" id="category-error" hidden>Error: Choose a product type.</p>
 </div>
 <div class="field">
 <label for="quantity">Estimated quantity</label>
-<input id="quantity" name="quantity" maxlength="80" required aria-describedby="quantity-hint">
+<input id="quantity" name="quantity" maxlength="80" required aria-describedby="quantity-hint" aria-invalid="false" data-error="quantity-error">
+<p class="field-error" id="quantity-error" hidden>Error: Enter an estimated quantity or “Not decided”.</p>
 <p class="hint" id="quantity-hint">Add units or a range, or write “Not decided”.</p>
 </div>
 <div class="field">
 <label for="destination">Destination</label>
-<input id="destination" name="destination" maxlength="100" required aria-describedby="destination-hint">
+<input id="destination" name="destination" maxlength="100" required aria-describedby="destination-hint" aria-invalid="false" data-error="destination-error">
+<p class="field-error" id="destination-error" hidden>Error: Enter a country or region, or “Not decided”.</p>
 <p class="hint" id="destination-hint">Country or region. No street address needed.</p>
 </div>
 <div class="field">
@@ -96,8 +100,9 @@
 </div>
 <div class="field full">
 <label for="requirements">What do you need?</label>
-<textarea id="requirements" name="requirements" maxlength="1500" required aria-describedby="requirements-hint">
+<textarea id="requirements" name="requirements" maxlength="1500" required aria-describedby="requirements-hint" aria-invalid="false" data-error="requirements-error">
 </textarea>
+<p class="field-error" id="requirements-error" hidden>Error: Describe your requirements or open questions.</p>
 <p class="hint" id="requirements-hint">Describe the product, dimensions, display setting and open questions. Mention any photos or space plans you can share later; do not paste private file links. Maximum 1,500 characters. No confidential or personal information.</p>
 </div>
 </div>
