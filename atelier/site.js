@@ -62,7 +62,7 @@ if(form){
   document.querySelector('#result-title').focus();
  });
  form.addEventListener('input',e=>{if(e.target.setCustomValidity)e.target.setCustomValidity('');syncError(e.target);invalidate()});
- form.addEventListener('change',()=>{result.hidden=true;status.textContent=''});
+ form.addEventListener('change',e=>{syncError(e.target);invalidate()});
  form.addEventListener('submit',e=>e.preventDefault());
  emailLink.addEventListener('click',()=>{status.textContent='Opening your email app. Review the draft and send it there; this page cannot confirm delivery.'});
  document.querySelector('#copy-brief').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(draft.value);status.textContent='Brief copied. Paste it into an email to shopdisplay@bigfame.co.'}catch{draft.focus();draft.select();status.textContent='Select and copy the brief above using your device’s copy command.'}});
