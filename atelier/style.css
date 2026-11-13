@@ -6,3 +6,7 @@
 :is(input,select,textarea)[aria-invalid="true"]{border:2px solid #a22d1b;background:#fff4ee}
 .dark .num{color:#f28f78}
 .email{display:inline-flex;align-items:center;min-height:44px}
+
+/* Buyer routes are choices, not numbered process steps. */
+.route{grid-template-columns:1fr 1fr 44px}
+@media(max-width:760px){.route{grid-template-columns:1fr 28px}.route p{grid-column:1;grid-row:2}.route .arrow{grid-column:2;grid-row:1}}
