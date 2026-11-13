@@ -10,3 +10,7 @@
 /* Buyer routes are choices, not numbered process steps. */
 .route{grid-template-columns:1fr 1fr 44px}
 @media(max-width:760px){.route{grid-template-columns:1fr 28px}.route p{grid-column:1;grid-row:2}.route .arrow{grid-column:2;grid-row:1}}
+
+/* Original conceptual imagery: preserve the whole object and disclosure. */
+.hero{grid-template-columns:1fr 1.25fr;gap:44px}.concept-hero picture,.concept-hero img{display:block;width:100%;height:auto}.concept-hero img{background:var(--soft)}.figure-note strong{color:var(--ink)}
+@media(max-width:760px){.hero{grid-template-columns:1fr;gap:28px}.concept-hero picture{aspect-ratio:4/5}.concept-hero img{height:100%;object-fit:contain}.hero figure{max-width:none}}
