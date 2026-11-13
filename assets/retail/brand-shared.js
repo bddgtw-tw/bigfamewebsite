@@ -1,0 +1,1 @@
+document.querySelectorAll('.brand-mobile').forEach(d=>{d.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>d.open=false));document.addEventListener('keydown',e=>{if(e.key==='Escape'&&d.open){d.open=false;d.querySelector('summary').focus()}})});
