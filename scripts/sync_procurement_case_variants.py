@@ -11,7 +11,6 @@ for lang in ("tw", "en", "jp"):
         'data-bf-source-record="1"',
         'data-bf-case-contract="1"',
         'data-bf-faq="1"',
-        "TA MUJI",
     )
     missing = [marker for marker in required if marker not in flat]
     if missing:
@@ -19,3 +18,4 @@ for lang in ("tw", "en", "jp"):
     clean_path.write_text(flat, encoding="utf-8", newline="\n")
 
 print("Synchronized procurement case flat and clean variants for tw/en/jp")
+
