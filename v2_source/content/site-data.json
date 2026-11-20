@@ -1,0 +1,1622 @@
+{
+  "brand": {
+    "name": "BIG FAME",
+    "legal": "Big Fame Industrial Corp.",
+    "founded": "1988",
+    "domain": "https://www.bigfame.co",
+    "ga4Id": "G-PDW4NPHHW8",
+    "posthogKey": "",
+    "posthogHost": "https://us.i.posthog.com",
+    "email": "shopdisplay@bigfame.co",
+    "phone": ""
+  },
+  "languages": [
+    "en",
+    "jp",
+    "tw"
+  ],
+  "langLabels": {
+    "en": "EN",
+    "jp": "日本語",
+    "tw": "繁體中文"
+  },
+  "ui": {
+    "en": {
+      "htmlLang": "en",
+      "siteTitle": "Big Fame — Engineering the Silent Stage Behind Retail & Hospitality Spaces",
+      "metaDesc": "Founded in 1988. Multi-material commercial fixtures (OEM/ODM, KD flat-pack export), hospitality FF&E, and Vietnam stone integration — preserving architectural intent from drawing to rollout.",
+      "nav": {
+        "home": "Home",
+        "capabilities": "Capabilities",
+        "cases": "Projects",
+        "inquiry": "Inquiry",
+        "cta": "Check Feasibility"
+      },
+      "footer": {
+        "tagline": "The engineering mind behind retail & hospitality spaces — multi-material fixtures, KD flat-pack export, and white-label NDA manufacturing since 1988.",
+        "hubsTitle": "Regional Footprint",
+        "hubs": [
+          "Taipei Headquarters",
+          "Taiwan Logistics & Warehousing",
+          "Vietnam Granite & Marble Processing Plant",
+          "Malaysia — Sunnyward Sdn Bhd"
+        ],
+        "linksTitle": "Navigation",
+        "contactTitle": "Direct Contact",
+        "privacy": "Privacy Policy",
+        "copyright": "© 1988–2026 Big Fame Industrial Corp. All rights reserved."
+      },
+      "home": {
+        "eyebrow": "THE SILENT STAGE · COMMERCIAL FIXTURE & FF&E ENGINEERING · EST. 1988",
+        "h1": "Engineering the Silent Stage Behind Retail & Hospitality Spaces.",
+        "subtitle": "Multi-material fixtures, KD flat-pack export, and Vietnam stone integration — built to preserve architectural intent from drawing to rollout.",
+        "primaryCta": "Check Feasibility & Rough Budget",
+        "secondaryCta": "View Selected Work",
+        "heroImage": "/assets/images/hero-veltor-island.webp",
+        "heroAlt": "Heavy-duty powder-coated steel and oak island display fixture engineered for KD flat-pack export",
+        "stats": [
+          {
+            "value": "1988",
+            "label": "Founded in Taipei, Taiwan"
+          },
+          {
+            "value": "300+",
+            "label": "Retail & commercial spaces delivered"
+          },
+          {
+            "value": "15",
+            "label": "Countries with direct export experience"
+          },
+          {
+            "value": "4 Hubs",
+            "label": "Taipei · Taiwan Warehouse · Vietnam Stone · Malaysia"
+          }
+        ],
+        "taEyebrow": "BUILT FOR DECISION-MAKERS",
+        "taTitle": "Solving the Four Real Risks Between Architectural Drawing and Store Opening",
+        "taIntro": "We act as your manufacturing engineering extension — addressing cross-material joinery, ocean freight volume, multi-batch consistency, and white-label confidentiality before production begins.",
+        "taLink": "Explore Engineering & KD Standards",
+        "taCards": [
+          {
+            "num": "01",
+            "role": "Store Architects & Interior Studios",
+            "title": "Architectural Intent & Multi-Material Joinery (DFM)",
+            "desc": "Pre-production DFM review of metal-to-wood and stone interfaces, concealed hardware, and matte finish sampling so factory output honors the original drawing."
+          },
+          {
+            "num": "02",
+            "role": "VP of Retail Expansion",
+            "title": "Modular Quick-Install & Batch Consistency",
+            "desc": "Simplified on-site assembly, 1:1 pre-shipment dry-fit verification, and revision-controlled drawing numbering to keep follow-up store rollouts aligned."
+          },
+          {
+            "num": "03",
+            "role": "Global Sourcing & Procurement",
+            "title": "KD Flat-Pack TCO & Single-Window Consolidation",
+            "desc": "Consolidating metal, millwork, acrylic, and stone under one engineering desk — engineered from prototyping for flat-pack container efficiency (actual CBM confirmed per project)."
+          },
+          {
+            "num": "04",
+            "role": "Global Trading Agents",
+            "title": "White-Label OEM Ethics & NDA Protection",
+            "desc": "Strict non-circumvention with zero direct contact to your end clients, supported by multilingual engineering drawings, self-inspection records, and flexible pilot runs."
+          }
+        ],
+        "casesEyebrow": "SELECTED WORK",
+        "casesTitle": "Completed Installations & Architectural System Studies",
+        "casesIntro": "Curated commercial interiors, hospitality FF&E packages, and modular concept studies focused on structural proportion and clean joinery.",
+        "casesLink": "View All Projects",
+        "craftEyebrow": "PHYSICAL ENGINEERING PROOF",
+        "craftTitle": "Verified in Metal & Prototyping Before Volume Production",
+        "craftIntro": "Before container loading, critical frames and multi-material junctions are physically fabricated, dry-fitted, and verified against approved drawings.",
+        "craftItems": [
+          {
+            "src": "/assets/images/craft-bent-tube.webp",
+            "title": "1:1 Bent-Tube & Perforated Steel Prototyping",
+            "desc": "Bent steel tubing and perforated sheet metal prototypes verified on our workshop floor for weld integrity, radius continuity, and KD assembly clearances."
+          },
+          {
+            "src": "/assets/images/craft-metal-mesh.webp",
+            "title": "Stainless Framing & Expanded Metal Discipline",
+            "desc": "Precision stainless tube frames, expanded metal mesh, and powder-coated finishes coordinated under one quality standard."
+          },
+          {
+            "src": "/assets/images/craft-wood-glass-bench.webp",
+            "title": "Solid Timber, Tempered Glass & Exposed Hardware",
+            "desc": "Heavy-section timber beams bolted directly into thick tempered glass legs — demonstrating cross-material load transfer and clean exposed joinery."
+          },
+          {
+            "src": "/assets/images/craft-stone-grinding.webp",
+            "title": "Stone Countertop Fabrication & Edge Finishing",
+            "desc": "Hands-on natural and engineered stone cutting, edge grinding, and hardware recessing aligned directly with metal and wood substructures."
+          }
+        ],
+        "processEyebrow": "WORKFLOW",
+        "processTitle": "From Drawing Review to Container Delivery",
+        "processSteps": [
+          {
+            "num": "01",
+            "title": "DFM & Joinery Pre-Check",
+            "desc": "Review 2D/3D drawings or fixture schedules to resolve multi-material tolerances and concealed hardware early."
+          },
+          {
+            "num": "02",
+            "title": "1:1 Physical Prototyping",
+            "desc": "Build and inspect real samples to validate proportions, finish sheen, and KD assembly ergonomics."
+          },
+          {
+            "num": "03",
+            "title": "Coordinated Production",
+            "desc": "Synchronize steel, wood, acrylic, glass, and Vietnam stone lines under revision-controlled project drawings."
+          },
+          {
+            "num": "04",
+            "title": "KD Packing & Pre-Ship Check",
+            "desc": "Flat-pack export crating and pre-shipment inspection. Lead times and crating specs are confirmed per project scope."
+          }
+        ],
+        "bottomTitle": "No finalized drawings yet? Start with a photo or sketch.",
+        "bottomDesc": "Whether you need a rough budget for an internal pitch or want to compare structural & container-loading options, our engineering desk will tell you what is feasible and what detail matters next.",
+        "bottomCta": "Check Feasibility & Rough Budget",
+        "ctaNote": "No finalized CAD yet? Completely fine. Share a reference photo, rough sketch, or brief note to start.",
+        "bottomSecondaryCta": "Request a Quote from Drawings or Samples"
+      },
+      "capabilities": {
+        "eyebrow": "ENGINEERING & MANUFACTURING",
+        "title": "Cross-Material Fabrication, KD Packaging & Regional Supply",
+        "intro": "Instead of splitting metal frames, wood cabinetry, acrylic trays, and stone countertops across disconnected vendors, Big Fame coordinates assembly tolerances and export logistics under one roof.",
+        "pillars": [
+          {
+            "num": "01",
+            "title": "Multi-Material Retail Fixtures (OEM / ODM)",
+            "desc": "Modular wall systems, heavy-duty gondolas, island tables, and specialty showcases combining powder-coated steel, bent tubing, birch plywood, solid wood, acrylic, and tempered glass.",
+            "points": [
+              "DFM review of metal-to-wood, glass, and stone interfaces prior to tooling",
+              "Revision-controlled drawing numbering for multi-year store rollouts",
+              "Dimensions, structural load ratings, and finishes confirmed per project drawings"
+            ]
+          },
+          {
+            "num": "02",
+            "title": "Knock-Down (KD) Flat-Pack & TCO Engineering",
+            "desc": "Moving beyond unit FOB pricing to Total Cost of Ownership — designing bolted, flat-pack breakdown structures from prototyping to reduce ocean freight volume and on-site installation friction.",
+            "points": [
+              "Flat-pack structural breakdown evaluated against container and pallet dimensions",
+              "Factory 1:1 pre-shipment dry-fit inspection and labeled hardware kits",
+              "Supported by Taiwan warehousing and regional export consolidation"
+            ]
+          },
+          {
+            "num": "03",
+            "title": "Hospitality FF&E, Vietnam Stone & Regional Hubs",
+            "desc": "Custom guestroom casegoods, bent-metal wardrobes, outdoor hospitality seating, and natural granite or marble countertops processed at our Vietnam stone facility.",
+            "points": [
+              "Direct Vietnam granite & marble processing integrated with metal frames and cabinetry",
+              "Malaysia regional hospitality & outdoor FF&E support via Sunnyward Sdn Bhd",
+              "Strict white-label OEM ethics and NDA protection for design studios and trading agents"
+            ]
+          }
+        ],
+        "note": "All engineering tolerances, container CBM calculations, material specifications, surface treatments, and lead times are confirmed per project drawings, order volume, and destination requirements.",
+        "systemsEyebrow": "STANDARD PLATFORMS & KD ENGINEERING",
+        "systemsTitle": "Repeatable Hardware Systems & Flat-Pack Structural Breakdown",
+        "systemsIntro": "Alongside bespoke OEM/ODM fabrication and 3D CAD layout coordination, Big Fame maintains proven modular wall hardware platforms and KD flat-pack structural methodologies for rapid multi-store rollouts.",
+        "systems": [
+          {
+            "src": "/assets/images/sys-25x40-upright.webp",
+            "title": "25×40mm Slotted Wall System (ROOT / IVY) & GROOVING Slatwall",
+            "desc": "Standardized steel upright profiles, concealed-slot brackets, and aluminum-reinforced slatwall panels that shorten development cycles and keep follow-up store reorders interchangeable."
+          },
+          {
+            "src": "/assets/images/sys-kd-exploded.webp",
+            "title": "KD Flat-Pack Exploded Engineering & Container TCO",
+            "desc": "Fixtures are decomposed at the CAD stage into panelized metal frames and flat-packed wood/glass decks — eliminating shipped air while simplifying on-site bolted assembly."
+          }
+        ]
+      },
+      "casesPage": {
+        "eyebrow": "PORTFOLIO",
+        "title": "Completed Installations & Architectural System Studies",
+        "intro": "Explore completed retail and hospitality installations alongside architectural concept showrooms developed to demonstrate multi-material fixture engineering.",
+        "filterAll": "All Projects",
+        "filterReal": "Completed Installations",
+        "filterConcept": "Concept Studies",
+        "viewCase": "View Project Details"
+      },
+      "caseDetail": {
+        "backToCases": "Back to Projects",
+        "metaType": "Space Type",
+        "metaCategory": "Classification",
+        "metaScope": "Manufacturing Scope",
+        "metaMaterials": "Primary Materials",
+        "briefTitle": "Design & Engineering Challenge",
+        "execTitle": "Joinery, Structure & Delivery Execution",
+        "specTitle": "Specifications & Delivery Notes",
+        "specNote": "Panel dimensions, finish sheen, structural load ratings, and KD export crating specifications are confirmed per project drawings and site conditions.",
+        "nextCase": "Next Project",
+        "inquireCase": "Inquire About a Similar System"
+      },
+      "inquiry": {
+        "eyebrow": "ENGINEERING INQUIRY",
+        "title": "Start with a Photo, Sketch, or Drawing — No Formal CAD Required",
+        "intro": "Choose the entry point that matches your stage. Only your business email and a brief note on what you need are required to start.",
+        "ctaNote": "No finalized CAD yet? Completely fine. Share a reference photo, rough sketch, or brief note to start.",
+        "modes": [
+          {
+            "id": "budget",
+            "label": "Check Feasibility & Rough Budget",
+            "hint": "Start with a reference photo or use case. We confirm feasibility and cost drivers before asking for formal CAD."
+          },
+          {
+            "id": "quote",
+            "label": "Request a Quote from Drawings or Samples",
+            "hint": "Compare sizes, single/double-sided or nestable options, carton weight limits, container loading, and KD assembly."
+          },
+          {
+            "id": "callback",
+            "label": "Leave My Contact — Have Your Team Reach Out",
+            "hint": "Short on time? Just leave your email or preferred contact method and our sales & engineering desk will reach out to you."
+          }
+        ],
+        "scenariosTitle": "Three Common Starting Points",
+        "scenarios": [
+          {
+            "num": "01",
+            "title": "Rough Budget for a Proposal",
+            "desc": "Start with reference photos alone. We clarify if it can be built and which specs move the price — no formal CAD or physical sample needed on day one."
+          },
+          {
+            "num": "02",
+            "title": "Comparing Structural Options",
+            "desc": "We explain how changes (single vs. double-sided, nestable vs. welded) impact unit cost, container loading, and lead time before asking for the next drawing."
+          },
+          {
+            "num": "03",
+            "title": "Delivery, Weight & Store Assembly",
+            "desc": "Feasibility includes carton weight limits, flat-pack loading volume, phased rollouts, and practical on-site installation."
+          }
+        ],
+        "fields": {
+          "modeLegend": "Select Your Inquiry Stage",
+          "requiredSection": "Core Details (Email + brief note — or Email only if requesting outreach)",
+          "email": "Business Email *",
+          "emailPh": "name@company.com",
+          "requirements": "What are you making / where will it be used? *",
+          "requirementsPh": "e.g., Retail display rack in matte steel & wood — looking for feasibility and a rough budget range from reference photos, or comparing single vs. double-sided options.",
+          "optionalSection": "Optional (Share whatever you have on hand)",
+          "referenceLink": "Reference Photo / Drawing Cloud Link (Optional)",
+          "referenceLinkPh": "Google Drive, Dropbox, or reference product URL",
+          "referenceFile": "Attach Photo, Sketch, or Drawing (Optional)",
+          "referenceFileHint": "JPG, PNG, PDF, DWG, STEP. You can also share sensitive drawings after our first reply.",
+          "batchQty": "Estimated Batch Quantity (Optional)",
+          "batchQtyPh": "e.g., 1 prototype + 50 units per rollout",
+          "quoteDate": "Target Quotation Date (Optional)",
+          "deliveryDate": "Target Delivery Window (Optional)",
+          "company": "Company Name (Optional)",
+          "companyPh": "Studio / Retail Group / Trading Corp.",
+          "name": "Contact Name (Optional)",
+          "namePh": "Your name",
+          "ndaFirst": "I prefer to discuss confidentiality / NDA first (no need to attach sensitive drawings yet)",
+          "consentPrefix": "I agree to the ",
+          "consentLink": "Privacy Policy",
+          "consentSuffix": " regarding the handling of my inquiry data and analytics cookies. *",
+          "submit": "Send Inquiry",
+          "contactAlt": "Alternative Contact / Preferred Time (Optional: Phone / WhatsApp / Time Zone)",
+          "contactAltPh": "e.g., WhatsApp / Phone or best time to reach you",
+          "callbackNote": "Short Note (Optional)",
+          "callbackNotePh": "e.g., Planning a multi-store fixture rollout — please reach out by email to schedule a quick intro.",
+          "moreToggle": "+ Add Company / Contact Name (Optional)"
+        },
+        "successTitle": "Inquiry Received",
+        "successDesc": "Thank you — we have received your message. Our Taipei engineering desk will review your note and send a first human reply explaining how far we can estimate right now and which 1–2 missing details matter most next (we verify scope carefully rather than promising a formal quote in one day).",
+        "receiptTitle": "Recorded Inquiry Summary",
+        "directTitle": "Taipei Desk & Regional Hubs",
+        "directDesc": "Direct engineering and sales support in English, Japanese, and Traditional Chinese from Taipei (UTC+8).",
+        "directEmailCard": {
+          "eyebrow": "DIRECT EMAIL TRACK",
+          "title": "Prefer sending directly from Outlook or Gmail?",
+          "desc": "Convenient if you want to CC your team or drag-and-drop multiple reference photos. Opens a pre-filled template addressed to our sales & engineering desk.",
+          "mailtoBtn": "Open Email App (shopdisplay@bigfame.co)",
+          "copyBtn": "Copy Email",
+          "copiedText": "Copied!",
+          "mailtoSubject": "[Inquiry] Custom Fixtures / FF&E Consultation",
+          "mailtoBody": "Hello Big Fame Team,\n\nI would like to discuss the following project:\n\n- Inquiry Type (Feasibility & Rough Budget / Drawing Quote / Please Reach Out):\n- Intended Use / Space Type:\n- Estimated Batch Quantity (if known):\n- Target Quotation Date:\n- Target Delivery Window:\n- Prefer to discuss NDA first? (Yes / No):\n\n(Feel free to attach reference photos or sketches directly to this email.)"
+        },
+        "choices": [
+          {
+            "id": "budget",
+            "label": "Check Feasibility & Rough Budget",
+            "short": "Reference photo or idea is enough"
+          },
+          {
+            "id": "quote",
+            "label": "Quote from Drawings / Samples",
+            "short": "Compare specs, loading & dates"
+          },
+          {
+            "id": "callback",
+            "label": "Leave Contact for Outreach",
+            "short": "Email only — we will reach out"
+          },
+          {
+            "id": "email",
+            "label": "Send Direct Email",
+            "short": "shopdisplay@bigfame.co"
+          }
+        ],
+        "modeHints": {
+          "budget": "No finalized CAD yet? Completely fine. Share a reference photo, rough sketch, or brief note to start.",
+          "quote": "Compare representative sizes, single/double-sided or nestable options, carton weight limits, container loading, and target dates.",
+          "callback": "Short on time? Just leave your email or preferred contact method and our Taipei desk will reach out."
+        }
+      },
+      "privacy": {
+        "eyebrow": "LEGAL & DATA GOVERNANCE",
+        "title": "Privacy Policy",
+        "updated": "Last updated: November 2026",
+        "sections": [
+          {
+            "h": "1. Information We Collect",
+            "p": "When you submit an engineering inquiry on bigfame.co, we collect your company name, contact name, business email address, and any project specifications you voluntarily share so our team can respond to your request."
+          },
+          {
+            "h": "2. Analytics & Cookies (Google Analytics 4)",
+            "p": "We use Google Analytics 4 (Measurement ID: G-PDW4NPHHW8) to understand aggregate website traffic, language preferences, and inquiry conversion events (such as contact clicks and form submissions). We do not sell personal data to third parties."
+          },
+          {
+            "h": "3. Confidentiality, NDA & White-Label Ethics",
+            "p": "Architectural drawings, fixture schedules, and client identities submitted by prospective B2B clients, studios, or trading partners are treated strictly confidentially and used solely for manufacturing feasibility review and quotation preparation."
+          },
+          {
+            "h": "4. Data Requests & Contact",
+            "p": "To request access, correction, or deletion of your inquiry information, please contact Big Fame Industrial Corp. at shopdisplay@bigfame.co."
+          }
+        ]
+      }
+    },
+    "jp": {
+      "htmlLang": "ja",
+      "siteTitle": "Big Fame — 設計意図を、現場の「納まり」まで忠実に。特注什器・FF&E 製造パートナー",
+      "metaDesc": "1988年設立。金属・木工・アクリル・ベトナム石材を統合する特注什器・FF&E 製造パートナー。図面 DFM 検証から KD 輸出梱包・白牌 OEM まで一貫対応。",
+      "nav": {
+        "home": "ホーム",
+        "capabilities": "製造・KD対応",
+        "cases": "製作実績",
+        "inquiry": "お問い合わせ",
+        "cta": "製作可否・概算を相談"
+      },
+      "footer": {
+        "tagline": "1988年設立。商業空間とブランドを支える「静かな舞台」——異素材特注什器・KD 輸出梱包・白牌 NDA 製造パートナー。",
+        "hubsTitle": "拠点体制",
+        "hubs": [
+          "台北本社（Taipei HQ）",
+          "台湾物流倉庫",
+          "ベトナム石材加工工場（御影石・大理石）",
+          "マレーシア拠点（Sunnyward Sdn Bhd）"
+        ],
+        "linksTitle": "サイトマップ",
+        "contactTitle": "お問い合わせ窓口",
+        "privacy": "プライバシーポリシー",
+        "copyright": "© 1988–2026 Big Fame Industrial Corp. All rights reserved."
+      },
+      "home": {
+        "eyebrow": "商業空間の「静かな舞台」を設計製造｜1988年設立",
+        "h1": "設計意図を、現場の「納まり」まで忠実に。",
+        "subtitle": "金属・木工・アクリル・ベトナム石材を統合する特注什器・FF&E 製造パートナー。図面 DFM 検証から KD 輸出梱包・白牌 OEM まで一貫対応。",
+        "primaryCta": "製作可否・概算を相談する",
+        "secondaryCta": "製作実績を見る",
+        "heroImage": "/assets/images/hero-veltor-island.webp",
+        "heroAlt": "マットスチールとオーク材による KD 輸出対応アイランドディスプレイ什器",
+        "stats": [
+          {
+            "value": "1988年",
+            "label": "台北本社設立"
+          },
+          {
+            "value": "300+",
+            "label": "商業空間・店舗への累計納入実績"
+          },
+          {
+            "value": "15カ国",
+            "label": "海外輸出・納品実績"
+          },
+          {
+            "value": "4拠点",
+            "label": "台北本社・台湾倉庫・ベトナム石材工場・マレーシア"
+          }
+        ],
+        "taEyebrow": "課題別のエンジニアリング対応",
+        "taTitle": "図面から海外出店までに生じる 4 つの実務リスクを解消",
+        "taIntro": "単なる工場ではなく「製造エンジニアリングの外脳」として、異素材の取り合い精度・海上輸送の容積効率・追加発注の再現性・商社様の機密保持まで実務目線で支えます。",
+        "taLink": "製造能力・KD 設計の詳細を見る",
+        "taCards": [
+          {
+            "num": "01",
+            "role": "商業空間デザイナー・設計事務所様",
+            "title": "設計意図の忠実な再現と DFM 納まり検証",
+            "desc": "量産前に金属×木工・石材の取り合い目地、隠し金物構造、マット塗装サンプルを検証し、図面のディテールを崩さず実物へ落とし込みます。"
+          },
+          {
+            "num": "02",
+            "role": "連鎖ブランド・店舗開発ご担当者様",
+            "title": "モジュール快拆構造と図番版次管理",
+            "desc": "現場施工の負担を抑える分解構造と出荷前 1:1 仮組検品を実施。図番管理により次年度以降の追加店舗でも仕様と色味を揃えます。"
+          },
+          {
+            "num": "03",
+            "role": "グローバル購買・調達ご担当者様",
+            "title": "単一窓口統合と KD 梱包による TCO 最適化",
+            "desc": "FOB 単価だけでなく輸送費・破損リスクを含む総着地コストを重視。試作段階からフラットパック化を検討します（積載効率は案件外箱寸法にて試算）。"
+          },
+          {
+            "num": "04",
+            "role": "総合商社・専門商社様",
+            "title": "白牌 OEM 倫理と NDA 機密保持の徹底",
+            "desc": "エンドクライアントへの直接接触は一切行いません。日英中対応の製作図面・自主検品記録を備え、試作や小中ロット案件にも柔軟に対応します。"
+          }
+        ],
+        "casesEyebrow": "製作実績・空間スタディ",
+        "casesTitle": "納入実績と空間モジュール提案",
+        "casesIntro": "ホテル FF&E、曲げ金属家具、専門店ディスプレイから空間コンセプトスタディまで、構造美と納まり精度を重視した事例をご紹介します。",
+        "casesLink": "すべての事例を見る",
+        "craftEyebrow": "実物試作・仮組の証拠",
+        "craftTitle": "量産前の 1:1 試作と金物ディテール検証",
+        "craftIntro": "コンテナ出荷の前に、主要フレームと異素材接合部を実物試作・仮組し、溶接品質・曲げ R 精度・現場組立性を確認します。",
+        "craftItems": [
+          {
+            "src": "/assets/images/craft-bent-tube.webp",
+            "title": "曲げパイプ・パンチングメタルの 1:1 試作検証",
+            "desc": "台湾工場の床面で溶接精度、曲げ R の連続性、金物のクリアランスを実物ベースで確認してから量産へ移行します。"
+          },
+          {
+            "src": "/assets/images/craft-metal-mesh.webp",
+            "title": "ステンレス丸管・エキスパンドメタルの精密仕上げ",
+            "desc": "ステンレス丸パイプ、エキスパンドメタル、焼付塗装の質感を単一の検品基準で管理します。"
+          },
+          {
+            "src": "/assets/images/craft-wood-glass-bench.webp",
+            "title": "無垢木材×厚板強化ガラス×露出ボルト納まり",
+            "desc": "厚みのある無垢材と強化ガラス脚を精密ボルトで直結し、異素材間の荷重伝達とミニマルな意匠を両立しています。"
+          },
+          {
+            "src": "/assets/images/craft-stone-grinding.webp",
+            "title": "石材天板の切断・研磨・金物取り合い加工",
+            "desc": "天然石・人造石カウンターの切断・小口研磨から金属・木工下地との取り合い加工まで自社拠点と連携して一貫対応します。"
+          }
+        ],
+        "processEyebrow": "製作フロー",
+        "processTitle": "図面 DFM 確認から試作・KD 輸出出荷まで",
+        "processSteps": [
+          {
+            "num": "01",
+            "title": "図面・納まり DFM 確認",
+            "desc": "CAD 図面や什器リストをもとに、異素材の取り合い・隠し金物・製作課題を事前整理します。"
+          },
+          {
+            "num": "02",
+            "title": "1:1 実物試作・仮組",
+            "desc": "量産前に実物試作を行い、塗装ツヤ感・構造強度・現場での組立手順を検証します。"
+          },
+          {
+            "num": "03",
+            "title": "異素材一貫生産",
+            "desc": "図番版次を管理し、金属・木工・アクリル・ベトナム石材の各工程を同期して製造します。"
+          },
+          {
+            "num": "04",
+            "title": "KD 梱包・出荷前検品",
+            "desc": "輸出仕様のフラットパック梱包と自主検品を実施。納期および梱包仕様は案件ごとに確認します。"
+          }
+        ],
+        "bottomTitle": "図面が未確定でも、まずはご相談ください",
+        "bottomDesc": "図面が未確定でもご相談いただけます。参考写真やラフスケッチがあれば、お送りください。初回のご返信で製作可否と見積りに影響する確認ポイントを整理します。",
+        "bottomCta": "製作可否・概算を相談する",
+        "ctaNote": "図面が未確定でもご相談いただけます。参考写真やラフスケッチがあれば、お送りください。",
+        "bottomSecondaryCta": "図面・サンプルをもとに見積りを依頼する"
+      },
+      "capabilities": {
+        "eyebrow": "製造能力・KD 設計",
+        "title": "異素材統合加工、ノックダウン輸出、拠点連携体制",
+        "intro": "金属・木工・アクリル・石材を別々の工場へ手配する手間と寸法ズレのリスクを抑え、設計意図に沿った納まりを一貫管理します。",
+        "pillars": [
+          {
+            "num": "01",
+            "title": "異素材複合の店舗特注什器（OEM / ODM）",
+            "desc": "スチール・曲げパイプ・バーチ合板・突板木工・アクリル・強化ガラスを組み合わせた壁面システム、VMD ディスプレイ、アイランド什器を製作します。",
+            "points": [
+              "金属と木工・ガラス・石材の取り合い目地を揃える DFM 事前検証",
+              "追加出店でも仕様・孔ピッチを保つ図番版次管理",
+              "寸法公差・耐荷重・塗装仕上げは案件ごとの図面に基づき確認"
+            ]
+          },
+          {
+            "num": "02",
+            "title": "ノックダウン（KD）設計と TCO 視点の輸出梱包",
+            "desc": "FOB 単価だけでなく海上輸送費と現場施工費を含む総コスト（TCO）を見据え、試作段階からフラットパック分解構造を設計します。",
+            "points": [
+              "コンテナ積載効率と現場組立性を両立するボルト締結 KD 構造",
+              "出荷前の 1:1 仮組検品と分かりやすい金物梱包ラベル管理",
+              "台湾物流倉庫での検品・混載輸出手配に対応"
+            ]
+          },
+          {
+            "num": "03",
+            "title": "ホテル FF&E・ベトナム石材加工・白牌 NDA 体制",
+            "desc": "客室家具・曲げ金属収納・リゾート屋外家具に加え、ベトナム自社工場による御影石・大理石天板加工を一体で手配します。",
+            "points": [
+              "ベトナム石材加工工場による天然石カウンターと金属フレームの一体納まり",
+              "マレーシア拠点（Sunnyward Sdn Bhd）によるリゾート・屋外 FF&E 連携",
+              "商社様・設計事務所様向けの白牌 OEM 倫理と厳格な NDA 保護"
+            ]
+          }
+        ],
+        "note": "具体的な寸法公差、コンテナ積載効率の試算、表面処理仕様および納期は、案件ごとの図面・数量・納品地域に基づき個別に確認いたします。",
+        "systemsEyebrow": "標準モジュールシステム・KD 構造設計",
+        "systemsTitle": "多店舗展開を加速する標準金物プラットフォームと KD 分解設計",
+        "systemsIntro": "フル特注の OEM/ODM 製作や 3D レイアウト協業に加え、ゼロから金型を起こさずに迅速な追加出店を実現する標準壁面システムと KD フラットパック設計知見を備えています。",
+        "systems": [
+          {
+            "src": "/assets/images/sys-25x40-upright.webp",
+            "title": "25×40mm スリット壁面システム（ROOT / IVY）・GROOVING スラットウォール",
+            "desc": "規格化されたスチール支柱・ブラケット・アルミ補強溝パネルにより、開発期間を短縮しながら複数店舗間でのパーツ互換性を維持します。"
+          },
+          {
+            "src": "/assets/images/sys-kd-exploded.webp",
+            "title": "KD フラットパック分解構造とコンテナ積載 TCO 設計",
+            "desc": "CAD 設計段階からフレーム・棚板・側板をパネル分解し、海上輸送時のデッドスペースを削減するとともに現場でのボルト組立を簡素化します。"
+          }
+        ]
+      },
+      "casesPage": {
+        "eyebrow": "製作実績・空間スタディ",
+        "title": "商業空間の納入実績とコンセプト検証",
+        "intro": "実際の店舗・ホテルへの納入事例に加え、異素材什器の構成力を可視化した空間コンセプトスタディをご覧いただけます。",
+        "filterAll": "すべて表示",
+        "filterReal": "納入実績（実景）",
+        "filterConcept": "空間スタディ（コンセプト）",
+        "viewCase": "詳細を見る"
+      },
+      "caseDetail": {
+        "backToCases": "一覧へ戻る",
+        "metaType": "空間用途",
+        "metaCategory": "区分",
+        "metaScope": "製作範囲",
+        "metaMaterials": "主要材質",
+        "briefTitle": "設計・製作上の課題",
+        "execTitle": "異素材納まり・構造・納入の工夫",
+        "specTitle": "仕様・納入条件について",
+        "specNote": "什器寸法、塗装ツヤ感、耐荷重および海外輸送向けのノックダウン（KD）梱包仕様は、案件ごとの図面・数量条件に基づき確認いたします。",
+        "nextCase": "次の事例へ",
+        "inquireCase": "この構成について相談する"
+      },
+      "inquiry": {
+        "eyebrow": "お問い合わせ・概算／見積り相談",
+        "title": "写真1枚・ラフ案からでも、製作可否と見積り条件を整理します",
+        "intro": "図面が未確定でもご相談いただけます。参考写真やラフスケッチがあれば、お送りください。まずはご状況に近い入口をお選びください。",
+        "ctaNote": "図面が未確定でもご相談いただけます。参考写真やラフスケッチがあれば、お送りください。",
+        "modes": [
+          {
+            "id": "budget",
+            "label": "製作可否・概算を相談する",
+            "hint": "参考写真や用途の概要だけでOK。製作できるか、何が見積りに影響するかを先に整理します。"
+          },
+          {
+            "id": "quote",
+            "label": "図面・サンプルをもとに見積りを依頼する",
+            "hint": "代表サイズ・片面／両面・ネスティング可否の比較や、梱包重量・積載量・現場組立まで確認します。"
+          },
+          {
+            "id": "callback",
+            "label": "連絡先を残して、担当から連絡をもらう",
+            "hint": "今は詳細を書くお時間がない方へ。メールアドレスやご希望の連絡先だけ残していただければ、担当よりご連絡いたします。"
+          }
+        ],
+        "scenariosTitle": "よくある3つのご相談パターン",
+        "scenarios": [
+          {
+            "num": "01",
+            "title": "まずは概算で提案を通したい",
+            "desc": "参考写真のみでOK。実物サンプルや正式 CAD はお客様承認後でも構いません。最初に製作可否と価格に影響する条件を整理します。"
+          },
+          {
+            "num": "02",
+            "title": "図面があり、仕様・構造を比較したい",
+            "desc": "代表サイズのコスト感や、片面／両面・ネスティング可否による単価・積載量・納期の違いをお伝えしたうえで、次に必要な図面をご案内します。"
+          },
+          {
+            "num": "03",
+            "title": "作れるだけでなく、現場まで届けたい",
+            "desc": "1箱あたりの最大重量、積載効率、店舗搬入時の分解組立や分納条件まで含めて実行可否を確認します。"
+          }
+        ],
+        "fields": {
+          "modeLegend": "ご相談の入口を選択してください",
+          "requiredSection": "基本項目（メール＋ご相談内容で送信可能／「担当から連絡」選択時はメールのみでOK）",
+          "email": "ビジネスメールアドレス *",
+          "emailPh": "name@company.co.jp",
+          "requirements": "用途・ご相談内容（何を作りたいか／どこで使うか） *",
+          "requirementsPh": "例：店舗向けの金属×木工什器を検収中。まずは参考写真ベースで製作可否と概算の目安を知りたい／片面と両面のコスト差を比べたい、など。",
+          "optionalSection": "任意項目（お決まりの範囲だけで構いません）",
+          "referenceLink": "参考写真・図面のクラウドURL（任意）",
+          "referenceLinkPh": "Google Drive / Dropbox / 参考商品ページのURLなど",
+          "referenceFile": "写真・ラフスケッチ・図面ファイル添付（任意）",
+          "referenceFileHint": "JPG / PNG / PDF / DWG / STEP 等。機密図面は初回返信後の共有でも構いません。",
+          "batchQty": "1ロット想定数量（任意）",
+          "batchQtyPh": "例：初回 20台／試作 1台＋量産 50台",
+          "quoteDate": "見積り希望日（任意）",
+          "deliveryDate": "希望納期・納品時期（任意）",
+          "company": "貴社名（任意）",
+          "companyPh": "設計事務所・商社・リテール企業名など",
+          "name": "ご担当者様名（任意）",
+          "namePh": "お名前",
+          "ndaFirst": "まずは秘密保持（NDA）について相談したい（機密図面の添付は初回返信後で構いません）",
+          "consentPrefix": "お問い合わせ情報の取扱いおよび解析 Cookie に関する",
+          "consentLink": "プライバシーポリシー",
+          "consentSuffix": "に同意します。*",
+          "submit": "相談内容を送信する",
+          "contactAlt": "その他の連絡先・ご希望時間帯（任意：電話 / WhatsApp / LINE / ご都合の良い時間帯など）",
+          "contactAltPh": "例：お電話 +81-3-xxxx-xxxx／平日午後メール希望 など",
+          "callbackNote": "一言メモ（任意：ご希望の連絡方法や簡単なテーマなど）",
+          "callbackNotePh": "例：新店舗の特注什器について、まずはメールで打ち合わせ日程を相談したい",
+          "moreToggle": "＋ 貴社名・ご担当者様名を追加する（任意）"
+        },
+        "successTitle": "お問い合わせを受け付けました",
+        "successDesc": "ご送信ありがとうございます。内容を受付いたしました。台北エンジニアリング窓口の担当者が内容を確認のうえ、初回のご返信にて「現時点でどこまで概算・評価できるか」と「次にご確認いただきたい1〜2点の条件」を丁寧にご案内いたします。（※案件条件の確認を重視しているため、1日以内の正式見積りは確約しておりません。）",
+        "receiptTitle": "受付内容の確認（送信控え）",
+        "directTitle": "対応体制・拠点情報",
+        "directDesc": "台北本社エンジニアリング・営業窓口より、日本語・英語・中国語にて対応いたします（UTC+8 平日）。",
+        "directEmailCard": {
+          "eyebrow": "メールソフトで直接送る",
+          "title": "普段のメール（Outlook / Gmail）から直接ご相談いただけます",
+          "desc": "社内 CC や複数枚の参考写真・PDF 添付に便利です。下のボタンから定型フォーマット入りでメール作成画面が開きます。",
+          "mailtoBtn": "メールを作成する（shopdisplay@bigfame.co）",
+          "copyBtn": "アドレスをコピー",
+          "copiedText": "コピーしました",
+          "mailtoSubject": "【お問い合わせ】特注什器・FF&E のご相談",
+          "mailtoBody": "Big Fame ご担当者様\n\n以下の内容について相談したくご連絡いたしました。\n\n■ ご相談内容（製作可否・概算／図面見積り／まずは連絡希望）：\n■ 用途・設置場所：\n■ 1ロット想定数量（未定でも可）：\n■ 見積り希望日：\n■ 希望納期：\n■ 秘密保持（NDA）の事前相談希望：あり ／ なし\n\n※参考写真やラフスケッチがあれば、このまま添付してお送りください。"
+        },
+        "choices": [
+          {
+            "id": "budget",
+            "label": "製作可否・概算を相談する",
+            "short": "参考写真や用途だけでOK"
+          },
+          {
+            "id": "quote",
+            "label": "図面・サンプルをもとに見積り",
+            "short": "仕様比較・積載・希望日あり"
+          },
+          {
+            "id": "callback",
+            "label": "連絡先を残して連絡をもらう",
+            "short": "メールのみで折り返し希望"
+          },
+          {
+            "id": "email",
+            "label": "メールで直接送る",
+            "short": "shopdisplay@bigfame.co"
+          }
+        ],
+        "modeHints": {
+          "budget": "図面が未確定でもご相談いただけます。参考写真やラフスケッチがあれば、お送りください。",
+          "quote": "複数サイズ・片面／両面・ネスティング可否、梱包重量や積載効率の比較もご相談いただけます。",
+          "callback": "お忙しい方はメールアドレスだけでも構いません。台北の日本語対応窓口よりご連絡いたします。"
+        }
+      },
+      "privacy": {
+        "eyebrow": "個人情報保護方針",
+        "title": "プライバシーポリシー",
+        "updated": "最終更新日：2026年11月",
+        "sections": [
+          {
+            "h": "1. 取得する情報",
+            "p": "bigfame.co のお問い合わせフォームを通じて、貴社名、ご担当者様名、ビジネスメールアドレス、および任意でご提供いただいた案件仕様・図面情報をお預かりします。"
+          },
+          {
+            "h": "2. アクセス解析と Cookie（Google Analytics 4）",
+            "p": "当サイトでは、サイト改善およびお問い合わせ導線の把握のため Google Analytics 4（計測 ID：G-PDW4NPHHW8）を使用しています。個人情報を第三者へ販売することはありません。"
+          },
+          {
+            "h": "3. 図面・案件情報の機密保持および白牌倫理",
+            "p": "設計事務所様・商社様・ブランド様よりお預かりした図面、什器リスト、エンドクライアント情報は厳重に管理し、製作可否の検討およびお見積り作成の目的にのみ使用いたします。"
+          },
+          {
+            "h": "4. お問い合わせ窓口",
+            "p": "個人情報の開示・訂正・削除のご請求は、Big Fame Industrial Corp.（shopdisplay@bigfame.co）までご連絡ください。"
+          }
+        ]
+      }
+    },
+    "tw": {
+      "htmlLang": "zh-Hant",
+      "siteTitle": "Big Fame 盛名實業 — 把設計圖的每一道收口，落成海外門市的沉默舞台",
+      "metaDesc": "1988 年創立。專注跨材質展示架 OEM/ODM、KD 平整包裝出口與旅宿 FF&E／越南石材整合，做建築師、品牌與商社最可靠的製造工程外腦。",
+      "nav": {
+        "home": "首頁",
+        "capabilities": "工程與 KD 能力",
+        "cases": "案例實績",
+        "inquiry": "工程詢價",
+        "cta": "詢問製作與概算"
+      },
+      "footer": {
+        "tagline": "1988 年創立。商業空間與品牌背後的「沉默舞台」與展示設備工程外腦——跨材質 OEM/ODM、KD 出口與白牌 NDA 製造。",
+        "hubsTitle": "營運與製造據點",
+        "hubs": [
+          "台北總部",
+          "台灣物流倉儲",
+          "越南花崗岩大理石加工廠",
+          "馬來西亞 Sunnyward Sdn Bhd"
+        ],
+        "linksTitle": "網站導覽",
+        "contactTitle": "直接聯繫",
+        "privacy": "隱私權政策",
+        "copyright": "© 1988–2026 Big Fame Industrial Corp. 版權所有。"
+      },
+      "home": {
+        "eyebrow": "THE SILENT STAGE · 商業空間展示設備工程外腦 · 創立於 1988",
+        "h1": "把設計圖的每一道收口，精準落成海外門市的沉默舞台。",
+        "subtitle": "1988 年創立。專注跨材質展示架 OEM/ODM、KD 平整包裝出口與旅宿 FF&E／越南石材整合，做建築師、品牌與商社最可靠的製造工程外腦。",
+        "primaryCta": "詢問製作可否與概算方向",
+        "secondaryCta": "瀏覽精選案例",
+        "heroImage": "/assets/images/hero-veltor-island.webp",
+        "heroAlt": "霧面粉體烤漆黑鐵與橡木雙層中島展示桌，專為 KD 平整包裝與跨國展店設計",
+        "stats": [
+          {
+            "value": "1988 年",
+            "label": "創立於台北"
+          },
+          {
+            "value": "300+",
+            "label": "累計服務門市與商空實績"
+          },
+          {
+            "value": "15 國",
+            "label": "跨國 KD 包裝出口經驗"
+          },
+          {
+            "value": "4 據點",
+            "label": "台北總部・台灣倉儲・越南石材廠・馬來西亞"
+          }
+        ],
+        "taEyebrow": "直擊 B2B 決策痛點",
+        "taTitle": "解決設計圖落地海外門市的 4 大關鍵風險",
+        "taIntro": "我們不是只收圖加工的傳統工廠，而是站在建築師、展店團隊、跨國採購與商社視角，在開工前先解掉異材質收口、海運材積、跨批次色差與保密邊界。",
+        "taLink": "了解工程與 KD 標準",
+        "taCards": [
+          {
+            "num": "01",
+            "role": "商業空間建築師／設計事務所",
+            "title": "設計意圖忠實轉譯與 DFM 收口預檢",
+            "desc": "投產前檢視金屬與木作／石材接縫、暗扣五金結構與消光烤漆打樣，確保圖面極簡線條與收口細節不走樣。"
+          },
+          {
+            "num": "02",
+            "role": "連鎖品牌展店負責人",
+            "title": "模組化快拆與圖號版次一致性",
+            "desc": "簡化海外現場組裝工時、出貨前工廠 1:1 預試裝驗證，並透過專案圖號管理維持跨年度補單的孔位與質感一致。"
+          },
+          {
+            "num": "03",
+            "role": "跨國採購長／專案採購",
+            "title": "單一窗口整合＋KD 總落地成本（TCO）",
+            "desc": "不只看 FOB 出廠單價，從打樣期即規劃平整拆裝與貨櫃材積配置，降低海運費與破損風險（實際裝載量依個案外箱試算）。"
+          },
+          {
+            "num": "04",
+            "role": "國際商社與貿易大行",
+            "title": "嚴守白牌代工倫理與 NDA 客戶保護",
+            "desc": "絕不越過合作夥伴私聯終端品牌；提供中／英／日工程圖面、自主品檢紀錄表單，並支援彈性打樣與小中量精品排產。"
+          }
+        ],
+        "casesEyebrow": "精選作品",
+        "casesTitle": "真實完工實景與商空系統研究",
+        "casesIntro": "聚焦旅宿石材 FF&E、古銅彎管金屬工藝、戶外度假家具與旗艦零售模組系統，呈現可落地、可複製的結構實力。",
+        "casesLink": "查看全部案例",
+        "craftEyebrow": "真實工程與打樣實證",
+        "craftTitle": "量產前的 1:1 實體打樣與五金工藝驗證",
+        "craftIntro": "在裝櫃出口前，關鍵鋼構框架與異材質交界皆於台灣工廠完成實體試裝，確認焊道、彎管弧度與現場拆裝順暢度。",
+        "craftItems": [
+          {
+            "src": "/assets/images/craft-bent-tube.webp",
+            "title": "台灣工廠彎管焊接 × 沖孔金屬 1:1 原型",
+            "desc": "量產前實物檢核圓管折彎半徑、沖孔鈑金對位與表面處理前的結構剛性。"
+          },
+          {
+            "src": "/assets/images/craft-metal-mesh.webp",
+            "title": "不鏽鋼圓管 × 金屬擴張網工藝微距",
+            "desc": "精密金屬件、擴張網與烤漆塗裝由單一工程標準控管，維持商空近距離觀看的俐落質感。"
+          },
+          {
+            "src": "/assets/images/craft-wood-glass-bench.webp",
+            "title": "厚實木樑 × 強化玻璃 × 外露螺栓結構",
+            "desc": "以精密五金螺栓將厚實木樑與厚強化玻璃桌腳直結，展現跨材質承重傳導與建築級極簡收口。"
+          },
+          {
+            "src": "/assets/images/craft-stone-grinding.webp",
+            "title": "石材檯面精切研磨與異材質對位實拍",
+            "desc": "天然與人造石檯面切割、倒角研磨與五金開孔同步銜接金屬與木作底架，確保現場安裝零落差。"
+          }
+        ],
+        "processEyebrow": "合作流程",
+        "processTitle": "從圖面 DFM 檢核到海外 KD 交付",
+        "processSteps": [
+          {
+            "num": "01",
+            "title": "圖面 DFM 與收口預檢",
+            "desc": "提供 2D/3D 圖面或清單，於打樣前先對齊異材質接縫、暗扣五金與製程可行性。"
+          },
+          {
+            "num": "02",
+            "title": "1:1 實體打樣與預試裝",
+            "desc": "透過實體樣品驗證結構比例、塗裝光澤度與 KD 拆裝順暢度。"
+          },
+          {
+            "num": "03",
+            "title": "圖號版次控管同步生產",
+            "desc": "依核准封樣同步協調金屬、木作、壓克力與越南石材產線，確保收口一致。"
+          },
+          {
+            "num": "04",
+            "title": "KD 平整包裝與出口交付",
+            "desc": "執行平整包裝、五金標示與出貨前自主品檢；實際交期與船期依個案條件確認。"
+          }
+        ],
+        "bottomTitle": "還沒有正式圖面？傳照片或草圖就能開始聊",
+        "bottomDesc": "無論是要先拿概算去提案、比較不同拆裝結構的成本，或確認裝櫃與現場配送條件，台北工程窗口會先回覆做到哪一步與最關鍵的待確認細節。",
+        "bottomCta": "詢問製作可否與概算方向",
+        "ctaNote": "還沒有正式圖面也沒關係。一張參考照片、草圖，或簡述想展示的商品與用途就可以開始。",
+        "bottomSecondaryCta": "提供圖面或樣品進行估價"
+      },
+      "capabilities": {
+        "eyebrow": "跨材質製造與出口整合",
+        "title": "異材質整合加工、KD 平整包裝與跨區供應支援",
+        "intro": "避免金屬框體、木作櫃體、壓克力與石材檯面分散發包造成的組裝公差，由單一工程窗口統籌製程與檢核。",
+        "pillars": [
+          {
+            "num": "01",
+            "title": "跨材質連鎖零售展示架 OEM / ODM",
+            "desc": "整合鋼構金屬、彎管五金、樺木夾板、實木、壓克力與強化玻璃，製作模組牆系統、重載中島展示桌與陳列架。",
+            "points": [
+              "投產前執行金屬、木作、玻璃與石材交界處之 DFM 收口預檢",
+              "建立專案圖號版次控管，支援跨年度連鎖門市一致補單",
+              "實際尺寸公差、承重條件與塗裝規格依個案圖面確認"
+            ]
+          },
+          {
+            "num": "02",
+            "title": "KD 平整包裝結構與 TCO 出口思維",
+            "desc": "從 FOB 單價升級為總落地成本（TCO）思維，於打樣期即設計螺栓快拆與貨櫃材積配置，降低海運費與現場施工門檻。",
+            "points": [
+              "兼顧結構穩固與貨櫃裝載率的平整拆裝設計（實際材積依個案外箱試算）",
+              "出貨前 1:1 試組檢核與清晰五金包標示",
+              "搭配台灣物流倉儲執行檢品、併櫃與出口作業"
+            ]
+          },
+          {
+            "num": "03",
+            "title": "旅宿 FF&E、越南石材加工與白牌 NDA 保護",
+            "desc": "承製飯店客房與度假空間客製家具，結合越南花崗岩與大理石加工廠直供檯面，並嚴守商社與設計事務所白牌保密邊界。",
+            "points": [
+              "越南石材加工廠直供花崗岩／大理石檯面，與金屬框體同步對位",
+              "馬來西亞據點（Sunnyward Sdn Bhd）支援區域旅宿與戶外 FF&E",
+              "嚴守白牌代工倫理與 NDA 保密承諾，絕不私聯終端客戶"
+            ]
+          }
+        ],
+        "note": "所有工程公差、貨櫃材積試算、材質檢驗標準、表面處理與交付交期，均依個案條件、圖面規格、數量與出貨目的地確認。",
+        "systemsEyebrow": "自有標準模組系統 × KD 拆解工程",
+        "systemsTitle": "縮短展店週期的標準五金平台與 KD 平整化結構圖解",
+        "systemsIntro": "除全客製化 OEM/ODM 與前期 3D 空間配置協作外，我們亦具備成熟的標準壁面五金模組與 KD 拆解工程方法論，讓連鎖品牌免從零開模即可快速複製展店。",
+        "systems": [
+          {
+            "src": "/assets/images/sys-25x40-upright.webp",
+            "title": "25×40mm 排孔壁面模組（ROOT / IVY）與 GROOVING 溝槽板系統",
+            "desc": "標準化鋼構立柱、五金托架與鋁強化溝槽背板，大幅縮短打樣開發期，並確保後續補單與分店擴張的配件高度通用。"
+          },
+          {
+            "src": "/assets/images/sys-kd-exploded.webp",
+            "title": "KD 平整化結構拆解爆炸圖與貨櫃 TCO 思維",
+            "desc": "於 CAD 階段即規劃框體、層板與側板的平整拆解結構，避免焊接整架付海運費買空氣，同時簡化海外現場螺栓組裝工時。"
+          }
+        ]
+      },
+      "casesPage": {
+        "eyebrow": "案例實績",
+        "title": "真實完工實景與商空系統研究",
+        "intro": "收錄實際商空與旅宿完工紀錄，並並列跨材質空間概念研究，供海外採購團隊、商社與空間建築師評估結構落地能力。",
+        "filterAll": "全部案例",
+        "filterReal": "真實完工案例",
+        "filterConcept": "商空概念研究",
+        "viewCase": "檢視案例詳情"
+      },
+      "caseDetail": {
+        "backToCases": "返回案例列表",
+        "metaType": "空間類型",
+        "metaCategory": "案例屬性",
+        "metaScope": "製造範圍",
+        "metaMaterials": "主要材質",
+        "briefTitle": "設計與工程難題",
+        "execTitle": "異材質收口、結構與交付解法",
+        "specTitle": "規格與交付說明",
+        "specNote": "實際面板尺寸、面漆光澤度、層板承重條件與出口 KD 包裝配置，均依個案條件與圖面確認。",
+        "nextCase": "下一個案例",
+        "inquireCase": "洽詢同類展示系統"
+      },
+      "inquiry": {
+        "eyebrow": "低摩擦工程詢價入口",
+        "title": "傳照片或草圖，聊聊你的需求",
+        "intro": "還沒有圖也沒關係。一張產品照、參考連結，或說明你想展示什麼都可以開始；請依目前階段選擇入口。",
+        "ctaNote": "還沒有圖也沒關係。一張產品照、參考連結，或說明你想展示什麼，都可以開始。",
+        "modes": [
+          {
+            "id": "budget",
+            "label": "詢問製作可否與概算方向",
+            "hint": "只有參考照片或用途就能開始。我們先回覆能否製作、哪些條件最影響估價，不先要求正式 CAD。"
+          },
+          {
+            "id": "quote",
+            "label": "提供圖面或樣品進行估價",
+            "hint": "比較代表規格、單雙面或套疊結構對價格與裝櫃量的影響，並同步確認單箱重量與現場拆裝。"
+          },
+          {
+            "id": "callback",
+            "label": "留下聯絡方式，請專人主動聯繫",
+            "hint": "目前忙碌或不方便詳述？只要留下聯絡方式，我們的業務／工程窗口會主動與您聯繫接洽。"
+          }
+        ],
+        "scenariosTitle": "常見的 3 種詢價起點",
+        "scenarios": [
+          {
+            "num": "01",
+            "title": "先拿概算去提案",
+            "desc": "已有參考照片但樣品尚未定案沒關係，我們先確認製作可行性與影響估價的關鍵條件。"
+          },
+          {
+            "num": "02",
+            "title": "有圖，想比較不同做法",
+            "desc": "先說明單面／雙面、可否套疊等改法如何影響單價、裝櫃量或交期，再請您補最有用的下一份圖。"
+          },
+          {
+            "num": "03",
+            "title": "不只做得出來，還要送得到",
+            "desc": "同步考量單箱限重、貨櫃裝載數、現場拆裝與分批交貨條件，避免最後卡在物流與進場。"
+          }
+        ],
+        "fields": {
+          "modeLegend": "選擇您目前的詢價階段",
+          "requiredSection": "基本項目（Email＋需求簡述即可送出；選「請專人主動聯繫」時僅需填 Email）",
+          "email": "商務 Email *",
+          "emailPh": "name@company.com",
+          "requirements": "用途與需求說明（想做什麼／用在哪裡） *",
+          "requirementsPh": "例如：想做門市金屬木作展示架，目前只有參考照片，想先了解製作可否與概算方向；或有圖想比較單面／雙面結構成本。",
+          "optionalSection": "選填項目（手邊有什麼填什麼即可）",
+          "referenceLink": "參考照片／草圖／圖面雲端連結（選填）",
+          "referenceLinkPh": "Google Drive / Dropbox / 參考商品連結",
+          "referenceFile": "附加照片、草圖或圖檔（選填）",
+          "referenceFileHint": "支援 JPG / PNG / PDF / DWG / STEP；機密圖面可等首次回覆後再提供。",
+          "batchQty": "單批預估數量（選填）",
+          "batchQtyPh": "例如：打樣 1 台／首批 30 台",
+          "quoteDate": "希望報價日（選填）",
+          "deliveryDate": "希望交貨日（選填）",
+          "company": "公司名稱（選填）",
+          "companyPh": "設計事務所／連鎖品牌／商社",
+          "name": "聯絡人姓名（選填）",
+          "namePh": "您的姓名",
+          "ndaFirst": "希望先談保密／NDA（無需先上傳機密圖檔）",
+          "consentPrefix": "我已閱讀並同意",
+          "consentLink": "隱私權政策",
+          "consentSuffix": "中關於詢價資料與 GA4 網站分析 Cookie 之說明。*",
+          "submit": "送出詢問",
+          "contactAlt": "其他聯絡方式或方便聯繫時段（選填：電話 / LINE / WhatsApp / 時段）",
+          "contactAltPh": "例如：電話 09xx-xxx-xxx／LINE ID／希望週一下午聯繫",
+          "callbackNote": "簡短備註（選填）",
+          "callbackNotePh": "例如：預計展店需要金屬木作展示架，請先以 Email 聯繫。",
+          "moreToggle": "＋ 補充公司名稱與聯絡人姓名（選填）"
+        },
+        "successTitle": "已收到您的詢問",
+        "successDesc": "感謝填寫，我們已收件。台北工程窗口將由真人檢視內容，在首封回覆中清楚說明目前能估到哪一步、還缺哪一項關鍵條件（為確保準確，不先承諾一天內出完整正式報價）。",
+        "receiptTitle": "已記錄的詢問內容",
+        "directTitle": "台北業務與工程窗口",
+        "directDesc": "由盛名實業台北總部提供中／英／日文直接對接（UTC+8 平日）。",
+        "directEmailCard": {
+          "eyebrow": "直接寫信給業務單位",
+          "title": "習慣用 Outlook / Gmail 附檔或 CC 同事？",
+          "desc": "點下方按鈕即可自動開啟預填好主旨與條列範本的寫信視窗，直接拖入參考照片或圖檔寄給我們。",
+          "mailtoBtn": "開啟郵件撰寫（shopdisplay@bigfame.co）",
+          "copyBtn": "複製信箱",
+          "copiedText": "已複製！",
+          "mailtoSubject": "【商空展示架／FF&E 諮詢】專案洽詢",
+          "mailtoBody": "Big Fame 業務與工程團隊 您好：\n\n我想洽詢以下展示架／商空設備需求：\n\n・洽詢類型（詢問製作與概算／提供圖面估價／請專人主動聯繫）：\n・預計用途與空間：\n・單批預估數量（未定可略）：\n・希望報價日：\n・希望交貨日：\n・是否希望先談保密／NDA：是 ／ 否\n\n（可直接將參考照片、草圖或雲端連結附於本信件中）"
+        },
+        "choices": [
+          {
+            "id": "budget",
+            "label": "詢問製作可否與概算方向",
+            "short": "參考照片或用途就能開始"
+          },
+          {
+            "id": "quote",
+            "label": "提供圖面／樣品進行估價",
+            "short": "規格比較・裝櫃・雙日期設定"
+          },
+          {
+            "id": "callback",
+            "label": "留下聯絡方式，請專人聯繫",
+            "short": "僅留 Email 即可由專人接洽"
+          },
+          {
+            "id": "email",
+            "label": "直接開啟郵件寫信",
+            "short": "shopdisplay@bigfame.co"
+          }
+        ],
+        "modeHints": {
+          "budget": "還沒有圖也沒關係。一張產品照、參考連結，或說明你想展示什麼，都可以開始。",
+          "quote": "可比較代表規格、單雙面／套疊結構、單箱限重與裝櫃量，並分開填寫希望報價日與希望交貨日。",
+          "callback": "目前忙碌不方便詳述？只要留下 Email 或常用聯絡方式，台北業務窗口會主動聯繫您。"
+        }
+      },
+      "privacy": {
+        "eyebrow": "隱私權與資料治理",
+        "title": "隱私權政策",
+        "updated": "最後更新日期：2026 年 11 月",
+        "sections": [
+          {
+            "h": "1. 我們蒐集的資料",
+            "p": "當您透過 bigfame.co 提交工程詢價表單時，我們會蒐集您的公司名稱、聯絡人姓名、商務 Email 以及您主動填寫之專案需求，僅供報價與工程評估聯繫使用。"
+          },
+          {
+            "h": "2. 網站分析與 Cookie（Google Analytics 4）",
+            "p": "本網站使用 Google Analytics 4（評估 ID：G-PDW4NPHHW8）分析整體流量、語系偏好與聯絡轉換事件（含聯絡點擊與表單送出）。我們絕不販售個人資料予第三方。"
+          },
+          {
+            "h": "3. 設計圖面保密與白牌倫理",
+            "p": "建築師事務所、商社與品牌客戶提供之圖面、什器清單與終端資訊皆受嚴格保密管理，僅用於製造可行性評估與報價作業。"
+          },
+          {
+            "h": "4. 資料查詢與聯繫方式",
+            "p": "若您欲查詢、更正或刪除詢價資料，請來信聯繫盛名實業（Big Fame Industrial Corp.）：shopdisplay@bigfame.co。"
+          }
+        ]
+      }
+    }
+  },
+  "cases": [
+    {
+      "slug": "hotel-guestroom-vanity-ffe",
+      "kind": "real",
+      "heroImage": "/assets/images/case-hotel-stone-01.webp",
+      "gallery": [
+        {
+          "src": "/assets/images/case-hotel-stone-01.webp",
+          "caption": {
+            "en": "Woven black leather headboard flanked by tiered natural stone and slender black-steel nightstands",
+            "jp": "編み込みブラックレザーヘッドボードと天然石×細身黒スチール2段ナイトテーブル",
+            "tw": "編織黑皮革床頭板搭配雙層天然石材與纖細黑鐵框架邊几"
+          }
+        },
+        {
+          "src": "/assets/images/case-guestroom-01.webp",
+          "caption": {
+            "en": "Custom perforated-metal rounded wardrobe, ash-wood desk, and integrated white vanity",
+            "jp": "パンチングメタル円弧衣類収納、アッシュ木工デスク、一体型洗面カウンター",
+            "tw": "客製圓角沖孔金屬衣櫃、梣木金屬書桌與一體成形白色洗手檯面"
+          }
+        },
+        {
+          "src": "/assets/images/case-guestroom-02.webp",
+          "caption": {
+            "en": "Coordinated guestroom casegoods: tufted headboard, dual-tone wood nightstand, and steel study desk",
+            "jp": "統一意匠の客室 FF&E：レザーヘッドボード、二段木製ナイトテーブル、スチール脚デスク",
+            "tw": "跨房型客房 FF&E 整合：皮革床頭、雙色木作床頭櫃與黑鐵書桌"
+          }
+        },
+        {
+          "src": "/assets/images/case-hotel-brass-detail.webp",
+          "caption": {
+            "en": "Minimal brushed-brass architectural garment rail detail for boutique guestrooms",
+            "jp": "ブティックホテル客室向け ヘアライン真鍮調ミニマルハンガーバーのディテール",
+            "tw": "精品旅宿客房極簡霧金髮絲紋吊衣桿五金收邊細節"
+          }
+        }
+      ],
+      "en": {
+        "title": "Boutique Hotel Guestroom FF&E & Stone Nightstand Integration",
+        "badge": "Completed Installation",
+        "spaceType": "Boutique Hospitality Guestroom",
+        "scope": "Tiered stone-and-steel nightstands, woven leather headboards, perforated-metal wardrobes, integrated desks & vanities",
+        "materials": "Natural stone slabs, slim matte-black steel, perforated steel sheet, ash veneer, woven leather",
+        "summary": "Multi-room hospitality FF&E combining tiered stone-top steel nightstands, woven leather headboards, and perforated-metal wardrobes.",
+        "brief": "The hospitality studio specified slender architectural profiles across multiple guestroom types — pairing heavy natural stone surfaces with thin black-steel legs, woven leather headboards, and curved perforated-metal wardrobes without visible structural bulk.",
+        "execution": [
+          "Stone & Slim Steel Joinery: Engineered concealed steel under-supports beneath tiered stone nightstand slabs to preserve crisp cantilevered edges while maintaining commercial durability.",
+          "Perforated-Metal Rounded Wardrobe: Precision-rolled metal mesh doors integrated with ash-wood lower drawers and continuous vanity alignment across dry and wet zones.",
+          "Batch Repeatability & Delivery: Coordinated metalwork, upholstery, wood joinery, and stone cutting under unified project drawings to maintain consistent sheen and seam tolerances across rooms."
+        ]
+      },
+      "jp": {
+        "title": "ブティックホテル客室 石材ナイトテーブル・異素材 FF&E 統合",
+        "badge": "納入実績",
+        "spaceType": "ブティックホテル客室",
+        "scope": "天然石×黒スチール2段ナイトテーブル、編み込みレザーヘッドボード、パンチングメタル収納、洗面カウンター",
+        "materials": "天然石天板、細身マット黒スチール、パンチングメタル、アッシュ突板、編み込みレザー",
+        "summary": "天然石と細身スチールの2段ナイトテーブル、編み込みレザーヘッドボード、円弧パンチングメタル収納を一貫納まりで製作。",
+        "brief": "複数タイプの客室にわたり、重量のある天然石天板を極細のスチールフレームで支える軽快な造形と、パンチングメタル収納・木工デスク・洗面カウンターの連続的な納まりが求められました。",
+        "execution": [
+          "石材×細身スチールの納まり：段差構成の天然石天板の裏面に隠し補強フレームを織り込み、シャープな見付けと業務用強度を両立しています。",
+          "円弧パンチングメタル収納と洗面連続納まり：曲げ加工メッシュ扉とアッシュ木工下台を組み合わせ、デスクから洗面カウンターまで水平ラインを揃えました。",
+          "多室展開のロット管理：金属・木工・レザー張地・石材加工を同一図番で統合管理し、客室間の仕上がりばらつきを抑えて納入しました。"
+        ]
+      },
+      "tw": {
+        "title": "精品旅宿客房石材邊几與跨材質 FF&E 整合",
+        "badge": "真實完工",
+        "spaceType": "精品旅宿客房空間",
+        "scope": "雙層天然石材細鐵邊几、編織黑皮革床頭板、圓角沖孔金屬衣櫃、木金屬書桌與洗手檯面",
+        "materials": "天然石材檯面、纖細消光黑鐵、沖孔金屬板、淺梣木皮、編織皮革",
+        "summary": "結合雙層天然石材細鐵邊几、編織黑皮革床頭板與圓角沖孔金屬衣櫃，展現旅宿客房跨材質收口與批次一致性。",
+        "brief": "設計團隊希望在多房型客房內以極細黑鐵撐起厚實天然石材邊几，並同步整合編織皮革床頭、圓角沖孔金屬衣櫃與衛浴洗手檯面，避免分包導致的色差與收邊落差。",
+        "execution": [
+          "石材與纖細黑鐵收口：於雙層石材檯面底部設計隱藏式鋼構支撐，兼顧懸浮視覺比例與旅宿高頻率使用強度。",
+          "圓角沖孔金屬衣櫃與檯面連續整合：以金屬折彎沖孔網結合梣木下櫃，並精準對齊書桌與白色洗手檯面交界線。",
+          "跨房型批次一致交付：透過單一專案圖號統籌金屬、木作、皮革與石材產線，確保各房型收邊公差與塗裝光澤一致。"
+        ]
+      }
+    },
+    {
+      "slug": "bent-metal-hospitality-collection",
+      "kind": "real",
+      "heroImage": "/assets/images/case-esctasy-wardrobe.webp",
+      "gallery": [
+        {
+          "src": "/assets/images/case-esctasy-wardrobe.webp",
+          "caption": {
+            "en": "Champagne-bronze bent steel tubing paired with expanded metal mesh and timber storage",
+            "jp": "シャンパンブロンズ曲げスチールパイプ×エキスパンドメタル×木工収納ワードローブ",
+            "tw": "香檳古銅彎管鋼構結合鋁／鐵擴張網與實木收納抽屜衣櫃組"
+          }
+        },
+        {
+          "src": "/assets/images/case-esctasy-sidetable.webp",
+          "caption": {
+            "en": "Matching champagne-bronze bent-tube round bedside table with perforated metal lower tray",
+            "jp": "同シリーズのシャンパンブロンズ曲げパイプ丸型サイドテーブル",
+            "tw": "同系列香檳古銅彎管圓形邊几與沖孔金屬下層置物盤"
+          }
+        }
+      ],
+      "en": {
+        "title": "Champagne-Bronze Bent Metal & Mesh Hospitality Suite",
+        "badge": "Completed Installation",
+        "spaceType": "Boutique Hotel & Lifestyle FF&E",
+        "scope": "Bent-tube open wardrobes, expanded-mesh doors, solid-wood drawer boxes, matching round side tables",
+        "materials": "Bent steel tubing, expanded metal mesh, metallic bronze powder coat, warm timber veneer",
+        "summary": "Architectural bent-tube wardrobe and matching round bedside table pairing champagne-bronze metalwork with warm wood joinery.",
+        "brief": "Contemporary boutique hotels increasingly replace bulky built-in closets with open architectural furniture pieces. The design required smooth continuous tube bends, clean mesh-to-frame welds, and warm champagne-bronze finishing that resists guest wear.",
+        "execution": [
+          "Precision Tube Bending & Mesh Framing: Uniform bend radii and flush-ground welds across both the tall wardrobe frame and the curved round side table.",
+          "Metallic Bronze Finish Discipline: Controlled satin bronze powder coating matched across tubing, expanded mesh panels, and concealed hardware fasteners.",
+          "Mixed-Material Fit & KD Packing: Timber drawer boxes and marble/wood tops engineered to drop cleanly into the metal carcass with protective flat/nested export packing."
+        ]
+      },
+      "jp": {
+        "title": "シャンパンブロンズ曲げ金属・メッシュ ホテル家具シリーズ",
+        "badge": "納入実績",
+        "spaceType": "ブティックホテル・ライフスタイル FF&E",
+        "scope": "曲げパイプオープンワードローブ、エキスパンドメタル扉、木工引き出しユニット、丸型サイドテーブル",
+        "materials": "曲げ加工スチールパイプ、エキスパンドメタル、ブロンズ調粉体塗装、突板木工",
+        "summary": "滑らかな曲げパイプとエキスパンドメタル、温かみのある木工を組み合わせたシャンパンブロンズ仕上げの客室家具シリーズ。",
+        "brief": "圧迫感のある造作クローゼットに代わり、空間のアイコンとなる軽やかなオープンワードローブと丸型サイドテーブルのシリーズ製作がテーマ。曲げ R の精度、メッシュとパイプの溶接仕上げ、ブロンズ塗装の色合わせが重要でした。",
+        "execution": [
+          "高精度パイプ曲げ・溶接仕上げ：ワードローブ本体から丸型サイドテーブルまで曲げ R を統一し、溶接痕を目立たせない平滑仕上げを施しています。",
+          "ブロンズ調塗装の色味統一：パイプ・メッシュ・金物パーツ間でツヤ感と色調がブレないよう同一ロットで焼付塗装を管理しました。",
+          "木工ユニット組み込みと輸出保護梱包：木製引き出しボックスを金属フレームへ正確に納め、海外輸送時の擦れを防ぐ保護梱包で納入しました。"
+        ]
+      },
+      "tw": {
+        "title": "香檳古銅彎管 × 金屬擴張網旅宿家具系列",
+        "badge": "真實完工",
+        "spaceType": "設計旅宿與精品商空 FF&E",
+        "scope": "彎管開放式衣櫃、金屬擴張網門片、實木紋抽屜櫃與同系列圓形邊几",
+        "materials": "精密彎管鋼構、金屬擴張網、香檳古銅金屬烤漆、溫潤實木皮",
+        "summary": "以流暢連續彎管、金屬擴張網與溫潤木作抽屜打造的香檳古銅旅宿衣櫃與圓形邊几系列。",
+        "brief": "現代設計旅宿偏好以輕盈開放的金屬架構取代厚重木作衣櫃，本系列需在連續圓管折彎、擴張網收邊焊道與香檳古銅霧面烤漆上達到家具級近看質感。",
+        "execution": [
+          "連續彎管與網框收邊工藝：高挑衣櫃與圓形邊几採用一致的折彎半徑，焊點平整打磨以維持俐落建築線條。",
+          "古銅烤漆批次控管：管件、擴張網片與五金配件採同批金屬烤漆管理，確保不同構件光澤度一致。",
+          "異材質嵌入式結構與出口保護：木質抽屜框體精準嵌入金屬骨架，並依出口條件規劃防刮護角與拆裝包裝。"
+        ]
+      }
+    },
+    {
+      "slug": "apparel-footwear-flagship",
+      "kind": "real",
+      "heroImage": "/assets/images/case-apparel-01.webp",
+      "gallery": [
+        {
+          "src": "/assets/images/case-apparel-01.webp",
+          "caption": {
+            "en": "Matte-black steel garment racks, nesting display tables, and architectural retail circulation",
+            "jp": "マットブラック・スチール製ハンガーラックとネストディスプレイテーブルの構成",
+            "tw": "霧黑鋼構服飾吊掛架、層疊中島展示桌與精品選物門市動線"
+          }
+        },
+        {
+          "src": "/assets/images/case-apparel-02.webp",
+          "caption": {
+            "en": "Full-store fixture integration including cantilevered wall footwear shelves and tiered accessories tables",
+            "jp": "壁面シューズ片持ち棚・アクセサリー展示テーブルを含むアパレル店舗什器一式",
+            "tw": "全店系統整合：壁面懸臂鞋履展示牆、高層金屬陳列架與配件展示桌"
+          }
+        }
+      ],
+      "en": {
+        "title": "Apparel & Footwear Flagship — Modular Steel Fixture System",
+        "badge": "Completed Installation",
+        "spaceType": "Apparel & Footwear Flagship Retail",
+        "scope": "Heavy-duty garment racks, nesting display tables, cantilevered wall shoe shelves, perimeter shelving",
+        "materials": "Matte powder-coated square steel tubing, laminated tabletops, concealed wall brackets",
+        "summary": "Complete fashion & footwear flagship fixture package combining matte-black steel garment racks, nesting tables, and cantilevered wall shoe displays.",
+        "brief": "A multi-category apparel and footwear flagship required slim, understated steel fixtures strong enough to carry heavy outerwear and dense footwear walls without visual clutter, while allowing rapid floor reconfiguration across seasons.",
+        "execution": [
+          "Anti-Sag Garment & Nesting Frames: Precision-welded square steel tubing with uniform matte powder coating, supporting heavy coats and layered folding displays cleanly.",
+          "Cantilevered Footwear Wall: Concealed wall-mounted brackets supporting crisp horizontal shoe shelves along the perimeter bay.",
+          "Modular Floor Rollout: Standardized table heights and rack footprints designed for flexible seasonal VMD layouts and repeatable multi-store production."
+        ]
+      },
+      "jp": {
+        "title": "アパレル・シューズ旗艦店 モジュールスチール什器システム",
+        "badge": "納入実績",
+        "spaceType": "アパレル・シューズ専門店（物販店舗）",
+        "scope": "重量対応ハンガーラック、ネスト展示テーブル、壁面片持ちシューズ棚、外周什器一式",
+        "materials": "マット粉体塗装角パイプスチール、化粧天板、隠し壁面ブラケット",
+        "summary": "マットブラックの角パイプハンガーラック、ネスト展示テーブル、壁面シューズ棚を統一意匠で納入したアパレル旗艦店事例。",
+        "brief": "重衣料のアウターからバッグ・シューズまで幅広いアイテムを扱いながら、什器自体の主張を抑え、季節ごとの VMD レイアウト変更に即応できる店舗什器システムが求められました。",
+        "execution": [
+          "高剛性ハンガーラック・ネストテーブル：細身のマット塗装スチール角パイプで構成し、重量アウターを掛けてもたわみにくい剛性と軽快な見付けを両立しています。",
+          "壁面シューズ片持ち棚：支持金物を目立たせない壁面構成により、シューズのシルエットを浮かび上がらせる陳列を実現しました。",
+          "多店舗展開を見据えたモジュール寸法：テーブル・ラックのモジュール寸法を統一し、季節ごとのレイアウト変更や追加発注に対応しています。"
+        ]
+      },
+      "tw": {
+        "title": "服飾與鞋履旗艦店 — 霧黑鋼構模組化展示系統",
+        "badge": "真實完工",
+        "spaceType": "服飾選物與鞋履旗艦門市",
+        "scope": "重載服飾吊掛架、層疊中島展示桌、壁面懸臂鞋牆、高層配件展示架",
+        "materials": "霧面粉體烤漆方管鋼構、耐磨檯面板、隱藏式壁面托架",
+        "summary": "以俐落霧黑鋼構方管整合服飾吊掛架、層疊中島桌與壁面懸臂鞋履層架，展現實景服飾門市系統落地力。",
+        "brief": "複合式服飾與鞋履旗艦門市需要視覺極簡卻具高承重力的展示系統，能穩定懸掛厚重外套與密集鞋款，並讓門市人員依換季檔期快速重組動線。",
+        "execution": [
+          "高剛性吊掛與層疊中島桌：採精密焊接霧黑粉體烤漆方管，兼顧纖細視覺比例與冬季厚重服飾長期懸掛不下垂的結構強度。",
+          "壁面懸臂鞋履展示牆：透過隱藏式壁面支撐件呈現俐落浮空鞋架，凸顯鞋款輪廓而不顯雜亂。",
+          "模組化換季配置：統一中島桌與吊架模數尺寸，支援換季 VMD 彈性調整與跨店複製生產。"
+        ]
+      }
+    },
+    {
+      "slug": "japanese-wine-bar-millwork",
+      "kind": "real",
+      "heroImage": "/assets/images/case-winebar-01.webp",
+      "gallery": [
+        {
+          "src": "/assets/images/case-winebar-01.webp",
+          "caption": {
+            "en": "Backlit recessed millwork liquor display wall with tempered glass shelves and polished dark stone bar counter",
+            "jp": "間接 LED 組み込み木工バックバー棚・強化ガラス棚板・黒石材バーカウンター",
+            "tw": "內嵌垂直線燈木作背牆酒櫃、強化玻璃層板與深色石材吧台整合"
+          }
+        },
+        {
+          "src": "/assets/images/case-winebar-02.webp",
+          "caption": {
+            "en": "Close-up of flush vertical LED light channels, clean glass shelf alignment, and concealed lower cabinetry",
+            "jp": "縦型間接照明ラインと強化ガラス棚の水平納まり・下部収納キャビネット",
+            "tw": "垂直隱藏式發光槽、強化玻璃層板水平收口與下層隱藏收納櫃體細節"
+          }
+        }
+      ],
+      "en": {
+        "title": "Japanese Lounge & Wine Bar — Backlit Millwork & Stone Counter",
+        "badge": "Completed Installation",
+        "spaceType": "Hospitality Lounge & Wine Bar",
+        "scope": "Backlit recessed display wall, tempered glass shelving, concealed lower cabinetry, stone bar counter",
+        "materials": "Lacquered architectural millwork, recessed linear LED, clear tempered glass, polished dark stone",
+        "summary": "Custom hospitality bar interior integrating recessed linear-LED millwork display niches, clear tempered glass shelving, and a dark stone counter.",
+        "brief": "For an intimate Japanese-style hospitality bar, the designer sought a glowing architectural bottle gallery where concealed vertical lighting, razor-thin glass shelves, and dark reflective stone work together without visible wiring or bulky brackets.",
+        "execution": [
+          "Concealed Linear LED Joinery: Milled flush light channels directly into the vertical millwork dividers so illumination washes evenly across every bay.",
+          "Tempered Glass Shelf Alignment: Precision-drilled concealed shelf supports holding clear glass tiers level across adjacent recessed bays.",
+          "Stone Bar & Storage Integration: Coordinated dark stone bar top with handle-less lower service cabinetry for seamless front-of-house elegance and back-of-house durability."
+        ]
+      },
+      "jp": {
+        "title": "ジャパニーズ・ワインバー 間接照明バックバー造作・石材カウンター",
+        "badge": "納入実績",
+        "spaceType": "ホスピタリティ・バー／ラウンジ空間",
+        "scope": "間接照明内蔵バックバー造作棚、強化ガラス棚、下部サービス収納、黒石材バーカウンター",
+        "materials": "塗装仕上げ造作木工、埋め込みリニア LED、強化ガラス、天然石カウンター",
+        "summary": "縦型間接照明を仕込んだバックバー造作棚、透明強化ガラス棚、黒石材バーカウンターを一体納まりで仕上げた飲食空間事例。",
+        "brief": "落ち着いたバー空間において、配線や支持金物を一切見せずにボトルを美しく浮かび上がらせる発光バックバーと、重厚な石材カウンターの精密な納まりが求められました。",
+        "execution": [
+          "縦型リニア LED の埋め込み納まり：木工仕切り板の内部へ照明チャンネルをフラットに埋め込み、各スパンを均一に照らす柔らかな光を演出しています。",
+          "強化ガラス棚の水平精度：隠しダボ金物により複数スパンにまたがる強化ガラス棚の水平ラインを揃えました。",
+          "石材カウンターと収納の統合：艶やかな黒石材カウンターとフラットな下部サービス収納を組み合わせ、意匠性と業務耐久性を両立しています。"
+        ]
+      },
+      "tw": {
+        "title": "日式精品酒吧 — 隱藏線燈背牆酒櫃與黑石材吧台",
+        "badge": "真實完工",
+        "spaceType": "旅宿餐飲酒吧與 VIP 商空",
+        "scope": "內嵌線燈背牆展示櫃、強化玻璃層板、無把手下層工作櫃、深色石材吧台",
+        "materials": "烤漆建築木作、內嵌線性 LED 燈槽、清強化玻璃、深色拋光石材檯面",
+        "summary": "整合垂直隱藏式線燈木作背牆、強化玻璃展示層板與深色石材吧台，呈現高階餐飲商空的精密收口工藝。",
+        "brief": "針對靜謐質感的日式酒吧空間，設計師希望背牆展示櫃完全隱藏燈具線路與五金支撐件，讓垂直柔光均勻打亮每格酒瓶，並與深色石材吧台形成優雅倒影。",
+        "execution": [
+          "內嵌式垂直線燈木作：於立面木作隔板內精密開槽嵌入線性 LED 燈條，見光不見燈，維持立面極簡平整。",
+          "跨格位強化玻璃水平對齊：採用極簡隱藏托件固定清強化玻璃層板，確保相鄰三格水平線條精準連貫。",
+          "石材吧台與下櫃整合：拋光深色石材吧台結合無把手下層服務收納櫃，兼顧接待質感與餐飲現場耐用性。"
+        ]
+      }
+    },
+    {
+      "slug": "veltor-retail-concept",
+      "kind": "concept",
+      "heroImage": "/assets/images/dt-veltor-01.webp",
+      "gallery": [
+        {
+          "src": "/assets/images/hero-veltor-island.webp",
+          "caption": {
+            "en": "KD heavy-duty black steel and brushed oak two-tier island display table",
+            "jp": "KD 分解対応マットスチール×オーク2段アイランドディスプレイ什器",
+            "tw": "KD 平整包裝重載黑鐵 × 橡木雙層中島展示桌特寫"
+          }
+        },
+        {
+          "src": "/assets/images/dt-veltor-01.webp",
+          "caption": {
+            "en": "Storefront view of modular heavy-load wall shelving, central island, and reception counter",
+            "jp": "店舗エントランス視角：重量物対応壁面棚・中央アイランド・受付カウンター",
+            "tw": "門市入口視角：壁面重載模組架、中央黑鐵橡木中島桌與收銀櫃台"
+          }
+        },
+        {
+          "src": "/assets/images/dt-veltor-02.webp",
+          "caption": {
+            "en": "Interior circulation showing garment racks, helmet bays, and consultation seating",
+            "jp": "ハンガーラック、ヘルメット壁面棚、接客エリアの空間動線",
+            "tw": "服飾吊掛架、壁面裝備層架與洽談區空間動線"
+          }
+        }
+      ],
+      "en": {
+        "title": "VELTOR — Heavy-Load KD Flagship Retail System Study",
+        "badge": "Concept Study",
+        "spaceType": "Specialty Moto & Touring Flagship (Concept)",
+        "scope": "Heavy-duty wall shelving, KD steel-and-oak island tables, garment racks, reception counter",
+        "materials": "Powder-coated matte steel, brushed oak veneer, olive laminate cabinetry, integrated LED",
+        "summary": "Architectural flagship study demonstrating heavy-load steel-and-oak wall bays and bolted KD island tables engineered for multi-store rollouts.",
+        "brief": "Developed as an architectural fixture system study for outdoor and motorcycle gear retail, demonstrating how heavy merchandise (helmets, leather boots, and touring luggage) can sit on refined, repeatable KD modular structures.",
+        "execution": [
+          "KD Central Island Table: Bolted dark-steel perimeter frame supporting two-tier brushed oak decks — designed to pack flat for ocean freight and assemble rapidly on site without welding.",
+          "Heavy-Load Wall Bays: Matte steel upright frames integrated with concealed LED shelf channels, oak shelving, and olive-toned lower stock drawers.",
+          "Unified Storewide Material Palette: Garment racks and wood-clad reception counters share identical finish codes to keep multi-store expansions visually coherent."
+        ]
+      },
+      "jp": {
+        "title": "VELTOR — 重量物対応 KD フラッグシップ什器スタディ",
+        "badge": "空間スタディ",
+        "spaceType": "モーターサイクル・ギア専門店（コンセプト）",
+        "scope": "重量物対応壁面棚、KD スチール×オーク中島テーブル、ハンガーラック、受付カウンター",
+        "materials": "マット粉体塗装スチール、オーク突板、化粧板収納、間接 LED 照明",
+        "summary": "ヘルメットやブーツなど重量ギアを上質に陳列する、KD 分解対応スチール×オーク什器システムの空間スタディ。",
+        "brief": "ヘルメット・レザーブーツ・ツーリングバッグといった重量物を扱いながら、ブティックのような洗練された空間と海外多店舗展開に耐える KD 輸送効率を両立する構成を検証しました。",
+        "execution": [
+          "KD 対応アイランドディスプレイ：ボルト締結式のスチール枠に2段オーク天板を載せる構造とし、海上輸送のフラットパック化と現場での短時間組立を想定しています。",
+          "重量物対応の壁面モジュール棚：マットスチール支柱に間接 LED 照明付きオーク棚板と下部ストック引き出しを統合しました。",
+          "店舗全体のマテリアル統一：アパレルラックからレジカウンターまで同一の塗装・木目コードで管理し、多店舗展開時の再現性を高めています。"
+        ]
+      },
+      "tw": {
+        "title": "VELTOR — 重載異素材 KD 旗艦店展示系統研究",
+        "badge": "概念研究",
+        "spaceType": "重機部品與戶外裝備旗艦店（概念研究）",
+        "scope": "壁面重載展示架、KD 黑鐵橡木中島桌、服飾吊掛架與木質收銀櫃台",
+        "materials": "霧面粉體烤漆鋼構、橡木木皮、橄欖綠下櫃面板、隱藏式燈條",
+        "summary": "針對安全帽、皮靴與重型裝備設計的跨材質旗艦店展示系統研究，結合螺栓快拆 KD 中島桌與重載壁面系統。",
+        "brief": "本概念研究示範如何以可複製、可 KD 拆裝的金屬與橡木模組結構，承載安全帽、重機靴與旅行包等高重量商品，同時維持精品選物店等級的建築空間美感與海運材積效率。",
+        "execution": [
+          "KD 平整包裝中島展示桌：採螺栓快拆黑鐵框架搭配雙層橡木檯面，避免焊接整架佔用貨櫃空氣，兼顧現場組裝效率與載重穩定度。",
+          "壁面重載模組系統：霧面鋼構立柱結合隱藏式 LED 層板燈、橡木層板與橄欖綠下層收納抽屜。",
+          "全店材質圖號一致：服飾吊掛系統與木質收銀台共用同一套金屬烤漆與木紋規範，利於連鎖展店快速複製。"
+        ]
+      }
+    },
+    {
+      "slug": "resort-outdoor-hospitality-ffe",
+      "kind": "real",
+      "heroImage": "/assets/images/case-sunnyward-outdoor.webp",
+      "gallery": [
+        {
+          "src": "/assets/images/case-sunnyward-outdoor.webp",
+          "caption": {
+            "en": "Weather-resistant outdoor woven-rope lounge sofa and steel-framed coffee tables via Malaysia hub",
+            "jp": "マレーシア拠点（Sunnyward Sdn Bhd）連携による屋外ロープ編みリゾートソファ＆テーブル",
+            "tw": "馬來西亞 Sunnyward Sdn Bhd 據點支援之戶外編織繩與金屬框度假旅宿沙發組"
+          }
+        }
+      ],
+      "en": {
+        "title": "Malaysia Regional Resort & Outdoor Hospitality FF&E",
+        "badge": "Completed Installation",
+        "spaceType": "Resort & Outdoor Hospitality Terrace",
+        "scope": "Outdoor woven-rope lounge seating, powder-coated metal frames, slatted coffee tables, weather-ready cushions",
+        "materials": "Powder-coated aluminum/steel frame, all-weather synthetic rope weave, exterior performance fabric",
+        "summary": "Outdoor woven-rope lounge seating and weather-resistant hospitality tables supported through our Malaysia hub (Sunnyward Sdn Bhd).",
+        "brief": "Tropical and coastal hospitality terraces demand outdoor lounge furniture that balances architectural lightness with resistance to UV exposure, humidity, and heavy resort guest turnover.",
+        "execution": [
+          "Weather-Resistant Frame & Weave: Corrosion-resistant powder-coated metal framing paired with hand-tensioned synthetic outdoor rope weaving.",
+          "Regional Southeast Asia Supply: Coordinated through Big Fame's Malaysia hub (Sunnyward Sdn Bhd) alongside Taipei engineering oversight for seamless regional delivery.",
+          "Project-Specific Finish & Packing: Cushion densities, exterior fabric grades, and container loading plans are confirmed per resort climate and project schedule."
+        ]
+      },
+      "jp": {
+        "title": "マレーシア拠点連携 リゾート・屋外ホスピタリティ FF&E",
+        "badge": "納入実績",
+        "spaceType": "リゾート・屋外テラス空間",
+        "scope": "屋外ロープ編みラウンジソファ、耐候性金属フレーム、屋外ローテーブル、耐候クッション",
+        "materials": "耐候粉体塗装アルミ／スチール、屋外用シンセティックロープ、屋外耐候ファブリック",
+        "summary": "マレーシア拠点（Sunnyward Sdn Bhd）との連携により供給する、リゾートテラス向け屋外ロープ編みソファ＆金属テーブル。",
+        "brief": "高温多湿・紫外線の厳しいリゾートテラスでは、建築空間に溶け込む軽快な意匠と、業務用基準の耐候性・メンテナンス性の両立が求められます。",
+        "execution": [
+          "耐候フレーム×ロープ編み構造：防錆・耐候粉体塗装フレームに屋外用ロープ編みを組み合わせ、軽やかなシルエットと高い耐久性を確保しています。",
+          "東南アジア広域サポート：台北本社の品質基準とマレーシア拠点（Sunnyward Sdn Bhd）の供給網を連携させ、アジア太平洋地域のホテル案件に対応します。",
+          "案件別仕様調整：張地の耐候グレードや梱包形態は、納入先気候とプロジェクト数量に応じて個別に確認します。"
+        ]
+      },
+      "tw": {
+        "title": "馬來西亞據點度假旅宿與戶外金屬編織 FF&E",
+        "badge": "真實完工",
+        "spaceType": "度假旅宿與戶外露台空間",
+        "scope": "戶外編織繩沙發組、防鏽粉體烤漆金屬框體、戶外茶几與耐候軟墊",
+        "materials": "防鏽粉體烤漆鋁／鋼構、全天候合成編織繩、戶外耐候防潑水布料",
+        "summary": "結合馬來西亞 Sunnyward Sdn Bhd 據點能量，打造兼具建築輕盈感與熱帶耐候強度的度假旅宿戶外沙發系統。",
+        "brief": "熱帶與海濱度假旅宿的戶外露台空間，需要家具在高濕度、強日照與高頻率旅客使用下仍維持結構穩固與視覺清爽。",
+        "execution": [
+          "耐候金屬骨架與編織工藝：採用防鏽粉體烤漆金屬框體結合高張力戶外合成編織繩，兼顧通透視覺與耐用度。",
+          "跨區域據點協同交付：結合台北總部工程品管與馬來西亞 Sunnyward Sdn Bhd 據點，靈活支援東南亞與國際旅宿專案。",
+          "依專案環境客製規範：戶外布料耐候等級、泡棉快乾規格與出口裝櫃配置，均依專案所在地氣候與圖面確認。"
+        ]
+      }
+    },
+    {
+      "slug": "eyewear-boutique-fixtures",
+      "kind": "real",
+      "heroImage": "/assets/images/case-eyewear-02.webp",
+      "gallery": [
+        {
+          "src": "/assets/images/case-eyewear-02.webp",
+          "caption": {
+            "en": "Symmetrical optical gallery with bilateral birch pegboard walls and custom reception counter",
+            "jp": "両側バーチ有孔モジュール壁面とバックカウンターの対称空間構成",
+            "tw": "兩側對稱樺木洞洞板展示牆與後方收銀工作櫃全景"
+          }
+        },
+        {
+          "src": "/assets/images/case-eyewear-detail.webp",
+          "caption": {
+            "en": "Macro view of mitered birch display tray and clear tempered-glass consultation tabletop",
+            "jp": "バーチ合板トレイと強化ガラス天板による接客ディスプレイのディテール",
+            "tw": "樺木夾板陳列格位與強化玻璃檯面展示桌微距細節"
+          }
+        },
+        {
+          "src": "/assets/images/case-eyewear-01.webp",
+          "caption": {
+            "en": "Modular birch pegboard bays with tool-free cantilevered steel shelves and glass display tables",
+            "jp": "バーチ合板有孔壁面と焼付塗装スチール片持ち棚・ガラス天板テーブル",
+            "tw": "模組化樺木洞洞板牆面、懸臂金屬層板與玻璃檯面展示桌"
+          }
+        }
+      ],
+      "en": {
+        "title": "Optical Boutique Modular Display System",
+        "badge": "Completed Installation",
+        "spaceType": "Specialty Optical Retail",
+        "scope": "Wall pegboard system, cantilevered steel shelves, glass-top tables, back counter",
+        "materials": "Birch plywood, powder-coated steel, tempered glass, mirror",
+        "summary": "Symmetrical birch-plywood pegboard walls with tool-free cantilevered steel shelving and mitered glass-top consultation tables.",
+        "brief": "The retail designer specified a warm, architectural eyewear gallery where frames sit at eye level without heavy visual framing. The wall system needed flexible shelf reconfiguration for seasonal collections while concealing stock beneath glass consultation tables.",
+        "execution": [
+          "Modular Birch Pegboard Wall: Fabricated in aligned vertical panel bays with consistent CNC-drilled peg grids, allowing cantilevered steel shelves and try-on mirrors to be repositioned without tools.",
+          "Staggered Lower Storage: Built-in birch drawer modules anchored cleanly beneath the pegboard bays to hold stock cases while maintaining crisp shadow-gap reveals.",
+          "Glass-Top Display Tables: Mitered birch enclosures paired with clear tempered glass tops and slim steel underframes, balancing structural rigidity with visual lightness."
+        ]
+      },
+      "jp": {
+        "title": "アイウェア専門店 モジュール壁面・ガラス展示什器",
+        "badge": "納入実績",
+        "spaceType": "アイウェア専門店（物販店舗）",
+        "scope": "壁面有孔ボード什器、スチール片持ち棚、ガラス天板接客テーブル、バックカウンター",
+        "materials": "バーチ合板、焼付塗装スチール、強化ガラス、ミラー",
+        "summary": "両側対称のバーチ合板有孔モジュール壁面と焼付塗装スチール片持ち棚、強化ガラス天板テーブルを一貫製作。",
+        "brief": "温かみのある木質空間の中で、アイウェア本来の造形を引き立てる VMD ディスプレイが求められました。季節ごとの陳列変更に柔軟に対応できる壁面システムに加え、接客用ガラス天板テーブルからバックカウンターまで素材感を統一しています。",
+        "execution": [
+          "バーチ合板・有孔モジュール壁面：パネル目地と孔ピッチを正確に揃え、白色スチール片持ち棚および丸ミラーを工具なしで差し替えられる構造としています。",
+          "段差構成の下部収納ユニット：壁面下部にストック収納用の引き出しボックスを組み込み、目地とチリ寸法を整えました。",
+          "ガラス天板ディスプレイテーブル：バーチ材フレームに強化ガラスを落とし込み、細身の金属脚と組み合わせて軽やかさと安定性を両立しています。"
+        ]
+      },
+      "tw": {
+        "title": "精品眼鏡門市模組化展示系統",
+        "badge": "真實完工",
+        "spaceType": "精品眼鏡零售門市",
+        "scope": "模組洞洞板牆面、懸臂金屬層板、玻璃檯面展示桌、後方收銀工作櫃",
+        "materials": "樺木夾板、粉體烤漆金屬、強化玻璃、鏡面",
+        "summary": "兩側對稱樺木洞洞板牆面結合免工具懸臂金屬層板，搭配玻璃檯面洽談桌與交錯式下層收納櫃。",
+        "brief": "空間設計師希望打造溫潤且具展示彈性的精品眼鏡門市，讓鏡框成為視覺主角。壁面陳列需能隨季節商品快速調整層板高度，中島洽談區則需兼顧玻璃展示與收銀工作櫃的整體木質語彙。",
+        "execution": [
+          "模組化樺木洞洞板牆面：以對縫樺木夾板結合精準 CNC 孔位配置，搭配白色粉體烤漆懸臂層板與圓鏡，門市人員免工具即可調整佈局。",
+          "交錯式下層收納櫃體：於洞洞板下方整合多段高度木質抽屜與陳列台，兼顧備品收納與建築收邊線條。",
+          "玻璃檯面展示中島桌：木質框體搭配強化玻璃與纖細金屬桌腳，確保陳列通透度與日常接客使用的結構穩固性。"
+        ]
+      }
+    },
+    {
+      "slug": "neo-lounge-experience-concept",
+      "kind": "concept",
+      "heroImage": "/assets/images/dt-neolounge-01.webp",
+      "gallery": [
+        {
+          "src": "/assets/images/dt-neolounge-01.webp",
+          "caption": {
+            "en": "Fluted wood arched booths, tall bronze-framed display wall, and stone-top hospitality bar",
+            "jp": "リブ木工アーチブース、ブロンズ調フレーム高層陳列棚、石材天板バーカウンター",
+            "tw": "實木格柵拱門包廂、高挑金屬展示牆與天然石材吧台整合"
+          }
+        }
+      ],
+      "en": {
+        "title": "NEO LOUNGE — Commercial Millwork & Stone Bar Study",
+        "badge": "Concept Study",
+        "spaceType": "Hospitality & Brand Experience Lounge (Concept)",
+        "scope": "Fluted wood booth millwork, tall illuminated metal shelving, stone-top bar counter, lounge seating",
+        "materials": "Fluted oak millwork, brushed bronze-tone metal, honed natural stone countertop, bouclé upholstery",
+        "summary": "Architectural lounge concept pairing curved fluted-wood niches, full-height metal display shelving, and a honed natural stone bar.",
+        "brief": "Created to showcase cross-category coordination between architectural millwork, double-height metal display frames, and natural stone hospitality counters for flagship VIP lounges and hybrid retail-hospitality spaces.",
+        "execution": [
+          "Fluted Wood Arched Niches: Continuous vertical timber slats transitioning into curved built-in booth alcoves with recessed warm lighting.",
+          "Full-Height Metal Display Wall: Slim bronze-toned metal framing engineered to display collectibles and hardware across double-height bays.",
+          "Vietnam Stone Bar Integration: Fluted timber bar front capped with a honed natural stone countertop, aligned with Big Fame's Vietnam stone processing facility."
+        ]
+      },
+      "jp": {
+        "title": "NEO LOUNGE — 木工造作・高層什器・石材バー空間スタディ",
+        "badge": "空間スタディ",
+        "spaceType": "VIP ラウンジ・体験型複合空間（コンセプト）",
+        "scope": "リブ木工ブース造作、高層金属ディスプレイ棚、石材天板バーカウンター、ラウンジ家具",
+        "materials": "オーク縦格子木工、ブロンズ調金属フレーム、天然石天板、ブークレ張地",
+        "summary": "縦格子木工のアーチブース、天井高まで伸びる金属ディスプレイ棚、ベトナム石材加工連携を想定した天然石バーの複合空間スタディ。",
+        "brief": "物販とホスピタリティが融合する体験型ラウンジを想定し、木工造作・高層金属フレーム什器・ベトナム石材加工天板の複合手配力を示すために構築した空間スタディです。",
+        "execution": [
+          "縦格子木工アーチブース：連続する木製リブと曲面ニッチ造作を組み合わせ、間接照明による柔らかな陰影を演出しています。",
+          "高層金属ディスプレイ壁面：細身のブロンズ調金属フレームで天井高を活かしたグリッド棚を構成しました。",
+          "天然石天板バーカウンター：縦格子腰壁に天然石カウンターを組み合わせ、ベトナム石材加工工場との一体手配力を体現しています。"
+        ]
+      },
+      "tw": {
+        "title": "NEO LOUNGE — 商空木作格柵、高挑展示架與石材吧台研究",
+        "badge": "概念研究",
+        "spaceType": "品牌體驗空間／VIP 交誼廳（概念研究）",
+        "scope": "實木格柵拱門包廂、高挑金屬展示架、天然石材吧台與軟裝整合",
+        "materials": "實木格柵木作、古銅色金屬框體、天然石材檯面、圈絨織布軟裝",
+        "summary": "結合實木格柵拱門、高挑金屬陳列櫃與天然石材吧台，呈現高階商空與旅宿跨材質整合能力。",
+        "brief": "針對品牌體驗館與高階旅宿 VIP 交誼廳，示範大型木作格柵、高挑金屬展示架與天然石材檯面在同一空間內的跨材質整合配置。",
+        "execution": [
+          "實木格柵拱門包廂：以連續木質格柵銜接弧形包廂內嵌結構與間接光源，營造溫潤建築層次。",
+          "高挑金屬展示牆：纖細古銅金屬框架搭配多層展示格位，示範大型立面結構的線條精度。",
+          "越南石材吧台整合：木格柵立面結合天然石材吧台檯面，呼應越南石材加工廠與旅宿 FF&E 的整合優勢。"
+        ]
+      }
+    }
+  ]
+}
